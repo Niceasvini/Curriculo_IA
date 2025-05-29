@@ -1,0 +1,9 @@
+2025-05-22 16:20:51,656 - INFO - Banco de dados inicializado em C:\Users\Viana e Moura.VM210490\Documents\GitHub\Airflow-DadosVM\Curriculo_IA\db.json
+2025-05-22 16:21:04,756 - INFO - Banco de dados inicializado em C:\Users\Viana e Moura.VM210490\Documents\GitHub\Airflow-DadosVM\Curriculo_IA\db.json
+2025-05-22 16:21:13,244 - INFO - Banco de dados inicializado em C:\Users\Viana e Moura.VM210490\Documents\GitHub\Airflow-DadosVM\Curriculo_IA\db.json
+2025-05-22 16:21:13,610 - INFO - Banco de dados inicializado em C:\Users\Viana e Moura.VM210490\Documents\GitHub\Airflow-DadosVM\Curriculo_IA\db.json
+2025-05-22 16:21:19,357 - INFO - Banco de dados inicializado em C:\Users\Viana e Moura.VM210490\Documents\GitHub\Airflow-DadosVM\Curriculo_IA\db.json
+2025-05-22 16:21:49,448 - INFO - Banco de dados inicializado em C:\Users\Viana e Moura.VM210490\Documents\GitHub\Airflow-DadosVM\Curriculo_IA\db.json
+2025-05-23 15:24:43,486 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 15:24:55,645 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 15:24:59,557 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
