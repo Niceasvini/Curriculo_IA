@@ -39,7 +39,7 @@ class JobCreator:
             
             # Cria a vaga
             new_job = Job(**cleaned_data)
-            self.db.jobs.insert(new_job.model_dump())
+            self.db.insert_job(new_job.model_dump())
             logger.info(f"Vaga criada com ID: {new_job.id}")
             return new_job.model_dump()
         
