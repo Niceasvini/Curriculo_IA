@@ -40,7 +40,7 @@ def setup_page():
     st.title("📊 Painel de Recrutamento Inteligente")
     st.markdown("---")
 
-    st.subheader("📤 Enviar Currículos para Análise")
+    st.subheader("📄 Enviar Currículos para Análise")
     uploaded_files = st.file_uploader(
         "Selecione os arquivos de currículo (PDF, DOCX, TXT):",
         type=["pdf", "docx", "txt"],
@@ -61,24 +61,10 @@ def setup_page():
                     name=texto_manual.strip().split("\n")[0]
                 )
                 print(vaga)
-                process_with_files(uploaded_files,texto_manual,vaga["id"])
-        # for file in uploaded_files:
-        #     # Aqui você pode salvar ou processar os arquivos como preferir
-        #     # Exemplo: salvar temporariamente
-        #     file_path = Path("uploads") / file.name
-        #     file_path.parent.mkdir(parents=True, exist_ok=True)
-        #     with open(file_path, "wb") as f:
-        #         f.write(file.read())
-            
-        #     # Chamada para análise automática (exemplo, você deve adaptar conforme sua lógica)
-        #     try:
-        #         database.analyze_resum(file_path, job['id'])
-        #         st.success(f"Arquivo '{file.name}' enviado e análise iniciada.")
-        #     except Exception as e:
-        #         st.error(f"Erro ao analisar '{file.name}': {e}")
+                process_with_files(uploaded_files, texto_manual, vaga["id"])
 
 def get_job_selector():
-    jobs = database.jobs.all()
+    jobs = database.get_jobs()
     if not jobs:
         st.warning("Nenhuma vaga cadastrada.")
         return None
@@ -182,7 +168,7 @@ def main():
     # Exibe análise se um candidato for selecionado
     selected_rows = grid_response.get("selected_rows", [])
     if selected_rows is not None and len(selected_rows) > 0:
-        candidate = selected_rows.iloc[0].to_dict()
+        candidate = selected_rows[0]  # Corrigido: era .iloc[0].to_dict() com erro
         show_candidate_details(candidate)
 
 if __name__ == "__main__":
