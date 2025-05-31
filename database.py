@@ -51,23 +51,34 @@ class AnalyseDataBase:
         }
     
     def delete_job_and_related_data(self, job_id: str) -> Dict[str, int]:
+        """
+        Exclui a vaga e todos os dados relacionados nas tabelas:
+        - analysis (deve vir antes de resums por causa da FK)
+        - resums
+        - files
+        - jobs
+        """
         deleted_counts = {
-            "resums": 0,
             "analysis": 0,
+            "resums": 0,
             "files": 0,
             "jobs": 0
         }
 
         try:
-            res1 = supabase.table("resums").delete().eq("job_id", job_id).execute()
-            deleted_counts["resums"] = len(res1.data or [])
+            # Deletar primeiro a tabela analysis (dependente de resum_id)
+            res1 = supabase.table("analysis").delete().eq("job_id", job_id).execute()
+            deleted_counts["analysis"] = len(res1.data or [])
 
-            res2 = supabase.table("analysis").delete().eq("job_id", job_id).execute()
-            deleted_counts["analysis"] = len(res2.data or [])
+            # Agora deletar resums
+            res2 = supabase.table("resums").delete().eq("job_id", job_id).execute()
+            deleted_counts["resums"] = len(res2.data or [])
 
+            # Depois files
             res3 = supabase.table("files").delete().eq("job_id", job_id).execute()
             deleted_counts["files"] = len(res3.data or [])
 
+            # Por fim, deletar a vaga em jobs
             res4 = supabase.table("jobs").delete().eq("id", job_id).execute()
             deleted_counts["jobs"] = len(res4.data or [])
 
@@ -75,6 +86,7 @@ class AnalyseDataBase:
             print(f"Erro ao deletar dados da vaga: {e}")
 
         return deleted_counts
+
 
 
     def get_db_stats(self) -> Dict[str, int]:
