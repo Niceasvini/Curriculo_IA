@@ -168,7 +168,7 @@ def main():
     # Exibe análise se um candidato for selecionado
     selected_rows = grid_response.get("selected_rows", [])
     if selected_rows is not None and len(selected_rows) > 0:
-        candidate = selected_rows[0]  # Corrigido: era .iloc[0].to_dict() com erro
+        candidate = selected_rows.iloc[0].to_dict()  # Corrigido: era .iloc[0].to_dict() com erro
         show_candidate_details(candidate)
 
 if __name__ == "__main__":
