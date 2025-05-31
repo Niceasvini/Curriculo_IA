@@ -150,7 +150,7 @@ def main():
                 sucesso = database.delete_job_and_related_data(job['id'])
                 if sucesso:
                     st.success("Vaga e dados excluídos com sucesso.")
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.error("Erro ao excluir os dados. Verifique os logs.")
 
