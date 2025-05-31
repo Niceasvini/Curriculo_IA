@@ -72,8 +72,7 @@ def get_job_selector(jobs=None):
         return None
 
     job_names = [job['name'] for job in jobs]
-    selected_name = st.selectbox("Selecione a vaga:", job_names)
-
+    selected_name = st.selectbox("Selecione a vaga:", job_names, key="vaga_selector")
     return next((job for job in jobs if job['name'] == selected_name), None)
 
 
@@ -144,17 +143,16 @@ def main():
     jobs = database.get_jobs()
     job = get_job_selector(jobs)
 
-    with st.expander("⚠️ Excluir vaga e currículos analisados"):
-        st.warning("Esta ação é irreversível. Todos os dados relacionados serão perdidos.")
-        if st.button("🗑️ Excluir esta vaga"):
-            sucesso = database.delete_job_and_related_data(job['id'])
-            if sucesso:
-                st.success("Vaga e dados excluídos com sucesso.")
-                # Atualiza a lista de jobs
-                jobs = database.get_jobs()
-                job = get_job_selector(jobs)
-            else:
-                st.error("Erro ao excluir os dados. Verifique os logs.")
+    if job:
+        with st.expander("⚠️ Excluir vaga e currículos analisados"):
+            st.warning("Esta ação é irreversível. Todos os dados relacionados serão perdidos.")
+            if st.button("🗑️ Excluir esta vaga"):
+                sucesso = database.delete_job_and_related_data(job['id'])
+                if sucesso:
+                    st.success("Vaga e dados excluídos com sucesso.")
+                    st.experimental_rerun()
+                else:
+                    st.error("Erro ao excluir os dados. Verifique os logs.")
 
     if not job:
         return
