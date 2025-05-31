@@ -12,6 +12,7 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 from database import AnalyseDataBase
 from analise import process_with_files
 from create_job import JobCreator
+from PIL import Image
 
 # Configuração de logging
 logging.basicConfig(
@@ -37,6 +38,31 @@ def setup_page():
         page_title="Sistema de Recrutamento IA",
         page_icon="🧠"
     )
+
+    logo_path = "VMC.png"  # ou caminho completo se necessário
+    logo = Image.open(logo_path)
+    st.image(logo, width=200)
+
+    st.markdown("""
+        <style>
+        .stButton>button {
+            background-color: #B93A3E;
+            color: white;
+            font-weight: bold;
+        }
+        .stButton>button:hover {
+            background-color: #E4A230;
+            color: black;
+        }
+        .css-18ni7ap {
+            color: #B93A3E !important;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    logo = Image.open("16daf571-32b2-421e-a4b7-ee425f1b45e8.png")
+    st.image(logo, width=200)
+
     st.title("📊 Painel de Recrutamento Inteligente")
     st.markdown("---")
 
