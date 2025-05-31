@@ -51,13 +51,6 @@ class AnalyseDataBase:
         }
     
     def delete_job_and_related_data(self, job_id: str) -> Dict[str, int]:
-        """
-        Exclui a vaga e todos os dados relacionados nas tabelas:
-        - resums
-        - analysis
-        - files
-        - jobs
-        """
         deleted_counts = {
             "resums": 0,
             "analysis": 0,
