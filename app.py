@@ -72,6 +72,7 @@ def get_job_selector():
     selected_name = st.selectbox("Selecione a vaga:", job_names)
     return next((job for job in jobs if job['name'] == selected_name), None)
 
+
 def process_candidate_data(data):
     if not data:
         return pd.DataFrame()
@@ -137,6 +138,17 @@ def main():
     setup_page()
 
     job = get_job_selector()
+        # Botão de exclusão da vaga e dados
+    with st.expander("⚠️ Excluir vaga e currículos analisados"):
+        st.warning("Esta ação é irreversível. Todos os dados relacionados serão perdidos.")
+        if st.button("🗑️ Excluir esta vaga"):
+            sucesso = database.delete_job_and_related_data(job['id'])
+            if sucesso:
+                st.success(f"Vaga '{job['name']}' e dados relacionados excluídos com sucesso!")
+                st.experimental_rerun()
+            else:
+                st.error("Erro ao excluir os dados. Verifique os logs.")
+
     if not job:
         return
 
