@@ -49,6 +49,40 @@ class AnalyseDataBase:
             "analysis": len(res2.data or []),
             "files": len(res3.data or [])
         }
+    
+    def delete_job_and_related_data(self, job_id: str) -> Dict[str, int]:
+        """
+        Exclui a vaga e todos os dados relacionados nas tabelas:
+        - resums
+        - analysis
+        - files
+        - jobs
+        """
+        deleted_counts = {
+            "resums": 0,
+            "analysis": 0,
+            "files": 0,
+            "jobs": 0
+        }
+
+        try:
+            res1 = supabase.table("resums").delete().eq("job_id", job_id).execute()
+            deleted_counts["resums"] = len(res1.data or [])
+
+            res2 = supabase.table("analysis").delete().eq("job_id", job_id).execute()
+            deleted_counts["analysis"] = len(res2.data or [])
+
+            res3 = supabase.table("files").delete().eq("job_id", job_id).execute()
+            deleted_counts["files"] = len(res3.data or [])
+
+            res4 = supabase.table("jobs").delete().eq("id", job_id).execute()
+            deleted_counts["jobs"] = len(res4.data or [])
+
+        except Exception as e:
+            print(f"Erro ao deletar dados da vaga: {e}")
+
+        return deleted_counts
+
 
     def get_db_stats(self) -> Dict[str, int]:
         stats = {}
