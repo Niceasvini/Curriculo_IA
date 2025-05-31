@@ -8,3 +8,45 @@
 2025-05-23 15:24:55,645 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
 2025-05-23 15:24:59,557 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
 2025-05-29 22:08:23,225 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:31:20,355 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:40:54,663 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:41:04,329 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
+2025-05-29 22:41:04,431 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs "HTTP/2 400 Bad Request"
+2025-05-29 22:41:04,434 - ERROR - Erro ao criar vaga: {'message': "Could not find the 'status' column of 'jobs' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\create_job.py", line 42, in create_job
+    self.db.insert_job(new_job.model_dump())
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\database.py", line 12, in insert_job
+    supabase.table("jobs").insert(job_data).execute()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Viana e Moura.VM210490\AppData\Roaming\Python\Python313\site-packages\postgrest\_sync\request_builder.py", line 78, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': "Could not find the 'status' column of 'jobs' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-29 22:43:45,548 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:43:50,870 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:43:57,644 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
+2025-05-29 22:43:57,846 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs "HTTP/2 400 Bad Request"
+2025-05-29 22:43:57,847 - ERROR - Erro ao criar vaga: {'message': "Could not find the 'updated_at' column of 'jobs' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\create_job.py", line 42, in create_job
+    self.db.insert_job(new_job.model_dump())
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\database.py", line 12, in insert_job
+    supabase.table("jobs").insert(job_data).execute()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Viana e Moura.VM210490\AppData\Roaming\Python\Python313\site-packages\postgrest\_sync\request_builder.py", line 78, in execute
+    raise APIError(dict(json_obj))
+postgrest.exceptions.APIError: {'message': "Could not find the 'updated_at' column of 'jobs' in the schema cache", 'code': 'PGRST204', 'hint': None, 'details': None}
+2025-05-29 22:46:28,047 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:46:32,309 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:46:38,497 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
+2025-05-29 22:46:41,107 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs "HTTP/2 201 Created"
+2025-05-29 22:46:41,108 - INFO - Vaga criada com ID: 9482be32-4dc9-4385-af03-07fbccd282b1
+2025-05-29 22:46:42,302 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 22:47:14,225 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 22:47:45,369 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 22:48:22,922 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 22:49:00,919 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-05-29 22:49:33,620 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-29 22:49:33,851 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.9482be32-4dc9-4385-af03-07fbccd282b1 "HTTP/2 200 OK"

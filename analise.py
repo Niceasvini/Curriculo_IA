@@ -172,9 +172,9 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
         }
 
         # 💾 Inserção no banco
-        database.resums.insert(resum_data.model_dump())
-        database.analysis.insert(analysis_data.model_dump())
-        database.files.insert(file_data)
+        database.insert_resum(resum_data.model_dump())
+        database.insert_analysis(analysis_data.model_dump())
+        database.insert_file(file_data)
 
         logger.info(f"✅ Currículo '{name}' processado e salvo com ID: {resum_id}")
 
