@@ -63,13 +63,17 @@ def setup_page():
                 print(vaga)
                 process_with_files(uploaded_files, texto_manual, vaga["id"])
 
-def get_job_selector():
-    jobs = database.get_jobs()
+def get_job_selector(jobs=None):
+    if jobs is None:
+        jobs = database.get_jobs()
+
     if not jobs:
         st.warning("Nenhuma vaga cadastrada.")
         return None
+
     job_names = [job['name'] for job in jobs]
     selected_name = st.selectbox("Selecione a vaga:", job_names)
+
     return next((job for job in jobs if job['name'] == selected_name), None)
 
 
@@ -137,14 +141,18 @@ def show_candidate_details(candidate):
 def main():
     setup_page()
 
-    job = get_job_selector()
-        # Botão de exclusão da vaga e dados
+    jobs = database.get_jobs()
+    job = get_job_selector(jobs)
+
     with st.expander("⚠️ Excluir vaga e currículos analisados"):
         st.warning("Esta ação é irreversível. Todos os dados relacionados serão perdidos.")
         if st.button("🗑️ Excluir esta vaga"):
             sucesso = database.delete_job_and_related_data(job['id'])
             if sucesso:
-                st.success(sucesso)
+                st.success("Vaga e dados excluídos com sucesso.")
+                # Atualiza a lista de jobs
+                jobs = database.get_jobs()
+                job = get_job_selector(jobs)
             else:
                 st.error("Erro ao excluir os dados. Verifique os logs.")
 

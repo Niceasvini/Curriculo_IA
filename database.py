@@ -66,21 +66,21 @@ class AnalyseDataBase:
         }
 
         try:
-            # Deletar primeiro a tabela analysis (dependente de resum_id)
-            res1 = supabase.table("analysis").delete().eq("job_id", job_id).execute()
-            deleted_counts["analysis"] = len(res1.data or [])
+            # Deletar registros em analysis (depende de resum_id)
+            res_analysis = supabase.table("analysis").delete().eq("job_id", job_id).execute()
+            deleted_counts["analysis"] = len(res_analysis.data or [])
 
-            # Agora deletar resums
-            res2 = supabase.table("resums").delete().eq("job_id", job_id).execute()
-            deleted_counts["resums"] = len(res2.data or [])
+            # Deletar registros em files (também depende de resum_id)
+            res_files = supabase.table("files").delete().eq("job_id", job_id).execute()
+            deleted_counts["files"] = len(res_files.data or [])
 
-            # Depois files
-            res3 = supabase.table("files").delete().eq("job_id", job_id).execute()
-            deleted_counts["files"] = len(res3.data or [])
+            # Deletar registros em resums
+            res_resums = supabase.table("resums").delete().eq("job_id", job_id).execute()
+            deleted_counts["resums"] = len(res_resums.data or [])
 
             # Por fim, deletar a vaga em jobs
-            res4 = supabase.table("jobs").delete().eq("id", job_id).execute()
-            deleted_counts["jobs"] = len(res4.data or [])
+            res_jobs = supabase.table("jobs").delete().eq("id", job_id).execute()
+            deleted_counts["jobs"] = len(res_jobs.data or [])
 
         except Exception as e:
             print(f"Erro ao deletar dados da vaga: {e}")
