@@ -20,7 +20,8 @@ if os.name == 'nt':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')  # Também evita o erro no traceback
 
-stream_handler = logging.StreamHandler(sys.stdout)
+stream_handler = logging.StreamHandler(stream=sys.stdout)
+stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 file_handler = logging.FileHandler('app.log', encoding='utf-8')
 stream_handler.setLevel(logging.INFO)
 file_handler.setLevel(logging.INFO)
