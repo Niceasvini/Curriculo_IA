@@ -17,19 +17,19 @@ from create_job import JobCreator
 from PIL import Image
 
 
+# Força UTF-8 no Windows
+if os.name == 'nt':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')  # Também evita o erro no traceback
+
 # Regex para remover emojis e caracteres fora do ASCII
 def remove_non_ascii(text):
     return re.sub(r'[^\x00-\x7F]+', '', text)
 class ConsoleFilter(logging.Filter):
     def filter(self, record):
-        # Remove caracteres não ASCII do msg para evitar erro no console
-        record.msg = record.msg.encode('ascii', 'ignore').decode('ascii')
+        if isinstance(record.msg, str):
+            record.msg = remove_non_ascii(record.msg)
         return True
-
-# Força UTF-8 no Windows
-if os.name == 'nt':
-    sys.stdout.reconfigure(encoding='utf-8')
-    sys.stderr.reconfigure(encoding='utf-8')  # Também evita o erro no traceback
 
 # Criar handler de console
 stream_handler = logging.StreamHandler(stream=sys.stdout)
