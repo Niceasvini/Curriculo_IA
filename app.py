@@ -39,7 +39,7 @@ def setup_page():
         page_icon="🧠"
     )
 
-    logo_path = "VMC.png"  # ou caminho completo se necessário
+    logo_path = r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\VMC.png.png"  # ou caminho completo se necessário
     logo = Image.open(logo_path)
     st.image(logo, width=200)
 
