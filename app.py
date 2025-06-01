@@ -2,6 +2,7 @@ import os
 import sys
 import time
 import logging
+import re
 import codecs
 from pathlib import Path
 
@@ -15,6 +16,10 @@ from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
 
+
+# Regex para remover emojis e caracteres fora do ASCII
+def remove_non_ascii(text):
+    return re.sub(r'[^\x00-\x7F]+', '', text)
 class ConsoleFilter(logging.Filter):
     def filter(self, record):
         # Remove caracteres não ASCII do msg para evitar erro no console
@@ -30,7 +35,6 @@ if os.name == 'nt':
 stream_handler = logging.StreamHandler(stream=sys.stdout)
 stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 stream_handler.setLevel(logging.INFO)
-
 # Adicionar filtro para remover emojis do console
 stream_handler.addFilter(ConsoleFilter())
 
