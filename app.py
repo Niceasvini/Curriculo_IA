@@ -15,14 +15,19 @@ from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
 
+# Força UTF-8 no Windows
+if os.name == 'nt':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')  # Também evita o erro no traceback
+
 stream_handler = logging.StreamHandler(sys.stdout)
 file_handler = logging.FileHandler('app.log', encoding='utf-8')
 
 # Configuração de logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[stream_handler, file_handler]
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stdout)]
 )
 logger = logging.getLogger(__name__)
 
