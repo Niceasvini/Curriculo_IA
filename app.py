@@ -22,12 +22,13 @@ if os.name == 'nt':
 
 stream_handler = logging.StreamHandler(sys.stdout)
 file_handler = logging.FileHandler('app.log', encoding='utf-8')
+stream_handler.setLevel(logging.INFO)
+file_handler.setLevel(logging.INFO)
 
-# Configuração de logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)]
+    handlers=[stream_handler, file_handler]
 )
 logger = logging.getLogger(__name__)
 
