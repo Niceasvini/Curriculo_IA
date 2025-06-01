@@ -27,21 +27,26 @@ def remove_non_ascii(text):
     return re.sub(r'[^\x00-\x7F]+', '', text)
 class ConsoleFilter(logging.Filter):
     def filter(self, record):
-        def remove_non_ascii(text):
-            if isinstance(text, str):
-                return re.sub(r'[^\x00-\x7F]+', '', text)
-            return text
-        
-        # Limpa a mensagem original, se string
-        if isinstance(record.msg, str):
-            record.msg = remove_non_ascii(record.msg)
+        try:
+            # Antes de formatar, limpar msg e args
+            if isinstance(record.msg, str):
+                record.msg = re.sub(r'[^\x00-\x7F]+', '', record.msg)
 
-        # Limpa todos os argumentos da mensagem (tupla ou string)
-        if record.args:
-            if isinstance(record.args, tuple):
-                record.args = tuple(remove_non_ascii(str(a)) for a in record.args)
-            else:
-                record.args = remove_non_ascii(str(record.args))
+            if record.args:
+                if isinstance(record.args, tuple):
+                    record.args = tuple(re.sub(r'[^\x00-\x7F]+', '', str(a)) for a in record.args)
+                else:
+                    record.args = re.sub(r'[^\x00-\x7F]+', '', str(record.args))
+
+            # Agora a mensagem formatada sem emojis
+            msg = record.getMessage()
+            # Força encode ASCII ignorando caracteres não ASCII
+            record.msg = msg.encode('ascii', errors='ignore').decode('ascii')
+            record.args = None  # já formatou msg, não precisa de args
+
+        except Exception:
+            # Em caso de erro, deixa passar para evitar travar logging
+            pass
 
         return True
 
