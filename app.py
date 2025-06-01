@@ -27,21 +27,21 @@ def remove_non_ascii(text):
     return re.sub(r'[^\x00-\x7F]+', '', text)
 class ConsoleFilter(logging.Filter):
     def filter(self, record):
-        def remove_emojis_and_non_ascii(s):
-            if isinstance(s, str):
-                return re.sub(r'[^\x00-\x7F]+', '', s)
-            return s
-
-        # Remove de record.msg se for string
+        def remove_non_ascii(text):
+            if isinstance(text, str):
+                return re.sub(r'[^\x00-\x7F]+', '', text)
+            return text
+        
+        # Limpa a mensagem original, se string
         if isinstance(record.msg, str):
-            record.msg = remove_emojis_and_non_ascii(record.msg)
+            record.msg = remove_non_ascii(record.msg)
 
-        # Remove dos argumentos, que podem conter emojis
+        # Limpa todos os argumentos da mensagem (tupla ou string)
         if record.args:
             if isinstance(record.args, tuple):
-                record.args = tuple(remove_emojis_and_non_ascii(str(a)) for a in record.args)
+                record.args = tuple(remove_non_ascii(str(a)) for a in record.args)
             else:
-                record.args = remove_emojis_and_non_ascii(str(record.args))
+                record.args = remove_non_ascii(str(record.args))
 
         return True
 
