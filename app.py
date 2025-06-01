@@ -39,7 +39,7 @@ def setup_page():
         page_icon="🧠"
     )
 
-    logo_path = r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\VMC.png.png"  # ou caminho completo se necessário
+    logo_path = r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\VMC.png"  # ou caminho completo se necessário
     logo = Image.open(logo_path)
     st.image(logo, width=200)
 
@@ -60,7 +60,7 @@ def setup_page():
         </style>
     """, unsafe_allow_html=True)
 
-    logo = Image.open("16daf571-32b2-421e-a4b7-ee425f1b45e8.png")
+    logo = Image.open(r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\VMC.png")
     st.image(logo, width=200)
 
     st.title("📊 Painel de Recrutamento Inteligente")
