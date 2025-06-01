@@ -2,6 +2,7 @@ import os
 import sys
 import time
 import logging
+import io
 from pathlib import Path
 
 import streamlit as st
@@ -14,14 +15,14 @@ from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
 
+stream_handler = logging.StreamHandler(stream=io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8'))
+file_handler = logging.FileHandler('app.log', encoding='utf-8')
+
 # Configuração de logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler('app.log', encoding='utf-8')
-    ]
+    handlers=[stream_handler, file_handler]
 )
 logger = logging.getLogger(__name__)
 
