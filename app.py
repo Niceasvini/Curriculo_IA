@@ -15,15 +15,26 @@ from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
 
+class ConsoleFilter(logging.Filter):
+    def filter(self, record):
+        # Remove caracteres não ASCII do msg para evitar erro no console
+        record.msg = record.msg.encode('ascii', 'ignore').decode('ascii')
+        return True
+
 # Força UTF-8 no Windows
 if os.name == 'nt':
     sys.stdout.reconfigure(encoding='utf-8')
     sys.stderr.reconfigure(encoding='utf-8')  # Também evita o erro no traceback
 
-stream_handler = logging.StreamHandler(stream=sys.stdout.buffer)
+# Criar handler de console
+stream_handler = logging.StreamHandler(stream=sys.stdout)
 stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 stream_handler.setLevel(logging.INFO)
 
+# Adicionar filtro para remover emojis do console
+stream_handler.addFilter(ConsoleFilter())
+
+# Criar handler de arquivo (com encoding utf-8)
 file_handler = logging.FileHandler('app.log', encoding='utf-8')
 file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 file_handler.setLevel(logging.INFO)
