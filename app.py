@@ -2,7 +2,7 @@ import os
 import sys
 import time
 import logging
-import io
+import codecs
 from pathlib import Path
 
 import streamlit as st
@@ -22,8 +22,10 @@ if os.name == 'nt':
 
 stream_handler = logging.StreamHandler(stream=sys.stdout)
 stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-file_handler = logging.FileHandler('app.log', encoding='utf-8')
 stream_handler.setLevel(logging.INFO)
+
+file_handler = logging.FileHandler('app.log', encoding='utf-8')
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 file_handler.setLevel(logging.INFO)
 
 logging.basicConfig(
@@ -32,6 +34,7 @@ logging.basicConfig(
     handlers=[stream_handler, file_handler]
 )
 logger = logging.getLogger(__name__)
+logger.info("Teste de logging UTF-8 sem erros 🧠")
 
 # Inicializa o banco de dados
 try:
