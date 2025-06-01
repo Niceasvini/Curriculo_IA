@@ -60,9 +60,6 @@ def setup_page():
         </style>
     """, unsafe_allow_html=True)
 
-    logo = Image.open(r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\VMC.png")
-    st.image(logo, width=200)
-
     st.title("📊 Painel de Recrutamento Inteligente")
     st.markdown("---")
 
