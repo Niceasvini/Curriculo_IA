@@ -15,7 +15,7 @@ from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
 
-stream_handler = logging.StreamHandler(stream=io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8'))
+stream_handler = logging.StreamHandler(sys.stdout)
 file_handler = logging.FileHandler('app.log', encoding='utf-8')
 
 # Configuração de logging
