@@ -39,7 +39,7 @@ def setup_page():
         page_icon="🧠"
     )
 
-    logo_path = "16daf571-32b2-421e-a4b7-ee425f1b45e8.png"  # ou caminho completo se necessário
+    logo_path = "VMC.png"  # ou caminho completo se necessário
     logo = Image.open(logo_path)
     st.image(logo, width=200)
 
