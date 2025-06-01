@@ -288,3 +288,6 @@ postgrest.exceptions.APIError: {'message': "Could not find the 'updated_at' colu
 2025-05-31 23:30:25,380 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?job_id=eq.3b3ca451-114e-4ebd-84a1-e72baba7c91c "HTTP/2 200 OK"
 2025-05-31 23:30:25,480 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?id=eq.3b3ca451-114e-4ebd-84a1-e72baba7c91c "HTTP/2 200 OK"
 2025-05-31 23:30:25,688 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-31 23:32:02,903 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-31 23:32:42,943 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-05-31 23:35:19,406 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
