@@ -84,9 +84,12 @@ def setup_page():
         page_icon="🧠"
     )
 
-    logo_path = r"C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\VMC.png"  # ou caminho completo se necessário
-    logo = Image.open(logo_path)
-    st.image(logo, width=200)
+    logo_path = Path("assets/VMC.png")
+    if logo_path.exists():
+        logo = Image.open(logo_path)
+        st.image(logo, width=200)
+    else:
+        st.warning("Logo não encontrado.")
 
     st.markdown("""
         <style>
