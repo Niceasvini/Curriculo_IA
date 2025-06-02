@@ -111,7 +111,7 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
         existing_resum = database.find_file_by_name(file.name)
         if any(resum.get("job_id") == job['id'] for resum in existing_resum):
             logger.warning(f"⚠️ Arquivo já processado anteriormente. Ignorando: {file.name}")
-            
+            return None
 
         content = extract_text_from_pdf(file)
         if not content or len(content.strip()) < 50:

@@ -1,54 +1,12 @@
-2025-06-02 01:17:05,477 - INFO - Conexão com o banco de dados inicializada com sucesso.
-2025-06-02 01:17:05,664 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
-2025-06-02 01:17:05,666 - INFO - Vaga já existente: Coordenador de Dados
-2025-06-02 01:17:05,666 - INFO - Nova vaga criada: {'id': 'eb331613-4293-4af0-8f74-2544d0af83e5', 'name': 'Coordenador de Dados', 'created_at': '2025-06-02T01:13:31.80811', 'status': 'active', 'updated_at': '2025-06-02T01:13:31.808118'}
-2025-06-02 01:17:05,895 - INFO - 📄 Processando: CurrículoANGELICADASILVA (1) 1.pdf
-2025-06-02 01:17:06,000 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculoANGELICADASILVA+%281%29+1.pdf "HTTP/2 200 OK"
-2025-06-02 01:17:06,001 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurrículoANGELICADASILVA (1) 1.pdf
-2025-06-02 01:17:06,448 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
-2025-06-02 01:17:36,372 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
-2025-06-02 01:17:36,469 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
-2025-06-02 01:17:36,568 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
-2025-06-02 01:17:36,570 - INFO - ✅ Currículo 'Angelicadasilva (1) 1' processado e salvo com ID: a197d8cf-1e4a-4a0a-b993-023dc93ddd12
-2025-06-02 01:17:36,571 - INFO - 📄 Processando: CurrículoMarcellaOliveiradaSilva (1) 1.pdf
-2025-06-02 01:17:36,686 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculoMarcellaOliveiradaSilva+%281%29+1.pdf "HTTP/2 200 OK"
-2025-06-02 01:17:36,690 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurrículoMarcellaOliveiradaSilva (1) 1.pdf
-2025-06-02 01:17:37,098 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
-2025-06-02 01:18:15,981 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
-2025-06-02 01:18:16,073 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
-2025-06-02 01:18:16,169 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
-2025-06-02 01:18:16,170 - INFO - ✅ Currículo 'Marcella Oliveirada Silva (1) 1' processado e salvo com ID: b0486c51-97f0-4eaf-8681-5abe30c93c2e
-2025-06-02 01:18:16,170 - INFO - 📄 Processando: CurrículoEdileneGomesdaSilva 1.pdf
-2025-06-02 01:18:16,262 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculoEdileneGomesdaSilva+1.pdf "HTTP/2 200 OK"
-2025-06-02 01:18:16,264 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurrículoEdileneGomesdaSilva 1.pdf
-2025-06-02 01:18:16,726 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
-2025-06-02 01:18:50,822 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
-2025-06-02 01:18:50,923 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
-2025-06-02 01:18:51,017 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
-2025-06-02 01:18:51,019 - INFO - ✅ Currículo 'Edilene Gomesda Silva 1' processado e salvo com ID: 6f395d58-b47c-47f8-94df-d15a24cf9bcf
-2025-06-02 01:18:51,019 - INFO - 📄 Processando: curriculo-adrielly 1.pdf
-2025-06-02 01:18:51,116 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.curriculo-adrielly+1.pdf "HTTP/2 200 OK"
-2025-06-02 01:18:51,117 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: curriculo-adrielly 1.pdf
-2025-06-02 01:18:52,099 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
-2025-06-02 01:19:32,339 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
-2025-06-02 01:19:32,428 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
-2025-06-02 01:19:32,517 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
-2025-06-02 01:19:32,517 - INFO - ✅ Currículo 'Adrielly 1' processado e salvo com ID: f957eaf8-cb3c-4cdd-8b3d-4c21300db474
-2025-06-02 01:19:32,517 - INFO - 📄 Processando: CurrículoEwertonDiasdaSilva 1.pdf
-2025-06-02 01:19:32,608 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculoEwertonDiasdaSilva+1.pdf "HTTP/2 200 OK"
-2025-06-02 01:19:32,609 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurrículoEwertonDiasdaSilva 1.pdf
-2025-06-02 01:19:33,000 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
-2025-06-02 01:20:03,813 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
-2025-06-02 01:20:03,916 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
-2025-06-02 01:20:04,037 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
-2025-06-02 01:20:04,038 - INFO - ✅ Currículo 'Ewerton Diasda Silva 1' processado e salvo com ID: b8ec31cf-e890-4ac3-a896-9459ab0b43ef
-2025-06-02 01:20:04,038 - INFO - 📄 Processando: Currículo Wellington Dourado (1).pdf
-2025-06-02 01:20:04,137 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculo+Wellington+Dourado+%281%29.pdf "HTTP/2 200 OK"
-2025-06-02 01:20:04,138 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: Currículo Wellington Dourado (1).pdf
-2025-06-02 01:20:04,528 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
-2025-06-02 01:20:39,742 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
-2025-06-02 01:20:39,849 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
-2025-06-02 01:20:39,942 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
-2025-06-02 01:20:39,944 - INFO - ✅ Currículo 'Wellington Dourado (1)' processado e salvo com ID: 5f5c1d95-542a-4edb-99cd-5c68ea128569
-2025-06-02 01:20:40,043 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
-2025-06-02 01:20:40,144 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.eb331613-4293-4af0-8f74-2544d0af83e5 "HTTP/2 200 OK"
+2025-06-02 01:57:40,044 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-02 01:57:40,148 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
+2025-06-02 01:57:40,155 - INFO - Vaga já existente: Coordenador de Dados
+2025-06-02 01:57:40,156 - INFO - Nova vaga criada: {'id': 'c356065b-19b9-4c5e-8123-4de3c179fa6f', 'name': 'Coordenador de Dados', 'created_at': '2025-06-02T01:55:22.42435', 'status': 'active', 'updated_at': '2025-06-02T01:55:22.42436'}
+2025-06-02 01:57:40,400 - INFO - 📄 Processando: CurrículoEwertonDiasdaSilva 1.pdf
+2025-06-02 01:57:40,484 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculoEwertonDiasdaSilva+1.pdf "HTTP/2 200 OK"
+2025-06-02 01:57:40,485 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurrículoEwertonDiasdaSilva 1.pdf
+2025-06-02 01:57:40,485 - INFO - 📄 Processando: Currículo Wellington Dourado (1).pdf
+2025-06-02 01:57:40,569 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculo+Wellington+Dourado+%281%29.pdf "HTTP/2 200 OK"
+2025-06-02 01:57:40,572 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: Currículo Wellington Dourado (1).pdf
+2025-06-02 01:57:40,684 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-02 01:57:40,775 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.c356065b-19b9-4c5e-8123-4de3c179fa6f "HTTP/2 200 OK"
