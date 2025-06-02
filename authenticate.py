@@ -10,7 +10,6 @@ from google.auth.exceptions import RefreshError
 # Configuração de logging
 logging.basicConfig(
     level=logging.INFO,
-    encoding='utf-8',
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)

@@ -22,7 +22,6 @@ load_dotenv()
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    encoding='utf-8',
     handlers=[
         logging.FileHandler('analysis.log', mode='w'),
         logging.StreamHandler()
@@ -107,23 +106,19 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
     try:
         logger.info(f"📄 Processando: {file.name}")
         
-        
+        job_id = job['id']
 
-        # # ✅ Verifica se já foi processado antes
-        # existing_resum = database.files.search(File.file_path == abs_path )
-        # if any(resum.get("job_id") == job['id'] for resum in existing_resum):
-        #     logger.warning(f"⚠️ Arquivo já processado anteriormente. Ignorando: {filename}")
-        #     return {
-        #         'file': filename,
-        #         'resum_id': existing_resum["resum_id"],
-        #         'status': 'skipped'
-        #     } 
+        existing_resum = database.find_file_by_name(file.name)
+        if any(resum.get("job_id") == job['id'] for resum in existing_resum):
+            logger.warning(f"⚠️ Arquivo já processado anteriormente. Ignorando: {file.name}")
+            
 
         content = extract_text_from_pdf(file)
         if not content or len(content.strip()) < 50:
             raise ValueError("❌ PDF vazio ou ilegível")
 
         name = extract_name(content, file.name.split('.')[0], uploaded_file=file)
+        
         email = extract_email(content)
 
         # 🔍 Geração via IA
@@ -135,7 +130,7 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
         # 🔢 Geração de IDs
         resum_id = str(uuid.uuid4())
 
-        job_id = job['id']
+        
 
         # ✅ Dados estruturados
         resum_data = Resum(

@@ -744,3 +744,35 @@ postgrest.exceptions.APIError: {'message': "Could not find the 'updated_at' colu
 2025-06-01 23:43:26,338 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 200 OK"
 2025-06-01 23:43:26,451 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
 2025-06-01 23:43:26,546 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.a26fc970-6ed2-435a-8568-ca60752c32cd "HTTP/2 200 OK"
+2025-06-01 23:46:49,825 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:46:53,208 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:47:04,096 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
+2025-06-01 23:47:04,292 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs "HTTP/2 201 Created"
+2025-06-01 23:47:04,293 - INFO - Vaga criada com ID: baefe0e6-9454-4c3d-8876-311bf341f9b8
+2025-06-01 23:47:05,799 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-01 23:47:34,072 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
+2025-06-01 23:47:34,165 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
+2025-06-01 23:47:34,355 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 201 Created"
+2025-06-01 23:47:34,460 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:47:34,573 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.baefe0e6-9454-4c3d-8876-311bf341f9b8 "HTTP/2 200 OK"
+2025-06-01 23:51:09,114 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:51:09,216 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?job_id=eq.baefe0e6-9454-4c3d-8876-311bf341f9b8 "HTTP/2 200 OK"
+2025-06-01 23:51:09,418 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?job_id=eq.baefe0e6-9454-4c3d-8876-311bf341f9b8 "HTTP/2 200 OK"
+2025-06-01 23:51:09,508 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?job_id=eq.baefe0e6-9454-4c3d-8876-311bf341f9b8 "HTTP/2 200 OK"
+2025-06-01 23:51:09,593 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?id=eq.baefe0e6-9454-4c3d-8876-311bf341f9b8 "HTTP/2 200 OK"
+2025-06-01 23:51:09,780 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:56:34,462 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-01 23:56:35,185 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:56:38,192 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-01 23:56:38,303 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:56:44,225 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-01 23:56:44,417 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
+2025-06-01 23:56:44,527 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs "HTTP/2 201 Created"
+2025-06-01 23:56:44,528 - INFO - Vaga criada com ID: 78911168-1f23-407a-9aa2-f8cf6be13b8f
+2025-06-01 23:56:44,528 - INFO - Nova vaga criada: {'id': '78911168-1f23-407a-9aa2-f8cf6be13b8f', 'name': 'Coordenador de Dados', 'created_at': '2025-06-01T23:56:44.419363', 'updated_at': '2025-06-01T23:56:44.419370', 'status': 'active'}
+2025-06-01 23:56:45,662 - INFO - HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-06-01 23:57:16,441 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?on_conflict=id "HTTP/2 201 Created"
+2025-06-01 23:57:16,530 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?on_conflict=resum_id "HTTP/2 201 Created"
+2025-06-01 23:57:16,615 - INFO - HTTP Request: POST https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?on_conflict=file_path "HTTP/2 201 Created"
+2025-06-01 23:57:16,704 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-01 23:57:16,787 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.78911168-1f23-407a-9aa2-f8cf6be13b8f "HTTP/2 200 OK"

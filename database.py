@@ -20,6 +20,22 @@ class AnalyseDataBase:
     def insert_file(self, file_data: Dict):
         supabase.table("files").upsert(file_data, on_conflict=["file_path"]).execute()
 
+    def find_file_by_name(self, file_name: str) -> List[Dict]:
+        """
+        Busca por arquivos que tenham um nome original específico.
+        
+        Args:
+            file_name: O nome do arquivo a ser procurado.
+        
+        Returns:
+            Uma lista de dicionários com os dados dos arquivos encontrados.
+            Retorna uma lista vazia se nenhum arquivo for encontrado.
+        """
+        # A sintaxe correta é usar .select() para escolher as colunas
+        # e .eq() para criar a condição "onde a coluna é igual a".
+        response = supabase.table("files").select("*").eq("original_name", file_name).execute()
+        return response.data
+
     def get_job_by_name(self, name: str) -> Optional[Dict]:
         result = supabase.table("jobs").select("*").eq("name", name).execute()
         return result.data[0] if result.data else None

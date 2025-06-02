@@ -11,7 +11,6 @@ import httpx
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    encoding='utf-8',
     handlers=[
         logging.FileHandler('deepseek_analysis.log'),
         logging.StreamHandler()
@@ -108,7 +107,7 @@ class DeepSeekClient:
     def analyze_cv(self, cv_text: str, job_description: Dict) -> Tuple[str, str, float]:
         prompt = f"""
         Você é um analista de currículos. Analise o currículo abaixo para a vaga '{job_description.get("name")}'.
-
+        
         Retorne:
         - Um resumo estruturado do currículo em Markdown.
         - Uma opinião crítica com base na vaga (alinhamento técnico, gaps e recomendação).

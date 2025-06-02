@@ -1,9 +1,7 @@
 import os
 import sys
-import time
 import logging
 import re
-import codecs
 from pathlib import Path
 
 import streamlit as st
@@ -16,65 +14,51 @@ from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
 
+# --- Início da Configuração de Logging ---
 
-# Força UTF-8 no Windows
-if os.name == 'nt':
-    sys.stdout.reconfigure(encoding='utf-8')
-    sys.stderr.reconfigure(encoding='utf-8')  # Também evita o erro no traceback
-
-# Regex para remover emojis e caracteres fora do ASCII
-def remove_non_ascii(text):
-    return re.sub(r'[^\x00-\x7F]+', '', text)
-class ConsoleFilter(logging.Filter):
+class AsciiOnlyFilter(logging.Filter):
+    """
+    Filtro de logging que remove todos os caracteres não-ASCII
+    da mensagem final que será exibida no console.
+    """
     def filter(self, record):
-        try:
-            # Antes de formatar, limpar msg e args
-            if isinstance(record.msg, str):
-                record.msg = re.sub(r'[^\x00-\x7F]+', '', record.msg)
-
-            if record.args:
-                if isinstance(record.args, tuple):
-                    record.args = tuple(re.sub(r'[^\x00-\x7F]+', '', str(a)) for a in record.args)
-                else:
-                    record.args = re.sub(r'[^\x00-\x7F]+', '', str(record.args))
-
-            # Agora a mensagem formatada sem emojis
-            msg = record.getMessage()
-            # Força encode ASCII ignorando caracteres não ASCII
-            record.msg = msg.encode('ascii', errors='ignore').decode('ascii')
-            record.args = None  # já formatou msg, não precisa de args
-
-        except Exception:
-            # Em caso de erro, deixa passar para evitar travar logging
-            pass
-
+        original_message = record.getMessage()
+        record.msg = re.sub(r'[^\x00-\x7F]+', '', original_message)
+        record.args = ()
         return True
 
-# Criar handler de console
+# 1. Pega o logger RAIZ para ter controle total.
+root_logger = logging.getLogger()
+root_logger.setLevel(logging.INFO)
+
+# 2. Remove handlers pré-existentes (do Streamlit, etc.) para evitar conflitos.
+if root_logger.hasHandlers():
+    root_logger.handlers.clear()
+
+# 3. Cria nosso handler de ARQUIVO (completo, com UTF-8)
+file_handler = logging.FileHandler('app.log', mode='w', encoding='utf-8')
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+# 4. Cria nosso handler de CONSOLE (seguro, com o filtro ASCII)
 stream_handler = logging.StreamHandler(stream=sys.stdout)
 stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-stream_handler.setLevel(logging.INFO)
-# Adicionar filtro para remover emojis do console
-stream_handler.addFilter(ConsoleFilter())
+stream_handler.addFilter(AsciiOnlyFilter())
 
-# Criar handler de arquivo (com encoding utf-8)
-file_handler = logging.FileHandler('app.log', encoding='utf-8')
-file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-file_handler.setLevel(logging.INFO)
+# 5. Adiciona NOSSOS handlers ao logger raiz.
+root_logger.addHandler(file_handler)
+root_logger.addHandler(stream_handler)
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    encoding='utf-8',
-    handlers=[stream_handler, file_handler]
-)
+# Pega o logger para usar no restante da aplicação.
 logger = logging.getLogger(__name__)
-logger.info("Teste de logging UTF-8 sem erros 🧠")
+
+# --- Fim da Configuração de Logging ---
 
 # Inicializa o banco de dados
 try:
     database = AnalyseDataBase()
+    logger.info("Conexão com o banco de dados inicializada com sucesso.")
 except Exception as e:
+    logger.error(f"Erro fatal ao inicializar banco de dados: {e}")
     st.error("Erro ao inicializar banco de dados: " + str(e))
     st.stop()
 
@@ -90,7 +74,8 @@ def setup_page():
         logo = Image.open(logo_path)
         st.image(logo, width=200)
     else:
-        st.warning("Logo não encontrado.")
+        st.warning("Logo não encontrado no caminho: assets/VMC.png")
+        logger.warning("Arquivo de logo não encontrado.")
 
     st.markdown("""
         <style>
@@ -132,7 +117,7 @@ def setup_page():
                 vaga = jc.create_job(
                     name=texto_manual.strip().split("\n")[0]
                 )
-                print(vaga)
+                logger.info(f"Nova vaga criada: {vaga}")
                 process_with_files(uploaded_files, texto_manual, vaga["id"])
 
 def get_job_selector(jobs=None):
@@ -156,6 +141,7 @@ def process_candidate_data(data):
 
     if 'resum_id' not in df.columns:
         st.warning("Dados sem 'resum_id'. Verifique a fonte de dados.")
+        logger.warning("Dados de análise recebidos sem a coluna 'resum_id'.")
         return pd.DataFrame()
 
     df = df.sort_values('score', ascending=False)
@@ -187,9 +173,11 @@ def show_candidate_details(candidate):
         resum = database.get_resum_by_id(candidate['resum_id'])
         if not resum:
             st.warning("Currículo não encontrado.")
+            logger.warning(f"Tentativa de buscar currículo com resum_id {candidate['resum_id']} falhou.")
             return
     except Exception as e:
         st.error(f"Erro ao buscar currículo: {e}")
+        logger.error(f"Exceção ao buscar currículo com resum_id {candidate['resum_id']}: {e}")
         return
 
     st.markdown(resum.get('content', 'Sem conteúdo'))
@@ -222,9 +210,11 @@ def main():
                 sucesso = database.delete_job_and_related_data(job['id'])
                 if sucesso:
                     st.success("Vaga e dados excluídos com sucesso.")
+                    logger.info(f"Vaga '{job['name']}' (ID: {job['id']}) e dados relacionados foram excluídos.")
                     st.rerun()
                 else:
                     st.error("Erro ao excluir os dados. Verifique os logs.")
+                    logger.error(f"Falha ao tentar excluir a vaga '{job['name']}' (ID: {job['id']}).")
 
     if not job:
         return
@@ -234,7 +224,7 @@ def main():
     df = process_candidate_data(data)
 
     if df.empty:
-        st.warning("Nenhum currículo analisado para essa vaga.")
+        st.info("Nenhum currículo analisado para essa vaga.")
         return
 
     # Gráfico de Score
@@ -257,7 +247,7 @@ def main():
     # Exibe análise se um candidato for selecionado
     selected_rows = grid_response.get("selected_rows", [])
     if selected_rows is not None and len(selected_rows) > 0:
-        candidate = selected_rows.iloc[0].to_dict()  # Corrigido: era .iloc[0].to_dict() com erro
+        candidate = selected_rows.iloc[0].to_dict()
         show_candidate_details(candidate)
 
 if __name__ == "__main__":

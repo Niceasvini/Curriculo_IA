@@ -8,7 +8,7 @@ import re
 from typing import List, Dict
 
 # Configuração de logging
-logging.basicConfig(level=logging.INFO,encoding='utf-8')
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Constantes
