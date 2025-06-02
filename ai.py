@@ -11,6 +11,7 @@ import httpx
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
+    encoding='utf-8',
     handlers=[
         logging.FileHandler('deepseek_analysis.log'),
         logging.StreamHandler()
@@ -135,8 +136,7 @@ class DeepSeekClient:
         if not result:
             return "Resumo indisponível.", "Opinião indisponível.", 5.0
 
-        # Extrai cada parte com regex
-        print(result)
+    
         resumo = re.search(r"### RESUMO\s*(.*?)\s*(?=### OPINIÃO|### SCORE|$)", result, re.DOTALL)
         opiniao = re.search(r"### OPINIÃO\s*(.*?)\s*(?=### SCORE|$)", result, re.DOTALL)
         score = re.search(r"### SCORE\s*([\d]{1,2}(?:\.\d)?)", result)

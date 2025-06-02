@@ -13,7 +13,7 @@ from datetime import datetime
 init()
 
 # Configuração de logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO,encoding='utf-8')
 logger = logging.getLogger(__name__)
 
 class PDFHelper:

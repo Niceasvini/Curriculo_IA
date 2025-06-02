@@ -22,6 +22,7 @@ load_dotenv()
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    encoding='utf-8',
     handlers=[
         logging.FileHandler('analysis.log', mode='w'),
         logging.StreamHandler()

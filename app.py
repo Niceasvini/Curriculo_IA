@@ -65,6 +65,7 @@ file_handler.setLevel(logging.INFO)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
+    encoding='utf-8',
     handlers=[stream_handler, file_handler]
 )
 logger = logging.getLogger(__name__)
