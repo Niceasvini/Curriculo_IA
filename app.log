@@ -1,12 +1,4 @@
-2025-06-02 01:57:40,044 - INFO - Conexão com o banco de dados inicializada com sucesso.
-2025-06-02 01:57:40,148 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A&name=eq.Coordenador+de+Dados "HTTP/2 200 OK"
-2025-06-02 01:57:40,155 - INFO - Vaga já existente: Coordenador de Dados
-2025-06-02 01:57:40,156 - INFO - Nova vaga criada: {'id': 'c356065b-19b9-4c5e-8123-4de3c179fa6f', 'name': 'Coordenador de Dados', 'created_at': '2025-06-02T01:55:22.42435', 'status': 'active', 'updated_at': '2025-06-02T01:55:22.42436'}
-2025-06-02 01:57:40,400 - INFO - 📄 Processando: CurrículoEwertonDiasdaSilva 1.pdf
-2025-06-02 01:57:40,484 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculoEwertonDiasdaSilva+1.pdf "HTTP/2 200 OK"
-2025-06-02 01:57:40,485 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurrículoEwertonDiasdaSilva 1.pdf
-2025-06-02 01:57:40,485 - INFO - 📄 Processando: Currículo Wellington Dourado (1).pdf
-2025-06-02 01:57:40,569 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?select=%2A&original_name=eq.Curr%C3%ADculo+Wellington+Dourado+%281%29.pdf "HTTP/2 200 OK"
-2025-06-02 01:57:40,572 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: Currículo Wellington Dourado (1).pdf
-2025-06-02 01:57:40,684 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
-2025-06-02 01:57:40,775 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.c356065b-19b9-4c5e-8123-4de3c179fa6f "HTTP/2 200 OK"
+2025-06-02 21:33:49,130 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-02 21:33:49,299 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-02 21:33:49,391 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.d4e0673a-4ac0-44ae-a6b5-297c5d59db31 "HTTP/2 200 OK"
+2025-06-02 21:33:49,524 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?select=%2A&id=eq.f6effe9a-1a14-4060-8f22-f1661ba8ff08 "HTTP/2 200 OK"

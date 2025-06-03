@@ -1,18 +1,22 @@
 import os
+import time
 import sys
 import logging
 import re
+import threading
 from pathlib import Path
-
 import streamlit as st
 import pandas as pd
 import altair as alt
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
-
 from database import AnalyseDataBase
 from analise import process_with_files
 from create_job import JobCreator
 from PIL import Image
+
+
+
+
 
 # --- Início da Configuração de Logging ---
 
@@ -95,7 +99,20 @@ def setup_page():
     """, unsafe_allow_html=True)
 
     st.title("📊 Painel de Recrutamento Inteligente")
-    st.markdown("---")
+    st.markdown("""
+    ---  
+    ### 🚀 Objetivo   
+    Este aplicativo tem como objetivo otimizar o processo de recrutamento por meio da análise automática de currículos utilizando Inteligência Artificial. Ele auxilia na seleção de candidatos mais adequados para cada vaga, agilizando a triagem e fornecendo um ranking baseado em scores inteligentes.
+
+    ### ⚙️ Como usar  
+    1. Faça o upload dos currículos dos candidatos nos formatos PDF, DOCX ou TXT.  
+    2. Insira a descrição da vaga ou o Documento de Conteúdo Funcional (DCF) para análise.  
+    3. Aguarde o sistema processar e analisar os currículos automaticamente.  
+    4. Selecione a vaga gerada para visualizar os resultados da análise.  
+    5. Consulte o ranking dos candidatos com base no score gerado pela IA e realize a avaliação detalhada dos currículos.
+
+    ---  
+    """)
 
     st.subheader("📄 Enviar Currículos para Análise")
     uploaded_files = st.file_uploader(
@@ -104,10 +121,23 @@ def setup_page():
         accept_multiple_files=True
     )
 
+    
+    
+
     if uploaded_files:
         with st.form("manual_resume_form"):
-            texto_manual = st.text_area("Conteúdo da Vaga:")
+            st.header("💼 Conteúdo da Vaga")
+            texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
             submitted = st.form_submit_button("Analisar Currículo")
+
+        def simulate_progress(duration_seconds, progress_placeholder):
+            """Simula progresso de 0 a 100% durante a duração estimada"""
+            steps = 20  # número de passos para a barra
+            sleep_time = duration_seconds / steps
+            for i in range(steps + 1):
+                percent = int(i * 100 / steps)
+                progress_placeholder.progress(percent)
+                time.sleep(sleep_time)
 
         if submitted:
             if not texto_manual.strip():
@@ -118,7 +148,75 @@ def setup_page():
                     name=texto_manual.strip().split("\n")[0]
                 )
                 logger.info(f"Nova vaga criada: {vaga}")
-                process_with_files(uploaded_files, texto_manual, vaga["id"])
+
+                tempos = []  # Lista para armazenar dados
+                falhas = 0
+
+                # Interação visual durante análise
+                for i, file in enumerate(uploaded_files, start=1):
+                    progresso_barra = st.progress(0, text=f"📄 Currículo {i}/{len(uploaded_files)}: `{file.name}` - Iniciando...")
+                    status_placeholder = st.empty()
+
+                    start = time.time()
+
+                    try:
+                        # Processamento real (bloqueante)
+                        process_with_files([file], texto_manual, vaga["id"])
+
+                        end = time.time()
+                        duracao = end - start
+                        duracao = max(duracao, 1)  # garantir tempo mínimo de 1s
+
+                        # Simula a porcentagem com base no tempo real
+                        for p in range(101):
+                            progresso_barra.progress(p, text=f"📄 Currículo {i}/{len(uploaded_files)}: `{file.name}` - Analisando... ({p}%)")
+                            time.sleep(duracao / 100)
+
+                        progresso_barra.empty()
+
+                        # Formata o tempo
+                        if duracao >= 60:
+                            tempo_formatado = f"{duracao / 60:.2f} min"
+                        else:
+                            tempo_formatado = f"{duracao:.2f} seg"
+
+                        tempos.append({"Currículo": file.name, "Tempo": tempo_formatado})
+                        logger.info(f"⏱️ Currículo `{file.name}` analisado em {tempo_formatado}.")
+
+                        # Exibe mensagem de sucesso por 2 segundos e limpa depois
+                        status_placeholder.success(f"✅ `{file.name}` analisado em {tempo_formatado}.")
+                        time.sleep(2)
+                        status_placeholder.empty()
+
+                    except Exception as e:
+                        falhas += 1
+                        logger.error(f"❌ Erro ao analisar `{file.name}`: {e}")
+                        tempos.append({"Currículo": file.name, "Tempo": "Falha"})
+                        progresso_barra.empty()
+                        status_placeholder.error(f"❌ Falha ao analisar `{file.name}`.")
+                        time.sleep(3)
+                        status_placeholder.empty()
+
+                # Ao final, mostra resumo
+                total = len(uploaded_files)
+                col1, col2 = st.columns(2)
+                col1.metric("Currículos analisados", total)
+                col2.metric("Falhas na análise", falhas)
+
+                # Tempo total em minutos (somando só os que tiveram sucesso)
+                tempo_total = round(
+                    sum(
+                        float(x["Tempo"].replace(" min", ""))
+                        for x in tempos if "min" in x["Tempo"]
+                    ) +
+                    sum(
+                        float(x["Tempo"].replace(" seg", "")) / 60
+                        for x in tempos if "seg" in x["Tempo"]
+                    )
+                )
+
+                st.success(f"✅ Todos os currículos foram analisados em {tempo_total} minuto(s) somados.")
+
 
 def get_job_selector(jobs=None):
     if jobs is None:
@@ -150,21 +248,58 @@ def process_candidate_data(data):
     df = df.dropna(subset=['score'])
     return df
 
-def create_score_chart(df):
+def create_modern_score_chart(df):
     df = df.rename(columns={'name': 'Nome', 'score': 'Score'})
-    chart = alt.Chart(df.head(5)).mark_bar().encode(
-        y=alt.Y('Nome:N', sort='-x'),
-        x=alt.X('Score:Q', scale=alt.Scale(domain=[0, 10])),
-        color=alt.Color('Score:Q', scale=alt.Scale(scheme='redyellowgreen', domain=[0, 10]))
+    top_n = 15
+    df_top = df.head(top_n)
+
+    base = alt.Chart(df_top).encode(
+        y=alt.Y('Nome:N', sort='-x', title=None, axis=alt.Axis(labelFontSize=12, labelColor='#444')),
+        x=alt.X('Score:Q', scale=alt.Scale(domain=[0, 10]), title='Pontuação', axis=alt.Axis(labelFontSize=12, labelColor='#444')),
+        tooltip=[
+            alt.Tooltip('Nome:N', title='Candidato'),
+            alt.Tooltip('Score:Q', title='Score', format='.2f')
+        ]
     )
-    text = alt.Chart(df.head(5)).mark_text(
-        align='left', dx=3, baseline='middle'
+
+    bars = base.mark_bar(cornerRadiusTopLeft=5, cornerRadiusTopRight=5).encode(
+        color=alt.Color('Score:Q',
+                        scale=alt.Scale(scheme='tealblues'),
+                        legend=None)
+    )
+
+    text = base.mark_text(
+        align='left',
+        baseline='middle',
+        dx=5,
+        fontWeight='bold',
+        fontSize=12,
+        color='#333'
     ).encode(
-        y=alt.Y('Nome:N', sort='-x'),
-        x='Score:Q',
         text=alt.Text('Score:Q', format='.1f')
     )
-    return (chart + text).properties(height=500, title="Top 5 Candidatos por Pontuação")
+
+    chart = (bars + text).properties(
+        width=600,
+        height=30 * top_n,  # 30 px por linha
+        title=alt.TitleParams(
+            text=f"Top {top_n} Candidatos por Pontuação",
+            fontSize=18,
+            font='Segoe UI',
+            anchor='start',
+            color='#222'
+        )
+    ).configure_view(
+        strokeWidth=0
+    ).configure_axis(
+        grid=False,
+        domain=False
+    ).configure_title(
+        fontWeight='bold'
+    )
+
+    return chart
+
 
 def show_candidate_details(candidate):
     st.subheader(f"📄 Currículo de {candidate.get('name', 'Desconhecido')}")
@@ -190,7 +325,7 @@ def show_candidate_details(candidate):
     else:
         st.text(str(opinion))
 
-    st.metric("Score", f"{candidate['score']:.1f}/10")
+    st.metric("Pontuação", f"{candidate['Pontuação']:.1f}/10")
 
     file_path = resum.get('file')
     if file_path and Path(file_path).exists():
@@ -229,26 +364,60 @@ def main():
 
     # Gráfico de Score
     st.subheader("🎯 Score dos Candidatos")
-    st.altair_chart(create_score_chart(df), use_container_width=True)
+    st.altair_chart(create_modern_score_chart(df), use_container_width=True)
 
     # Lista de Currículos com AgGrid
     st.subheader("📋 Lista de Currículos Analisados")
-    gb = GridOptionsBuilder.from_dataframe(df)
-    gb.configure_selection('single', use_checkbox=True)
-    grid_options = gb.build()
 
+    # Copia do df original com todas as colunas (inclusive resum_id, id, job_id)
+    df_original = df.copy()
+
+    # Renomear colunas para português, se quiser
+    df_original = df_original.rename(columns={
+        'name': 'Nome',
+        'email': 'Email',
+        'created_at': 'Data de Criação',
+        'score': 'Pontuação'
+    })
+
+    # Ajustar formato da data para dd/mm/yyyy - HH:MM
+    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'])
+    df_original['Data de Criação'] = df_original['Data de Criação'].dt.strftime('%d/%m/%Y - %H:%M')
+
+    # Cria a versão para exibição (removendo colunas técnicas)
+    df_display = df_original.drop(columns=['resum_id', 'id', 'job_id','skills', 'education', 'language'])
+
+    # Configurações do AgGrid
+    gb = GridOptionsBuilder.from_dataframe(df_display)
+    gb.configure_selection('single', use_checkbox=True)
+    gb.configure_default_column(sortable=True)
+
+    # Força ordenação por pontuação decrescente
+    grid_options = gb.build()
+    grid_options['sortModel'] = [{'colId': 'Pontuação', 'sort': 'desc'}]
+
+    # Exibe a tabela
     grid_response = AgGrid(
-        df,
+        df_display,
         gridOptions=grid_options,
         update_mode=GridUpdateMode.SELECTION_CHANGED,
-        allow_unsafe_jscode=True
+        allow_unsafe_jscode=True,
+        fit_columns_on_grid_load=True
     )
 
-    # Exibe análise se um candidato for selecionado
-    selected_rows = grid_response.get("selected_rows", [])
-    if selected_rows is not None and len(selected_rows) > 0:
-        candidate = selected_rows.iloc[0].to_dict()
-        show_candidate_details(candidate)
+   # Verifica e exibe detalhes se alguém for selecionado
+    selected_rows = grid_response.get('selected_rows')
+
+    if selected_rows is not None:
+        if isinstance(selected_rows, pd.DataFrame):
+            selected_rows = selected_rows.to_dict(orient='records')
+
+        if isinstance(selected_rows, list) and len(selected_rows) > 0:
+            selected_nome = selected_rows[0].get('Nome')
+            if selected_nome:
+                selected_index = df_display[df_display['Nome'] == selected_nome].index[0]
+                candidate = df_original.iloc[selected_index]
+                show_candidate_details(candidate)
 
 if __name__ == "__main__":
     main()

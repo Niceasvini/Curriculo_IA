@@ -21,6 +21,9 @@ logger = logging.getLogger(__name__)
 # Carrega variáveis de ambiente
 load_dotenv()
 
+def round_to_nearest_half(num: float) -> float:
+    return round(num * 2) / 2
+
 class DeepSeekClient:
     def __init__(self, model_id: str = "deepseek-chat"):
         self.api_key = os.getenv("DEEPSEEK_API_KEY")
@@ -78,7 +81,9 @@ class DeepSeekClient:
     def generate_score(self, cv_text: str, job_description: Dict) -> float:
         prompt = f"""
         Avalie de 0 a 10 o quão bem este currículo se encaixa na vaga '{job_description.get("name")}'.
-        Retorne apenas um número com uma casa decimal.
+        Retorne APENAS um número, sem texto, explicações ou símbolos.
+        O número deve ser múltiplo de 0.5, como 1.0, 1.5, 2.0, 2.5, 3.0, e assim por diante.
+        Se a nota calculada tiver casas decimais diferentes, arredonde para o múltiplo de 0.5 mais próximo.
 
         Currículo:
         {cv_text[:5000]}
@@ -86,9 +91,11 @@ class DeepSeekClient:
         response = self.generate_response(prompt, temperature=0.2, max_tokens=50)
         match = re.search(r"(\d{1,2}(?:\.\d)?)", response)
         if match:
-            score = float(match.group(1))
-            return min(max(score, 0), 10)
-        return 5.0  # Valor neutro padrão
+            raw_score = float(match.group(1))
+            rounded_score = round_to_nearest_half(raw_score)
+            return min(max(rounded_score, 0), 10)
+        # Se falhar, retorna None para indicar erro (ou pode deixar 5.0 se preferir)
+        return None
 
     def generate_opinion(self, cv_text: str, job_description: Dict) -> str:
         prompt = f"""
