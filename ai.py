@@ -80,14 +80,15 @@ class DeepSeekClient:
 
     def generate_score(self, cv_text: str, job_description: Dict) -> float:
         prompt = f"""
-        Avalie de 0 a 10 o quão bem este currículo se encaixa na vaga '{job_description.get("name")}'.
-        Retorne APENAS um número, sem texto, explicações ou símbolos.
-        O número deve ser múltiplo de 0.5, como 1.0, 1.5, 2.0, 2.5, 3.0, e assim por diante.
-        Se a nota calculada tiver casas decimais diferentes, arredonde para o múltiplo de 0.5 mais próximo.
+        Você é um avaliador especialista que dará uma nota de 0 a 10 para o seguinte currículo em relação à vaga '{job_description.get("name")}'.
+        Considere experiência, habilidades, educação e adequação ao cargo.
+        Retorne somente um número decimal, múltiplo de 0.5, sem texto adicional.
+        Se precisar arredondar, arredonde para o múltiplo de 0.5 mais próximo.
 
         Currículo:
         {cv_text[:5000]}
         """
+
         response = self.generate_response(prompt, temperature=0.2, max_tokens=50)
         match = re.search(r"(\d{1,2}(?:\.\d)?)", response)
         if match:

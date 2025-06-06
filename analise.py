@@ -178,7 +178,8 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
             'file': file.name,
             'score': score,
             'resum_id': resum_id,
-            'status': 'success'
+            'status': 'success',
+            'name': name
         }
 
     except Exception as e:

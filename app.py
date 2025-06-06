@@ -1,4 +1,5 @@
 import os
+import pytz
 import time
 import sys
 import logging
@@ -302,7 +303,7 @@ def create_modern_score_chart(df):
 
 
 def show_candidate_details(candidate):
-    st.subheader(f"📄 Currículo de {candidate.get('name', 'Desconhecido')}")
+    st.subheader(f"📄 Currículo de {candidate.get('Nome', 'Desconhecido')}")
 
     try:
         resum = database.get_resum_by_id(candidate['resum_id'])
@@ -381,7 +382,10 @@ def main():
     })
 
     # Ajustar formato da data para dd/mm/yyyy - HH:MM
-    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'])
+    # Ajustar Data de Criação para datetime com timezone UTC (ou o timezone original correto)
+    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'], utc=True)
+    # Converter para timezone de São Paulo
+    df_original['Data de Criação'] = df_original['Data de Criação'].dt.tz_convert('America/Sao_Paulo')
     df_original['Data de Criação'] = df_original['Data de Criação'].dt.strftime('%d/%m/%Y - %H:%M')
 
     # Cria a versão para exibição (removendo colunas técnicas)
