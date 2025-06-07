@@ -1,4 +1,4 @@
-2025-06-06 14:50:14,605 - INFO - Conexão com o banco de dados inicializada com sucesso.
-2025-06-06 14:50:14,875 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
-2025-06-06 14:50:15,019 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.a0f66989-587f-4789-8fc2-2e3ff47d221a "HTTP/2 200 OK"
-2025-06-06 14:50:15,207 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?select=%2A&id=eq.42311ffd-db40-4bc9-95b3-b164117e63f8 "HTTP/2 200 OK"
+2025-06-06 15:11:31,563 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-06 15:11:31,763 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-06 15:11:31,911 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.ed5bf8d4-9d56-41b7-a950-8105c0a28229 "HTTP/2 200 OK"
+2025-06-06 15:11:32,093 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?select=%2A&id=eq.07e5e5a7-8219-40c5-8382-c7656b52b674 "HTTP/2 200 OK"

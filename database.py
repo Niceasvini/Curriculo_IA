@@ -104,6 +104,16 @@ class AnalyseDataBase:
         return deleted_counts
 
 
+    def update_job(self, job_id: str, updated_data: Dict) -> Optional[Dict]:
+        """
+        Atualiza uma vaga (job) com os dados fornecidos.
+        """
+        try:
+            response = supabase.table("jobs").update(updated_data).eq("id", job_id).execute()
+            return response.data[0] if response.data else None
+        except Exception as e:
+            print(f"Erro ao atualizar job {job_id}: {e}")
+            return None
 
     def get_db_stats(self) -> Dict[str, int]:
         stats = {}

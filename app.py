@@ -229,6 +229,33 @@ def get_job_selector(jobs=None):
 
     job_names = [job['name'] for job in jobs]
     selected_name = st.selectbox("Selecione a vaga:", job_names, key="vaga_selector")
+    selected_job = next((job for job in jobs if job['name'] == selected_name), None)
+    if selected_job:
+        col1, col2 = st.columns([4, 1])
+        with col1:
+            st.write(f"**Vaga Selecionada:** {selected_job['name']}")
+        with col2:
+            edit_clicked = st.button("✏️ Editar Vaga")
+
+        if edit_clicked:
+            with st.form(f"edit_job_form_{selected_job['id']}"):
+                novo_nome = st.text_input("Nome da vaga", value=selected_job['name'])
+                nova_desc = st.text_area("Descrição da vaga", value=selected_job.get('description', ''))
+                salvar = st.form_submit_button("Salvar Alterações")
+
+            if salvar:
+                try:
+                    database.update_job(
+                        job_id=selected_job['id'],
+                        name=novo_nome,
+                        description=nova_desc
+                    )
+                    st.success("✅ Vaga atualizada com sucesso.")
+                    st.experimental_rerun()  # Recarrega a página para atualizar o seletor
+                except Exception as e:
+                    logger.error(f"Erro ao atualizar vaga: {e}")
+                    st.error(f"❌ Erro ao atualizar a vaga: {e}")
+
     return next((job for job in jobs if job['name'] == selected_name), None)
 
 

@@ -90,6 +90,7 @@ class DeepSeekClient:
         """
 
         response = self.generate_response(prompt, temperature=0.2, max_tokens=50)
+        print("Resposta da IA:", response)
         match = re.search(r"(\d{1,2}(?:\.\d)?)", response)
         if match:
             raw_score = float(match.group(1))
