@@ -6,6 +6,7 @@ import logging
 import re
 import threading
 from pathlib import Path
+import unicodedata
 import streamlit as st
 import pandas as pd
 import altair as alt
@@ -16,8 +17,13 @@ from create_job import JobCreator
 from PIL import Image
 
 
-
-
+def normalize_filename(filename: str) -> str:
+    # Normaliza Unicode (NFKD) e remove caracteres não ASCII
+    nfkd_form = unicodedata.normalize('NFKD', filename)
+    only_ascii = nfkd_form.encode('ASCII', 'ignore').decode('ASCII')
+    # Remove caracteres indesejados (exemplo: mantém letras, números, _, -, espaços)
+    safe_name = re.sub(r'[^a-zA-Z0-9_\-\. ]', '', only_ascii)
+    return safe_name.strip()
 
 # --- Início da Configuração de Logging ---
 
