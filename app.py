@@ -171,7 +171,7 @@ def setup_page():
                         # Simula a porcentagem com base no tempo real
                         for p in range(101):
                             progresso_barra.progress(p, text=f"📄 Currículo {i}/{len(uploaded_files)}: `{file.name}` - Analisando... ({p}%)")
-                            time.sleep(duracao / 100)
+                            time.sleep(duracao / 100, 0.03)
 
                         progresso_barra.empty()
 
@@ -217,6 +217,11 @@ def setup_page():
                 )
 
                 st.success(f"✅ Todos os currículos foram analisados em {tempo_total} minuto(s) somados.")
+
+                curriculos_sucesso = [x for x in tempos if x["Tempo"] != "Falha"]
+                if curriculos_sucesso:  # evitar divisão por zero
+                    media = round(tempo_total / len(curriculos_sucesso), 2)
+                    st.info(f"⏱️ Tempo médio por currículo: {media} minuto(s).")
 
 
 def get_job_selector(jobs=None):
