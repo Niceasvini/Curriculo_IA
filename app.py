@@ -171,7 +171,7 @@ def setup_page():
                         # Simula a porcentagem com base no tempo real
                         for p in range(101):
                             progresso_barra.progress(p, text=f"📄 Currículo {i}/{len(uploaded_files)}: `{file.name}` - Analisando... ({p}%)")
-                            time.sleep(duracao / 100)
+                            time.sleep(min(duracao / 100, 0.03))
 
                         progresso_barra.empty()
 
