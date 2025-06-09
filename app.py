@@ -118,7 +118,7 @@ def setup_page():
     st.subheader("📄 Enviar Currículos para Análise")
     uploaded_files = st.file_uploader(
         "Selecione os arquivos de currículo (PDF, DOCX, TXT):",
-        type=["pdf", "docx", "txt", "doc", "odt"],
+        type=["pdf", "PDF", "docx", "DOCX", "txt", "TXT", "doc", "DOC", "odt", "ODT"],
         accept_multiple_files=True
     )
 
