@@ -338,7 +338,7 @@ def setup_page():
                     falhas = 0
 
                     # 🔽 Expander já aberto para acumular os logs
-                    expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=True)
+                    expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=False)
                     container_resultados = expander.container()
 
                     # 🔄 Processa arquivos em paralelo
