@@ -231,7 +231,7 @@ def setup_page():
 
             st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
             with st.expander("📂 Clique para ver a lista de arquivos baixados"):
-                for f in filtered_files:
+                for nome in nomes_para_exibir:
                     st.markdown(f"📄 `{f.name}`")
 
             arquivos_unicos = {}
@@ -250,9 +250,6 @@ def setup_page():
                     nomes_para_exibir.append(sanitized_name)
 
             filtered_files = list(arquivos_unicos.values())
-            # Exibir todos os nomes de arquivos únicos
-            for nome in nomes_para_exibir:
-                st.markdown(f"- 📄 `{nome}`")
 
             with st.form("manual_resume_form"):
                 st.header("💼 Conteúdo da Vaga")
