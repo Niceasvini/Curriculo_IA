@@ -243,13 +243,12 @@ def setup_page():
                     arquivos_unicos[file_hash].name = sanitized_name # nome sanitizado
                     nomes_vistos.add(sanitized_name)
                     nomes_para_exibir.append(sanitized_name)
-                    
             # Agora que nomes_para_exibir está definido, pode mostrar no expander
             st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
 
             with st.expander("📂 Clique para ver a lista de arquivos baixados"):
                 for nome in nomes_para_exibir:
-                    st.markdown(f"📄 `{f.name}`")
+                    st.markdown(f"📄 `{nome}`")
 
             filtered_files = list(arquivos_unicos.values())
 
