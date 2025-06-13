@@ -333,18 +333,19 @@ def setup_page():
 
                     tempos = []
                     cache = {}
+                    sucessos = 0
+                    falhas = 0
 
+                    # 🔽 Expander já aberto para acumular os logs
+                    expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=True)
+                    container_resultados = expander.container()
+
+                    # 🔄 Processa arquivos em paralelo
                     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
                         futuros = {
                             executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
                             for i, f in enumerate(filtered_files, start=1)
                         }
-
-                        sucessos = 0
-                        falhas = 0
-                    # 🔽 Expander para exibir/ocultar os resultados detalhados
-                    with st.expander("▶️ Detalhes da análise (clique para expandir)"):
-                        container_resultados = st.container()
 
                         for future in concurrent.futures.as_completed(futuros):
                             sanitized_name, tempo_info, tempo_real, status = future.result()
@@ -352,9 +353,11 @@ def setup_page():
                             progresso_atual += 1
                             percentual = int((progresso_atual / total_arquivos) * 100)
 
+                            # 🟡 Atualiza barra e status em tempo real
                             progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
                             barra_progresso.progress(progresso_atual / total_arquivos)
 
+                        # 📦 Adiciona resultado ao container dentro do expander
                         with container_resultados:
                             if status == "Sucesso":
                                 tempos.append({
@@ -375,6 +378,7 @@ def setup_page():
                                 arquivos_falha_analise.append(sanitized_name)
                                 falhas += 1
 
+                    # 🟢 Limpa elementos temporários
                     barra_progresso.empty()
                     progresso_texto.empty()
                     progresso_global.empty()
