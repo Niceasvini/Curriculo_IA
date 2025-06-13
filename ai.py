@@ -89,9 +89,8 @@ class DeepSeekClient:
         3. Formação acadêmica (peso 2)
         4. Clareza e estrutura do currículo (peso 1)
 
-        Baseado na soma ponderada desses critérios, atribua uma **única nota decimal (múltiplo de 0.5)**, entre 0 e 10. Se necessário, arredonde para o múltiplo de 0.5 mais próximo.
-
-        Retorne apenas a nota final, sem comentários ou texto adicional.
+        - Retorne apenas a nota final, sem comentários ou texto adicional.
+        - Retorne apenas a nota final (ex: 7.91), com até duas casas decimais. Não arredonde para múltiplos de 0.5, apenas mantenha o valor real calculado.
 
         Currículo:
         {cv_text[:5000]}
@@ -99,11 +98,10 @@ class DeepSeekClient:
 
         response = self.generate_response(prompt, temperature=0.6, max_tokens=50)
         print("Resposta da IA:", response)
-        match = re.search(r"(\d{1,2}(?:\.\d)?)", response)
+        match = re.search(r"(\d{1,2}(?:\.\d{1,2})?)", response)
         if match:
             raw_score = float(match.group(1))
-            rounded_score = round_to_nearest_half(raw_score)
-            return min(max(rounded_score, 0), 10)
+            return round(min(max(raw_score, 0), 10), 2)
         # Se falhar, retorna None para indicar erro (ou pode deixar 5.0 se preferir)
         return None
 
