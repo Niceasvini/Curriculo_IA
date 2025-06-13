@@ -334,10 +334,6 @@ def setup_page():
                     tempos = []
                     cache = {}
 
-                    # 🔽 Expander para exibir/ocultar os resultados detalhados
-                    with st.expander("▶️ Detalhes da análise (clique para expandir)"):
-                        container_detalhes = st.container()
-
                     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
                         futuros = {
                             executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
@@ -346,6 +342,9 @@ def setup_page():
 
                         sucessos = 0
                         falhas = 0
+                    # 🔽 Expander para exibir/ocultar os resultados detalhados
+                    with st.expander("▶️ Detalhes da análise (clique para expandir)"):
+                        container_resultados = st.container()
 
                         for future in concurrent.futures.as_completed(futuros):
                             sanitized_name, tempo_info, tempo_real, status = future.result()
@@ -356,7 +355,7 @@ def setup_page():
                             progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
                             barra_progresso.progress(progresso_atual / total_arquivos)
 
-                        with container_detalhes:
+                        with container_resultados:
                             if status == "Sucesso":
                                 tempos.append({
                                     "Currículo": sanitized_name,
