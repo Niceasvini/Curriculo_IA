@@ -91,6 +91,7 @@ class DeepSeekClient:
 
         - Retorne apenas a nota final, sem comentários ou texto adicional.
         - Retorne apenas a nota final (ex: 7.91), com até duas casas decimais. Não arredonde para múltiplos de 0.5, apenas mantenha o valor real calculado.
+        - Não arredonde para múltiplos de 0.5 — apenas mantenha o valor real calculado.
 
         Currículo:
         {cv_text[:5000]}
