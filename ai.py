@@ -93,19 +93,21 @@ class DeepSeekClient:
         - Considere a relevância das experiências e habilidades em relação à vaga.
         - Avalie a formação acadêmica e se ela é adequada para a posição.
         - Com base na soma ponderada desses critérios, atribua uma **nota final com até duas casas decimais**, entre 0 e 10.
-        - Retorne apenas a nota final, sem comentários ou texto adicional.
+        - Retorne apenas a nota final, com até duas casas decimais (ex: 7.91 ou 6.25), sem comentários ou explicações.
+
+        Exemplo:
+        Nota: 6.87
 
         Currículo:
         {cv_text[:5000]}
         """
 
-        response = self.generate_response(prompt, temperature=0.6, max_tokens=50)
+        response = self.generate_response(prompt, temperature=0.85, max_tokens=150)
         print("Resposta da IA:", response)
         match = re.search(r"(\d{1,2}(?:\.\d{1,2})?)", response)
         if match:
             raw_score = float(match.group(1))
             return round(min(max(raw_score, 0), 10), 2)
-        # Se falhar, retorna None para indicar erro (ou pode deixar 5.0 se preferir)
         return None
 
     def generate_opinion(self, cv_text: str, job_description: Dict) -> str:
