@@ -229,11 +229,6 @@ def setup_page():
             if arquivos_invalidos_extensao:
                 st.warning(f"Alguns arquivos foram ignorados por terem extensões inválidas: {arquivos_invalidos_extensao}")
 
-            st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
-            with st.expander("📂 Clique para ver a lista de arquivos baixados"):
-                for nome in nomes_para_exibir:
-                    st.markdown(f"📄 `{f.name}`")
-
             arquivos_unicos = {}
             nomes_vistos = set()
             nomes_para_exibir = []
@@ -248,6 +243,13 @@ def setup_page():
                     arquivos_unicos[file_hash].name = sanitized_name # nome sanitizado
                     nomes_vistos.add(sanitized_name)
                     nomes_para_exibir.append(sanitized_name)
+                    
+            # Agora que nomes_para_exibir está definido, pode mostrar no expander
+            st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
+
+            with st.expander("📂 Clique para ver a lista de arquivos baixados"):
+                for nome in nomes_para_exibir:
+                    st.markdown(f"📄 `{f.name}`")
 
             filtered_files = list(arquivos_unicos.values())
 
