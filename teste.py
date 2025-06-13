@@ -1,16 +1,19 @@
+import requests
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-from openai import OpenAI
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_KEY")
 
-client = OpenAI(api_key="sk-08e53165834948c8b96fe8ec44a12baf", base_url="https://api.deepseek.com")
+headers = {
+    "apikey": key,
+    "Authorization": f"Bearer {key}"
+}
 
-response = client.chat.completions.create(
-    model="deepseek-chat",
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant"},
-        {"role": "user", "content": "Hello"},
-    ],
-    stream=False
-)
+# Substitua 'jobs' se o nome da sua tabela for diferente
+response = requests.get(f"{url}/rest/v1/jobs?select=*", headers=headers)
 
-print(response.choices[0].message.content)
+print("Status:", response.status_code)
+print("Response:", response.text)

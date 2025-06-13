@@ -98,8 +98,8 @@ def extract_name(content: str, fallback: str, uploaded_file) -> str:
 
 
 def extract_email(content: str) -> str:
-    match = re.search(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', content)
-    return match.group(0) if match else ""
+    matches = re.findall(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}', content)
+    return matches[0] if matches else ""
 
 def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, file) -> Optional[Dict]:
     
@@ -113,23 +113,40 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
             logger.warning(f"⚠️ Arquivo já processado anteriormente. Ignorando: {file.name}")
             return None
 
+    
+        def extract_text_from_pdf(file):
+            try:
+                with fitz.open(stream=file.read(), filetype="pdf") as doc:
+                    text = ""
+                    for page in doc:
+                        text += page.get_text()
+                    return text
+            except Exception as e:
+                logging.error(f"Erro ao extrair texto do PDF: {e}")
+                return ""
+
+
+            raise ValueError("❌ PDF vazio ou ilegível")
         content = extract_text_from_pdf(file)
         if not content or len(content.strip()) < 50:
             raise ValueError("❌ PDF vazio ou ilegível")
 
         name = extract_name(content, file.name.split('.')[0], uploaded_file=file)
         
-        email = extract_email(content)
+        email = extract_email(content) 
 
         # 🔍 Geração via IA
         resum_text, opinion, score = ai.analyze_cv(content, job)
 
-        if score is None:
-            raise ValueError("❌ Score retornou None")
+        if score is None or not isinstance(score, (int, float)):
+            raise ValueError("Score inválido retornado pela IA")
 
         # 🔢 Geração de IDs
         resum_id = str(uuid.uuid4())
 
+        email = extract_email(content)
+        if not email or "@" not in email:
+            email = None  # ou email = "" se seu modelo aceitar vazio, mas None costuma ser melhor
         
 
         # ✅ Dados estruturados
@@ -175,30 +192,38 @@ def process_candidate(ai: DeepSeekClient, database: AnalyseDataBase, job: Dict, 
         logger.info(f"✅ Currículo '{name}' processado e salvo com ID: {resum_id}")
 
         return {
+            'sucesso': True,
             'file': file.name,
             'score': score,
             'resum_id': resum_id,
-            'status': 'success',
             'name': name
         }
 
     except Exception as e:
         logger.error(f"❌ Erro ao processar {file.name}: {str(e)}", exc_info=True)
         return {
+            'sucesso': False,
             'file': file.name,
             'error': str(e),
-            'status': 'failed'
         }
 
 
-def process_with_files(files, job_description: str,job_id):
+def process_with_files(files, job_description: str,job_id) -> Dict:
     ai = DeepSeekClient()
     database = AnalyseDataBase()
     job = {"id":job_id,
            "name": job_description}
     
+    results = []
     for file in files:
-        process_candidate(ai, database, job, file)
+        result = process_candidate(ai, database, job, file)
+        if result:
+            results.append(result)
+
+    return {
+        'sucesso': any(r.get('sucesso') for r in results),
+        'resultados': results
+    }
 
 
 def main():

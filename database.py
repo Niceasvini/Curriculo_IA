@@ -1,8 +1,11 @@
+import os
+from dotenv import load_dotenv
 from supabase import create_client
 from typing import List, Dict, Optional
 
-SUPABASE_URL = "https://bndkpowgvagtlxwmthma.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJuZGtwb3dndmFndGx4d210aG1hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg1NjQ3NDYsImV4cCI6MjA2NDE0MDc0Nn0.uXCaQurTXcszNIpL6mY50L4GcIl089TXRSCG7Vg9avE"
+load_dotenv() # Carrega variáveis de ambiente do arquivo .env
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
@@ -38,6 +41,11 @@ class AnalyseDataBase:
 
     def get_job_by_name(self, name: str) -> Optional[Dict]:
         result = supabase.table("jobs").select("*").eq("name", name).execute()
+        return result.data[0] if result.data else None
+    
+    def get_job_details(self, job_id: str) -> Optional[Dict]:
+        """Retorna os detalhes completos de uma vaga específica pelo ID"""
+        result = supabase.table("jobs").select("*").eq("id", job_id).execute()
         return result.data[0] if result.data else None
 
     def get_jobs(self) -> List[Dict]:

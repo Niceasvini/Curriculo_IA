@@ -80,16 +80,24 @@ class DeepSeekClient:
 
     def generate_score(self, cv_text: str, job_description: Dict) -> float:
         prompt = f"""
-        Você é um avaliador especialista que dará uma nota de 0 a 10 para o seguinte currículo em relação à vaga '{job_description.get("name")}'.
-        Considere experiência, habilidades, educação e adequação ao cargo.
-        Retorne somente um número decimal, múltiplo de 0.5, sem texto adicional.
-        Se precisar arredondar, arredonde para o múltiplo de 0.5 mais próximo.
+        Você é um avaliador técnico especializado em recrutamento.
+
+        Dê uma nota de 0 a 10 para o currículo abaixo com base na vaga '{job_description.get("name")}', considerando:
+
+        1. Experiência prática na área (peso 4)
+        2. Habilidades técnicas relevantes (peso 3)
+        3. Formação acadêmica (peso 2)
+        4. Clareza e estrutura do currículo (peso 1)
+
+        Baseado na soma ponderada desses critérios, atribua uma **única nota decimal (múltiplo de 0.5)**, entre 0 e 10. Se necessário, arredonde para o múltiplo de 0.5 mais próximo.
+
+        Retorne apenas a nota final, sem comentários ou texto adicional.
 
         Currículo:
         {cv_text[:5000]}
         """
 
-        response = self.generate_response(prompt, temperature=0.2, max_tokens=50)
+        response = self.generate_response(prompt, temperature=0.6, max_tokens=50)
         print("Resposta da IA:", response)
         match = re.search(r"(\d{1,2}(?:\.\d)?)", response)
         if match:

@@ -1,15 +1,19 @@
-import os
-import pytz
-import time
-import sys
 import logging
+import os
+import sys
 import re
-import threading
+import tempfile
+import time
+from io import BytesIO
 from pathlib import Path
+from PyPDF2 import PdfReader
+from docx import Document
 import unicodedata
 import streamlit as st
 import pandas as pd
 import altair as alt
+import concurrent.futures
+import hashlib
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 from database import AnalyseDataBase
 from analise import process_with_files
@@ -33,34 +37,46 @@ class AsciiOnlyFilter(logging.Filter):
     da mensagem final que será exibida no console.
     """
     def filter(self, record):
-        original_message = record.getMessage()
-        record.msg = re.sub(r'[^\x00-\x7F]+', '', original_message)
+        record.msg = re.sub(r'[^\x00-\x7F]+', '', record.getMessage())
         record.args = ()
         return True
 
 # 1. Pega o logger RAIZ para ter controle total.
-root_logger = logging.getLogger()
-root_logger.setLevel(logging.INFO)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 # 2. Remove handlers pré-existentes (do Streamlit, etc.) para evitar conflitos.
-if root_logger.hasHandlers():
-    root_logger.handlers.clear()
+if logger.hasHandlers():
+    logger.handlers.clear()
 
-# 3. Cria nosso handler de ARQUIVO (completo, com UTF-8)
-file_handler = logging.FileHandler('app.log', mode='w', encoding='utf-8')
-file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+# ✅ Define o caminho absoluto de forma segura (compatível com Windows)
+try:
+    # Tenta usar o diretório atual
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    log_path = os.path.join(current_dir, "app.log")
+    file_handler = logging.FileHandler(log_path, mode='a', encoding='utf-8')
+except (OSError, IOError):
+    # Se falhar, usa diretório temporário
+    fallback_log_path = os.path.join(tempfile.gettempdir(), "app.log")
+    file_handler = logging.FileHandler(fallback_log_path, mode='a', encoding='utf-8')
+
+# Formatter
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
 
 # 4. Cria nosso handler de CONSOLE (seguro, com o filtro ASCII)
-stream_handler = logging.StreamHandler(stream=sys.stdout)
-stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+stream_handler = logging.StreamHandler(sys.stdout)
+stream_handler.setFormatter(formatter)
 stream_handler.addFilter(AsciiOnlyFilter())
 
 # 5. Adiciona NOSSOS handlers ao logger raiz.
-root_logger.addHandler(file_handler)
-root_logger.addHandler(stream_handler)
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
 
-# Pega o logger para usar no restante da aplicação.
-logger = logging.getLogger(__name__)
+# Para usar no app
+log = logging.getLogger(__name__)
+log.info("Log iniciado com sucesso.")
 
 # --- Fim da Configuração de Logging ---
 
@@ -121,113 +137,302 @@ def setup_page():
     ---  
     """)
 
-    st.subheader("📄 Enviar Currículos para Análise")
-    uploaded_files = st.file_uploader(
-        "Selecione os arquivos de currículo (PDF, DOCX, TXT):",
-        type=["pdf", "PDF", "docx", "DOCX", "txt", "TXT", "doc", "DOC", "odt", "ODT"],
-        accept_multiple_files=True
-    )
-
+    # Função para sanitizar nomes (exemplo)
+    def normalize_filename(filename):
+        name = filename.strip()
+        # Substitui qualquer caractere que não seja letra, número, _ . ou - por _
+        name = re.sub(r'[^\w\.\-]', '_', name, flags=re.UNICODE)
+        # Evita extensões repetidas tipo arquivo.pdf.pdf
+        parts = name.split('.')
+        if len(parts) > 2:
+            ext = parts[-1]
+            prev_ext = parts[-2]
+            if ext == prev_ext:
+                name = '.'.join(parts[:-1])
+        # Garante que tenha extensão, adiciona .pdf por padrão
+        if '.' not in name:
+            name += '.pdf'
+        # Limita tamanho total para 100 caracteres
+        if len(name) > 100:
+            base, ext = name.rsplit('.', 1)
+            base = base[:95]
+            name = base + '.' + ext
+        return name.lower()
     
+    def get_sanitized_name(file_hash, arquivos_sanitizados, file_name):
+        # Tenta obter o nome do arquivo
+        nome_original = Path(file_name).name if file_name else f"arquivo_sem_nome_{len(arquivos_sanitizados) + 1}.pdf"
+        nome_original = normalize_filename(nome_original)
+        # Evita nomes duplicados
+        if nome_original not in arquivos_sanitizados.values():
+            arquivos_sanitizados[file_hash] = nome_original
+            return nome_original
+        else:
+            base = Path(nome_original).stem
+            ext = Path(nome_original).suffix
+            contador = 2
+            novo_nome = f"{base}_{contador}{ext}"
+            while novo_nome in arquivos_sanitizados.values():
+                contador += 1
+                novo_nome = f"{base}_{contador}{ext}"
+            arquivos_sanitizados[file_hash] = novo_nome
+            return novo_nome
+        
+    def hash_file_content(file):
+        file.seek(0)
+        content = file.read()
+        file.seek(0)
+        return hashlib.md5(content).hexdigest()
+    
+    def hash_bytes(content_bytes):
+        return hashlib.md5(content_bytes).hexdigest()
     
 
-    if uploaded_files:
-        with st.form("manual_resume_form"):
-            st.header("💼 Conteúdo da Vaga")
-            texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
-            submitted = st.form_submit_button("Analisar Currículo")
+    def main():
+        st.subheader("📄 Enviar Currículos para Análise")
 
-        def simulate_progress(duration_seconds, progress_placeholder):
-            """Simula progresso de 0 a 100% durante a duração estimada"""
-            steps = 20  # número de passos para a barra
-            sleep_time = duration_seconds / steps
-            for i in range(steps + 1):
-                percent = int(i * 100 / steps)
-                progress_placeholder.progress(percent)
-                time.sleep(sleep_time)
+        extensoes_permitidas = [".pdf", ".docx", ".txt", ".doc", ".odt"]
 
-        if submitted:
-            if not texto_manual.strip():
-                st.warning("Por favor, insira algum conteúdo para análise.")
-            else:
-                jc = JobCreator()
-                vaga = jc.create_job(
-                    name=texto_manual.strip().split("\n")[0]
-                )
-                logger.info(f"Nova vaga criada: {vaga}")
+        uploaded_files = st.file_uploader(
+            "Selecione os arquivos de currículo (PDF, DOCX, TXT):",
+            type=None,
+            accept_multiple_files=True,
+            key="uploader_curriculos"
+        )
 
-                tempos = []  # Lista para armazenar dados
-                falhas = 0
+        if uploaded_files:
+            arquivos_sanitizados = {}
+            # 1. Ao carregar os arquivos, gere o hash e o nome sanitizado apenas 1 vez e guarde num dict:
+            hash_para_nome = {}
+            hash_para_arquivo = {}
+            for file in uploaded_files:
+                file_hash = hash_file_content(file)
+                if file_hash not in hash_para_nome:
+                    sanitized_name = get_sanitized_name(file_hash, hash_para_nome, file.name)
+                    hash_para_nome[file_hash] = sanitized_name
+                    hash_para_arquivo[file_hash] = file
 
-                # Interação visual durante análise
-                for i, file in enumerate(uploaded_files, start=1):
-                    progresso_barra = st.progress(0, text=f"📄 Currículo {i}/{len(uploaded_files)}: `{file.name}` - Iniciando...")
-                    status_placeholder = st.empty()
+            # 2. Filtra arquivos com extensões permitidas
+            filtered_hashes = [
+                h for h, nome in hash_para_nome.items()
+                if any(nome.endswith(ext) for ext in extensoes_permitidas)
+            ]
+            filtered_files = [hash_para_arquivo[h] for h in filtered_hashes]
 
-                    start = time.time()
+            
+            arquivos_invalidos_extensao = [
+                nome for h, nome in hash_para_nome.items()
+                if not any(nome.endswith(ext) for ext in extensoes_permitidas)
+            ]
 
-                    try:
-                        # Processamento real (bloqueante)
-                        process_with_files([file], texto_manual, vaga["id"])
+            if arquivos_invalidos_extensao:
+                st.warning(f"Alguns arquivos foram ignorados por terem extensões inválidas: {arquivos_invalidos_extensao}")
 
-                        end = time.time()
-                        duracao = end - start
-                        duracao = max(duracao, 1)  # garantir tempo mínimo de 1s
+            st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
 
-                        # Simula a porcentagem com base no tempo real
-                        for p in range(101):
-                            progresso_barra.progress(p, text=f"📄 Currículo {i}/{len(uploaded_files)}: `{file.name}` - Analisando... ({p}%)")
-                            time.sleep(min(duracao / 100, 0.03))
+            arquivos_unicos = {}
+            nomes_vistos = set()
+            nomes_para_exibir = []
 
-                        progresso_barra.empty()
+            for f in filtered_files:
+                content_bytes = f.read()
+                f.seek(0)
+                file_hash = hash_bytes(content_bytes) # função que cria hash a partir de bytes
+                sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, f.name)
+                if file_hash not in arquivos_unicos and sanitized_name not in nomes_vistos:
+                    arquivos_unicos[file_hash] = BytesIO(content_bytes) # cria um novo stream limpo
+                    arquivos_unicos[file_hash].name = sanitized_name # nome sanitizado
+                    nomes_vistos.add(sanitized_name)
+                    nomes_para_exibir.append(sanitized_name)
 
-                        # Formata o tempo
-                        if duracao >= 60:
-                            tempo_formatado = f"{duracao / 60:.2f} min"
-                        else:
-                            tempo_formatado = f"{duracao:.2f} seg"
+            filtered_files = list(arquivos_unicos.values())
+            # Exibir todos os nomes de arquivos únicos
+            for nome in nomes_para_exibir:
+                st.markdown(f"- 📄 `{nome}`")
 
-                        tempos.append({"Currículo": file.name, "Tempo": tempo_formatado})
-                        logger.info(f"⏱️ Currículo `{file.name}` analisado em {tempo_formatado}.")
+            with st.form("manual_resume_form"):
+                st.header("💼 Conteúdo da Vaga")
+                texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
+                submitted = st.form_submit_button("Analisar Currículo")
 
-                        # Exibe mensagem de sucesso por 2 segundos e limpa depois
-                        status_placeholder.success(f"✅ `{file.name}` analisado em {tempo_formatado}.")
-                        time.sleep(2)
-                        status_placeholder.empty()
+            if submitted:
+                if not texto_manual.strip():
+                    st.warning("Por favor, insira algum conteúdo para análise.")
+                else:
+                    if 'cache_analise_curriculos' not in st.session_state:
+                        st.session_state['cache_analise_curriculos'] = {}
 
-                    except Exception as e:
-                        falhas += 1
-                        logger.error(f"❌ Erro ao analisar `{file.name}`: {e}")
-                        tempos.append({"Currículo": file.name, "Tempo": "Falha"})
-                        progresso_barra.empty()
-                        status_placeholder.error(f"❌ Falha ao analisar `{file.name}`.")
-                        time.sleep(3)
-                        status_placeholder.empty()
-
-                # Ao final, mostra resumo
-                total = len(uploaded_files)
-                col1, col2 = st.columns(2)
-                col1.metric("Currículos analisados", total)
-                col2.metric("Falhas na análise", falhas)
-
-                # Tempo total em minutos (somando só os que tiveram sucesso)
-                tempo_total = round(
-                    sum(
-                        float(x["Tempo"].replace(" min", ""))
-                        for x in tempos if "min" in x["Tempo"]
-                    ) +
-                    sum(
-                        float(x["Tempo"].replace(" seg", "")) / 60
-                        for x in tempos if "seg" in x["Tempo"]
+                    cache = st.session_state['cache_analise_curriculos']
+                    # Exemplo: criação de vaga (JobCreator é parte externa)
+                    jc = JobCreator()
+                    vaga = jc.create_job(
+                        name=texto_manual.strip().split("\n")[0],
+                        description=texto_manual.strip()
                     )
-                )
+                    logger.info(f"Nova vaga criada: {vaga}")
 
-                st.success(f"✅ Todos os currículos foram analisados em {tempo_total} minuto(s) somados.")
+                    tempos = []
+                    falhas = 0
+                    sucessos = 0
+                    arquivos_falha_analise = []
 
-                curriculos_sucesso = [x for x in tempos if x["Tempo"] != "Falha"]
-                if curriculos_sucesso:  # evitar divisão por zero
-                    media = round(tempo_total / len(curriculos_sucesso), 2)
-                    st.info(f"⏱️ Tempo médio por currículo: {media} minuto(s).")
+                    progresso_global = st.empty()
+                    status_area = st.container()
+
+                    def analisar_curriculo(file, i, total, cache, filename):
+                        file_hash = hash_file_content(file)
+                        sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, filename)
+                        try:
+                            if file_hash in cache:
+                                return sanitized_name, "Cache", cache[file_hash], "Sucesso"
+
+                            file_bytes = file.read()
+                            file.seek(0)
+
+                            if len(file_bytes) == 0:
+                                raise ValueError("Arquivo vazio ou corrompido.")
+
+                            texto_validacao = ""
+                            if sanitized_name.endswith(".pdf"):
+                                reader = PdfReader(file)
+                                texto_validacao = "".join([page.extract_text() or "" for page in reader.pages])
+                            elif sanitized_name.endswith((".docx", ".doc")):
+                                doc = Document(file)
+                                texto_validacao = "\n".join([para.text for para in doc.paragraphs])
+                            elif sanitized_name.endswith((".txt", ".odt")):
+                                texto_validacao = file_bytes.decode("utf-8", errors="ignore")
+                            else:
+                                raise ValueError("Extensão não suportada.")
+
+                            if not texto_validacao.strip():
+                                raise ValueError("Texto ilegível ou ausente.")
+
+                            file.seek(0)
+                            start = time.time()
+                            result = process_with_files([file], texto_manual, vaga["id"])
+                            end = time.time()
+
+                            if not result or not result.get("sucesso", False):
+                                raise ValueError("Falha na análise do currículo.")
+
+                            duracao = max(end - start, 1)
+                            cache[file_hash] = duracao  # Armazena tempo no cache
+                            return sanitized_name, f"{duracao:.2f} seg", duracao, "Sucesso"
+
+                        except Exception as e:
+                            return sanitized_name, str(e), None, "Falha"
+
+                    progresso_global = st.empty()
+                    progresso_global.info("⏳ Iniciando análise...")
+
+                    progresso_texto = st.empty()
+                    barra_progresso = st.progress(0)
+                    progresso_atual = 0
+                    total_arquivos = len(filtered_files)
+                    inicio_geral = time.time()
+
+                    lista_pendentes = st.empty()
+                    nomes_pendentes = [Path(f.name).stem for f in filtered_files]
+                    lista_pendentes.markdown("### Currículos pendentes:\n" + "\n".join(f"- {nome}" for nome in nomes_pendentes))
+
+                    def mostrar_pendentes():
+                        lista_pendentes.markdown(f"**⌛ Pendentes:** {', '.join(nomes_pendentes)}")
+
+                    mostrar_pendentes()
+
+                    tempos = []
+                    cache = {}
+
+                    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+                        futuros = {
+                            executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
+                            for i, f in enumerate(filtered_files, start=1)
+                        }
+
+                        sucessos = 0
+                        falhas = 0
+                        
+
+                        for future in concurrent.futures.as_completed(futuros):
+                            sanitized_name, tempo_info, tempo_real, status = future.result()
+
+                            progresso_atual += 1
+                            percentual = int((progresso_atual / total_arquivos) * 100)
+
+                            progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
+                            barra_progresso.progress(progresso_atual / total_arquivos)
+
+                            # Atualiza lista de pendentes
+                            if sanitized_name in nomes_pendentes:
+                                nomes_pendentes.remove(sanitized_name)
+                            mostrar_pendentes()
+
+                            if status == "Sucesso":
+                                tempos.append({
+                                    "Currículo": sanitized_name,
+                                    "Tempo": tempo_info,
+                                    "Status": status
+                                })
+                                # ✅ Mostra mensagem temporária
+                                with status_area.container():
+                                    status_area.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
+                                    time.sleep(3)
+                                    status_area.empty()
+                                sucessos += 1
+                            else:
+                                tempos.append({
+                                    "Currículo": sanitized_name,
+                                    "Tempo": "Falha",
+                                    "Status": status
+                                })
+                                with status_area.container():
+                                    st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
+                                    time.sleep(3)
+                                    status_area.empty()
+                                    arquivos_falha_analise.append(sanitized_name)
+                                    falhas += 1
+
+                    barra_progresso.empty()
+                    progresso_texto.empty()
+                    progresso_global.empty()
+                    lista_pendentes.empty()
+                    fim_geral = time.time()
+                    tempo_total_real = round((fim_geral - inicio_geral) / 60, 2)  # minutos reais
+
+
+                    st.write("### Resultados da Análise")
+                    for t in tempos:
+                        st.write(f"{t['Currículo']}: {t['Status']} - {t['Tempo']}")
+
+
+                    # Resumo final dentro da função main:
+                total = len(uploaded_files)
+
+                col1, col2, col3 = st.columns(3)
+                col1.metric("📊 Total de Currículos", total)
+                col2.metric("✅ Sucessos", sucessos)
+                col3.metric("❌ Falhas", falhas)
+
+                if arquivos_falha_analise:
+                    st.write("### 📋 Resumo da Análise")
+                    st.write("### Arquivos Inválidos ou com Falha:")
+                    for nome in arquivos_falha_analise:
+                        st.write(f"- {nome}")
+
+                if sucessos > 0:
+                    media = round(tempo_total_real / sucessos, 2)
+                    st.success(
+                        f"✅ {sucessos} currículo(s) analisado(s) com sucesso | "
+                        f"❌ {falhas} falha(s) | "
+                        f"⏱️ Tempo total real: {tempo_total_real} minuto(s)"
+                    )
+                    st.info(f"⏱️ Tempo médio por currículo (real): {media} minuto(s).")
+                else:
+                    st.error(f"❌ Todos os {total} currículos falharam na análise.")
+
+
+    if __name__ == "__main__":
+        main()
 
 
 def get_job_selector(jobs=None):
@@ -241,6 +446,7 @@ def get_job_selector(jobs=None):
     job_names = [job['name'] for job in jobs]
     selected_name = st.selectbox("Selecione a vaga:", job_names, key="vaga_selector")
     selected_job = next((job for job in jobs if job['name'] == selected_name), None)
+    
     if selected_job:
         col1, col2 = st.columns([4, 1])
         with col1:
@@ -249,25 +455,30 @@ def get_job_selector(jobs=None):
             edit_clicked = st.button("✏️ Editar Vaga")
 
         if edit_clicked:
+            # Busca a descrição atual da vaga no banco de dados
+            job_details = database.get_job_details(selected_job['id'])
+
             with st.form(f"edit_job_form_{selected_job['id']}"):
-                novo_nome = st.text_input("Nome da vaga", value=selected_job['name'])
-                nova_desc = st.text_area("Descrição da vaga", value=selected_job.get('description', ''))
+                novo_nome = st.text_input("Nome da vaga", value=job_details.get('name', ''))
+                nova_desc = st.text_area("Descrição da vaga", 
+                                         value=job_details.get('description', ''))
                 salvar = st.form_submit_button("Salvar Alterações")
 
             if salvar:
                 try:
-                    database.update_job(
-                        job_id=selected_job['id'],
-                        name=novo_nome,
-                        description=nova_desc
-                    )
+                    updated_data = {
+                        'name': novo_nome,
+                        'description': nova_desc
+                    }
+                    database.update_job(selected_job['id'], updated_data)
                     st.success("✅ Vaga atualizada com sucesso.")
-                    st.experimental_rerun()  # Recarrega a página para atualizar o seletor
+                    time.sleep(1) # Pequeno delay para visualização
+                    st.rerun() # Recarrega a página para atualizar o seletor
                 except Exception as e:
                     logger.error(f"Erro ao atualizar vaga: {e}")
                     st.error(f"❌ Erro ao atualizar a vaga: {e}")
 
-    return next((job for job in jobs if job['name'] == selected_name), None)
+    return selected_job
 
 
 def process_candidate_data(data):

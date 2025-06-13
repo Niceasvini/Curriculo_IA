@@ -21,6 +21,7 @@ class JobCreator:
     def create_job(
         self,
         name: str,
+        description: str = ""  # Novo parâmetro
     ) -> Dict:
         """
         Cria uma nova vaga de emprego e salva no banco.
@@ -28,7 +29,8 @@ class JobCreator:
         """
         try:
             cleaned_data = self._clean_job_data(
-                name or []
+                name,
+                description # Passa a descrição para o cleaner
             )
             
             # Verifica se já existe vaga com esse nome
@@ -49,12 +51,14 @@ class JobCreator:
 
     def _clean_job_data(
         self,
-        name: str
+        name: str,
+        description: str = ""  # Novo parâmetro
     ) -> Dict:
         """Valida e limpa os dados da vaga."""
         cleaned = {
             'id': str(uuid.uuid4()),
-            'name': self._clean_name(name)
+            'name': self._clean_name(name),
+            'description': description  # Adiciona a descrição
         }
         
         # Checa campos obrigatórios
