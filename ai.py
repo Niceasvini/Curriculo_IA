@@ -90,9 +90,10 @@ class DeepSeekClient:
         3. Formação acadêmica (peso 2)
         4. Clareza e estrutura do currículo (peso 1)
 
+        - Considere a relevância das experiências e habilidades em relação à vaga.
+        - Avalie a formação acadêmica e se ela é adequada para a posição.
+        - Com base na soma ponderada desses critérios, atribua uma **nota final com até duas casas decimais**, entre 0 e 10.
         - Retorne apenas a nota final, sem comentários ou texto adicional.
-        - Retorne apenas a nota final (ex: 7.91), com até duas casas decimais. Não arredonde para múltiplos de 0.5, apenas mantenha o valor real calculado.
-        - Não arredonde para múltiplos de 0.5 — apenas mantenha o valor real calculado.
 
         Currículo:
         {cv_text[:5000]}
