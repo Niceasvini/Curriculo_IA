@@ -4,6 +4,7 @@ import sys
 import re
 import tempfile
 import time
+import pytz
 from io import BytesIO
 from pathlib import Path
 from PyPDF2 import PdfReader
@@ -277,7 +278,6 @@ def setup_page():
                     arquivos_falha_analise = []
 
                     progresso_global = st.empty()
-                    status_area = st.container()
 
                     def analisar_curriculo(file, i, total, cache, filename):
                         file_hash = hash_file_content(file)
@@ -334,6 +334,10 @@ def setup_page():
                     tempos = []
                     cache = {}
 
+                    # 🔽 Expander para exibir/ocultar os resultados detalhados
+                    with st.expander("▶️ Detalhes da análise (clique para expandir)"):
+                        container_detalhes = st.container()
+
                     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
                         futuros = {
                             executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
@@ -343,8 +347,6 @@ def setup_page():
                         sucessos = 0
                         falhas = 0
 
-                     # 🔽 Expander para exibir/ocultar os resultados detalhados
-                    with st.expander("▶️ Detalhes da análise (clique para expandir)"):
                         for future in concurrent.futures.as_completed(futuros):
                             sanitized_name, tempo_info, tempo_real, status = future.result()
 
@@ -354,6 +356,7 @@ def setup_page():
                             progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
                             barra_progresso.progress(progresso_atual / total_arquivos)
 
+                        with container_detalhes:
                             if status == "Sucesso":
                                 tempos.append({
                                     "Currículo": sanitized_name,
@@ -605,9 +608,17 @@ def main():
         'score': 'Pontuação'
     })
 
-    # Ajustar formato da data para dd/mm/yyyy - HH:MM
-    # Ajustar Data de Criação para datetime com timezone UTC (ou o timezone original correto)
-    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'])
+    # Converta para datetime e force timezone UTC (caso não tenha)
+    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'], errors='coerce')
+
+    # Se não tiver timezone, defina como UTC
+    if df_original['Data de Criação'].dt.tz is None:
+        df_original['Data de Criação'] = df_original['Data de Criação'].dt.tz_localize('UTC')
+
+    # Converta para fuso horário de São Paulo
+    df_original['Data de Criação'] = df_original['Data de Criação'].dt.tz_convert('America/Sao_Paulo')
+
+    # Formate para exibir no padrão desejado
     df_original['Data de Criação'] = df_original['Data de Criação'].dt.strftime('%d/%m/%Y - %H:%M')
 
     # Cria a versão para exibição (removendo colunas técnicas)
