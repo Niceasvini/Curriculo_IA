@@ -331,15 +331,6 @@ def setup_page():
                     total_arquivos = len(filtered_files)
                     inicio_geral = time.time()
 
-                    lista_pendentes = st.empty()
-                    nomes_pendentes = [Path(f.name).stem for f in filtered_files]
-                    lista_pendentes.markdown("### Currículos pendentes:\n" + "\n".join(f"- {nome}" for nome in nomes_pendentes))
-
-                    def mostrar_pendentes():
-                        lista_pendentes.markdown(f"**⌛ Pendentes:** {', '.join(nomes_pendentes)}")
-
-                    mostrar_pendentes()
-
                     tempos = []
                     cache = {}
 
@@ -351,8 +342,9 @@ def setup_page():
 
                         sucessos = 0
                         falhas = 0
-                        
 
+                     # 🔽 Expander para exibir/ocultar os resultados detalhados
+                    with st.expander("▶️ Detalhes da análise (clique para expandir)"):
                         for future in concurrent.futures.as_completed(futuros):
                             sanitized_name, tempo_info, tempo_real, status = future.result()
 
@@ -362,11 +354,6 @@ def setup_page():
                             progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
                             barra_progresso.progress(progresso_atual / total_arquivos)
 
-                            # Atualiza lista de pendentes
-                            if sanitized_name in nomes_pendentes:
-                                nomes_pendentes.remove(sanitized_name)
-                            mostrar_pendentes()
-
                             if status == "Sucesso":
                                 tempos.append({
                                     "Currículo": sanitized_name,
@@ -374,10 +361,7 @@ def setup_page():
                                     "Status": status
                                 })
                                 # ✅ Mostra mensagem temporária
-                                with status_area.container():
-                                    status_area.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
-                                    time.sleep(3)
-                                    status_area.empty()
+                                st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
                                 sucessos += 1
                             else:
                                 tempos.append({
@@ -385,24 +369,15 @@ def setup_page():
                                     "Tempo": "Falha",
                                     "Status": status
                                 })
-                                with status_area.container():
-                                    st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
-                                    time.sleep(3)
-                                    status_area.empty()
-                                    arquivos_falha_analise.append(sanitized_name)
-                                    falhas += 1
+                                st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
+                                arquivos_falha_analise.append(sanitized_name)
+                                falhas += 1
 
                     barra_progresso.empty()
                     progresso_texto.empty()
                     progresso_global.empty()
-                    lista_pendentes.empty()
                     fim_geral = time.time()
                     tempo_total_real = round((fim_geral - inicio_geral) / 60, 2)  # minutos reais
-
-
-                    st.write("### Resultados da Análise")
-                    for t in tempos:
-                        st.write(f"{t['Currículo']}: {t['Status']} - {t['Tempo']}")
 
 
                     # Resumo final dentro da função main:
@@ -632,9 +607,7 @@ def main():
 
     # Ajustar formato da data para dd/mm/yyyy - HH:MM
     # Ajustar Data de Criação para datetime com timezone UTC (ou o timezone original correto)
-    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'], utc=True)
-    # Converter para timezone de São Paulo
-    df_original['Data de Criação'] = df_original['Data de Criação'].dt.tz_convert('America/Sao_Paulo')
+    df_original['Data de Criação'] = pd.to_datetime(df_original['Data de Criação'])
     df_original['Data de Criação'] = df_original['Data de Criação'].dt.strftime('%d/%m/%Y - %H:%M')
 
     # Cria a versão para exibição (removendo colunas técnicas)
