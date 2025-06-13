@@ -390,16 +390,16 @@ def setup_page():
                     # Resumo final dentro da função main:
                 total = len(uploaded_files)
 
-                col1, col2, col3 = st.columns(3)
-                col1.metric("📊 Total de Currículos", total)
-                col2.metric("✅ Sucessos", sucessos)
-                col3.metric("❌ Falhas", falhas)
-
                 if arquivos_falha_analise:
                     st.write("### 📋 Resumo da Análise")
                     st.write("### Arquivos Inválidos ou com Falha:")
                     for nome in arquivos_falha_analise:
                         st.write(f"- {nome}")
+
+                col1, col2, col3 = st.columns(3)
+                col1.metric("📊 Total de Currículos", total)
+                col2.metric("✅ Sucessos", sucessos)
+                col3.metric("❌ Falhas", falhas)
 
                 if sucessos > 0:
                     media = round(tempo_total_real / sucessos, 2)
