@@ -1,6 +1,7 @@
 import re
 import os
 import logging
+import fitz  # PyMuPDF
 from typing import Dict, Optional,Tuple
 from openai import OpenAI
 from dotenv import load_dotenv

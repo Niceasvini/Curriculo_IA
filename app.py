@@ -4,7 +4,7 @@ import sys
 import re
 import tempfile
 import time
-import pytz
+import fitz
 from io import BytesIO
 from pathlib import Path
 from PyPDF2 import PdfReader

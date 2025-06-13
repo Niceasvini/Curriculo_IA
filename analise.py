@@ -3,6 +3,7 @@ import os
 import re
 import logging
 import re
+import fitz  # PyMuPDF
 from tinydb import Query
 from pathlib import Path
 from datetime import datetime
@@ -14,7 +15,6 @@ from models.resum import Resum
 from models.file import File
 from models.analysis import Analysis
 from time import sleep
-import fitz  # PyMuPDF
 
 # Carrega variáveis de ambiente
 load_dotenv()
