@@ -357,26 +357,26 @@ def setup_page():
                             progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
                             barra_progresso.progress(progresso_atual / total_arquivos)
 
-                        # 📦 Adiciona resultado ao container dentro do expander
-                        with container_resultados:
-                            if status == "Sucesso":
-                                tempos.append({
-                                    "Currículo": sanitized_name,
-                                    "Tempo": tempo_info,
-                                    "Status": status
-                                })
-                                # ✅ Mostra mensagem temporária
-                                st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
-                                sucessos += 1
-                            else:
-                                tempos.append({
-                                    "Currículo": sanitized_name,
-                                    "Tempo": "Falha",
-                                    "Status": status
-                                })
-                                st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
-                                arquivos_falha_analise.append(sanitized_name)
-                                falhas += 1
+                            # 📦 Adiciona resultado ao container dentro do expander
+                            with container_resultados:
+                                if status == "Sucesso":
+                                    tempos.append({
+                                        "Currículo": sanitized_name,
+                                        "Tempo": tempo_info,
+                                        "Status": status
+                                    })
+                                    # ✅ Mostra mensagem temporária
+                                    st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
+                                    sucessos += 1
+                                else:
+                                    tempos.append({
+                                        "Currículo": sanitized_name,
+                                        "Tempo": "Falha",
+                                        "Status": status
+                                    })
+                                    st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
+                                    arquivos_falha_analise.append(sanitized_name)
+                                    falhas += 1
 
                     # 🟢 Limpa elementos temporários
                     barra_progresso.empty()
