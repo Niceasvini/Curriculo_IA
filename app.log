@@ -8801,3 +8801,18 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-13 17:13:40,208 - INFO - Conexão com o banco de dados inicializada com sucesso.
 2025-06-13 17:13:40,384 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
 2025-06-13 17:13:40,555 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.6dc8bc30-ad1b-4a4c-a772-c961a446b5f1 "HTTP/2 200 OK"
+2025-06-13 21:40:22,092 - INFO - Log iniciado com sucesso.
+2025-06-13 21:40:22,093 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-13 21:40:23,069 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-13 21:40:23,224 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?select=%2A&job_id=eq.4266b738-5263-42d6-8bc0-c419ca949c9d "HTTP/2 200 OK"
+2025-06-13 21:40:25,257 - INFO - Log iniciado com sucesso.
+2025-06-13 21:40:25,257 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-13 21:40:25,353 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-13 21:40:25,497 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/analysis?job_id=eq.4266b738-5263-42d6-8bc0-c419ca949c9d "HTTP/2 200 OK"
+2025-06-13 21:40:25,581 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/files?job_id=eq.4266b738-5263-42d6-8bc0-c419ca949c9d "HTTP/2 200 OK"
+2025-06-13 21:40:25,664 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/resums?job_id=eq.4266b738-5263-42d6-8bc0-c419ca949c9d "HTTP/2 200 OK"
+2025-06-13 21:40:25,747 - INFO - HTTP Request: DELETE https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?id=eq.4266b738-5263-42d6-8bc0-c419ca949c9d "HTTP/2 200 OK"
+2025-06-13 21:40:25,748 - INFO - Vaga 'Coordenador de Dados' (ID: 4266b738-5263-42d6-8bc0-c419ca949c9d) e dados relacionados foram excluídos.
+2025-06-13 21:40:25,820 - INFO - Log iniciado com sucesso.
+2025-06-13 21:40:25,821 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-13 21:40:25,912 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
