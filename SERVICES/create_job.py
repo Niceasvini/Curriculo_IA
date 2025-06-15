@@ -3,15 +3,12 @@ import logging
 import re
 from typing import List, Optional, Dict, Union
 from pathlib import Path
-from database import AnalyseDataBase
+from CONFIG.database import AnalyseDataBase
 from models.job import Job
 
 # Configuração de logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+from LOGS.log_config import setup_logger
+logger = setup_logger(__name__, "job_creator.log")
 
 class JobCreator:
     def __init__(self, db_path: Optional[Union[str, Path]] = None):

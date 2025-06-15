@@ -1,0 +1,104 @@
+2025-06-15 10:23:29,295 - INFO - 📄 Processando: currículotácitobrunosilvavieira.pdf
+2025-06-15 10:23:29,454 - INFO - 📄 Processando: currículosaraarielesilva.pdf
+2025-06-15 10:23:29,495 - ERROR - ❌ Erro ao processar currículotácitobrunosilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-15 10:23:29,551 - INFO - 📄 Processando: currículosuévellimcavalcantedelima.pdf
+2025-06-15 10:23:29,623 - INFO - 📄 Processando: currículosobremim.pdf
+2025-06-15 10:23:29,634 - INFO - 📄 Processando: currículosuelymariadasilva.pdf
+2025-06-15 10:23:29,648 - INFO - 📄 Processando: currículotalitasamaradasilvaalves.pdf
+2025-06-15 10:23:29,747 - INFO - 📄 Processando: currículotatianeliradavi.pdf
+2025-06-15 10:23:29,750 - INFO - 📄 Processando: currículostefanypereirasampaio.pdf
+2025-06-15 10:23:29,951 - INFO - 📄 Processando: currículothaísesluciamelo.pdf
+2025-06-15 10:23:54,909 - INFO - ✅ Currículo 'Suévellimcavalcantedelima' processado e salvo com ID: b267eb29-119e-41cd-9a58-90b4e8a60b9b
+2025-06-15 10:23:55,239 - INFO - 📄 Processando: currículotiagomendesbezerra.pdf
+2025-06-15 10:23:57,786 - INFO - ✅ Currículo 'Stefanypereirasampaio' processado e salvo com ID: 9474257b-fcb9-42fa-b167-62e023798ff7
+2025-06-15 10:23:58,100 - INFO - 📄 Processando: currículovivianemariadasilva.pdf
+2025-06-15 10:24:01,481 - INFO - ✅ Currículo 'Suelymariadasilva' processado e salvo com ID: 1f539b3c-f413-44e3-ab43-630b4358f331
+2025-06-15 10:24:01,703 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 251c1542-5600-43ca-b18c-a5608e505a1c
+2025-06-15 10:24:01,811 - INFO - 📄 Processando: currículowalkyryamyrelle.pdf
+2025-06-15 10:24:02,034 - INFO - 📄 Processando: currículowesleydasilvasgarlate.pdf
+2025-06-15 10:24:03,863 - INFO - ✅ Currículo 'Talitasamaradasilvaalves' processado e salvo com ID: deca198d-0fb8-4ba3-9aab-3cf2240b63ad
+2025-06-15 10:24:04,197 - INFO - 📄 Processando: currículowyllianferanandodossantossilva.pdf
+2025-06-15 10:24:04,569 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: f26e5007-8a89-4e51-b7ea-b3206ceee2b5
+2025-06-15 10:24:04,894 - INFO - 📄 Processando: currículoyagoeduardo.pdf
+2025-06-15 10:24:04,983 - INFO - ✅ Currículo 'Thaísesluciamelo' processado e salvo com ID: 8a78dc10-7f39-4bfe-b9c0-2f08b9aa434b
+2025-06-15 10:24:05,340 - INFO - 📄 Processando: currículoyagovictorcavalcantifreirealmeida.pdf
+2025-06-15 10:24:11,340 - INFO - ✅ Currículo 'Tatianeliradavi' processado e salvo com ID: 1f6cba41-e741-4815-8da7-30799c5fa2bc
+2025-06-15 10:24:11,722 - INFO - 📄 Processando: currículoyas.pdf
+2025-06-15 10:24:21,567 - INFO - ✅ Currículo 'Vivianemariadasilva' processado e salvo com ID: 8e261896-8aad-49ce-a2ce-8ed350a0b590
+2025-06-15 10:24:21,907 - INFO - ✅ Currículo 'Tiagomendesbezerra' processado e salvo com ID: d80cf5f6-51b1-495e-958b-d62ebbb9e5f1
+2025-06-15 10:24:21,937 - INFO - 📄 Processando: currículoyasmimsoares.pdf
+2025-06-15 10:24:22,255 - INFO - 📄 Processando: currículoyasminlauanesousabarbosa.pdf
+2025-06-15 10:24:28,094 - INFO - ✅ Currículo 'Yagoeduardo' processado e salvo com ID: e3541562-6029-40f4-a0a8-4f588cc6e13e
+2025-06-15 10:24:28,915 - INFO - 📄 Processando: curriculum_plínio_rafael_caruaru.pdf
+2025-06-15 10:24:30,784 - INFO - ✅ Currículo 'Walkyryamyrelle' processado e salvo com ID: 45b9cac8-a9fb-441b-9ab6-8585972d498f
+2025-06-15 10:24:30,895 - INFO - ✅ Currículo 'Yagovictorcavalcantifreirealmeida' processado e salvo com ID: a36112ac-f6f5-4faa-8c1e-d4a7d9eb66c9
+2025-06-15 10:24:31,179 - INFO - 📄 Processando: currículoketllyeduardasouzaminervino.pdf
+2025-06-15 10:24:31,277 - INFO - 📄 Processando: currículokeyllaraphaela.pdf
+2025-06-15 10:24:33,236 - INFO - ✅ Currículo 'Wyllianferanandodossantossilva' processado e salvo com ID: b3207a61-be82-48ff-b24b-c6664ec16a5e
+2025-06-15 10:24:33,579 - INFO - 📄 Processando: currículolauannycibelleferreiradasilva.pdf
+2025-06-15 10:24:35,899 - INFO - ✅ Currículo 'Wesleydasilvasgarlate' processado e salvo com ID: a655aabf-e3dd-4214-a3ab-4aaa02b29bf3
+2025-06-15 10:24:36,284 - INFO - 📄 Processando: currículoleonardoalves.pdf
+2025-06-15 10:24:50,533 - INFO - ✅ Currículo 'Yas' processado e salvo com ID: eac82d2e-5100-4d22-9789-34b7bece5f5b
+2025-06-15 10:24:50,865 - INFO - 📄 Processando: currículoluanvitor.pdf
+2025-06-15 10:24:51,126 - INFO - ✅ Currículo 'Yasminlauanesousabarbosa' processado e salvo com ID: 39f8f763-dbce-4b3b-b505-7165e37c9b00
+2025-06-15 10:24:51,468 - INFO - 📄 Processando: currículolucasdemacedosantos.pdf
+2025-06-15 10:24:56,578 - INFO - ✅ Currículo 'Yasmimsoares' processado e salvo com ID: ff8f143a-0b1b-4c6e-be17-3b58ef1398b1
+2025-06-15 10:24:56,967 - INFO - 📄 Processando: currículolucasmateussantosdemacêdo.pdf
+2025-06-15 10:24:59,707 - INFO - ✅ Currículo 'Ketllyeduardasouzaminervino' processado e salvo com ID: 8ad6382c-2f51-4941-878f-7bd27a145c1e
+2025-06-15 10:25:00,072 - INFO - 📄 Processando: currículoluizfelipetenorioportomoraes.pdf
+2025-06-15 10:25:00,409 - INFO - ✅ Currículo 'Keyllaraphaela' processado e salvo com ID: bd524ede-0a34-4497-890d-9b65daa313f2
+2025-06-15 10:25:00,582 - INFO - ✅ Currículo 'Lauannycibelleferreiradasilva' processado e salvo com ID: 5e0632f8-1d2a-4e47-877f-15743552d3c4
+2025-06-15 10:25:00,811 - INFO - 📄 Processando: currículoluizfellipedasilvagomes.pdf
+2025-06-15 10:25:00,969 - INFO - 📄 Processando: currículomarciaeduardalaurentinosilva.pdf
+2025-06-15 10:25:04,682 - INFO - ✅ Currículo 'Curriculum Plínio Rafael Caruaru' processado e salvo com ID: 0f1da266-9b51-44d9-ab5a-7242c9c2c24b
+2025-06-15 10:25:05,025 - INFO - 📄 Processando: currículomariaclara.pdf
+2025-06-15 10:25:08,362 - INFO - ✅ Currículo 'Leonardoalves' processado e salvo com ID: 75121628-00c1-4549-aafc-bffb0353b131
+2025-06-15 10:25:08,706 - INFO - 📄 Processando: currículomariaericadasilva.pdf
+2025-06-15 10:25:20,966 - INFO - ✅ Currículo 'Luanvitor' processado e salvo com ID: f54b5a77-baba-4e15-9822-ef3f72a8adc4
+2025-06-15 10:25:21,297 - INFO - 📄 Processando: currículomariafernandamarques.pdf
+2025-06-15 10:25:26,614 - INFO - ✅ Currículo 'Luizfelipetenorioportomoraes' processado e salvo com ID: fc8248b7-e98e-4f52-960d-441a7874dcff
+2025-06-15 10:25:26,954 - INFO - 📄 Processando: currículomariagabriela.pdf
+2025-06-15 10:25:27,404 - INFO - ✅ Currículo 'Mariaclara' processado e salvo com ID: f3a3eeb5-4be8-458e-aab8-34caeffeacfa
+2025-06-15 10:25:27,484 - INFO - ✅ Currículo 'Marciaeduardalaurentinosilva' processado e salvo com ID: 8beba15e-92a7-47ff-b0b0-537babaa4f12
+2025-06-15 10:25:27,813 - INFO - 📄 Processando: currículomariavitóriadacruzmacedo.pdf
+2025-06-15 10:25:27,935 - INFO - 📄 Processando: currículomatheusjacomettipalmeira.pdf
+2025-06-15 10:25:28,030 - INFO - ✅ Currículo 'Luizfellipedasilvagomes' processado e salvo com ID: 0649741e-0e54-4efd-ba5d-f22a90b69130
+2025-06-15 10:25:28,404 - INFO - 📄 Processando: currículomatheussantos.pdf
+2025-06-15 10:25:30,667 - INFO - ✅ Currículo 'Lucasdemacedosantos' processado e salvo com ID: e2054ae3-212f-479c-86bf-5964d34e82be
+2025-06-15 10:25:31,054 - INFO - 📄 Processando: currículomichaelleandrosilva.pdf
+2025-06-15 10:25:39,378 - INFO - ✅ Currículo 'Mariaericadasilva' processado e salvo com ID: 23068a5f-9ee4-4daf-bcbd-e9249b66b145
+2025-06-15 10:25:39,710 - INFO - 📄 Processando: currículomikaelecristinedasilva.pdf
+2025-06-15 10:25:42,650 - INFO - ✅ Currículo 'Lucasmateussantosdemacêdo' processado e salvo com ID: 29e4fcb2-cc96-43ec-bbe5-acab286322c9
+2025-06-15 10:25:43,014 - INFO - 📄 Processando: currículomilenalima.pdf
+2025-06-15 10:25:53,279 - INFO - ✅ Currículo 'Mariafernandamarques' processado e salvo com ID: 459be3d3-710b-49db-b10d-fbfd94c35945
+2025-06-15 10:25:53,599 - INFO - 📄 Processando: currículomiquéiassantos.pdf
+2025-06-15 10:25:55,772 - INFO - ✅ Currículo 'Matheussantos' processado e salvo com ID: 7a3c91db-41e5-483c-848f-b7de87601849
+2025-06-15 10:25:56,102 - INFO - 📄 Processando: currículomonicamoura.pdf
+2025-06-15 10:25:57,824 - INFO - ✅ Currículo 'Mariavitóriadacruzmacedo' processado e salvo com ID: 2e5c9d73-f9ec-442c-956e-82cb92e4171e
+2025-06-15 10:25:58,181 - INFO - 📄 Processando: currículootiliaislâniatorres.pdf
+2025-06-15 10:26:02,832 - INFO - ✅ Currículo 'Mikaelecristinedasilva' processado e salvo com ID: 69a69834-d5bc-40dd-beea-0a0c85687a29
+2025-06-15 10:26:03,075 - INFO - ✅ Currículo 'Michaelleandrosilva' processado e salvo com ID: b8a2bd19-8e72-4aa6-9f2d-18ca5d177f39
+2025-06-15 10:26:03,337 - INFO - 📄 Processando: currículopaulosergiosergio.pdf
+2025-06-15 10:26:03,461 - INFO - 📄 Processando: currículopedrohenriquemarquesdasilva.pdf
+2025-06-15 10:26:04,168 - INFO - ✅ Currículo 'Matheusjacomettipalmeira' processado e salvo com ID: 089a7d61-a900-48d3-a7ef-febfefb1e2e5
+2025-06-15 10:26:04,536 - INFO - 📄 Processando: currículoquétulaeliasdefrançasilva.pdf
+2025-06-15 10:26:13,390 - INFO - ✅ Currículo 'Mariagabriela' processado e salvo com ID: 7ee76df7-a639-4a31-a056-83e601ddeb6e
+2025-06-15 10:26:13,753 - INFO - 📄 Processando: currículorafaelsoaresdelima.pdf
+2025-06-15 10:26:14,318 - INFO - ✅ Currículo 'Milenalima' processado e salvo com ID: 8d72c881-7bda-4da7-862b-3e0c8e52d1dc
+2025-06-15 10:26:14,659 - INFO - 📄 Processando: currículorebeccaislaynenascimentofreitas.pdf
+2025-06-15 10:26:17,319 - INFO - ✅ Currículo 'Miquéiassantos' processado e salvo com ID: ccea449d-d940-4df4-8e79-20403043f5a3
+2025-06-15 10:26:17,696 - INFO - 📄 Processando: currículoreginaldorodriguesneto.pdf
+2025-06-15 10:26:23,063 - INFO - ✅ Currículo 'Monicamoura' processado e salvo com ID: 64275154-533a-4570-9521-c4e5acca4acd
+2025-06-15 10:26:23,480 - INFO - 📄 Processando: currículoruthflorêncio.pdf
+2025-06-15 10:26:29,358 - INFO - ✅ Currículo 'Otiliaislâniatorres' processado e salvo com ID: 19485822-bbb9-4ce9-82d0-4fb05ac346af
+2025-06-15 10:26:32,069 - INFO - ✅ Currículo 'Quétulaeliasdefrançasilva' processado e salvo com ID: 336e8e7b-afb4-490f-865d-c22be4007737
+2025-06-15 10:26:32,267 - INFO - ✅ Currículo 'Pedrohenriquemarquesdasilva' processado e salvo com ID: f727779b-a91f-461a-80c6-7052a53dc07d
+2025-06-15 10:26:37,072 - INFO - ✅ Currículo 'Paulosergiosergio' processado e salvo com ID: 37d8c17e-fa2f-44c8-9409-5aa834ee0b6f
+2025-06-15 10:26:42,137 - INFO - ✅ Currículo 'Rebeccaislaynenascimentofreitas' processado e salvo com ID: 5f62485d-5ca5-42bd-b580-09fad37378dc
+2025-06-15 10:26:43,899 - INFO - ✅ Currículo 'Rafaelsoaresdelima' processado e salvo com ID: ef0b2fb8-68e8-45cd-8369-eeed082e8cc3
+2025-06-15 10:26:47,543 - INFO - ✅ Currículo 'Ruthflorêncio' processado e salvo com ID: 831658ce-7947-4de4-adf4-15ec60a7520a
+2025-06-15 10:26:57,089 - INFO - ✅ Currículo 'Reginaldorodriguesneto' processado e salvo com ID: 7d01a8ea-93b2-4e63-aba8-ac5826c007a7

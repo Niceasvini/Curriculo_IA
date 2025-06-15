@@ -8816,3 +8816,13 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-13 21:40:25,820 - INFO - Log iniciado com sucesso.
 2025-06-13 21:40:25,821 - INFO - Conexão com o banco de dados inicializada com sucesso.
 2025-06-13 21:40:25,912 - INFO - HTTP Request: GET https://bndkpowgvagtlxwmthma.supabase.co/rest/v1/jobs?select=%2A "HTTP/2 200 OK"
+2025-06-15 10:21:12,044 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:23:13,846 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:23:13,846 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:23:23,523 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:23:23,523 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:23:28,385 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:23:28,385 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:23:28,809 - INFO - Nova vaga criada: {'id': '619fcda6-0cb7-4a08-a7dd-761226937b60', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-15T10:23:28.690180', 'updated_at': '2025-06-15T10:23:28.690180', 'status': 'active'}
+2025-06-15 10:27:30,597 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:27:30,597 - INFO - Conexão com o banco de dados inicializada com sucesso.

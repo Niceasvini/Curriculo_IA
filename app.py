@@ -16,10 +16,11 @@ import altair as alt
 import concurrent.futures
 import hashlib
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
-from database import AnalyseDataBase
-from analise import process_with_files
-from create_job import JobCreator
+from CONFIG.database import AnalyseDataBase
+from SERVICES.analise import process_with_files
+from SERVICES.create_job import JobCreator
 from PIL import Image
+from LOGS.log_config import setup_logger
 
 
 def normalize_filename(filename: str) -> str:
@@ -32,61 +33,21 @@ def normalize_filename(filename: str) -> str:
 
 # --- Início da Configuração de Logging ---
 
-class AsciiOnlyFilter(logging.Filter):
-    """
-    Filtro de logging que remove todos os caracteres não-ASCII
-    da mensagem final que será exibida no console.
-    """
-    def filter(self, record):
-        record.msg = re.sub(r'[^\x00-\x7F]+', '', record.getMessage())
-        record.args = ()
-        return True
+from LOGS.log_config import setup_logger
 
-# 1. Pega o logger RAIZ para ter controle total.
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+log = setup_logger(__name__, "app.log")
 
-# 2. Remove handlers pré-existentes (do Streamlit, etc.) para evitar conflitos.
-if logger.hasHandlers():
-    logger.handlers.clear()
+log.info("Log do app iniciado com sucesso.")
 
-
-# ✅ Define o caminho absoluto de forma segura (compatível com Windows)
-try:
-    # Tenta usar o diretório atual
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    log_path = os.path.join(current_dir, "app.log")
-    file_handler = logging.FileHandler(log_path, mode='a', encoding='utf-8')
-except (OSError, IOError):
-    # Se falhar, usa diretório temporário
-    fallback_log_path = os.path.join(tempfile.gettempdir(), "app.log")
-    file_handler = logging.FileHandler(fallback_log_path, mode='a', encoding='utf-8')
-
-# Formatter
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-file_handler.setFormatter(formatter)
-
-# 4. Cria nosso handler de CONSOLE (seguro, com o filtro ASCII)
-stream_handler = logging.StreamHandler(sys.stdout)
-stream_handler.setFormatter(formatter)
-stream_handler.addFilter(AsciiOnlyFilter())
-
-# 5. Adiciona NOSSOS handlers ao logger raiz.
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)
-
-# Para usar no app
-log = logging.getLogger(__name__)
-log.info("Log iniciado com sucesso.")
 
 # --- Fim da Configuração de Logging ---
 
 # Inicializa o banco de dados
 try:
     database = AnalyseDataBase()
-    logger.info("Conexão com o banco de dados inicializada com sucesso.")
+    log.info("Conexão com o banco de dados inicializada com sucesso.")
 except Exception as e:
-    logger.error(f"Erro fatal ao inicializar banco de dados: {e}")
+    log.error(f"Erro fatal ao inicializar banco de dados: {e}")
     st.error("Erro ao inicializar banco de dados: " + str(e))
     st.stop()
 
@@ -103,7 +64,7 @@ def setup_page():
         st.image(logo, width=200)
     else:
         st.warning("Logo não encontrado no caminho: assets/VMC.png")
-        logger.warning("Arquivo de logo não encontrado.")
+        log.warning("Arquivo de logo não encontrado.")
 
     st.markdown("""
         <style>
@@ -271,7 +232,7 @@ def setup_page():
                         name=texto_manual.strip().split("\n")[0],
                         description=texto_manual.strip()
                     )
-                    logger.info(f"Nova vaga criada: {vaga}")
+                    log.info(f"Nova vaga criada: {vaga}")
 
                     tempos = []
                     falhas = 0
@@ -457,7 +418,7 @@ def get_job_selector(jobs=None):
                     time.sleep(1) # Pequeno delay para visualização
                     st.rerun() # Recarrega a página para atualizar o seletor
                 except Exception as e:
-                    logger.error(f"Erro ao atualizar vaga: {e}")
+                    log.error(f"Erro ao atualizar vaga: {e}")
                     st.error(f"❌ Erro ao atualizar a vaga: {e}")
 
     return selected_job
@@ -471,7 +432,7 @@ def process_candidate_data(data):
 
     if 'resum_id' not in df.columns:
         st.warning("Dados sem 'resum_id'. Verifique a fonte de dados.")
-        logger.warning("Dados de análise recebidos sem a coluna 'resum_id'.")
+        log.warning("Dados de análise recebidos sem a coluna 'resum_id'.")
         return pd.DataFrame()
 
     df = df.sort_values('score', ascending=False)
@@ -540,11 +501,11 @@ def show_candidate_details(candidate):
         resum = database.get_resum_by_id(candidate['resum_id'])
         if not resum:
             st.warning("Currículo não encontrado.")
-            logger.warning(f"Tentativa de buscar currículo com resum_id {candidate['resum_id']} falhou.")
+            log.warning(f"Tentativa de buscar currículo com resum_id {candidate['resum_id']} falhou.")
             return
     except Exception as e:
         st.error(f"Erro ao buscar currículo: {e}")
-        logger.error(f"Exceção ao buscar currículo com resum_id {candidate['resum_id']}: {e}")
+        log.error(f"Exceção ao buscar currículo com resum_id {candidate['resum_id']}: {e}")
         return
 
     st.markdown(resum.get('content', 'Sem conteúdo'))
@@ -577,11 +538,11 @@ def main():
                 sucesso = database.delete_job_and_related_data(job['id'])
                 if sucesso:
                     st.success("Vaga e dados excluídos com sucesso.")
-                    logger.info(f"Vaga '{job['name']}' (ID: {job['id']}) e dados relacionados foram excluídos.")
+                    log.info(f"Vaga '{job['name']}' (ID: {job['id']}) e dados relacionados foram excluídos.")
                     st.rerun()
                 else:
                     st.error("Erro ao excluir os dados. Verifique os logs.")
-                    logger.error(f"Falha ao tentar excluir a vaga '{job['name']}' (ID: {job['id']}).")
+                    log.error(f"Falha ao tentar excluir a vaga '{job['name']}' (ID: {job['id']}).")
 
     if not job:
         return

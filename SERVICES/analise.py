@@ -9,8 +9,8 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, Optional
 from dotenv import load_dotenv
-from database import AnalyseDataBase
-from ai import DeepSeekClient
+from CONFIG.database import AnalyseDataBase
+from SERVICES.ai import DeepSeekClient
 from models.resum import Resum
 from models.file import File
 from models.analysis import Analysis
@@ -19,15 +19,8 @@ from time import sleep
 # Carrega variáveis de ambiente
 load_dotenv()
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('analysis.log', mode='w'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+from LOGS.log_config import setup_logger
+logger = setup_logger(__name__, "analysis.log")
 
 File = Query()
 

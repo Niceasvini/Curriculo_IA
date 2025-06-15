@@ -9,15 +9,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 import httpx
 
 # Configuração de logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('deepseek_analysis.log'),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+from LOGS.log_config import setup_logger
+logger = setup_logger(__name__, "deepseek_analysis.log")
 
 # Carrega variáveis de ambiente
 load_dotenv()
