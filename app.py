@@ -550,10 +550,17 @@ def main_page():
 
 
 def main():
+    """Função principal que controla o fluxo da aplicação"""
+    
     # Verifica se o usuário está logado
-    if "user" not in st.session_state or not st.session_state.get("logged_in", False):
+    if not st.session_state.get("user") or not st.session_state.get("logged_in", False):
+        # Limpa qualquer conteúdo residual antes de mostrar login
+        st.empty()
         login_page()
+        # Para a execução aqui para evitar vazamento de conteúdo
+        return
     else:
+        # Usuário logado - mostra página principal
         main_page()
 
 if __name__ == "__main__":
