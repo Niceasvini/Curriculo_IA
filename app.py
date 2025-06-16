@@ -50,57 +50,45 @@ def normalize_filename(filename: str) -> str:
     return safe_name.strip()
 
 def login_page():
-    """Página de login profissional centralizada"""
+    """Página de login profissional e limpa"""
     
-    # Limpa qualquer conteúdo residual
-    st.empty()
-    
-    # CSS para estilização profissional
+    # CSS limpo para login
     st.markdown("""
         <style>
-        /* Reset de estilos para garantir limpeza */
+        .stDeployButton {display: none !important;}
+        footer {display: none !important;}
+        .stDecoration {display: none !important;}
+        
         .main .block-container {
-            padding-top: 2rem;
+            padding-top: 3rem;
             padding-bottom: 2rem;
+            max-width: 500px;
+            margin: 0 auto;
         }
         
-        /* Oculta elementos desnecessários na tela de login */
-        .stDeployButton {display: none;}
-        footer {display: none;}
-        .stDecoration {display: none;}
-        
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            margin: 1rem 0;
-        }
         .login-card {
             background: white;
             padding: 3rem;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid #e1e5e9;
             text-align: center;
             margin: 2rem auto;
         }
-        .logo-container {
-            margin-bottom: 2rem;
-        }
+        
         .login-title {
             color: #333;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
+        
         .login-subtitle {
             color: #666;
             margin-bottom: 2rem;
+            font-size: 1rem;
         }
+        
         .stButton > button {
             width: 100%;
             background: linear-gradient(45deg, #B93A3E, #E4A230);
@@ -113,131 +101,120 @@ def login_page():
             margin: 0.5rem 0;
             transition: all 0.3s ease;
         }
+        
         .stButton > button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(185, 58, 62, 0.3);
+            box-shadow: 0 8px 15px rgba(185, 58, 62, 0.3);
         }
+        
         .stTextInput > div > div > input {
             border-radius: 10px;
             border: 2px solid #e1e5e9;
             padding: 0.75rem;
             font-size: 1rem;
         }
+        
         .stTextInput > div > div > input:focus {
             border-color: #B93A3E;
             box-shadow: 0 0 0 3px rgba(185, 58, 62, 0.1);
         }
-        .toggle-link {
-            color: #B93A3E;
-            text-decoration: none;
-            font-weight: 500;
-            cursor: pointer;
-        }
-        .toggle-link:hover {
-            text-decoration: underline;
-        }
         </style>
     """, unsafe_allow_html=True)
 
-    # Container principal com fundo
-    st.markdown('<div class="main-container">', unsafe_allow_html=True)
-    
     # Container centralizado
-    col1, col2, col3 = st.columns([1, 2, 1])
+    st.markdown('<div class="login-card">', unsafe_allow_html=True)
     
-    with col2:
-        st.markdown('<div class="login-card">', unsafe_allow_html=True)
+    # Logo
+    logo_path = Path("assets/VMC.png")
+    if logo_path.exists():
+        logo = Image.open(logo_path)
+        st.image(logo, width=200)
+    else:
+        st.markdown("### 🏢 Viana & Moura")
+    
+    # Título
+    st.markdown('<h1 class="login-title">Sistema de Recrutamento IA</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="login-subtitle">Faça login para acessar o sistema</p>', unsafe_allow_html=True)
+    
+    # Inicializa o estado do formulário
+    if 'show_register' not in st.session_state:
+        st.session_state.show_register = False
+    
+    # Formulário de Login
+    if not st.session_state.show_register:
+        st.markdown("### 🔐 Entrar no Sistema")
         
-        # Logo
-        logo_path = Path("assets/VMC.png")
-        if logo_path.exists():
-            logo = Image.open(logo_path)
-            st.image(logo, width=200)
-        else:
-            st.markdown("### 🏢 Viana & Moura")
-        
-        # Título
-        st.markdown('<h1 class="login-title">Sistema de Recrutamento IA</h1>', unsafe_allow_html=True)
-        st.markdown('<p class="login-subtitle">Faça login para acessar o sistema</p>', unsafe_allow_html=True)
-        
-        # Inicializa o estado do formulário
-        if 'show_register' not in st.session_state:
-            st.session_state.show_register = False
-        
-        # Formulário de Login
-        if not st.session_state.show_register:
-            st.markdown("### 🔐 Entrar no Sistema")
+        with st.form("login_form", clear_on_submit=False):
+            email = st.text_input("📧 Email", placeholder="Digite seu email")
+            password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
             
-            with st.form("login_form", clear_on_submit=False):
-                email = st.text_input("📧 Email", placeholder="Digite seu email")
-                password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
-                
-                col_login, col_register = st.columns(2)
-                
-                with col_login:
-                    login_submitted = st.form_submit_button("🚀 Entrar", use_container_width=True)
-                
-                with col_register:
-                    if st.form_submit_button("📝 Cadastrar", use_container_width=True):
-                        st.session_state.show_register = True
-                        st.rerun()
+            col_login, col_register = st.columns(2)
             
-            if login_submitted:
-                if not email or not password:
-                    st.error("⚠️ Por favor, preencha todos os campos.")
-                else:
-                    try:
-                        with st.spinner("🔄 Verificando credenciais..."):
-                            user = database.sign_in(email, password)
-                            if user:
-                                st.session_state.user = user.email
-                                st.session_state.logged_in = True
-                                st.success("✅ Login realizado com sucesso! Redirecionando...")
-                                time.sleep(1)
-                                st.rerun()
-                            else:
-                                st.error("❌ Email ou senha incorretos.")
-                    except Exception as e:
-                        st.error(f"❌ Erro no login: {e}")
+            with col_login:
+                login_submitted = st.form_submit_button("🚀 Entrar", use_container_width=True)
+            
+            with col_register:
+                register_clicked = st.form_submit_button("📝 Cadastrar", use_container_width=True)
         
+        if register_clicked:
+            st.session_state.show_register = True
+            st.rerun()
+        
+        if login_submitted:
+            if not email or not password:
+                st.error("⚠️ Por favor, preencha todos os campos.")
+            else:
+                try:
+                    with st.spinner("🔄 Verificando credenciais..."):
+                        user = database.sign_in(email, password)
+                        if user:
+                            st.session_state.user = user.email
+                            st.session_state.logged_in = True
+                            st.success("✅ Login realizado com sucesso! Redirecionando...")
+                            time.sleep(1)
+                            st.rerun()
+                        else:
+                            st.error("❌ Email ou senha incorretos.")
+                except Exception as e:
+                    st.error(f"❌ Erro no login: {e}")
+    else:
         # Formulário de Cadastro
-        else:
-            st.markdown("### 📝 Criar Nova Conta")
+        st.markdown("### 📝 Criar Nova Conta")
+        
+        with st.form("register_form", clear_on_submit=True):
+            email = st.text_input("📧 Email", placeholder="Digite seu email")
+            password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
+            password_confirm = st.text_input("🔒 Confirme a Senha", type="password", placeholder="Confirme sua senha")
             
-            with st.form("register_form", clear_on_submit=True):
-                email = st.text_input("📧 Email", placeholder="Digite seu email")
-                password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
-                password_confirm = st.text_input("🔒 Confirme a Senha", type="password", placeholder="Confirme sua senha")
-                
-                col_register, col_back = st.columns(2)
-                
-                with col_register:
-                    register_submitted = st.form_submit_button("✅ Criar Conta", use_container_width=True)
-                
-                with col_back:
-                    if st.form_submit_button("⬅️ Voltar", use_container_width=True):
+            col_register, col_back = st.columns(2)
+            
+            with col_register:
+                register_submitted = st.form_submit_button("✅ Criar Conta", use_container_width=True)
+            
+            with col_back:
+                back_clicked = st.form_submit_button("⬅️ Voltar", use_container_width=True)
+        
+        if back_clicked:
+            st.session_state.show_register = False
+            st.rerun()
+        
+        if register_submitted:
+            if not email or not password or not password_confirm:
+                st.error("⚠️ Por favor, preencha todos os campos.")
+            elif password != password_confirm:
+                st.error("❌ As senhas não coincidem.")
+            else:
+                try:
+                    with st.spinner("📝 Criando conta..."):
+                        user = database.sign_up(email, password)
+                        st.success(f"✅ Usuário criado com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme para fazer login.")
+                        time.sleep(2)
                         st.session_state.show_register = False
                         st.rerun()
-            
-            if register_submitted:
-                if not email or not password or not password_confirm:
-                    st.error("⚠️ Por favor, preencha todos os campos.")
-                elif password != password_confirm:
-                    st.error("❌ As senhas não coincidem.")
-                else:
-                    try:
-                        with st.spinner("📝 Criando conta..."):
-                            user = database.sign_up(email, password)
-                            st.success(f"✅ Usuário criado com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme para fazer login.")
-                            time.sleep(2)
-                            st.session_state.show_register = False
-                            st.rerun()
-                    except Exception as e:
-                        st.error(f"❌ Erro no cadastro: {e}")
-        
-        st.markdown('</div>', unsafe_allow_html=True)  # Fecha login-card
+                except Exception as e:
+                    st.error(f"❌ Erro no cadastro: {e}")
     
-    st.markdown('</div>', unsafe_allow_html=True)  # Fecha main-container
+    st.markdown('</div>', unsafe_allow_html=True)
 
 def setup_page():
     """Configuração da página principal (apenas quando logado)"""
@@ -259,9 +236,6 @@ def setup_page():
         .stButton>button:hover {
             background-color: #E4A230;
             color: black;
-        }
-        .css-18ni7ap {
-            color: #B93A3E !important;
         }
         </style>
     """, unsafe_allow_html=True)
@@ -294,8 +268,8 @@ def hash_file_content(file):
 def hash_bytes(content_bytes):
     return hashlib.md5(content_bytes).hexdigest()
 
-def main_page():
-    # Header com informações do usuário e logout
+def main_page_authenticated():
+    # Header com logout
     col1, col2, col3 = st.columns([2, 1, 1])
     
     with col1:
@@ -304,8 +278,9 @@ def main_page():
     with col3:
         st.markdown(f"**👤 Usuário:** {st.session_state.user}")
         if st.button("🚪 Sair", use_container_width=True):
-            st.session_state.pop("user", None)
-            st.session_state.pop("logged_in", None)
+            # Limpa session state
+            for key in list(st.session_state.keys()):
+                del st.session_state[key]
             st.rerun()
 
     st.title("📊 Painel de Recrutamento Inteligente")
@@ -324,8 +299,6 @@ def main_page():
     ---  
     """)
     
-
-
     st.subheader("📄 Enviar Currículos para Análise")
 
     extensoes_permitidas = [".pdf", ".docx", ".txt", ".doc", ".odt"]
@@ -336,6 +309,18 @@ def main_page():
         accept_multiple_files=True,
         key="uploader_curriculos"
     )
+
+    # Inicializa estados de sessão
+    if 'mostrar_form_vaga' not in st.session_state:
+        st.session_state.mostrar_form_vaga = False
+    if 'vaga_selecionada_id' not in st.session_state:
+        st.session_state.vaga_selecionada_id = None
+    if 'mostrar_edicao' not in st.session_state:
+        st.session_state.mostrar_edicao = False
+    if 'mostrar_exclusao' not in st.session_state:
+        st.session_state.mostrar_exclusao = False
+    if 'analise_concluida' not in st.session_state:
+        st.session_state.analise_concluida = False
 
     if uploaded_files:
         arquivos_sanitizados = {}
@@ -388,229 +373,350 @@ def main_page():
 
         filtered_files = list(arquivos_unicos.values())
 
-        with st.form("manual_resume_form"):
-            st.header("💼 Conteúdo da Vaga")
-            texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
-            submitted = st.form_submit_button("Analisar Currículo")
+        # 🔧 FORMULÁRIO DE VAGA (só aparece quando necessário)
+        if st.session_state.mostrar_form_vaga:
+            with st.form("manual_resume_form"):
+                st.header("💼 Conteúdo da Vaga")
+                texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
+                
+                col1, col2 = st.columns(2)
+                with col1:
+                    submitted = st.form_submit_button("✅ Criar Vaga e Analisar")
+                with col2:
+                    cancelar = st.form_submit_button("❌ Cancelar")
 
-        if submitted:
-            if not texto_manual.strip():
-                st.warning("Por favor, insira algum conteúdo para análise.")
-            else:
-                if 'cache_analise_curriculos' not in st.session_state:
-                    st.session_state['cache_analise_curriculos'] = {}
+            if cancelar:
+                st.session_state.mostrar_form_vaga = False
+                st.rerun()
 
-                cache = st.session_state['cache_analise_curriculos']
-                # Exemplo: criação de vaga (JobCreator é parte externa)
-                jc = JobCreator()
-                vaga = jc.create_job(
-                    name=texto_manual.strip().split("\n")[0],
-                    description=texto_manual.strip()
-                )
-                log.info(f"Nova vaga criada: {vaga}")
+            if submitted:
+                if not texto_manual.strip():
+                    st.warning("Por favor, insira algum conteúdo para análise.")
+                else:
+                    # 🔧 LIMPAR CACHE ANTES DE CRIAR NOVA VAGA
+                    if 'cache_analise_curriculos' in st.session_state:
+                        del st.session_state['cache_analise_curriculos']
+                    
+                    # Criar nova vaga
+                    jc = JobCreator()
+                    vaga = jc.create_job(
+                        name=texto_manual.strip().split("\n")[0],
+                        description=texto_manual.strip()
+                    )
+                    log.info(f"Nova vaga criada: {vaga}")
+                    
+                    # Definir como vaga selecionada
+                    st.session_state.vaga_selecionada_id = vaga["id"]
+                    st.session_state.mostrar_form_vaga = False
+                    st.session_state.analise_concluida = False
+                    
+                    # Processar análise SEM RERUN IMEDIATO
+                    sucesso = processar_analise(filtered_files, texto_manual, vaga["id"], arquivos_sanitizados)
+                    
+                    if sucesso:
+                        st.session_state.analise_concluida = True
+                        st.balloons()
+                        # Aguarda um pouco antes do rerun para garantir que tudo foi salvo
+                        time.sleep(2)
+                        st.rerun()
 
-                tempos = []
-                falhas = 0
-                sucessos = 0
-                arquivos_falha_analise = []
-
-                progresso_global = st.empty()
-
-                def analisar_curriculo(file, i, total, cache, filename):
-                    file_hash = hash_file_content(file)
-                    sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, filename)
-                    try:
-                        if file_hash in cache:
-                            return sanitized_name, "Cache", cache[file_hash], "Sucesso"
-
-                        file_bytes = file.read()
-                        file.seek(0)
-
-                        if len(file_bytes) == 0:
-                            raise ValueError("Arquivo vazio ou corrompido.")
-
-                        texto_validacao = ""
-                        if sanitized_name.endswith(".pdf"):
-                            reader = PdfReader(file)
-                            texto_validacao = "".join([page.extract_text() or "" for page in reader.pages])
-                        elif sanitized_name.endswith((".docx", ".doc")):
-                            doc = Document(file)
-                            texto_validacao = "\n".join([para.text for para in doc.paragraphs])
-                        elif sanitized_name.endswith((".txt", ".odt")):
-                            texto_validacao = file_bytes.decode("utf-8", errors="ignore")
-                        else:
-                            raise ValueError("Extensão não suportada.")
-
-                        if not texto_validacao.strip():
-                            raise ValueError("Texto ilegível ou ausente.")
-
-                        file.seek(0)
-                        start = time.time()
-                        result = process_with_files([file], texto_manual, vaga["id"])
-                        end = time.time()
-
-                        if not result or not result.get("sucesso", False):
-                            raise ValueError("Falha na análise do currículo.")
-
-                        duracao = max(end - start, 1)
-                        cache[file_hash] = duracao  # Armazena tempo no cache
-                        return sanitized_name, f"{duracao:.2f} seg", duracao, "Sucesso"
-
-                    except Exception as e:
-                        return sanitized_name, str(e), None, "Falha"
-
-                progresso_global = st.empty()
-                progresso_global.info("⏳ Iniciando análise...")
-
-                progresso_texto = st.empty()
-                barra_progresso = st.progress(0)
-                progresso_atual = 0
-                total_arquivos = len(filtered_files)
-                inicio_geral = time.time()
-
-                tempos = []
-                cache = {}
-                sucessos = 0
-                falhas = 0
-
-                # 🔽 Expander já aberto para acumular os logs
-                expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=False)
-                container_resultados = expander.container()
-
-                # 🔄 Processa arquivos em paralelo
-                with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
-                    futuros = {
-                        executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
-                        for i, f in enumerate(filtered_files, start=1)
-                    }
-
-                    for future in concurrent.futures.as_completed(futuros):
-                        sanitized_name, tempo_info, tempo_real, status = future.result()
-
-                        progresso_atual += 1
-                        percentual = int((progresso_atual / total_arquivos) * 100)
-
-                        # 🟡 Atualiza barra e status em tempo real
-                        progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
-                        barra_progresso.progress(progresso_atual / total_arquivos)
-
-                        # 📦 Adiciona resultado ao container dentro do expander
-                        with container_resultados:
-                            if status == "Sucesso":
-                                tempos.append({
-                                    "Currículo": sanitized_name,
-                                    "Tempo": tempo_info,
-                                    "Status": status
-                                })
-                                # ✅ Mostra mensagem temporária
-                                st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
-                                sucessos += 1
-                            else:
-                                tempos.append({
-                                    "Currículo": sanitized_name,
-                                    "Tempo": "Falha",
-                                    "Status": status
-                                })
-                                st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
-                                arquivos_falha_analise.append(sanitized_name)
-                                falhas += 1
-
-                # 🟢 Limpa elementos temporários
-                barra_progresso.empty()
-                progresso_texto.empty()
-                progresso_global.empty()
-                fim_geral = time.time()
-                tempo_total_real = round((fim_geral - inicio_geral) / 60, 2)  # minutos reais
-
-
-                # Resumo final dentro da função main:
-            total = len(uploaded_files)
-
-            if arquivos_falha_analise:
-                st.write("### 📋 Resumo da Análise")
-                st.write("### Arquivos Inválidos ou com Falha:")
-                for nome in arquivos_falha_analise:
-                    st.write(f"- {nome}")
-
-            col1, col2, col3 = st.columns(3)
-            col1.metric("📊 Total de Currículos", total)
-            col2.metric("✅ Sucessos", sucessos)
-            col3.metric("❌ Falhas", falhas)
-
-            if sucessos > 0:
-                media = round(tempo_total_real / sucessos, 2)
-                st.success(
-                    f"✅ {sucessos} currículo(s) analisado(s) com sucesso | "
-                    f"❌ {falhas} falha(s) | "
-                    f"⏱️ Tempo total real: {tempo_total_real} minuto(s)"
-                )
-                st.info(f"⏱️ Tempo médio por currículo (real): {media} minuto(s).")
-            else:
-                st.error(f"❌ Todos os {total} currículos falharam na análise.")
-
-
-def main():
-    """Função principal que controla o fluxo da aplicação"""
+    # 🔧 SEÇÃO ÚNICA DE ANÁLISE DE VAGAS (sempre aparece aqui)
+    st.markdown("---")
+    st.subheader("📊 Análise de Vagas")
     
-    # Verifica se o usuário está logado
-    if not st.session_state.get("user") or not st.session_state.get("logged_in", False):
-        # Limpa qualquer conteúdo residual antes de mostrar login
-        st.empty()
-        login_page()
-        # Para a execução aqui para evitar vazamento de conteúdo
-        return
-    else:
-        # Usuário logado - mostra página principal
-        main_page()
-
-if __name__ == "__main__":
-    main()
-
-def get_job_selector(jobs=None):
-    if jobs is None:
-        jobs = database.get_jobs()
-
+    jobs = database.get_jobs()
+    
     if not jobs:
-        st.warning("Nenhuma vaga cadastrada.")
-        return None
+        st.info("Nenhuma vaga cadastrada.")
+        if uploaded_files:
+            if st.button("➕ Criar Nova Vaga", use_container_width=True):
+                st.session_state.mostrar_form_vaga = True
+                st.rerun()
+    else:
+        # 🔧 LAYOUT MELHORADO DOS BOTÕES
+        # Linha 1: Seletor de vagas
+        selected_job = None
+        job_names = [job['name'] for job in jobs]
+        
+        # Define índice padrão baseado na vaga selecionada
+        default_index = 0
+        if st.session_state.vaga_selecionada_id:
+            for i, job in enumerate(jobs):
+                if job['id'] == st.session_state.vaga_selecionada_id:
+                    default_index = i
+                    break
+        
+        selected_name = st.selectbox(
+            "Selecione a vaga:", 
+            job_names, 
+            index=default_index,
+            key="vaga_selector"
+        )
+        selected_job = next((job for job in jobs if job['name'] == selected_name), None)
+        
+        if selected_job:
+            # Linha 2: Informações da vaga + botões de ação
+            col1, col2 = st.columns([3, 1])
+            
+            with col1:
+                st.write(f"**Vaga Selecionada:** {selected_job['name']}")
+            
+            with col2:
+                # Botões organizados verticalmente
+                if uploaded_files:
+                    if st.button("➕ Nova Vaga", use_container_width=True):
+                        st.session_state.mostrar_form_vaga = True
+                        st.rerun()
+                
+                if st.button("✏️ Editar Vaga", use_container_width=True):
+                    st.session_state.mostrar_edicao = True
+                    st.session_state.mostrar_exclusao = False
+                    st.rerun()
+                
+                if st.button("🗑️ Excluir Vaga", use_container_width=True):
+                    st.session_state.mostrar_exclusao = True
+                    st.session_state.mostrar_edicao = False
+                    st.rerun()
 
-    job_names = [job['name'] for job in jobs]
-    selected_name = st.selectbox("Selecione a vaga:", job_names, key="vaga_selector")
-    selected_job = next((job for job in jobs if job['name'] == selected_name), None)
+        # 🔧 FORMULÁRIOS DE EDIÇÃO E EXCLUSÃO
+        if st.session_state.mostrar_edicao and selected_job:
+            editar_vaga(selected_job)
+        
+        if st.session_state.mostrar_exclusao and selected_job:
+            excluir_vaga(selected_job)
+
+        # 🔧 RESULTADOS ÚNICOS (atualizam conforme vaga selecionada)
+        if selected_job and not st.session_state.mostrar_edicao and not st.session_state.mostrar_exclusao:
+            show_analysis_results(selected_job['id'])
+
+def processar_analise(filtered_files, texto_manual, vaga_id, arquivos_sanitizados):
+    """Processa a análise dos currículos - RETORNA SUCESSO/FALHA"""
     
-    if selected_job:
-        col1, col2 = st.columns([4, 1])
+    try:
+        # 🔧 CACHE LIMPO PARA NOVA VAGA
+        if 'cache_analise_curriculos' not in st.session_state:
+            st.session_state['cache_analise_curriculos'] = {}
+
+        # 🔧 NÃO USA CACHE PARA NOVA VAGA - FORÇA ANÁLISE REAL
+        cache = {}  # Cache vazio para forçar análise real
+        
+        tempos = []
+        falhas = 0
+        sucessos = 0
+        arquivos_falha_analise = []
+
+        def analisar_curriculo(file, i, total, cache, filename):
+            file_hash = hash_file_content(file)
+            sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, filename)
+            try:
+                file_bytes = file.read()
+                file.seek(0)
+
+                if len(file_bytes) == 0:
+                    raise ValueError("Arquivo vazio ou corrompido.")
+
+                texto_validacao = ""
+                if sanitized_name.endswith(".pdf"):
+                    reader = PdfReader(file)
+                    texto_validacao = "".join([page.extract_text() or "" for page in reader.pages])
+                elif sanitized_name.endswith((".docx", ".doc")):
+                    doc = Document(file)
+                    texto_validacao = "\n".join([para.text for para in doc.paragraphs])
+                elif sanitized_name.endswith((".txt", ".odt")):
+                    texto_validacao = file_bytes.decode("utf-8", errors="ignore")
+                else:
+                    raise ValueError("Extensão não suportada.")
+
+                if not texto_validacao.strip():
+                    raise ValueError("Texto ilegível ou ausente.")
+
+                file.seek(0)
+                start = time.time()
+                
+                # 🔧 LOG PARA DEBUG
+                log.info(f"Iniciando análise do arquivo {sanitized_name} para vaga ID {vaga_id}")
+                
+                result = process_with_files([file], texto_manual, vaga_id)
+                end = time.time()
+
+                # 🔧 LOG PARA DEBUG
+                log.info(f"Resultado da análise: {result}")
+
+                if not result or not result.get("sucesso", False):
+                    raise ValueError("Falha na análise do currículo.")
+
+                duracao = max(end - start, 1)
+                return sanitized_name, f"{duracao:.2f} seg", duracao, "Sucesso"
+
+            except Exception as e:
+                log.error(f"Erro ao analisar {sanitized_name}: {e}")
+                return sanitized_name, str(e), None, "Falha"
+
+        progresso_global = st.empty()
+        progresso_global.info("⏳ Iniciando análise...")
+
+        progresso_texto = st.empty()
+        barra_progresso = st.progress(0)
+        progresso_atual = 0
+        total_arquivos = len(filtered_files)
+        inicio_geral = time.time()
+
+        # 🔽 Expander já aberto para acumular os logs
+        expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=False)
+        container_resultados = expander.container()
+
+        # 🔄 Processa arquivos em paralelo
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:  # Reduzido para 4 workers
+            futuros = {
+                executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
+                for i, f in enumerate(filtered_files, start=1)
+            }
+
+            for future in concurrent.futures.as_completed(futuros):
+                sanitized_name, tempo_info, tempo_real, status = future.result()
+
+                progresso_atual += 1
+                percentual = int((progresso_atual / total_arquivos) * 100)
+
+                # 🟡 Atualiza barra e status em tempo real
+                progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
+                barra_progresso.progress(progresso_atual / total_arquivos)
+
+                # 📦 Adiciona resultado ao container dentro do expander
+                with container_resultados:
+                    if status == "Sucesso":
+                        tempos.append({
+                            "Currículo": sanitized_name,
+                            "Tempo": tempo_info,
+                            "Status": status
+                        })
+                        # ✅ Mostra mensagem temporária
+                        st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
+                        sucessos += 1
+                    else:
+                        tempos.append({
+                            "Currículo": sanitized_name,
+                            "Tempo": "Falha",
+                            "Status": status
+                        })
+                        st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
+                        arquivos_falha_analise.append(sanitized_name)
+                        falhas += 1
+
+        # 🟢 Limpa elementos temporários
+        barra_progresso.empty()
+        progresso_texto.empty()
+        progresso_global.empty()
+        fim_geral = time.time()
+        tempo_total_real = round((fim_geral - inicio_geral) / 60, 2)  # minutos reais
+
+        # Resumo final
+        total = len(filtered_files)
+
+        if arquivos_falha_analise:
+            st.write("### 📋 Resumo da Análise")
+            st.write("### Arquivos Inválidos ou com Falha:")
+            for nome in arquivos_falha_analise:
+                st.write(f"- {nome}")
+
+        col1, col2, col3 = st.columns(3)
+        col1.metric("📊 Total de Currículos", total)
+        col2.metric("✅ Sucessos", sucessos)
+        col3.metric("❌ Falhas", falhas)
+
+        if sucessos > 0:
+            media = round(tempo_total_real / sucessos, 2)
+            st.success(
+                f"✅ {sucessos} currículo(s) analisado(s) com sucesso | "
+                f"❌ {falhas} falha(s) | "
+                f"⏱️ Tempo total real: {tempo_total_real} minuto(s)"
+            )
+            st.info(f"⏱️ Tempo médio por currículo (real): {media} minuto(s).")
+            
+            # 🔧 LOG PARA DEBUG
+            log.info(f"Análise concluída com sucesso. Vaga ID: {vaga_id}, Sucessos: {sucessos}")
+            
+            return True
+        else:
+            st.error(f"❌ Todos os {total} currículos falharam na análise.")
+            return False
+            
+    except Exception as e:
+        log.error(f"Erro geral na análise: {e}")
+        st.error(f"❌ Erro durante a análise: {e}")
+        return False
+
+def editar_vaga(selected_job):
+    """Edita uma vaga existente"""
+    job_details = database.get_job_details(selected_job['id'])
+
+    with st.form(f"edit_job_form_{selected_job['id']}"):
+        st.header("✏️ Editar Vaga")
+        novo_nome = st.text_input("Nome da vaga", value=job_details.get('name', ''))
+        nova_desc = st.text_area("Descrição da vaga", 
+                                 value=job_details.get('description', ''))
+        
+        col1, col2 = st.columns(2)
         with col1:
-            st.write(f"**Vaga Selecionada:** {selected_job['name']}")
+            salvar = st.form_submit_button("✅ Salvar Alterações")
         with col2:
-            edit_clicked = st.button("✏️ Editar Vaga")
+            cancelar_edit = st.form_submit_button("❌ Cancelar")
 
-        if edit_clicked:
-            # Busca a descrição atual da vaga no banco de dados
-            job_details = database.get_job_details(selected_job['id'])
+    if cancelar_edit:
+        st.session_state.mostrar_edicao = False
+        st.rerun()
 
-            with st.form(f"edit_job_form_{selected_job['id']}"):
-                novo_nome = st.text_input("Nome da vaga", value=job_details.get('name', ''))
-                nova_desc = st.text_area("Descrição da vaga", 
-                                         value=job_details.get('description', ''))
-                salvar = st.form_submit_button("Salvar Alterações")
+    if salvar:
+        try:
+            updated_data = {
+                'name': novo_nome,
+                'description': nova_desc
+            }
+            database.update_job(selected_job['id'], updated_data)
+            st.success("✅ Vaga atualizada com sucesso.")
+            st.session_state.mostrar_edicao = False
+            time.sleep(1)
+            st.rerun()
+        except Exception as e:
+            log.error(f"Erro ao atualizar vaga: {e}")
+            st.error(f"❌ Erro ao atualizar a vaga: {e}")
 
-            if salvar:
-                try:
-                    updated_data = {
-                        'name': novo_nome,
-                        'description': nova_desc
-                    }
-                    database.update_job(selected_job['id'], updated_data)
-                    st.success("✅ Vaga atualizada com sucesso.")
-                    time.sleep(1) # Pequeno delay para visualização
-                    st.rerun() # Recarrega a página para atualizar o seletor
-                except Exception as e:
-                    log.error(f"Erro ao atualizar vaga: {e}")
-                    st.error(f"❌ Erro ao atualizar a vaga: {e}")
+def excluir_vaga(selected_job):
+    """Exclui uma vaga"""
+    with st.form(f"delete_job_form_{selected_job['id']}"):
+        st.header("🗑️ Excluir Vaga")
+        st.warning("⚠️ Esta ação é irreversível. Todos os dados relacionados serão perdidos.")
+        st.write(f"**Vaga a ser excluída:** {selected_job['name']}")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            confirmar = st.form_submit_button("🗑️ Confirmar Exclusão")
+        with col2:
+            cancelar_del = st.form_submit_button("❌ Cancelar")
 
-    return selected_job
+    if cancelar_del:
+        st.session_state.mostrar_exclusao = False
+        st.rerun()
 
+    if confirmar:
+        try:
+            sucesso = database.delete_job_and_related_data(selected_job['id'])
+            if sucesso:
+                st.success("✅ Vaga e dados excluídos com sucesso.")
+                log.info(f"Vaga '{selected_job['name']}' (ID: {selected_job['id']}) e dados relacionados foram excluídos.")
+                st.session_state.vaga_selecionada_id = None
+                st.session_state.mostrar_exclusao = False
+                # 🔧 LIMPAR CACHE APÓS EXCLUSÃO
+                if 'cache_analise_curriculos' in st.session_state:
+                    del st.session_state['cache_analise_curriculos']
+                time.sleep(1)
+                st.rerun()
+            else:
+                st.error("❌ Erro ao excluir os dados. Verifique os logs.")
+                log.error(f"Falha ao tentar excluir a vaga '{selected_job['name']}' (ID: {selected_job['id']}).")
+        except Exception as e:
+            st.error(f"❌ Erro ao excluir vaga: {e}")
+            log.error(f"Exceção ao excluir vaga: {e}")
 
 def process_candidate_data(data):
     if not data:
@@ -681,7 +787,6 @@ def create_modern_score_chart(df):
 
     return chart
 
-
 def show_candidate_details(candidate):
     st.subheader(f"📄 Currículo de {candidate.get('Nome', 'Desconhecido')}")
 
@@ -696,6 +801,7 @@ def show_candidate_details(candidate):
         log.error(f"Exceção ao buscar currículo com resum_id {candidate['resum_id']}: {e}")
         return
 
+    st.markdown("### 📋 Conteúdo do Currículo")
     st.markdown(resum.get('content', 'Sem conteúdo'))
 
     st.markdown("### 🔍 Análise da IA")
@@ -713,35 +819,26 @@ def show_candidate_details(candidate):
         with open(file_path, 'rb') as f:
             st.download_button("⬇️ Baixar Currículo", f, file_name=Path(file_path).name)
 
-def main():
-    setup_page()
-
-    jobs = database.get_jobs()
-    job = get_job_selector(jobs)
-
-    if job:
-        with st.expander("⚠️ Excluir vaga e currículos analisados"):
-            st.warning("Esta ação é irreversível. Todos os dados relacionados serão perdidos.")
-            if st.button("🗑️ Excluir esta vaga"):
-                sucesso = database.delete_job_and_related_data(job['id'])
-                if sucesso:
-                    st.success("Vaga e dados excluídos com sucesso.")
-                    log.info(f"Vaga '{job['name']}' (ID: {job['id']}) e dados relacionados foram excluídos.")
-                    st.rerun()
-                else:
-                    st.error("Erro ao excluir os dados. Verifique os logs.")
-                    log.error(f"Falha ao tentar excluir a vaga '{job['name']}' (ID: {job['id']}).")
-
-    if not job:
-        return
-
+def show_analysis_results(job_id):
+    """Mostra os resultados da análise para a vaga selecionada"""
+    
+    # 🔧 LOG PARA DEBUG
+    log.info(f"Buscando resultados para vaga ID: {job_id}")
+    
     # Buscar e processar dados
-    data = database.get_analysis_by_job_id(job['id'])
+    data = database.get_analysis_by_job_id(job_id)
+    
+    # 🔧 LOG PARA DEBUG
+    log.info(f"Dados encontrados: {len(data) if data else 0} registros")
+    
     df = process_candidate_data(data)
 
     if df.empty:
         st.info("Nenhum currículo analisado para essa vaga.")
         return
+
+    st.markdown("---")
+    st.markdown("## 📊 Resultados da Análise")
 
     # Gráfico de Score
     st.subheader("🎯 Score dos Candidatos")
@@ -786,13 +883,14 @@ def main():
     grid_options = gb.build()
     grid_options['sortModel'] = [{'colId': 'Pontuação', 'sort': 'desc'}]
 
-    # Exibe a tabela
+    # Key único
     grid_response = AgGrid(
         df_display,
         gridOptions=grid_options,
         update_mode=GridUpdateMode.SELECTION_CHANGED,
         allow_unsafe_jscode=True,
-        fit_columns_on_grid_load=True
+        fit_columns_on_grid_load=True,
+        key=f"aggrid_results_{job_id}"
     )
 
    # Verifica e exibe detalhes se alguém for selecionado
@@ -808,6 +906,23 @@ def main():
                 selected_index = df_display[df_display['Nome'] == selected_nome].index[0]
                 candidate = df_original.iloc[selected_index]
                 show_candidate_details(candidate)
+
+def main():
+    # Inicializa variáveis de sessão
+    if "logged_in" not in st.session_state:
+        st.session_state.logged_in = False
+    if "user" not in st.session_state:
+        st.session_state.user = None
+    if "show_register" not in st.session_state:
+        st.session_state.show_register = False
+
+    # Página de login/cadastro
+    if not st.session_state.logged_in:
+        login_page()
+        return
+    
+    # Se chegou aqui, o usuário está logado - mostra TODO o conteúdo
+    main_page_authenticated()
 
 if __name__ == "__main__":
     main()
