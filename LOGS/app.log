@@ -8826,3 +8826,230 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-15 10:23:28,809 - INFO - Nova vaga criada: {'id': '619fcda6-0cb7-4a08-a7dd-761226937b60', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-15T10:23:28.690180', 'updated_at': '2025-06-15T10:23:28.690180', 'status': 'active'}
 2025-06-15 10:27:30,597 - INFO - Log do app iniciado com sucesso.
 2025-06-15 10:27:30,597 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:40:18,026 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:40:18,027 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:43:06,170 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:43:06,170 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:45:31,680 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:45:31,680 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:48:05,978 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:48:05,979 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:49:59,343 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:49:59,344 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 10:57:24,854 - INFO - Log do app iniciado com sucesso.
+2025-06-15 10:57:24,854 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:10:44,492 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:10:44,493 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:14:29,818 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:14:29,819 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:14:33,930 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:14:33,931 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:14:36,942 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:14:36,943 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:14:52,551 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:14:52,551 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:14:57,389 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:14:57,390 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:15:00,781 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:15:00,781 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:15:02,200 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:15:02,200 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:17:41,898 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:17:41,899 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:17:45,173 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:17:45,173 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:17:52,973 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:17:52,973 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:17:56,698 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:17:56,698 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:17:58,732 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:17:58,733 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:17:58,831 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:17:58,831 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:07,882 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:07,883 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:14,262 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:14,263 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:17,583 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:17,584 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:17,669 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:17,669 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:29,505 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:29,505 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:35,377 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:35,378 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:36,973 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:36,973 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:18:38,049 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:18:38,050 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:19:55,456 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:19:55,456 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:19:58,488 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:19:58,489 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:01,725 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:01,725 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:03,676 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:03,677 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:21,836 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:21,836 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:27,885 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:27,885 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:34,463 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:34,463 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:36,949 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:36,949 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:40,372 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:40,373 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:43,567 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:43,568 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:44,836 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:44,836 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:51,235 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:51,235 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:20:53,799 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:20:53,799 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:21:21,448 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:21:21,449 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:13,032 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:13,034 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:16,068 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:16,068 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:18,797 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:18,797 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:40,233 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:40,234 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:44,252 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:44,252 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:46,775 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:46,775 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:24:46,862 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:24:46,862 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:25:13,065 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:25:13,065 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:25:27,838 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:25:27,839 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:26:18,948 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:26:18,948 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:26:21,088 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:26:21,089 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:26:25,372 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:26:25,372 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:26:27,275 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:26:27,275 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:27:13,409 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:27:13,409 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:27:15,594 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:27:15,595 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:27:19,751 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:27:19,751 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:27:19,836 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:27:19,836 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:27:29,967 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:27:29,968 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:27:37,503 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:27:37,503 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:10,409 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:10,409 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:13,064 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:13,064 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:15,643 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:15,644 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:15,732 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:15,732 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:22,435 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:22,435 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:26,794 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:26,795 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:27,398 - INFO - Vaga 'Coordenador de Dados' (ID: 619fcda6-0cb7-4a08-a7dd-761226937b60) e dados relacionados foram excluídos.
+2025-06-15 11:28:27,468 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:27,468 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:28,655 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:28,655 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-15 11:28:32,190 - INFO - Log do app iniciado com sucesso.
+2025-06-15 11:28:32,190 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:53:53,246 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:53:53,247 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:53:56,422 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:53:56,423 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:53:59,371 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:53:59,371 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:00,559 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:00,559 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:06,097 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:06,097 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:16,038 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:16,039 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:18,246 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:18,247 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:20,799 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:20,799 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:20,909 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:20,909 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:54:25,407 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:54:25,407 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:56:46,058 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:56:46,058 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:56:48,031 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:56:48,031 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:56:48,437 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:56:48,437 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 08:56:50,534 - INFO - Log do app iniciado com sucesso.
+2025-06-16 08:56:50,535 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:08,164 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:08,165 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:13,193 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:13,195 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:15,906 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:15,907 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:16,638 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:16,638 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:19,885 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:19,885 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:30,852 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:30,853 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:32,645 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:32,646 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:35,289 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:35,290 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:35,811 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:35,811 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:02:37,468 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:02:37,468 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:08:37,742 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:08:37,743 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:08:41,616 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:08:41,616 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:08:44,206 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:08:44,206 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:08:45,957 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:08:45,957 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:08:49,556 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:08:49,557 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:16,359 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:16,359 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:22,648 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:22,649 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:25,621 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:25,621 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:25,710 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:25,711 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:26,317 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:26,317 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:32,009 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:32,010 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:36,184 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:36,184 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:37,039 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:37,040 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:27:38,070 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:27:38,071 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:39:45,711 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:39:45,711 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:39:48,946 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:39:48,947 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:39:51,832 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:39:51,833 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:39:51,928 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:39:51,929 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:39:52,591 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:39:52,591 - INFO - Conexão com o banco de dados inicializada com sucesso.

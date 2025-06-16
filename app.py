@@ -1,4 +1,4 @@
-import logging
+# app.py
 import os
 import sys
 import re
@@ -23,24 +23,14 @@ from PIL import Image
 from LOGS.log_config import setup_logger
 
 
-def normalize_filename(filename: str) -> str:
-    # Normaliza Unicode (NFKD) e remove caracteres não ASCII
-    nfkd_form = unicodedata.normalize('NFKD', filename)
-    only_ascii = nfkd_form.encode('ASCII', 'ignore').decode('ASCII')
-    # Remove caracteres indesejados (exemplo: mantém letras, números, _, -, espaços)
-    safe_name = re.sub(r'[^a-zA-Z0-9_\-\. ]', '', only_ascii)
-    return safe_name.strip()
+# === CONFIG ===
+st.set_page_config(layout="wide", page_title="Sistema de Recrutamento IA", page_icon="🧠")
 
 # --- Início da Configuração de Logging ---
-
-from LOGS.log_config import setup_logger
-
 log = setup_logger(__name__, "app.log")
-
 log.info("Log do app iniciado com sucesso.")
-
-
 # --- Fim da Configuração de Logging ---
+
 
 # Inicializa o banco de dados
 try:
@@ -51,13 +41,48 @@ except Exception as e:
     st.error("Erro ao inicializar banco de dados: " + str(e))
     st.stop()
 
-def setup_page():
-    st.set_page_config(
-        layout="wide",
-        page_title="Sistema de Recrutamento IA",
-        page_icon="🧠"
-    )
+def normalize_filename(filename: str) -> str:
+    # Normaliza Unicode (NFKD) e remove caracteres não ASCII
+    nfkd_form = unicodedata.normalize('NFKD', filename)
+    only_ascii = nfkd_form.encode('ASCII', 'ignore').decode('ASCII')
+    # Remove caracteres indesejados (exemplo: mantém letras, números, _, -, espaços)
+    safe_name = re.sub(r'[^a-zA-Z0-9_\-\. ]', '', only_ascii)
+    return safe_name.strip()
 
+def register_form():
+    st.subheader("Criar novo usuário")
+    email = st.text_input("Email")
+    password = st.text_input("Senha", type="password")
+    password_confirm = st.text_input("Confirme a senha", type="password")
+
+    if st.button("Registrar"):
+        if password != password_confirm:
+            st.error("As senhas não coincidem.")
+            return
+        try:
+            user = database.sign_up(email, password)
+            st.success(f"Usuário criado com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme para fazer login.")
+        except Exception as e:
+            st.error(f"Erro no cadastro: {e}")
+
+def login_form():
+    st.markdown("## 🔐 Login")
+    email = st.text_input("Email")
+    password = st.text_input("Senha", type="password")
+    if st.button("Entrar"):
+        try:
+            user = database.sign_in(email, password)
+            if user:
+                st.session_state.user = user.email  # ou user.id, ou o que preferir guardar
+                st.session_state.logged_in = True  # Adiciona esta flag
+                st.success("Login realizado com sucesso!")
+                st.rerun()  # Força a atualização da página
+            else:
+                st.error("Usuário ou senha incorretos.")
+        except Exception as e:
+            st.error(f"Erro no login: {e}")
+
+def setup_page():
     logo_path = Path("assets/VMC.png")
     if logo_path.exists():
         logo = Image.open(logo_path)
@@ -83,6 +108,37 @@ def setup_page():
         </style>
     """, unsafe_allow_html=True)
 
+def get_sanitized_name(file_hash, arquivos_sanitizados, file_name):
+    # Tenta obter o nome do arquivo
+    nome_original = Path(file_name).name if file_name else f"arquivo_sem_nome_{len(arquivos_sanitizados) + 1}.pdf"
+    nome_original = normalize_filename(nome_original)
+    # Evita nomes duplicados
+    if nome_original not in arquivos_sanitizados.values():
+        arquivos_sanitizados[file_hash] = nome_original
+        return nome_original
+    else:
+        base = Path(nome_original).stem
+        ext = Path(nome_original).suffix
+        contador = 2
+        novo_nome = f"{base}_{contador}{ext}"
+        while novo_nome in arquivos_sanitizados.values():
+            contador += 1
+            novo_nome = f"{base}_{contador}{ext}"
+        arquivos_sanitizados[file_hash] = novo_nome
+        return novo_nome
+        
+def hash_file_content(file):
+    file.seek(0)
+    content = file.read()
+    file.seek(0)
+    return hashlib.md5(content).hexdigest()
+    
+def hash_bytes(content_bytes):
+    return hashlib.md5(content_bytes).hexdigest()
+
+def main_page():
+    setup_page()
+
     st.title("📊 Painel de Recrutamento Inteligente")
     st.markdown("""
     ---  
@@ -98,285 +154,254 @@ def setup_page():
 
     ---  
     """)
-
-    # Função para sanitizar nomes (exemplo)
-    def normalize_filename(filename):
-        name = filename.strip()
-        # Substitui qualquer caractere que não seja letra, número, _ . ou - por _
-        name = re.sub(r'[^\w\.\-]', '_', name, flags=re.UNICODE)
-        # Evita extensões repetidas tipo arquivo.pdf.pdf
-        parts = name.split('.')
-        if len(parts) > 2:
-            ext = parts[-1]
-            prev_ext = parts[-2]
-            if ext == prev_ext:
-                name = '.'.join(parts[:-1])
-        # Garante que tenha extensão, adiciona .pdf por padrão
-        if '.' not in name:
-            name += '.pdf'
-        # Limita tamanho total para 100 caracteres
-        if len(name) > 100:
-            base, ext = name.rsplit('.', 1)
-            base = base[:95]
-            name = base + '.' + ext
-        return name.lower()
     
-    def get_sanitized_name(file_hash, arquivos_sanitizados, file_name):
-        # Tenta obter o nome do arquivo
-        nome_original = Path(file_name).name if file_name else f"arquivo_sem_nome_{len(arquivos_sanitizados) + 1}.pdf"
-        nome_original = normalize_filename(nome_original)
-        # Evita nomes duplicados
-        if nome_original not in arquivos_sanitizados.values():
-            arquivos_sanitizados[file_hash] = nome_original
-            return nome_original
-        else:
-            base = Path(nome_original).stem
-            ext = Path(nome_original).suffix
-            contador = 2
-            novo_nome = f"{base}_{contador}{ext}"
-            while novo_nome in arquivos_sanitizados.values():
-                contador += 1
-                novo_nome = f"{base}_{contador}{ext}"
-            arquivos_sanitizados[file_hash] = novo_nome
-            return novo_nome
+
+
+    st.subheader("📄 Enviar Currículos para Análise")
+
+    extensoes_permitidas = [".pdf", ".docx", ".txt", ".doc", ".odt"]
+
+    uploaded_files = st.file_uploader(
+        "Selecione os arquivos de currículo (PDF, DOCX, TXT):",
+        type=None,
+        accept_multiple_files=True,
+        key="uploader_curriculos"
+    )
+
+    if uploaded_files:
+        arquivos_sanitizados = {}
+        # 1. Ao carregar os arquivos, gere o hash e o nome sanitizado apenas 1 vez e guarde num dict:
+        hash_para_nome = {}
+        hash_para_arquivo = {}
+        for file in uploaded_files:
+            file_hash = hash_file_content(file)
+            if file_hash not in hash_para_nome:
+                sanitized_name = get_sanitized_name(file_hash, hash_para_nome, file.name)
+                hash_para_nome[file_hash] = sanitized_name
+                hash_para_arquivo[file_hash] = file
+
+        # 2. Filtra arquivos com extensões permitidas
+        filtered_hashes = [
+            h for h, nome in hash_para_nome.items()
+            if any(nome.endswith(ext) for ext in extensoes_permitidas)
+        ]
+        filtered_files = [hash_para_arquivo[h] for h in filtered_hashes]
+
         
-    def hash_file_content(file):
-        file.seek(0)
-        content = file.read()
-        file.seek(0)
-        return hashlib.md5(content).hexdigest()
-    
-    def hash_bytes(content_bytes):
-        return hashlib.md5(content_bytes).hexdigest()
-    
+        arquivos_invalidos_extensao = [
+            nome for h, nome in hash_para_nome.items()
+            if not any(nome.endswith(ext) for ext in extensoes_permitidas)
+        ]
 
-    def main():
-        st.subheader("📄 Enviar Currículos para Análise")
+        if arquivos_invalidos_extensao:
+            st.warning(f"Alguns arquivos foram ignorados por terem extensões inválidas: {arquivos_invalidos_extensao}")
 
-        extensoes_permitidas = [".pdf", ".docx", ".txt", ".doc", ".odt"]
+        arquivos_unicos = {}
+        nomes_vistos = set()
+        nomes_para_exibir = []
 
-        uploaded_files = st.file_uploader(
-            "Selecione os arquivos de currículo (PDF, DOCX, TXT):",
-            type=None,
-            accept_multiple_files=True,
-            key="uploader_curriculos"
-        )
+        for f in filtered_files:
+            content_bytes = f.read()
+            f.seek(0)
+            file_hash = hash_bytes(content_bytes) # função que cria hash a partir de bytes
+            sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, f.name)
+            if file_hash not in arquivos_unicos and sanitized_name not in nomes_vistos:
+                arquivos_unicos[file_hash] = BytesIO(content_bytes) # cria um novo stream limpo
+                arquivos_unicos[file_hash].name = sanitized_name # nome sanitizado
+                nomes_vistos.add(sanitized_name)
+                nomes_para_exibir.append(sanitized_name)
+        # Agora que nomes_para_exibir está definido, pode mostrar no expander
+        st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
 
-        if uploaded_files:
-            arquivos_sanitizados = {}
-            # 1. Ao carregar os arquivos, gere o hash e o nome sanitizado apenas 1 vez e guarde num dict:
-            hash_para_nome = {}
-            hash_para_arquivo = {}
-            for file in uploaded_files:
-                file_hash = hash_file_content(file)
-                if file_hash not in hash_para_nome:
-                    sanitized_name = get_sanitized_name(file_hash, hash_para_nome, file.name)
-                    hash_para_nome[file_hash] = sanitized_name
-                    hash_para_arquivo[file_hash] = file
+        with st.expander("📂 Clique para ver a lista de arquivos baixados"):
+            for nome in nomes_para_exibir:
+                st.markdown(f"📄 `{nome}`")
 
-            # 2. Filtra arquivos com extensões permitidas
-            filtered_hashes = [
-                h for h, nome in hash_para_nome.items()
-                if any(nome.endswith(ext) for ext in extensoes_permitidas)
-            ]
-            filtered_files = [hash_para_arquivo[h] for h in filtered_hashes]
+        filtered_files = list(arquivos_unicos.values())
 
-            
-            arquivos_invalidos_extensao = [
-                nome for h, nome in hash_para_nome.items()
-                if not any(nome.endswith(ext) for ext in extensoes_permitidas)
-            ]
+        with st.form("manual_resume_form"):
+            st.header("💼 Conteúdo da Vaga")
+            texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
+            submitted = st.form_submit_button("Analisar Currículo")
 
-            if arquivos_invalidos_extensao:
-                st.warning(f"Alguns arquivos foram ignorados por terem extensões inválidas: {arquivos_invalidos_extensao}")
+        if submitted:
+            if not texto_manual.strip():
+                st.warning("Por favor, insira algum conteúdo para análise.")
+            else:
+                if 'cache_analise_curriculos' not in st.session_state:
+                    st.session_state['cache_analise_curriculos'] = {}
 
-            arquivos_unicos = {}
-            nomes_vistos = set()
-            nomes_para_exibir = []
+                cache = st.session_state['cache_analise_curriculos']
+                # Exemplo: criação de vaga (JobCreator é parte externa)
+                jc = JobCreator()
+                vaga = jc.create_job(
+                    name=texto_manual.strip().split("\n")[0],
+                    description=texto_manual.strip()
+                )
+                log.info(f"Nova vaga criada: {vaga}")
 
-            for f in filtered_files:
-                content_bytes = f.read()
-                f.seek(0)
-                file_hash = hash_bytes(content_bytes) # função que cria hash a partir de bytes
-                sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, f.name)
-                if file_hash not in arquivos_unicos and sanitized_name not in nomes_vistos:
-                    arquivos_unicos[file_hash] = BytesIO(content_bytes) # cria um novo stream limpo
-                    arquivos_unicos[file_hash].name = sanitized_name # nome sanitizado
-                    nomes_vistos.add(sanitized_name)
-                    nomes_para_exibir.append(sanitized_name)
-            # Agora que nomes_para_exibir está definido, pode mostrar no expander
-            st.success(f"{len(filtered_files)} arquivo(s) pronto(s) para análise:")
+                tempos = []
+                falhas = 0
+                sucessos = 0
+                arquivos_falha_analise = []
 
-            with st.expander("📂 Clique para ver a lista de arquivos baixados"):
-                for nome in nomes_para_exibir:
-                    st.markdown(f"📄 `{nome}`")
+                progresso_global = st.empty()
 
-            filtered_files = list(arquivos_unicos.values())
+                def analisar_curriculo(file, i, total, cache, filename):
+                    file_hash = hash_file_content(file)
+                    sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, filename)
+                    try:
+                        if file_hash in cache:
+                            return sanitized_name, "Cache", cache[file_hash], "Sucesso"
 
-            with st.form("manual_resume_form"):
-                st.header("💼 Conteúdo da Vaga")
-                texto_manual = st.text_area("Descreva quais são os requisitos da vaga e o que você busca de um candidato ideal:")
-                submitted = st.form_submit_button("Analisar Currículo")
+                        file_bytes = file.read()
+                        file.seek(0)
 
-            if submitted:
-                if not texto_manual.strip():
-                    st.warning("Por favor, insira algum conteúdo para análise.")
-                else:
-                    if 'cache_analise_curriculos' not in st.session_state:
-                        st.session_state['cache_analise_curriculos'] = {}
+                        if len(file_bytes) == 0:
+                            raise ValueError("Arquivo vazio ou corrompido.")
 
-                    cache = st.session_state['cache_analise_curriculos']
-                    # Exemplo: criação de vaga (JobCreator é parte externa)
-                    jc = JobCreator()
-                    vaga = jc.create_job(
-                        name=texto_manual.strip().split("\n")[0],
-                        description=texto_manual.strip()
-                    )
-                    log.info(f"Nova vaga criada: {vaga}")
+                        texto_validacao = ""
+                        if sanitized_name.endswith(".pdf"):
+                            reader = PdfReader(file)
+                            texto_validacao = "".join([page.extract_text() or "" for page in reader.pages])
+                        elif sanitized_name.endswith((".docx", ".doc")):
+                            doc = Document(file)
+                            texto_validacao = "\n".join([para.text for para in doc.paragraphs])
+                        elif sanitized_name.endswith((".txt", ".odt")):
+                            texto_validacao = file_bytes.decode("utf-8", errors="ignore")
+                        else:
+                            raise ValueError("Extensão não suportada.")
 
-                    tempos = []
-                    falhas = 0
-                    sucessos = 0
-                    arquivos_falha_analise = []
+                        if not texto_validacao.strip():
+                            raise ValueError("Texto ilegível ou ausente.")
 
-                    progresso_global = st.empty()
+                        file.seek(0)
+                        start = time.time()
+                        result = process_with_files([file], texto_manual, vaga["id"])
+                        end = time.time()
 
-                    def analisar_curriculo(file, i, total, cache, filename):
-                        file_hash = hash_file_content(file)
-                        sanitized_name = get_sanitized_name(file_hash, arquivos_sanitizados, filename)
-                        try:
-                            if file_hash in cache:
-                                return sanitized_name, "Cache", cache[file_hash], "Sucesso"
+                        if not result or not result.get("sucesso", False):
+                            raise ValueError("Falha na análise do currículo.")
 
-                            file_bytes = file.read()
-                            file.seek(0)
+                        duracao = max(end - start, 1)
+                        cache[file_hash] = duracao  # Armazena tempo no cache
+                        return sanitized_name, f"{duracao:.2f} seg", duracao, "Sucesso"
 
-                            if len(file_bytes) == 0:
-                                raise ValueError("Arquivo vazio ou corrompido.")
+                    except Exception as e:
+                        return sanitized_name, str(e), None, "Falha"
 
-                            texto_validacao = ""
-                            if sanitized_name.endswith(".pdf"):
-                                reader = PdfReader(file)
-                                texto_validacao = "".join([page.extract_text() or "" for page in reader.pages])
-                            elif sanitized_name.endswith((".docx", ".doc")):
-                                doc = Document(file)
-                                texto_validacao = "\n".join([para.text for para in doc.paragraphs])
-                            elif sanitized_name.endswith((".txt", ".odt")):
-                                texto_validacao = file_bytes.decode("utf-8", errors="ignore")
+                progresso_global = st.empty()
+                progresso_global.info("⏳ Iniciando análise...")
+
+                progresso_texto = st.empty()
+                barra_progresso = st.progress(0)
+                progresso_atual = 0
+                total_arquivos = len(filtered_files)
+                inicio_geral = time.time()
+
+                tempos = []
+                cache = {}
+                sucessos = 0
+                falhas = 0
+
+                # 🔽 Expander já aberto para acumular os logs
+                expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=False)
+                container_resultados = expander.container()
+
+                # 🔄 Processa arquivos em paralelo
+                with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+                    futuros = {
+                        executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
+                        for i, f in enumerate(filtered_files, start=1)
+                    }
+
+                    for future in concurrent.futures.as_completed(futuros):
+                        sanitized_name, tempo_info, tempo_real, status = future.result()
+
+                        progresso_atual += 1
+                        percentual = int((progresso_atual / total_arquivos) * 100)
+
+                        # 🟡 Atualiza barra e status em tempo real
+                        progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
+                        barra_progresso.progress(progresso_atual / total_arquivos)
+
+                        # 📦 Adiciona resultado ao container dentro do expander
+                        with container_resultados:
+                            if status == "Sucesso":
+                                tempos.append({
+                                    "Currículo": sanitized_name,
+                                    "Tempo": tempo_info,
+                                    "Status": status
+                                })
+                                # ✅ Mostra mensagem temporária
+                                st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
+                                sucessos += 1
                             else:
-                                raise ValueError("Extensão não suportada.")
+                                tempos.append({
+                                    "Currículo": sanitized_name,
+                                    "Tempo": "Falha",
+                                    "Status": status
+                                })
+                                st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
+                                arquivos_falha_analise.append(sanitized_name)
+                                falhas += 1
 
-                            if not texto_validacao.strip():
-                                raise ValueError("Texto ilegível ou ausente.")
-
-                            file.seek(0)
-                            start = time.time()
-                            result = process_with_files([file], texto_manual, vaga["id"])
-                            end = time.time()
-
-                            if not result or not result.get("sucesso", False):
-                                raise ValueError("Falha na análise do currículo.")
-
-                            duracao = max(end - start, 1)
-                            cache[file_hash] = duracao  # Armazena tempo no cache
-                            return sanitized_name, f"{duracao:.2f} seg", duracao, "Sucesso"
-
-                        except Exception as e:
-                            return sanitized_name, str(e), None, "Falha"
-
-                    progresso_global = st.empty()
-                    progresso_global.info("⏳ Iniciando análise...")
-
-                    progresso_texto = st.empty()
-                    barra_progresso = st.progress(0)
-                    progresso_atual = 0
-                    total_arquivos = len(filtered_files)
-                    inicio_geral = time.time()
-
-                    tempos = []
-                    cache = {}
-                    sucessos = 0
-                    falhas = 0
-
-                    # 🔽 Expander já aberto para acumular os logs
-                    expander = st.expander("▶️ Detalhes da análise (clique para expandir)", expanded=False)
-                    container_resultados = expander.container()
-
-                    # 🔄 Processa arquivos em paralelo
-                    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
-                        futuros = {
-                            executor.submit(analisar_curriculo, f, i, total_arquivos, cache, f.name): f
-                            for i, f in enumerate(filtered_files, start=1)
-                        }
-
-                        for future in concurrent.futures.as_completed(futuros):
-                            sanitized_name, tempo_info, tempo_real, status = future.result()
-
-                            progresso_atual += 1
-                            percentual = int((progresso_atual / total_arquivos) * 100)
-
-                            # 🟡 Atualiza barra e status em tempo real
-                            progresso_texto.info(f"⏳ Analisando... ({progresso_atual}/{total_arquivos} - {percentual}%)")
-                            barra_progresso.progress(progresso_atual / total_arquivos)
-
-                            # 📦 Adiciona resultado ao container dentro do expander
-                            with container_resultados:
-                                if status == "Sucesso":
-                                    tempos.append({
-                                        "Currículo": sanitized_name,
-                                        "Tempo": tempo_info,
-                                        "Status": status
-                                    })
-                                    # ✅ Mostra mensagem temporária
-                                    st.success(f"✅ `{sanitized_name}` analisado em {tempo_info}.")
-                                    sucessos += 1
-                                else:
-                                    tempos.append({
-                                        "Currículo": sanitized_name,
-                                        "Tempo": "Falha",
-                                        "Status": status
-                                    })
-                                    st.error(f"❌ `{sanitized_name}` falhou: {tempo_info}")
-                                    arquivos_falha_analise.append(sanitized_name)
-                                    falhas += 1
-
-                    # 🟢 Limpa elementos temporários
-                    barra_progresso.empty()
-                    progresso_texto.empty()
-                    progresso_global.empty()
-                    fim_geral = time.time()
-                    tempo_total_real = round((fim_geral - inicio_geral) / 60, 2)  # minutos reais
+                # 🟢 Limpa elementos temporários
+                barra_progresso.empty()
+                progresso_texto.empty()
+                progresso_global.empty()
+                fim_geral = time.time()
+                tempo_total_real = round((fim_geral - inicio_geral) / 60, 2)  # minutos reais
 
 
-                    # Resumo final dentro da função main:
-                total = len(uploaded_files)
+                # Resumo final dentro da função main:
+            total = len(uploaded_files)
 
-                if arquivos_falha_analise:
-                    st.write("### 📋 Resumo da Análise")
-                    st.write("### Arquivos Inválidos ou com Falha:")
-                    for nome in arquivos_falha_analise:
-                        st.write(f"- {nome}")
+            if arquivos_falha_analise:
+                st.write("### 📋 Resumo da Análise")
+                st.write("### Arquivos Inválidos ou com Falha:")
+                for nome in arquivos_falha_analise:
+                    st.write(f"- {nome}")
 
-                col1, col2, col3 = st.columns(3)
-                col1.metric("📊 Total de Currículos", total)
-                col2.metric("✅ Sucessos", sucessos)
-                col3.metric("❌ Falhas", falhas)
+            col1, col2, col3 = st.columns(3)
+            col1.metric("📊 Total de Currículos", total)
+            col2.metric("✅ Sucessos", sucessos)
+            col3.metric("❌ Falhas", falhas)
 
-                if sucessos > 0:
-                    media = round(tempo_total_real / sucessos, 2)
-                    st.success(
-                        f"✅ {sucessos} currículo(s) analisado(s) com sucesso | "
-                        f"❌ {falhas} falha(s) | "
-                        f"⏱️ Tempo total real: {tempo_total_real} minuto(s)"
-                    )
-                    st.info(f"⏱️ Tempo médio por currículo (real): {media} minuto(s).")
-                else:
-                    st.error(f"❌ Todos os {total} currículos falharam na análise.")
+            if sucessos > 0:
+                media = round(tempo_total_real / sucessos, 2)
+                st.success(
+                    f"✅ {sucessos} currículo(s) analisado(s) com sucesso | "
+                    f"❌ {falhas} falha(s) | "
+                    f"⏱️ Tempo total real: {tempo_total_real} minuto(s)"
+                )
+                st.info(f"⏱️ Tempo médio por currículo (real): {media} minuto(s).")
+            else:
+                st.error(f"❌ Todos os {total} currículos falharam na análise.")
 
 
-    if __name__ == "__main__":
-        main()
+def logout():
+    if st.button("Sair"):
+        st.session_state.pop("user", None)
+        st.query_params = {'reload': str(int(time.time()))}  # Atualiza URL e recarrega app
 
+
+def main():
+    if "user" not in st.session_state:
+        choice = st.sidebar.selectbox("Escolha uma opção", ["Login", "Cadastrar"])
+        if choice == "Login":
+            login_form()
+        else:
+            register_form()
+        st.stop()
+    else:
+        st.write(f"Usuário logado: {st.session_state.user}")
+        logout()  # Adicionei a função de logout aqui
+        # Chama a main_page() que contém toda a lógica principal
+        main_page()  # Esta é a linha crucial que estava faltando
+
+if __name__ == "__main__":
+    main()
 
 def get_job_selector(jobs=None):
     if jobs is None:

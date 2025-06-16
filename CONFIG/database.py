@@ -39,6 +39,32 @@ class AnalyseDataBase:
         # e .eq() para criar a condição "onde a coluna é igual a".
         response = supabase.table("files").select("*").eq("original_name", file_name).execute()
         return response.data
+    
+    #CRIAR USUÁRIO
+    def sign_up(self, email: str, password: str):
+        """Cria um novo usuário no Supabase com email e senha."""
+        response = supabase.auth.sign_up({"email": email, "password": password})
+        if response.user:
+            return response.user
+        else:
+            raise Exception(response.error.message if response.error else "Erro ao registrar usuário")
+    
+    #FAZER LOGIN
+    def sign_in(self, email: str, password: str):
+        """Faz login no Supabase com email e senha."""
+        response = supabase.auth.sign_in_with_password({"email": email, "password": password})
+        if response.user:
+            return response.user
+        else:
+            raise Exception(response.error.message if response.error else "Erro ao autenticar")
+    #FAZER LOGOUT
+    def sign_out(self):
+        """Faz logout."""
+        supabase.auth.sign_out()
+    
+    def get_user(self):
+        """Retorna o usuário autenticado atual."""
+        return supabase.auth.user()
 
     def get_job_by_name(self, name: str) -> Optional[Dict]:
         result = supabase.table("jobs").select("*").eq("name", name).execute()
