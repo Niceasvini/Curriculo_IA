@@ -49,40 +49,198 @@ def normalize_filename(filename: str) -> str:
     safe_name = re.sub(r'[^a-zA-Z0-9_\-\. ]', '', only_ascii)
     return safe_name.strip()
 
-def register_form():
-    st.subheader("Criar novo usuário")
-    email = st.text_input("Email")
-    password = st.text_input("Senha", type="password")
-    password_confirm = st.text_input("Confirme a senha", type="password")
+def login_page():
+    """Página de login profissional centralizada"""
+    
+    # Limpa qualquer conteúdo residual
+    st.empty()
+    
+    # CSS para estilização profissional
+    st.markdown("""
+        <style>
+        /* Reset de estilos para garantir limpeza */
+        .main .block-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        
+        /* Oculta elementos desnecessários na tela de login */
+        .stDeployButton {display: none;}
+        footer {display: none;}
+        .stDecoration {display: none;}
+        
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 1rem 0;
+        }
+        .login-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin: 2rem auto;
+        }
+        .logo-container {
+            margin-bottom: 2rem;
+        }
+        .login-title {
+            color: #333;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .login-subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        .stButton > button {
+            width: 100%;
+            background: linear-gradient(45deg, #B93A3E, #E4A230);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            transition: all 0.3s ease;
+        }
+        .stButton > button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(185, 58, 62, 0.3);
+        }
+        .stTextInput > div > div > input {
+            border-radius: 10px;
+            border: 2px solid #e1e5e9;
+            padding: 0.75rem;
+            font-size: 1rem;
+        }
+        .stTextInput > div > div > input:focus {
+            border-color: #B93A3E;
+            box-shadow: 0 0 0 3px rgba(185, 58, 62, 0.1);
+        }
+        .toggle-link {
+            color: #B93A3E;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .toggle-link:hover {
+            text-decoration: underline;
+        }
+        </style>
+    """, unsafe_allow_html=True)
 
-    if st.button("Registrar"):
-        if password != password_confirm:
-            st.error("As senhas não coincidem.")
-            return
-        try:
-            user = database.sign_up(email, password)
-            st.success(f"Usuário criado com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme para fazer login.")
-        except Exception as e:
-            st.error(f"Erro no cadastro: {e}")
-
-def login_form():
-    st.markdown("## 🔐 Login")
-    email = st.text_input("Email")
-    password = st.text_input("Senha", type="password")
-    if st.button("Entrar"):
-        try:
-            user = database.sign_in(email, password)
-            if user:
-                st.session_state.user = user.email  # ou user.id, ou o que preferir guardar
-                st.session_state.logged_in = True  # Adiciona esta flag
-                st.success("Login realizado com sucesso!")
-                st.rerun()  # Força a atualização da página
-            else:
-                st.error("Usuário ou senha incorretos.")
-        except Exception as e:
-            st.error(f"Erro no login: {e}")
+    # Container principal com fundo
+    st.markdown('<div class="main-container">', unsafe_allow_html=True)
+    
+    # Container centralizado
+    col1, col2, col3 = st.columns([1, 2, 1])
+    
+    with col2:
+        st.markdown('<div class="login-card">', unsafe_allow_html=True)
+        
+        # Logo
+        logo_path = Path("assets/VMC.png")
+        if logo_path.exists():
+            logo = Image.open(logo_path)
+            st.image(logo, width=200)
+        else:
+            st.markdown("### 🏢 Viana & Moura")
+        
+        # Título
+        st.markdown('<h1 class="login-title">Sistema de Recrutamento IA</h1>', unsafe_allow_html=True)
+        st.markdown('<p class="login-subtitle">Faça login para acessar o sistema</p>', unsafe_allow_html=True)
+        
+        # Inicializa o estado do formulário
+        if 'show_register' not in st.session_state:
+            st.session_state.show_register = False
+        
+        # Formulário de Login
+        if not st.session_state.show_register:
+            st.markdown("### 🔐 Entrar no Sistema")
+            
+            with st.form("login_form", clear_on_submit=False):
+                email = st.text_input("📧 Email", placeholder="Digite seu email")
+                password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
+                
+                col_login, col_register = st.columns(2)
+                
+                with col_login:
+                    login_submitted = st.form_submit_button("🚀 Entrar", use_container_width=True)
+                
+                with col_register:
+                    if st.form_submit_button("📝 Cadastrar", use_container_width=True):
+                        st.session_state.show_register = True
+                        st.rerun()
+            
+            if login_submitted:
+                if not email or not password:
+                    st.error("⚠️ Por favor, preencha todos os campos.")
+                else:
+                    try:
+                        with st.spinner("🔄 Verificando credenciais..."):
+                            user = database.sign_in(email, password)
+                            if user:
+                                st.session_state.user = user.email
+                                st.session_state.logged_in = True
+                                st.success("✅ Login realizado com sucesso! Redirecionando...")
+                                time.sleep(1)
+                                st.rerun()
+                            else:
+                                st.error("❌ Email ou senha incorretos.")
+                    except Exception as e:
+                        st.error(f"❌ Erro no login: {e}")
+        
+        # Formulário de Cadastro
+        else:
+            st.markdown("### 📝 Criar Nova Conta")
+            
+            with st.form("register_form", clear_on_submit=True):
+                email = st.text_input("📧 Email", placeholder="Digite seu email")
+                password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
+                password_confirm = st.text_input("🔒 Confirme a Senha", type="password", placeholder="Confirme sua senha")
+                
+                col_register, col_back = st.columns(2)
+                
+                with col_register:
+                    register_submitted = st.form_submit_button("✅ Criar Conta", use_container_width=True)
+                
+                with col_back:
+                    if st.form_submit_button("⬅️ Voltar", use_container_width=True):
+                        st.session_state.show_register = False
+                        st.rerun()
+            
+            if register_submitted:
+                if not email or not password or not password_confirm:
+                    st.error("⚠️ Por favor, preencha todos os campos.")
+                elif password != password_confirm:
+                    st.error("❌ As senhas não coincidem.")
+                else:
+                    try:
+                        with st.spinner("📝 Criando conta..."):
+                            user = database.sign_up(email, password)
+                            st.success(f"✅ Usuário criado com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme para fazer login.")
+                            time.sleep(2)
+                            st.session_state.show_register = False
+                            st.rerun()
+                    except Exception as e:
+                        st.error(f"❌ Erro no cadastro: {e}")
+        
+        st.markdown('</div>', unsafe_allow_html=True)  # Fecha login-card
+    
+    st.markdown('</div>', unsafe_allow_html=True)  # Fecha main-container
 
 def setup_page():
+    """Configuração da página principal (apenas quando logado)"""
     logo_path = Path("assets/VMC.png")
     if logo_path.exists():
         logo = Image.open(logo_path)
@@ -137,7 +295,18 @@ def hash_bytes(content_bytes):
     return hashlib.md5(content_bytes).hexdigest()
 
 def main_page():
-    setup_page()
+    # Header com informações do usuário e logout
+    col1, col2, col3 = st.columns([2, 1, 1])
+    
+    with col1:
+        setup_page()
+    
+    with col3:
+        st.markdown(f"**👤 Usuário:** {st.session_state.user}")
+        if st.button("🚪 Sair", use_container_width=True):
+            st.session_state.pop("user", None)
+            st.session_state.pop("logged_in", None)
+            st.rerun()
 
     st.title("📊 Painel de Recrutamento Inteligente")
     st.markdown("""
@@ -380,25 +549,12 @@ def main_page():
                 st.error(f"❌ Todos os {total} currículos falharam na análise.")
 
 
-def logout():
-    if st.button("Sair"):
-        st.session_state.pop("user", None)
-        st.query_params = {'reload': str(int(time.time()))}  # Atualiza URL e recarrega app
-
-
 def main():
-    if "user" not in st.session_state:
-        choice = st.sidebar.selectbox("Escolha uma opção", ["Login", "Cadastrar"])
-        if choice == "Login":
-            login_form()
-        else:
-            register_form()
-        st.stop()
+    # Verifica se o usuário está logado
+    if "user" not in st.session_state or not st.session_state.get("logged_in", False):
+        login_page()
     else:
-        st.write(f"Usuário logado: {st.session_state.user}")
-        logout()  # Adicionei a função de logout aqui
-        # Chama a main_page() que contém toda a lógica principal
-        main_page()  # Esta é a linha crucial que estava faltando
+        main_page()
 
 if __name__ == "__main__":
     main()
