@@ -49,6 +49,58 @@ def normalize_filename(filename: str) -> str:
     safe_name = re.sub(r'[^a-zA-Z0-9_\-\. ]', '', only_ascii)
     return safe_name.strip()
 
+def traduzir_erro(erro_msg):
+    """Traduz mensagens de erro comuns para português"""
+    traducoes = {
+        "User already registered": "Usuário já cadastrado com este email",
+        "Invalid email or password": "Email ou senha inválidos",
+        "Email not confirmed": "Email não confirmado. Verifique sua caixa de entrada",
+        "Invalid login credentials": "Credenciais de login inválidas",
+        "Password should be at least 6 characters": "A senha deve ter pelo menos 6 caracteres",
+        "Unable to validate email address": "Não foi possível validar o endereço de email",
+        "Email rate limit exceeded": "Limite de emails excedido. Tente novamente mais tarde",
+        "Invalid email format": "Formato de email inválido",
+        "Network error": "Erro de conexão. Verifique sua internet",
+        "Database error": "Erro no banco de dados",
+        "Authentication failed": "Falha na autenticação",
+        "Session expired": "Sessão expirada. Faça login novamente",
+        "Access denied": "Acesso negado",
+        "Server error": "Erro no servidor",
+        "Connection timeout": "Tempo limite de conexão excedido",
+        "Invalid request": "Requisição inválida",
+        "User not found": "Usuário não encontrado",
+        "Email already exists": "Este email já está cadastrado",
+        "Weak password": "Senha muito fraca",
+        "Password mismatch": "As senhas não coincidem",
+        "Required field": "Campo obrigatório",
+        "Invalid characters": "Caracteres inválidos",
+        "Too many requests": "Muitas tentativas. Aguarde um momento"
+    }
+    
+    erro_str = str(erro_msg).lower()
+    
+    for eng, pt in traducoes.items():
+        if eng.lower() in erro_str:
+            return pt
+    
+    # Se não encontrou tradução específica, retorna a mensagem original
+    return str(erro_msg)
+
+def verificar_email_existente(email):
+    """Verifica se já existe um usuário com este email"""
+    try:
+        # Tenta fazer login com email e senha vazia para verificar se existe
+        # Se o email não existir, vai dar erro diferente de senha incorreta
+        result = database.sign_in(email, "senha_temporaria_para_verificacao")
+        return True  # Se chegou aqui, email existe
+    except Exception as e:
+        erro_msg = str(e).lower()
+        # Se o erro for de senha incorreta, significa que o email existe
+        if "invalid login credentials" in erro_msg or "invalid email or password" in erro_msg:
+            return True
+        # Se for outro tipo de erro, provavelmente o email não existe
+        return False
+
 def login_page():
     """Página de login profissional e limpa"""
     
@@ -199,20 +251,37 @@ def login_page():
             st.rerun()
         
         if register_submitted:
+            # Validações
             if not email or not password or not password_confirm:
                 st.error("⚠️ Por favor, preencha todos os campos.")
+            elif not re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email):
+                st.error("⚠️ Por favor, digite um email válido.")
+            elif len(password) < 6:
+                st.error("⚠️ A senha deve ter pelo menos 6 caracteres.")
             elif password != password_confirm:
                 st.error("❌ As senhas não coincidem.")
             else:
                 try:
-                    with st.spinner("📝 Criando conta..."):
-                        user = database.sign_up(email, password)
-                        st.success(f"✅ Usuário criado com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme para fazer login.")
-                        time.sleep(2)
-                        st.session_state.show_register = False
-                        st.rerun()
+                    with st.spinner("🔍 Verificando se o email já está cadastrado..."):
+                        # Verifica se o email já existe
+                        if verificar_email_existente(email):
+                            st.error("❌ Este email já está cadastrado. Tente fazer login ou use outro email.")
+                            log.warning(f"Tentativa de cadastro com email já existente: {email}")
+                        else:
+                            with st.spinner("📝 Criando conta..."):
+                                user = database.sign_up(email, password)
+                                if user:
+                                    st.success(f"✅ Conta criada com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme seu email para fazer login.")
+                                    log.info(f"Nova conta criada para: {email}")
+                                    time.sleep(3)
+                                    st.session_state.show_register = False
+                                    st.rerun()
+                                else:
+                                    st.error("❌ Erro ao criar conta. Tente novamente.")
                 except Exception as e:
-                    st.error(f"❌ Erro no cadastro: {e}")
+                    erro_traduzido = traduzir_erro(str(e))
+                    st.error(f"❌ Erro no cadastro: {erro_traduzido}")
+                    log.error(f"Erro no cadastro para {email}: {e}")
     
     st.markdown('</div>', unsafe_allow_html=True)
 
