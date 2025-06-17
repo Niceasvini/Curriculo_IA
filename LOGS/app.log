@@ -9053,3 +9053,1037 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-16 09:39:51,929 - INFO - Conexão com o banco de dados inicializada com sucesso.
 2025-06-16 09:39:52,591 - INFO - Log do app iniciado com sucesso.
 2025-06-16 09:39:52,591 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:08,350 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:08,351 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:13,540 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:13,541 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:13,632 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:13,632 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:15,938 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:15,939 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:16,029 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:16,029 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:41,204 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:41,204 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:42,661 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:42,662 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:45,965 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:45,966 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:47:46,053 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:47:46,053 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:51:18,226 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:51:18,227 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:51:26,270 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:51:26,271 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 09:55:54,081 - INFO - Log do app iniciado com sucesso.
+2025-06-16 09:55:54,081 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:24,542 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:24,543 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:35,226 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:35,226 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:37,033 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:37,033 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:40,836 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:40,836 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:40,922 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:40,922 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:50,374 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:50,374 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:52,059 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:52,060 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:01:58,760 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:01:58,761 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:02:06,063 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:02:06,064 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:02:06,877 - INFO - Nova vaga criada: {'id': 'f2cc480b-093e-4556-aac6-623c7e794a9d', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T10:02:06.690263', 'updated_at': '2025-06-16T10:02:06.690263', 'status': 'active'}
+2025-06-16 10:02:12,175 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:02:12,175 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:02:12,769 - INFO - Nova vaga criada: {'id': 'f2cc480b-093e-4556-aac6-623c7e794a9d', 'name': 'Coordenador de Dados', 'created_at': '2025-06-16T10:02:06.690263', 'status': 'active', 'updated_at': '2025-06-16T10:02:06.690263', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.'}
+2025-06-16 10:02:19,103 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:02:19,104 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:02:19,740 - INFO - Nova vaga criada: {'id': 'f2cc480b-093e-4556-aac6-623c7e794a9d', 'name': 'Coordenador de Dados', 'created_at': '2025-06-16T10:02:06.690263', 'status': 'active', 'updated_at': '2025-06-16T10:02:06.690263', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.'}
+2025-06-16 10:06:39,464 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:06:39,464 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:06:44,758 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:06:44,758 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:06:46,497 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:06:46,497 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:06:52,391 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:06:52,391 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:06:54,088 - INFO - Vaga 'Coordenador de Dados' (ID: f2cc480b-093e-4556-aac6-623c7e794a9d) e dados relacionados foram excluídos.
+2025-06-16 10:06:54,158 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:06:54,158 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:07:00,608 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:07:00,608 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:07:07,997 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:07:07,998 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:07:09,394 - INFO - Nova vaga criada: {'id': 'bf66114a-17a3-4665-bf24-fa39599eb115', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T10:07:09.077367', 'updated_at': '2025-06-16T10:07:09.077367', 'status': 'active'}
+2025-06-16 10:12:16,373 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:12:16,374 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:12:22,629 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:12:22,629 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:12:24,121 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:12:24,121 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:12:27,121 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:12:27,122 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:12:33,304 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:12:33,304 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:12:33,394 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:12:33,394 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:14:06,187 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:14:06,187 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:14:11,292 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:14:11,294 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:14:12,964 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:14:12,964 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:15:06,021 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:15:06,021 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:15:11,673 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:15:11,673 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:18:34,697 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:18:34,698 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:18:41,931 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:18:41,932 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:18:43,830 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:18:43,830 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:18:55,253 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:18:55,253 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:18:56,242 - INFO - Vaga 'Coordenador de Dados' (ID: bf66114a-17a3-4665-bf24-fa39599eb115) e dados relacionados foram excluídos.
+2025-06-16 10:18:56,336 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:18:56,337 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:19:00,963 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:19:00,963 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:19:11,468 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:19:11,468 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:19:12,160 - INFO - Nova vaga criada: {'id': '3c0fc01b-ad39-40a1-9232-4f441dccac45', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T10:19:11.934047', 'updated_at': '2025-06-16T10:19:11.934047', 'status': 'active'}
+2025-06-16 10:22:17,186 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:17,187 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:27,186 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:27,186 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:29,020 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:29,021 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:33,977 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:33,978 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:34,712 - INFO - Vaga 'Coordenador de Dados' (ID: 3c0fc01b-ad39-40a1-9232-4f441dccac45) e dados relacionados foram excluídos.
+2025-06-16 10:22:34,793 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:34,793 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:39,752 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:39,752 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:47,609 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:22:47,610 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:22:48,035 - INFO - Nova vaga criada: {'id': 'd7702bd3-a617-451a-82aa-48dd1653847d', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T10:22:47.894253', 'updated_at': '2025-06-16T10:22:47.894253', 'status': 'active'}
+2025-06-16 10:29:22,484 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:22,485 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:29,120 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:29,120 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:30,776 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:30,777 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:37,907 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:37,908 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:39,301 - INFO - Vaga 'Coordenador de Dados' (ID: d7702bd3-a617-451a-82aa-48dd1653847d) e dados relacionados foram excluídos.
+2025-06-16 10:29:39,373 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:39,373 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:45,359 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:45,359 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:51,530 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:29:51,530 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:29:51,940 - INFO - Nova vaga criada: {'id': '16ae9154-4b06-496c-9d4a-0ccb2ad8007d', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T10:29:51.806833', 'updated_at': '2025-06-16T10:29:51.806833', 'status': 'active'}
+2025-06-16 10:31:35,000 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:35,000 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:37,244 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:37,247 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:39,593 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:39,593 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:39,684 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:39,684 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:40,286 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:40,286 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:45,810 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:45,810 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:51,909 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:51,909 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:31:52,846 - INFO - Vaga 'Coordenador de Dados' (ID: 16ae9154-4b06-496c-9d4a-0ccb2ad8007d) e dados relacionados foram excluídos.
+2025-06-16 10:31:52,935 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:31:52,935 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:34:02,684 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:34:02,684 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:47:02,963 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:47:02,964 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:47:52,855 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:47:52,855 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:47:59,332 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:47:59,332 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:48:00,887 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:48:00,888 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:48:07,947 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:48:07,948 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:48:21,212 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:48:21,213 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:48:21,640 - INFO - Nova vaga criada: {'id': 'bfee1ef5-3909-4169-808a-7c201bb37248', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T10:48:21.499827', 'updated_at': '2025-06-16T10:48:21.499827', 'status': 'active'}
+2025-06-16 10:48:59,839 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:48:59,840 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 10:49:06,601 - INFO - Log do app iniciado com sucesso.
+2025-06-16 10:49:06,601 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:40:59,138 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:40:59,139 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:41:07,984 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:41:07,984 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:41:08,811 - INFO - Vaga 'Coordenador de Dados' (ID: bfee1ef5-3909-4169-808a-7c201bb37248) e dados relacionados foram excluídos.
+2025-06-16 13:41:08,880 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:41:08,880 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:41:12,398 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:41:12,398 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:46:31,633 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:46:31,633 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:50:17,747 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:50:17,747 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 13:57:38,621 - INFO - Log do app iniciado com sucesso.
+2025-06-16 13:57:38,622 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:00:59,293 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:00:59,294 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:01:06,933 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:01:06,933 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:01:08,672 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:01:08,673 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:01:17,552 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:01:17,553 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:01:24,566 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:01:24,566 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:01:24,996 - INFO - Nova vaga criada: {'id': '548b494f-a72f-4b8a-84a6-ed08444262f9', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:01:24.859603', 'updated_at': '2025-06-16T14:01:24.859603', 'status': 'active'}
+2025-06-16 14:08:12,757 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:12,757 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:20,289 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:20,289 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:22,094 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:22,094 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:30,757 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:30,757 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:39,994 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:39,994 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:41,000 - INFO - Vaga 'Coordenador de Dados' (ID: 548b494f-a72f-4b8a-84a6-ed08444262f9) e dados relacionados foram excluídos.
+2025-06-16 14:08:41,081 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:41,082 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:48,190 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:48,190 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:55,753 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:08:55,753 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:08:56,267 - INFO - Nova vaga criada: {'id': '16d6ed5e-c509-4ba2-baae-af4b0da5ccc0', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:08:56.050608', 'updated_at': '2025-06-16T14:08:56.050608', 'status': 'active'}
+2025-06-16 14:10:15,277 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:15,278 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:22,736 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:22,737 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:34,178 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:34,183 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:40,345 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:40,346 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:41,785 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:41,786 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:45,222 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:45,222 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:50,477 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:50,477 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:51,237 - INFO - Vaga 'Coordenador de Dados' (ID: 16d6ed5e-c509-4ba2-baae-af4b0da5ccc0) e dados relacionados foram excluídos.
+2025-06-16 14:10:51,308 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:51,309 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:10:57,686 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:10:57,686 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:11:03,144 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:11:03,145 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:11:03,621 - INFO - Nova vaga criada: {'id': '1d829c8b-da6d-4a26-8fc4-d4fb69cd6408', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:11:03.480911', 'updated_at': '2025-06-16T14:11:03.480911', 'status': 'active'}
+2025-06-16 14:17:05,354 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:05,355 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:14,025 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:14,025 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:15,826 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:15,827 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:20,457 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:20,457 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:21,207 - INFO - Vaga 'Coordenador de Dados' (ID: 1d829c8b-da6d-4a26-8fc4-d4fb69cd6408) e dados relacionados foram excluídos.
+2025-06-16 14:17:21,282 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:21,282 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:25,821 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:25,821 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:32,145 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:17:32,145 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:17:32,921 - INFO - Nova vaga criada: {'id': '5faad966-4f80-4ed8-b24b-9940e88d60e9', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:17:32.541835', 'updated_at': '2025-06-16T14:17:32.541835', 'status': 'active'}
+2025-06-16 14:18:50,947 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:18:50,947 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:19:10,857 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:19:10,858 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:19:12,011 - INFO - Vaga 'Coordenador de Dados' (ID: 5faad966-4f80-4ed8-b24b-9940e88d60e9) e dados relacionados foram excluídos.
+2025-06-16 14:19:12,078 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:19:12,079 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:19:14,393 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:19:14,393 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:19:14,682 - INFO - Nova vaga criada: {'id': '4bece9f8-c406-4442-bb2b-c3e94577878b', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:19:14.552157', 'updated_at': '2025-06-16T14:19:14.552157', 'status': 'active'}
+2025-06-16 14:21:48,194 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:21:48,195 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:22:15,376 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:22:15,376 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:15,025 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:15,025 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:22,172 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:22,173 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:24,008 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:24,008 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:28,080 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:28,080 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:41,318 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:41,319 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:46,144 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:46,145 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:46,873 - INFO - Vaga 'Coordenador de Dados' (ID: 4bece9f8-c406-4442-bb2b-c3e94577878b) e dados relacionados foram excluídos.
+2025-06-16 14:26:46,944 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:46,944 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:26:53,109 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:26:53,110 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:27:01,172 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:27:01,172 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:27:01,999 - INFO - Nova vaga criada: {'id': '248d628c-4a81-4770-b1f2-1821af69a794', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:27:01.891809', 'updated_at': '2025-06-16T14:27:01.891809', 'status': 'active'}
+2025-06-16 14:33:48,664 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:33:48,665 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:33:54,683 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:33:54,683 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:33:56,395 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:33:56,396 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:33:59,926 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:33:59,926 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:34:07,422 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:34:07,422 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:34:08,339 - INFO - Vaga 'Coordenador de Dados' (ID: 248d628c-4a81-4770-b1f2-1821af69a794) e dados relacionados foram excluídos.
+2025-06-16 14:34:08,411 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:34:08,411 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:34:13,497 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:34:13,498 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:34:26,147 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:34:26,147 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:34:26,557 - INFO - Nova vaga criada: {'id': 'e96caec2-3537-4889-8598-5a4cb8498cde', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:34:26.428019', 'updated_at': '2025-06-16T14:34:26.428019', 'status': 'active'}
+2025-06-16 14:37:43,578 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:37:43,578 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:37:48,353 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:37:48,354 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:37:49,966 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:37:49,967 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:37:53,136 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:37:53,136 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:00,446 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:00,446 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:03,052 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:03,052 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:07,933 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:07,933 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:12,619 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:12,620 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:23,655 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:23,655 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:24,699 - INFO - Vaga 'Coordenador de Dados' (ID: e96caec2-3537-4889-8598-5a4cb8498cde) e dados relacionados foram excluídos.
+2025-06-16 14:38:24,780 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:24,781 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:32,161 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:32,162 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:37,001 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:38:37,001 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:38:37,328 - INFO - Nova vaga criada: {'id': 'dc430c99-5f82-4aca-a2a5-4c183fde711f', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:38:37.174280', 'updated_at': '2025-06-16T14:38:37.174280', 'status': 'active'}
+2025-06-16 14:39:25,412 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:39:25,413 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:40:43,923 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:40:43,923 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:40:52,499 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:40:52,499 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:40:54,113 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:40:54,113 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:41:01,860 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:41:01,860 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:41:03,091 - INFO - Vaga 'Coordenador de Dados' (ID: dc430c99-5f82-4aca-a2a5-4c183fde711f) e dados relacionados foram excluídos.
+2025-06-16 14:41:03,164 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:41:03,164 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:41:09,539 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:41:09,540 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:41:14,564 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:41:14,564 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:41:14,861 - INFO - Nova vaga criada: {'id': '15ecf59f-9801-4c3a-8895-99ed3617106b', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T14:41:14.724073', 'updated_at': '2025-06-16T14:41:14.724073', 'status': 'active'}
+2025-06-16 14:44:52,701 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:44:52,701 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:45:36,416 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:45:36,416 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:48:31,868 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:48:31,868 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:48:32,218 - INFO - Nova vaga criada: {'id': '15ecf59f-9801-4c3a-8895-99ed3617106b', 'name': 'Coordenador de Dados', 'created_at': '2025-06-16T14:41:14.724073', 'status': 'active', 'updated_at': '2025-06-16T14:41:14.724073', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.'}
+2025-06-16 14:49:42,078 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:49:42,078 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:49:45,184 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:49:45,184 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:49:45,293 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:49:45,293 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:49:56,235 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:49:56,235 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:50:07,383 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:50:07,384 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:50:09,878 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:50:09,878 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:51:52,101 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:51:52,101 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:51:58,222 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:51:58,223 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:51:59,832 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:51:59,832 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:07,801 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:07,802 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:17,212 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:17,212 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:23,273 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:23,273 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:26,998 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:26,998 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:29,447 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:29,448 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:30,713 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:30,713 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:40,400 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:40,400 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:49,636 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:49,636 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:52:49,959 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:52:49,960 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:53:01,168 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:53:01,168 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:53:01,587 - INFO - Nova vaga criada: {'id': 'd08b68d2-e580-4d5a-b4b5-9f20a789bb98', 'name': 'Vendedor', 'description': 'Vendedor', 'created_at': '2025-06-16T14:53:01.443907', 'updated_at': '2025-06-16T14:53:01.443907', 'status': 'active'}
+2025-06-16 14:53:37,333 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:53:37,334 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:53:51,583 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:53:51,584 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:05,309 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:05,309 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:08,280 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:08,280 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:12,287 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:12,287 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:14,273 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:14,275 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:19,578 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:19,578 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:20,007 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:20,007 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:20,182 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:20,183 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:20,500 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:20,500 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:21,127 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:21,127 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:25,301 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:25,301 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:30,966 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:30,966 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:34,912 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:34,912 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:54:37,365 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:54:37,366 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:55:50,681 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:55:50,681 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 14:59:58,419 - INFO - Log do app iniciado com sucesso.
+2025-06-16 14:59:58,420 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:05,646 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:05,646 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:09,876 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:09,877 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:17,989 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:17,989 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:18,393 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:18,393 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:21,565 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:21,565 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:22,624 - INFO - Vaga 'Vendedor' (ID: d08b68d2-e580-4d5a-b4b5-9f20a789bb98) e dados relacionados foram excluídos.
+2025-06-16 15:00:23,700 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:23,700 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:26,158 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:26,158 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:27,402 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:27,402 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:27,627 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:27,627 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:34,357 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:34,357 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:35,996 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:35,997 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:44,217 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:44,217 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:49,581 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:49,582 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:00:49,876 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:00:49,877 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:01:03,413 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:01:03,414 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:01:03,816 - INFO - Nova vaga criada: {'id': '0ff1b1ff-33ad-490d-be42-5f7a0cca916e', 'name': 'Vendedor', 'description': 'Vendedor\n\nProativo', 'created_at': '2025-06-16T15:01:03.682082', 'updated_at': '2025-06-16T15:01:03.682082', 'status': 'active'}
+2025-06-16 15:01:38,880 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:01:38,880 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:01:48,791 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:01:48,792 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:05,993 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:05,993 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:06,389 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:06,389 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:09,934 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:09,936 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:10,767 - INFO - Vaga 'Vendedor' (ID: 0ff1b1ff-33ad-490d-be42-5f7a0cca916e) e dados relacionados foram excluídos.
+2025-06-16 15:02:11,850 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:11,851 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:14,892 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:14,893 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:15,140 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:15,140 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:16,564 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:16,564 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:16,823 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:16,823 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:17,820 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:17,821 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:18,653 - INFO - Vaga 'Coordenador de Dados' (ID: 15ecf59f-9801-4c3a-8895-99ed3617106b) e dados relacionados foram excluídos.
+2025-06-16 15:02:19,719 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:19,720 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:29,485 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:29,485 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:29,869 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:29,869 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:36,356 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:36,356 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:36,766 - INFO - Nova vaga criada: {'id': '088458d1-f5f1-4bb0-9978-7a98e627a8eb', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T15:02:36.637696', 'updated_at': '2025-06-16T15:02:36.637696', 'status': 'active'}
+2025-06-16 15:02:37,366 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:37,366 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:44,907 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:44,908 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:52,141 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:52,141 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:52,473 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:52,473 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:54,206 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:54,207 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:02:54,982 - INFO - Vaga 'Coordenador de Dados' (ID: 088458d1-f5f1-4bb0-9978-7a98e627a8eb) e dados relacionados foram excluídos.
+2025-06-16 15:02:56,054 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:02:56,062 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:01,750 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:01,750 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:02,385 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:02,386 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:08,284 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:08,284 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:08,742 - INFO - Nova vaga criada: {'id': '3f560d22-4111-4442-9d88-f8bcb6443930', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T15:03:08.556141', 'updated_at': '2025-06-16T15:03:08.556141', 'status': 'active'}
+2025-06-16 15:03:09,335 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:09,336 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:15,616 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:15,617 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:28,926 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:28,928 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:30,404 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:30,405 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:30,628 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:30,628 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:32,323 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:32,324 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:33,336 - INFO - Vaga 'Coordenador de Dados' (ID: 3f560d22-4111-4442-9d88-f8bcb6443930) e dados relacionados foram excluídos.
+2025-06-16 15:03:34,413 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:34,413 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:35,509 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:35,510 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:35,805 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:35,805 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:39,679 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:39,679 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:03:39,968 - INFO - Nova vaga criada: {'id': 'de0c4a0e-1097-475c-84af-2302af8dcb4f', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T15:03:39.836735', 'updated_at': '2025-06-16T15:03:39.836735', 'status': 'active'}
+2025-06-16 15:03:40,550 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:03:40,550 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:03,072 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:03,083 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:03,725 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:03,725 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:05,878 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:05,879 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:06,142 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:06,142 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:07,624 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:07,625 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:08,491 - INFO - Vaga 'Coordenador de Dados' (ID: de0c4a0e-1097-475c-84af-2302af8dcb4f) e dados relacionados foram excluídos.
+2025-06-16 15:04:09,559 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:09,559 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:10,986 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:10,986 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:11,207 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:11,207 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:16,244 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:16,245 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:16,550 - INFO - Nova vaga criada: {'id': '1dbe92c6-c6e7-46b3-a7b7-7f073502342b', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T15:04:16.410629', 'updated_at': '2025-06-16T15:04:16.410629', 'status': 'active'}
+2025-06-16 15:04:16,640 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:16,641 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:58,189 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:58,189 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:04:58,571 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:04:58,571 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:05:00,571 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:05:00,572 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:05:01,340 - INFO - Vaga 'Coordenador de Dados' (ID: 1dbe92c6-c6e7-46b3-a7b7-7f073502342b) e dados relacionados foram excluídos.
+2025-06-16 15:05:02,412 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:05:02,412 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:05:10,703 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:05:10,705 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:05:11,053 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:05:11,054 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:05:20,029 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:05:20,029 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:05:20,607 - INFO - Nova vaga criada: {'id': 'c80998d2-2578-41fe-afb2-6962eb0e0d4e', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T15:05:20.475523', 'updated_at': '2025-06-16T15:05:20.475523', 'status': 'active'}
+2025-06-16 15:05:20,710 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:05:20,710 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:30,256 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:30,256 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:35,921 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:35,922 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:37,780 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:37,780 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:38,503 - INFO - Buscando resultados para vaga ID: c80998d2-2578-41fe-afb2-6962eb0e0d4e
+2025-06-16 15:12:38,705 - INFO - Dados encontrados: 0 registros
+2025-06-16 15:12:40,919 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:40,920 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:41,088 - INFO - Buscando resultados para vaga ID: c80998d2-2578-41fe-afb2-6962eb0e0d4e
+2025-06-16 15:12:41,227 - INFO - Dados encontrados: 0 registros
+2025-06-16 15:12:42,231 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:42,231 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:42,468 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:42,468 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:44,202 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:44,202 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:44,935 - INFO - Vaga 'Coordenador de Dados' (ID: c80998d2-2578-41fe-afb2-6962eb0e0d4e) e dados relacionados foram excluídos.
+2025-06-16 15:12:46,003 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:46,003 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:50,517 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:50,518 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:56,939 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:56,939 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:12:57,292 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:12:57,292 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:00,098 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:13:00,098 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:00,560 - INFO - Nova vaga criada: {'id': '5e52b00e-f191-410b-9d1c-8d66fc6e259d', 'name': 'Coordenador de Dados', 'description': 'Coordenador de Dados \n\nResponsabilidades: Coordenar as atividades de criação, modelagem e consulta de bancos de dados com a elaboração de dashboards, fornecendo as áreas internas informações para apoio na tomada de decisão, insights, direcionamento estratégico, identificação de oportunidades, otimização e redução de custos.\n\nFunções: *Coordenar e apoiar na elaboração de Dashboards e Painéis de gestão;\n*Gerenciar o armazém de dados (Data Lake);\n*Garantir o desenvolvimento de consultas SQL aos diversos bancos de dados da empresa;\n*Automação de processos analíticos;\n*Coordenar a elaboração os orçamentos empresariais das companhias; \n*Garantir a análise de resultados;\n*Desenvolver o Forecast; \n*Coordenar e desenvolver implantação de novos processos.\n\nConhecimentos: Ter experiência com Business Intelligence, armazém de dados, modelagem, extração, análise, design, visualização e criação de relatórios. Conhecimentos em cálculos estatísticos (regressão, desvio padrão, correlação). Ferramentas de Big Data.\n\nHabilidades: Liderança, solução de conflitos/problemas, negociação, comunicação, foco nos resultados. planejamento, visão analítica e sistêmica, Pacote Office Avançado, Power Bi, Pentaho, Apache Airflow, SQL e Python.', 'created_at': '2025-06-16T15:13:00.272521', 'updated_at': '2025-06-16T15:13:00.272521', 'status': 'active'}
+2025-06-16 15:13:00,597 - INFO - Iniciando análise do arquivo CurriculoSARAARIELESILVA_2.pdf para vaga ID 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:00,636 - INFO - Iniciando análise do arquivo CurriculoSOBREMIM_2.pdf para vaga ID 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:00,683 - INFO - Iniciando análise do arquivo CurriculoSuelyMariadaSilva_2.pdf para vaga ID 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:00,688 - INFO - Iniciando análise do arquivo CurriculoStefanyPereiraSampaio_2.pdf para vaga ID 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:26,430 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'CurriculoSARAARIELESILVA.pdf', 'error': 'Server disconnected'}]}
+2025-06-16 15:13:26,431 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'CurriculoSuelyMariadaSilva.pdf', 'error': 'Server disconnected'}]}
+2025-06-16 15:13:26,431 - ERROR - Erro ao analisar CurriculoSARAARIELESILVA_2.pdf: Falha na análise do currículo.
+2025-06-16 15:13:26,431 - ERROR - Erro ao analisar CurriculoSuelyMariadaSilva_2.pdf: Falha na análise do currículo.
+2025-06-16 15:13:27,606 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoStefanyPereiraSampaio.pdf', 'score': 2.0, 'resum_id': 'd3c92b1c-6059-445f-b678-75523e5ac24d', 'name': 'Stefany Pereira Sampaio'}]}
+2025-06-16 15:13:31,476 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSOBREMIM.pdf', 'score': 5.0, 'resum_id': 'fead3225-afe1-4cba-bfe0-9db75cd26e2a', 'name': 'Sobremim'}]}
+2025-06-16 15:13:31,493 - INFO - Análise concluída com sucesso. Vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d, Sucessos: 2
+2025-06-16 15:13:33,578 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:13:33,578 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:33,749 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:33,886 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:13:40,724 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:13:40,725 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:41,005 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:41,144 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:13:46,904 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:13:46,904 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:47,477 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:13:47,477 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:47,687 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:13:47,872 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:13:53,161 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:13:53,162 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:13:53,634 - INFO - Nova vaga criada: {'id': 'bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba', 'name': 'Vendedor', 'description': 'Vendedor', 'created_at': '2025-06-16T15:13:53.420063', 'updated_at': '2025-06-16T15:13:53.420063', 'status': 'active'}
+2025-06-16 15:13:53,702 - INFO - Iniciando análise do arquivo CurriculoStefanyPereiraSampaio_2.pdf para vaga ID bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba
+2025-06-16 15:13:53,746 - INFO - Iniciando análise do arquivo CurriculoSARAARIELESILVA_2.pdf para vaga ID bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba
+2025-06-16 15:13:53,751 - INFO - Iniciando análise do arquivo CurriculoSuelyMariadaSilva_2.pdf para vaga ID bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba
+2025-06-16 15:13:53,778 - INFO - Iniciando análise do arquivo CurriculoSOBREMIM_2.pdf para vaga ID bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba
+2025-06-16 15:14:22,494 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoStefanyPereiraSampaio.pdf', 'score': 6.5, 'resum_id': '69b41f31-afca-40d3-abf5-b164d9f29f55', 'name': 'Stefany Pereira Sampaio'}]}
+2025-06-16 15:14:24,855 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'CurriculoSOBREMIM.pdf', 'error': 'Server disconnected'}]}
+2025-06-16 15:14:24,856 - ERROR - Erro ao analisar CurriculoSOBREMIM_2.pdf: Falha na análise do currículo.
+2025-06-16 15:14:24,857 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'CurriculoSuelyMariadaSilva.pdf', 'error': 'Server disconnected'}]}
+2025-06-16 15:14:24,858 - ERROR - Erro ao analisar CurriculoSuelyMariadaSilva_2.pdf: Falha na análise do currículo.
+2025-06-16 15:14:25,925 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSARAARIELESILVA.pdf', 'score': 6.8, 'resum_id': 'aae4af9b-4e61-49cd-a06c-694b35aee8f4', 'name': 'Saraarielesilva'}]}
+2025-06-16 15:14:25,929 - INFO - Análise concluída com sucesso. Vaga ID: bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba, Sucessos: 2
+2025-06-16 15:14:28,017 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:28,017 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:28,166 - INFO - Buscando resultados para vaga ID: bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba
+2025-06-16 15:14:28,313 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:14:33,576 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:33,576 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:33,848 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:14:33,974 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:14:40,876 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:40,876 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:41,205 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:41,205 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:43,481 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:43,483 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:44,983 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:44,984 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:45,138 - INFO - Buscando resultados para vaga ID: bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba
+2025-06-16 15:14:45,273 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:14:47,436 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:47,437 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:47,669 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:47,670 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:49,419 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:49,419 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:50,156 - INFO - Vaga 'Vendedor' (ID: bb9ac7a0-8c12-4be8-aa04-8f1c0655ecba) e dados relacionados foram excluídos.
+2025-06-16 15:14:51,233 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:51,233 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:51,385 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:14:51,539 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:14:53,644 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:53,644 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:53,873 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:53,873 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:54,055 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:14:54,190 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:14:56,226 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:56,226 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:56,324 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:14:56,325 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:14:56,505 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 15:14:56,627 - INFO - Dados encontrados: 4 registros
+2025-06-16 15:15:01,347 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:15:01,348 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 15:15:01,437 - INFO - Log do app iniciado com sucesso.
+2025-06-16 15:15:01,437 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:10,088 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:10,090 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:12,572 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:12,572 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:12,682 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:12,683 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:25,242 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:25,242 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:26,016 - WARNING - Tentativa de cadastro com email já existente: viniciusniceas@vianaemoura.com.br
+2025-06-16 17:05:29,016 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:29,017 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:29,131 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:29,131 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:36,241 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:36,241 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:37,770 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:37,770 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:38,491 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 17:05:38,650 - INFO - Dados encontrados: 4 registros
+2025-06-16 17:05:56,805 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:05:56,805 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:05:57,398 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 17:05:57,601 - INFO - Dados encontrados: 4 registros
+2025-06-16 17:06:04,668 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:06:04,668 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:06:05,237 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:06:05,238 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:06:05,579 - INFO - Buscando resultados para vaga ID: 5e52b00e-f191-410b-9d1c-8d66fc6e259d
+2025-06-16 17:06:05,701 - INFO - Dados encontrados: 4 registros
+2025-06-16 17:06:21,339 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:06:21,339 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:06:21,963 - INFO - Nova vaga criada: {'id': 'b01e6524-2293-4512-af80-56b3d539d6ad', 'name': 'Assistente Contábil', 'description': 'Assistente Contábil', 'created_at': '2025-06-16T17:06:21.819957', 'updated_at': '2025-06-16T17:06:21.819957', 'status': 'active'}
+2025-06-16 17:06:22,019 - INFO - Iniciando análise do arquivo CurriculoSARAARIELESILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:22,031 - INFO - Iniciando análise do arquivo CurriculoSuelyMariadaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:22,100 - INFO - Iniciando análise do arquivo CurriculoSOBREMIM_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:22,124 - INFO - Iniciando análise do arquivo CurriculoStefanyPereiraSampaio_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:49,211 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoStefanyPereiraSampaio.pdf', 'score': 5.0, 'resum_id': 'c09123d3-00c2-4650-a6ea-ff024165e08c', 'name': 'Stefany Pereira Sampaio'}]}
+2025-06-16 17:06:49,293 - INFO - Iniciando análise do arquivo CurriculoSuevellimCavalcantedeLima_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:49,867 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSARAARIELESILVA.pdf', 'score': 5.0, 'resum_id': 'd9a8d2a7-b31c-43fd-bedf-59a912b6c258', 'name': 'Saraarielesilva'}]}
+2025-06-16 17:06:49,870 - INFO - Iniciando análise do arquivo CurriculoTacitobrunoSilvavieira_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:50,526 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'CurriculoTacitobrunoSilvavieira.pdf', 'error': '❌ PDF vazio ou ilegível'}]}
+2025-06-16 17:06:50,527 - ERROR - Erro ao analisar CurriculoTacitobrunoSilvavieira_2.pdf: Falha na análise do currículo.
+2025-06-16 17:06:50,596 - INFO - Iniciando análise do arquivo CurriculoTalitaSamaradaSilvaAlves_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:51,412 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSuelyMariadaSilva.pdf', 'score': 5.0, 'resum_id': 'bd11af80-66fe-49f0-8fa5-2c26b29245a9', 'name': 'Suely Mariada Silva'}]}
+2025-06-16 17:06:51,676 - INFO - Iniciando análise do arquivo CurriculoTatianeLiraDavi_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:06:58,296 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSOBREMIM.pdf', 'score': 5.0, 'resum_id': 'd5b1cf0e-f2df-4afb-9fed-0c29e6765d60', 'name': 'Sobremim'}]}
+2025-06-16 17:06:58,316 - INFO - Iniciando análise do arquivo CurriculoThaisesLuciaMelo_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:07:21,414 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSuevellimCavalcantedeLima.pdf', 'score': 5.0, 'resum_id': '7a2726c8-34cd-457c-b0fb-2d2591a31ff8', 'name': 'Suevellim Cavalcantede Lima'}]}
+2025-06-16 17:07:21,425 - INFO - Iniciando análise do arquivo CurriculoTIAGOMENDESBEZERRA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:07:41,182 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoTalitaSamaradaSilvaAlves.pdf', 'score': 5.0, 'resum_id': 'b810a553-4028-4df2-a379-a999a787eadd', 'name': 'Talita Samarada Silva Alves'}]}
+2025-06-16 17:07:41,187 - INFO - Iniciando análise do arquivo CurriculoVivianeMariadaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:07:43,649 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoThaisesLuciaMelo.pdf', 'score': 5.0, 'resum_id': '3d258ad4-f042-4bba-b933-994daf3610fb', 'name': 'Thaises Lucia Melo'}]}
+2025-06-16 17:07:43,655 - INFO - Iniciando análise do arquivo CurriculoWalkyryaMyrelle_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:07:51,220 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoTatianeLiraDavi.pdf', 'score': 5.0, 'resum_id': 'faf9b564-d82d-46be-9da4-fabec32bd61d', 'name': 'Tatiane Lira Davi'}]}
+2025-06-16 17:07:51,235 - INFO - Iniciando análise do arquivo CurriculowesleydaSilvasgarlate_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:01,022 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoTIAGOMENDESBEZERRA.pdf', 'score': 5.0, 'resum_id': '5e657d59-51c9-4da2-8e30-a6a536611cc5', 'name': 'Tiagomendesbezerra'}]}
+2025-06-16 17:08:01,073 - INFO - Iniciando análise do arquivo CurriculoWyllianFeranandodosSantosSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:09,766 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoVivianeMariadaSilva.pdf', 'score': 2.5, 'resum_id': '537dc0ec-724a-4ad1-b0fc-dc1e47f01429', 'name': 'Viviane Mariada Silva'}]}
+2025-06-16 17:08:09,798 - INFO - Iniciando análise do arquivo CurriculoYagoEduardo_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:12,564 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoWalkyryaMyrelle.pdf', 'score': 5.0, 'resum_id': '04da2418-6da6-4996-9c31-3ecc8802670f', 'name': 'Walkyrya Myrelle'}]}
+2025-06-16 17:08:12,628 - INFO - Iniciando análise do arquivo CurriculoYagoVictorCavalcantiFreireAlmeida_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:38,043 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoWyllianFeranandodosSantosSilva.pdf', 'score': 5.0, 'resum_id': '5df8226e-1364-4497-9793-ea4fbc8268df', 'name': 'Wyllian Feranandodos Santos Silva'}]}
+2025-06-16 17:08:38,082 - INFO - Iniciando análise do arquivo CurriculoYas_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:39,214 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculowesleydaSilvasgarlate.pdf', 'score': 2.5, 'resum_id': 'c217da79-a37e-4a3a-8555-9601a604927e', 'name': 'Wesleyda Silvasgarlate'}]}
+2025-06-16 17:08:39,284 - INFO - Iniciando análise do arquivo CurriculoYasmimSoares_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:43,068 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoYagoEduardo.pdf', 'score': 5.0, 'resum_id': '0bf88bc5-41d1-4a18-9626-fbd3b4b8d747', 'name': 'Yago Eduardo'}]}
+2025-06-16 17:08:43,123 - INFO - Iniciando análise do arquivo CurriculoYASMINLAUANESOUSABARBOSA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:08:49,246 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoYagoVictorCavalcantiFreireAlmeida.pdf', 'score': 5.0, 'resum_id': '426a5fba-90c9-4909-a74b-ad3723547ac8', 'name': 'Yago Victor Cavalcanti Freire Almeida'}]}
+2025-06-16 17:08:49,807 - INFO - Iniciando análise do arquivo curriculum Plinio Rafael caruaru_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:18,516 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoYASMINLAUANESOUSABARBOSA.pdf', 'score': 5.0, 'resum_id': '17ef132c-1279-4cc1-9ecc-ac46db3e5508', 'name': 'Yasminlauanesousabarbosa'}]}
+2025-06-16 17:09:18,563 - INFO - Iniciando análise do arquivo CurriculoKETLLYEDUARDASOUZAMINERVINO_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:19,680 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoYas.pdf', 'score': 5.0, 'resum_id': '4cc62aea-7e7f-47b9-b7fd-f1c963d472f8', 'name': 'Yas'}]}
+2025-06-16 17:09:19,707 - INFO - Iniciando análise do arquivo CurriculoKeyllaRaphaela_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:20,366 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoYasmimSoares.pdf', 'score': 5.0, 'resum_id': '118ccd11-ffae-4376-849c-a390e6b9c190', 'name': 'Yasmim Soares'}]}
+2025-06-16 17:09:20,416 - INFO - Iniciando análise do arquivo CurriculoLauannyCibelleFerreiradaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:27,899 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'curriculum Plinio Rafael caruaru.pdf', 'score': 5.0, 'resum_id': '8cbec4ed-f376-4153-abc7-fce552f418b7', 'name': 'Curriculum Plinio Rafael Caruaru'}]}
+2025-06-16 17:09:28,072 - INFO - Iniciando análise do arquivo CurriculoLeonardoAlves_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:55,015 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoKeyllaRaphaela.pdf', 'score': 5.0, 'resum_id': '41116b08-ab17-425b-bcda-51744966ef92', 'name': 'Keylla Raphaela'}]}
+2025-06-16 17:09:55,043 - INFO - Iniciando análise do arquivo CurriculoluanVitor_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:55,553 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoLauannyCibelleFerreiradaSilva.pdf', 'score': 5.0, 'resum_id': 'cb10fd35-ef82-4cde-a04f-2b870996b0d8', 'name': 'Lauanny Cibelle Ferreirada Silva'}]}
+2025-06-16 17:09:55,567 - INFO - Iniciando análise do arquivo CurriculoLucasdeMacedoSantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:09:55,687 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoKETLLYEDUARDASOUZAMINERVINO.pdf', 'score': 5.0, 'resum_id': '02f5c6e5-3d20-464a-b878-0c686a6d98d6', 'name': 'Ketllyeduardasouzaminervino'}]}
+2025-06-16 17:09:55,697 - INFO - Iniciando análise do arquivo CurriculoLucasMateusSantosdeMacedo_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:10:13,092 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoLeonardoAlves.pdf', 'score': 5.0, 'resum_id': 'c4104b42-d603-45b5-baa3-7e86c5a1cab5', 'name': 'Leonardo Alves'}]}
+2025-06-16 17:10:13,139 - INFO - Iniciando análise do arquivo CurriculoLuizFelipeTenorioPortoMoraes_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:10:24,729 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoluanVitor.pdf', 'score': 2.0, 'resum_id': 'e312e366-2bcc-4f8f-88ff-539b0fe5235f', 'name': 'Luan Vitor'}]}
+2025-06-16 17:10:24,814 - INFO - Iniciando análise do arquivo CurriculoLuizFellipeDaSIlvaGomes_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:10:26,624 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoLucasMateusSantosdeMacedo.pdf', 'score': 3.2, 'resum_id': '992bbfe8-ef53-4b64-82f4-59d42046899d', 'name': 'Lucas Mateus Santosde Macedo'}]}
+2025-06-16 17:10:26,626 - ERROR - Erro ao analisar CurriculoMaiaraAparecida_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:10:26,694 - INFO - Iniciando análise do arquivo CurriculoMARCIAEDUARDALAURENTINOSILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:10:33,125 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoLucasdeMacedoSantos.pdf', 'score': 5.0, 'resum_id': 'd88ae17a-6421-4258-81e4-4f39483ee177', 'name': 'Lucasde Macedo Santos'}]}
+2025-06-16 17:10:33,131 - INFO - Iniciando análise do arquivo CurriculoMariaClara_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:02,691 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoLuizFelipeTenorioPortoMoraes.pdf', 'score': 5.0, 'resum_id': '5b70db26-aaba-4cd6-9421-b50b17f9b53b', 'name': 'Luiz Felipe Tenorio Porto Moraes'}]}
+2025-06-16 17:11:02,791 - INFO - Iniciando análise do arquivo CurriculoMariaEricaDasilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:03,019 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMariaClara.pdf', 'score': 2.0, 'resum_id': '78cf4c1a-9454-40b3-8e02-e0e4f778d672', 'name': 'Maria Clara'}]}
+2025-06-16 17:11:03,031 - INFO - Iniciando análise do arquivo CurriculoMariaFernandaMarques_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:09,793 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoLuizFellipeDaSIlvaGomes.pdf', 'score': 5.0, 'resum_id': 'e5b95374-055e-4ed4-bf94-89f4a5afc7be', 'name': 'Luiz Fellipe da S Ilva Gomes'}]}
+2025-06-16 17:11:09,870 - INFO - Iniciando análise do arquivo CurriculoMariaGabriela_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:21,830 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMARCIAEDUARDALAURENTINOSILVA.pdf', 'score': 5.0, 'resum_id': '664dfa1d-3054-4509-adbe-f91002cb5098', 'name': 'Marciaeduardalaurentinosilva'}]}
+2025-06-16 17:11:21,961 - INFO - Iniciando análise do arquivo CurriculoMARIAVITORIADACRUZMACEDO_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:35,312 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMariaFernandaMarques.pdf', 'score': 2.5, 'resum_id': '8f95b1db-8861-4f83-8568-f56ec0e3c908', 'name': 'Maria Fernanda Marques'}]}
+2025-06-16 17:11:35,340 - INFO - Iniciando análise do arquivo CurriculoMatheusJacomettiPalmeira_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:39,751 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMariaEricaDasilva.pdf', 'score': 2.5, 'resum_id': 'c19ec32b-14bc-483f-b726-a10fb15763c0', 'name': 'Maria Erica Dasilva'}]}
+2025-06-16 17:11:39,790 - INFO - Iniciando análise do arquivo CurriculoMatheusSantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:11:47,337 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMariaGabriela.pdf', 'score': 5.0, 'resum_id': '919b6cad-abf1-4670-9d2d-223b86ff871f', 'name': 'Maria Gabriela'}]}
+2025-06-16 17:11:47,427 - INFO - Iniciando análise do arquivo CurriculoMichaelLeandroSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:02,591 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMatheusSantos.pdf', 'score': 5.0, 'resum_id': '56013b6e-5165-456b-8c1c-2603939e1b25', 'name': 'Matheus Santos'}]}
+2025-06-16 17:12:02,621 - INFO - Iniciando análise do arquivo CurriculoMikaeleCristineDaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:05,085 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMARIAVITORIADACRUZMACEDO.pdf', 'score': 5.0, 'resum_id': '9b9eb221-8370-4ed7-a4bc-262aeafe972f', 'name': 'Mariavitoriadacruzmacedo'}]}
+2025-06-16 17:12:05,146 - INFO - Iniciando análise do arquivo CurriculoMilenaLima_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:13,788 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMatheusJacomettiPalmeira.pdf', 'score': 5.0, 'resum_id': 'dda93234-8d26-4378-af9d-c865c8dbcedd', 'name': 'Matheus Jacometti Palmeira'}]}
+2025-06-16 17:12:13,799 - INFO - Iniciando análise do arquivo CurriculoMONICAMOURA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:23,350 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMichaelLeandroSilva.pdf', 'score': 5.0, 'resum_id': '08ca2620-51e2-4c1f-bbae-a5b6f0ee7488', 'name': 'Michael Leandro Silva'}]}
+2025-06-16 17:12:23,418 - INFO - Iniciando análise do arquivo CurriculoOTILIAISLANIATORRES_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:30,485 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMikaeleCristineDaSilva.pdf', 'score': 5.0, 'resum_id': '9b7eb501-387b-45a4-88d8-d35c0faa563d', 'name': 'Mikaele Cristine da Silva'}]}
+2025-06-16 17:12:30,692 - INFO - Iniciando análise do arquivo CurriculoPaulosergioSergio_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:47,710 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMONICAMOURA.pdf', 'score': 5.0, 'resum_id': 'a66f0b76-0c23-42d3-860f-8b1c5a6bb56a', 'name': 'Monicamoura'}]}
+2025-06-16 17:12:47,735 - INFO - Iniciando análise do arquivo CurriculoPedroHenriqueMarquesdaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:12:48,382 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoMilenaLima.pdf', 'score': 5.0, 'resum_id': 'be377f85-8174-474c-9ce7-20a1b2f82463', 'name': 'Milena Lima'}]}
+2025-06-16 17:12:48,463 - INFO - Iniciando análise do arquivo CurriculoQuetulaEliasdeFrancaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:13:00,352 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoOTILIAISLANIATORRES.pdf', 'score': 5.0, 'resum_id': '4673dd89-30b6-4c01-b759-66f42571136f', 'name': 'Otiliaislaniatorres'}]}
+2025-06-16 17:13:00,449 - INFO - Iniciando análise do arquivo CurriculoRafaelSoaresdeLima_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:13:25,908 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoPaulosergioSergio.pdf', 'score': 5.0, 'resum_id': 'dff04f8a-a4ac-48cd-95c7-24ff9fe59db2', 'name': 'Paulosergio Sergio'}]}
+2025-06-16 17:13:25,942 - INFO - Iniciando análise do arquivo CurriculoREBECCAISLAYNENASCIMENTOFREITAS_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:13:33,022 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoPedroHenriqueMarquesdaSilva.pdf', 'score': 5.0, 'resum_id': 'a3719de0-7b1a-4a8a-b386-3febca7502c2', 'name': 'Pedro Henrique Marquesda Silva'}]}
+2025-06-16 17:13:33,078 - INFO - Iniciando análise do arquivo CurriculoREGINALDORODRIGUESNETO_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:13:39,364 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoQuetulaEliasdeFrancaSilva.pdf', 'score': 5.0, 'resum_id': 'f677a562-2635-424b-95a5-ac972a9ad503', 'name': 'Quetula Eliasde Franca Silva'}]}
+2025-06-16 17:13:39,371 - ERROR - Erro ao analisar CurriculoRicardoFerreiradeAzevedo_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:13:39,416 - INFO - Iniciando análise do arquivo CurriculoRuthFlorencio_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:13:46,141 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoRafaelSoaresdeLima.pdf', 'score': 5.0, 'resum_id': 'c53e8299-7a2a-4ba1-a0c9-3729196658b9', 'name': 'Rafael Soaresde Lima'}]}
+2025-06-16 17:13:46,156 - INFO - Iniciando análise do arquivo CurriculoSABRINAMARIA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:14:13,080 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoREBECCAISLAYNENASCIMENTOFREITAS.pdf', 'score': 5.0, 'resum_id': '955da89f-73a5-44ee-ab2d-48c28bf76db2', 'name': 'Rebeccaislaynenascimentofreitas'}]}
+2025-06-16 17:14:13,090 - ERROR - Erro ao analisar CurriculoSamanthaAlves_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:14:13,129 - INFO - Iniciando análise do arquivo CurriculoFranklinSantosBarbosa_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:14:20,918 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoSABRINAMARIA.pdf', 'score': 1.0, 'resum_id': 'c3710d73-c485-4e5b-9ce0-be54d8b4507c', 'name': 'Sabrinamaria'}]}
+2025-06-16 17:14:20,940 - INFO - Iniciando análise do arquivo CurriculoGabrielDesantanasantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:14:27,525 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoREGINALDORODRIGUESNETO.pdf', 'score': 5.0, 'resum_id': 'f10f95c8-694b-4032-9114-a131a0743774', 'name': 'Reginaldorodriguesneto'}]}
+2025-06-16 17:14:27,526 - ERROR - Erro ao analisar CurriculoGedsonJacintodasilva_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:14:27,689 - INFO - Iniciando análise do arquivo CurriculoGerusaAlvesdaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:14:42,792 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoRuthFlorencio.pdf', 'score': 2.5, 'resum_id': '20cbd584-28c5-4559-8d8e-ae0b93ae5efd', 'name': 'Ruth Florencio'}]}
+2025-06-16 17:14:42,821 - INFO - Iniciando análise do arquivo CurriculoGivanildovelozo_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:14:46,646 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoFranklinSantosBarbosa.pdf', 'score': 5.0, 'resum_id': 'bfd08629-57a5-4150-8c28-1ad83c229144', 'name': 'Franklin Santos Barbosa'}]}
+2025-06-16 17:14:46,654 - INFO - Iniciando análise do arquivo CurriculoGlauseSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:14,167 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoGerusaAlvesdaSilva.pdf', 'score': 5.0, 'resum_id': '7fb7199b-8ce7-4c24-be38-dd67d2e36ad1', 'name': 'Gerusa Alvesda Silva'}]}
+2025-06-16 17:15:14,208 - INFO - Iniciando análise do arquivo CurriculoHELTONJOSEDASILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:16,731 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoGabrielDesantanasantos.pdf', 'score': 5.0, 'resum_id': 'c14ee912-fd94-4546-925c-13a83e85a188', 'name': 'Gabriel Desantanasantos'}]}
+2025-06-16 17:15:16,820 - INFO - Iniciando análise do arquivo CurriculoHOZANAQUEIROZ_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:28,188 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoGlauseSilva.pdf', 'score': 5.0, 'resum_id': 'b47b7fb4-0a89-4a51-a615-ef04e13a53e8', 'name': 'Glause Silva'}]}
+2025-06-16 17:15:28,189 - ERROR - Erro ao analisar CurriculoIaraPriscila_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:15:28,208 - INFO - Iniciando análise do arquivo CurriculoIgorNascimento_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:28,830 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoGivanildovelozo.pdf', 'score': 5.0, 'resum_id': '34264b74-c631-4f04-a003-fab9bcd2b568', 'name': 'Givanildovelozo'}]}
+2025-06-16 17:15:29,292 - INFO - Iniciando análise do arquivo Curriculoigorramos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:50,528 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoHOZANAQUEIROZ.pdf', 'score': 5.0, 'resum_id': 'af2dfda1-7c70-4679-b6c9-67e4ff859fbc', 'name': 'Hozanaqueiroz'}]}
+2025-06-16 17:15:50,534 - INFO - Iniciando análise do arquivo CurriculoIndianopolisCaruaru_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:51,005 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'CurriculoIndianopolisCaruaru.pdf', 'error': '❌ PDF vazio ou ilegível'}]}
+2025-06-16 17:15:51,006 - ERROR - Erro ao analisar CurriculoIndianopolisCaruaru_2.pdf: Falha na análise do currículo.
+2025-06-16 17:15:51,131 - INFO - Iniciando análise do arquivo CurriculoIsaacIourranniCorreiadeSouza_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:53,575 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculoigorramos.pdf', 'score': 1.0, 'resum_id': '7ddc5dc3-1ce1-4dc8-b500-fe952931cecc', 'name': 'Igorramos'}]}
+2025-06-16 17:15:53,609 - INFO - Iniciando análise do arquivo CurriculoJacksonBezerra_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:15:56,522 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoHELTONJOSEDASILVA.pdf', 'score': 5.0, 'resum_id': '52a94ed6-ecba-4b5d-96d5-bdbf50c898a2', 'name': 'Heltonjosedasilva'}]}
+2025-06-16 17:15:56,574 - INFO - Iniciando análise do arquivo CurriculoJACKSONMANOELDSANTOSSILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:16:10,243 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoIgorNascimento.pdf', 'score': 5.0, 'resum_id': '8988b37d-6d5c-425c-964e-0beb2f67e4a4', 'name': 'Igor Nascimento'}]}
+2025-06-16 17:16:10,293 - INFO - Iniciando análise do arquivo CurriculoJailtonGomes_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:16:30,825 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJacksonBezerra.pdf', 'score': 5.0, 'resum_id': '75ceb569-477f-422a-8b97-f6bff35f76db', 'name': 'Jackson Bezerra'}]}
+2025-06-16 17:16:30,854 - INFO - Iniciando análise do arquivo CurriculoJandsonMikaelFrancaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:16:33,477 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoIsaacIourranniCorreiadeSouza.pdf', 'score': 2.5, 'resum_id': '635ec808-b5ee-4b44-83bb-3bc4aac7d5e1', 'name': 'Isaac Iourranni Correiade Souza'}]}
+2025-06-16 17:16:33,522 - INFO - Iniciando análise do arquivo CurriculoJarielPereiraDos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:16:33,998 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJACKSONMANOELDSANTOSSILVA.pdf', 'score': 5.0, 'resum_id': 'c331982d-496d-4b99-8f77-29cee968fdeb', 'name': 'Jacksonmanoeldsantossilva'}]}
+2025-06-16 17:16:34,076 - INFO - Iniciando análise do arquivo CurriculoJESSICASantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:16:35,801 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJailtonGomes.pdf', 'score': 2.0, 'resum_id': 'af97ed32-91a1-47e0-9f04-f94b4fd55a4e', 'name': 'Jailton Gomes'}]}
+2025-06-16 17:16:35,821 - INFO - Iniciando análise do arquivo CurriculoJessikaNayaraAlmeidaOliveira_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:08,192 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJarielPereiraDos.pdf', 'score': 5.0, 'resum_id': 'ff61ec85-7513-453d-b360-c4bcecc978d4', 'name': 'Jariel Pereira dos'}]}
+2025-06-16 17:17:08,367 - INFO - Iniciando análise do arquivo CurriculoJoseDavideOliveiraSantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:09,445 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJessikaNayaraAlmeidaOliveira.pdf', 'score': 5.0, 'resum_id': '883b3708-ca46-438d-ab8e-4e1f977fadef', 'name': 'Jessika Nayara Almeida Oliveira'}]}
+2025-06-16 17:17:09,533 - INFO - Iniciando análise do arquivo CurriculoJOSEEDINALDODEANDRADEFILHO_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:10,068 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJESSICASantos.pdf', 'score': 5.0, 'resum_id': 'c4129bbb-2199-452f-b3a8-2135283002e1', 'name': 'Jessica Santos'}]}
+2025-06-16 17:17:10,132 - INFO - Iniciando análise do arquivo CurriculoJOSEERIVANBARROSDOSSANTOSERIVAN_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:46,305 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJandsonMikaelFrancaSilva.pdf', 'score': 5.0, 'resum_id': '7f478366-e906-4281-aaff-783d0225c1e2', 'name': 'Jandson Mikael Franca Silva'}]}
+2025-06-16 17:17:46,328 - INFO - Iniciando análise do arquivo CurriculoKETHILLYSAMARADASILVAFIGUEIRA - Copia 2_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:54,885 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJOSEERIVANBARROSDOSSANTOSERIVAN.pdf', 'score': 5.0, 'resum_id': '31cf42b4-a2fa-4df9-b944-0efce49c4dfe', 'name': 'Joseerivanbarrosdossantoserivan'}]}
+2025-06-16 17:17:54,917 - INFO - Iniciando análise do arquivo CurriculoAndredaSilvaSantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:56,991 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJOSEEDINALDODEANDRADEFILHO.pdf', 'score': 5.0, 'resum_id': '2e08ad17-1019-4b94-ac8a-d574cb0c3e22', 'name': 'Joseedinaldodeandradefilho'}]}
+2025-06-16 17:17:57,020 - INFO - Iniciando análise do arquivo CurriculoAndrezaelieteDasilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:17:58,233 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoJoseDavideOliveiraSantos.pdf', 'score': 5.0, 'resum_id': '42cbc974-2d49-467a-b920-39849f51ad09', 'name': 'José Davide Oliveira Santos'}]}
+2025-06-16 17:17:58,411 - INFO - Iniciando análise do arquivo CurriculoANNYCAROLINE_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:18:23,165 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoKETHILLYSAMARADASILVAFIGUEIRA - Copia 2.pdf', 'score': 5.0, 'resum_id': '7c8b2f82-3b90-48ad-a9e0-8e965a4e182e', 'name': 'Kethillysamaradasilvafigueira Copia 2'}]}
+2025-06-16 17:18:23,313 - INFO - Iniciando análise do arquivo CurriculoArthurSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:18:34,369 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAndredaSilvaSantos.pdf', 'score': 5.4, 'resum_id': 'f160f2c0-4cab-4fc8-b620-9d9c40a0c0f5', 'name': 'Andreda Silva Santos'}]}
+2025-06-16 17:18:34,467 - INFO - Iniciando análise do arquivo CurriculoArturViniciusSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:18:39,112 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAndrezaelieteDasilva.pdf', 'score': 5.0, 'resum_id': 'aec89bc2-91ea-471d-bf78-47597c08607f', 'name': 'Andrezaeliete Dasilva'}]}
+2025-06-16 17:18:39,176 - INFO - Iniciando análise do arquivo CurriculoAuxiliarVendas2025_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:18:39,629 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoANNYCAROLINE.pdf', 'score': 5.0, 'resum_id': '9e2b8977-953b-449a-b6e6-0497a452145e', 'name': 'Annycaroline'}]}
+2025-06-16 17:18:39,645 - INFO - Iniciando análise do arquivo CurriculoBarbaraThayse_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:18:55,414 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoArthurSilva.pdf', 'score': 5.0, 'resum_id': '90e3c5ec-b764-4ee3-9689-f22cc11e221c', 'name': 'Arthur Silva'}]}
+2025-06-16 17:18:55,529 - INFO - Iniciando análise do arquivo CurriculoBrenaVitoriaSantosFarias_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:19:15,167 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoArturViniciusSilva.pdf', 'score': 5.0, 'resum_id': '50842b3e-2416-4add-9ef2-96ae84120245', 'name': 'Artur Vinicius Silva'}]}
+2025-06-16 17:19:15,247 - INFO - Iniciando análise do arquivo CurriculoBrunoPereira_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:19:17,561 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoBarbaraThayse.pdf', 'score': 5.0, 'resum_id': '0057b3c7-c02a-4636-8e31-8c11d264a0ed', 'name': 'Barbara Thayse'}]}
+2025-06-16 17:19:17,645 - INFO - Iniciando análise do arquivo CurriculoCarlosOliveira_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:19:22,994 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAuxiliarVendas2025.pdf', 'score': 2.5, 'resum_id': 'bd1d3beb-8b26-4e4b-ad71-034e1358a4b6', 'name': 'Auxiliar Vendas2025'}]}
+2025-06-16 17:19:23,048 - INFO - Iniciando análise do arquivo CurriculoCELIAVERISSIMO_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:19:33,875 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoBrenaVitoriaSantosFarias.pdf', 'score': 5.0, 'resum_id': '67381e71-1ef2-477b-98e8-c0ab8a6a3ec4', 'name': 'Brena Vitoria Santos Farias'}]}
+2025-06-16 17:19:33,881 - INFO - Iniciando análise do arquivo CurriculoCelyDanuzadaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:19:55,429 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoCarlosOliveira.pdf', 'score': 5.0, 'resum_id': '0856142f-1e8f-470a-bdeb-cf117b6735ee', 'name': 'Carlos Oliveira'}]}
+2025-06-16 17:19:55,475 - INFO - Iniciando análise do arquivo CurriculoCiceraJucicleidedosSantosBezerra_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:20:00,979 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoBrunoPereira.pdf', 'score': 5.0, 'resum_id': '29f38970-3bce-4b65-a115-6b6bd9ecd867', 'name': 'Bruno Pereira'}]}
+2025-06-16 17:20:01,031 - INFO - Iniciando análise do arquivo CurriculoConceicaoGranja_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:20:11,536 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoCelyDanuzadaSilva.pdf', 'score': 6.3, 'resum_id': '646b65b8-c5bf-4128-91ba-7f6ed571c09d', 'name': 'Cely Danuzada Silva'}]}
+2025-06-16 17:20:11,549 - INFO - Iniciando análise do arquivo CurriculoCristianaPereiraSantana_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:20:24,990 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoCELIAVERISSIMO.pdf', 'score': 5.0, 'resum_id': '5de4c9e7-ca95-430f-b541-6a2122205a1f', 'name': 'Celiaverissimo'}]}
+2025-06-16 17:20:25,010 - INFO - Iniciando análise do arquivo CurriculoDaillaPietraBezerradaCruz_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:20:31,837 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoCiceraJucicleidedosSantosBezerra.pdf', 'score': 5.0, 'resum_id': 'bc2095a7-950e-4c02-9f2c-4e9315ac7871', 'name': 'Cicera Jucicleidedos Santos Bezerra'}]}
+2025-06-16 17:20:31,952 - INFO - Iniciando análise do arquivo CurriculoDanielAlmeidaRochaBarros_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:20:49,369 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoConceicaoGranja.pdf', 'score': 5.0, 'resum_id': '267f2eee-008a-45d1-a2f7-610d432f8810', 'name': 'Conceicao Granja'}]}
+2025-06-16 17:20:49,384 - ERROR - Erro ao analisar CurriculoDavidThom_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:20:49,432 - INFO - Iniciando análise do arquivo CurriculoDAYANESILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:20:52,905 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoCristianaPereiraSantana.pdf', 'score': 5.0, 'resum_id': 'b41e4f5e-e8b0-4ce6-91fa-eb9e71dd6129', 'name': 'Cristiana Pereira Santana'}]}
+2025-06-16 17:20:53,034 - INFO - Iniciando análise do arquivo CurriculoDeborakaianneCabraldaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:21:02,046 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoDaillaPietraBezerradaCruz.pdf', 'score': 5.0, 'resum_id': 'd018651e-8e91-4d94-b747-a4dbb90b9c62', 'name': 'Dailla Pietra Bezerrada Cruz'}]}
+2025-06-16 17:21:02,089 - INFO - Iniciando análise do arquivo CurriculoEdivanJoseSantanadosSantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:21:19,009 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoDanielAlmeidaRochaBarros.pdf', 'score': 5.0, 'resum_id': 'f89a416f-9cee-4374-b24d-4fe5735192a8', 'name': 'Daniel Almeida Rocha Barros'}]}
+2025-06-16 17:21:19,076 - INFO - Iniciando análise do arquivo CurriculoEDNEYMAIA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:21:27,312 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoDAYANESILVA.pdf', 'score': 2.0, 'resum_id': 'b44834bf-81f9-408d-a4dd-2f09026c0b1f', 'name': 'Dayanesilva'}]}
+2025-06-16 17:21:27,365 - INFO - Iniciando análise do arquivo CurriculoEduardaFarias_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:21:31,259 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoDeborakaianneCabraldaSilva.pdf', 'score': 3.5, 'resum_id': '1d862333-f9da-4809-9128-3b324f7ad7f2', 'name': 'Deborakaianne Cabralda Silva'}]}
+2025-06-16 17:21:31,366 - INFO - Iniciando análise do arquivo CurriculoEduardaLeticia_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:21:46,945 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEdivanJoseSantanadosSantos.pdf', 'score': 2.3, 'resum_id': '7d53db20-bdd1-4df9-89aa-a273a20863df', 'name': 'Edivan José Santanados Santos'}]}
+2025-06-16 17:21:46,970 - INFO - Iniciando análise do arquivo CurriculoEduardoFilipeAmarodaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:21:58,164 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEduardaFarias.pdf', 'score': 5.0, 'resum_id': '9ab1cd72-441c-4dfd-8575-f2ac2bb7ed73', 'name': 'Eduarda Farias'}]}
+2025-06-16 17:21:58,241 - INFO - Iniciando análise do arquivo CurriculoElayneVitoriaRodriguesdaSilva 1_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:06,849 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEDNEYMAIA.pdf', 'score': 4.5, 'resum_id': 'b3fe6821-1b8f-4665-afe2-4400872b0e16', 'name': 'Edneymaia'}]}
+2025-06-16 17:22:06,868 - INFO - Iniciando análise do arquivo CurriculoEliseuNunes_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:17,322 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEduardaLeticia.pdf', 'score': 5.0, 'resum_id': '7a7fbe4e-53dc-4e0c-9647-ae0017c88118', 'name': 'Eduarda Leticia'}]}
+2025-06-16 17:22:17,425 - INFO - Iniciando análise do arquivo CurriculoErineizeMaria_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:29,015 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEduardoFilipeAmarodaSilva.pdf', 'score': 5.0, 'resum_id': 'a8b55acf-e7c1-4b14-a186-63a8c3a1d21e', 'name': 'Eduardo Filipe Amaroda Silva'}]}
+2025-06-16 17:22:29,041 - INFO - Iniciando análise do arquivo CurriculoEvelynAlmeida_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:38,962 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoElayneVitoriaRodriguesdaSilva 1.pdf', 'score': 5.0, 'resum_id': '54b83e06-a939-492a-86b9-70efd77e3406', 'name': 'Elayne Vitoria Rodriguesda Silva 1'}]}
+2025-06-16 17:22:39,018 - INFO - Iniciando análise do arquivo CurriculoFelipeManoel_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:41,322 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEliseuNunes.pdf', 'score': 5.0, 'resum_id': 'd0e842f7-91b1-4745-84f3-022c4bb2d5ef', 'name': 'Eliseu Nunes'}]}
+2025-06-16 17:22:41,374 - INFO - Iniciando análise do arquivo CurriculoFernandoAllyssonSerafimdaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:52,149 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoErineizeMaria.pdf', 'score': 5.0, 'resum_id': '99e4c7ee-cf79-43fd-aa41-fd97b53d8f69', 'name': 'Erineize Maria'}]}
+2025-06-16 17:22:52,169 - ERROR - Erro ao analisar CurriculoFrancisRibeiro_2.doc: file '<_io.BytesIO object at 0x000002377D166E80>' is not a Word file, content type is 'application/vnd.openxmlformats-officedocument.themeManager+xml'
+2025-06-16 17:22:52,173 - ERROR - Erro ao analisar 1000199329_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:22:52,197 - INFO - Iniciando análise do arquivo Ana Beatriz Cavalcante Soares_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:22:56,589 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoEvelynAlmeida.pdf', 'score': 5.0, 'resum_id': '35946e0b-49ab-4efb-a9a1-a550b5c1e2dd', 'name': 'Evelyn Almeida'}]}
+2025-06-16 17:22:56,617 - INFO - Iniciando análise do arquivo ANA BEATRIZ DOS SANTOS SILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:23:17,601 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoFelipeManoel.pdf', 'score': 5.0, 'resum_id': '82b08cd3-2740-4587-ad03-2bebbf77fae5', 'name': 'Felipe Manoel'}]}
+2025-06-16 17:23:17,686 - INFO - Iniciando análise do arquivo Curriculo - Emerson Vinicius_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:23:22,552 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoFernandoAllyssonSerafimdaSilva.pdf', 'score': 2.5, 'resum_id': 'b80a8b83-c59f-44b9-b836-f761adfc8fd0', 'name': 'Fernando Allysson Serafimda Silva'}]}
+2025-06-16 17:23:22,576 - INFO - Iniciando análise do arquivo Curriculo - Esther_20250312_202116_0000_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:23:26,696 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Ana Beatriz Cavalcante Soares.pdf', 'score': 3.5, 'resum_id': 'ecdb962f-653b-4ff5-90f0-9be271df6a85', 'name': 'Ana Beatriz Cavalcante Soares'}]}
+2025-06-16 17:23:26,710 - INFO - Iniciando análise do arquivo curriculo 2_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:23:54,028 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'ANA BEATRIZ DOS SANTOS SILVA.pdf', 'score': 5.0, 'resum_id': '3631f4af-bc7a-48a1-9875-d82ca3d3193d', 'name': 'Ana Beatriz dos Santos Silva'}]}
+2025-06-16 17:23:54,046 - INFO - Iniciando análise do arquivo curriculo _3.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:23:55,722 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo - Esther_20250312_202116_0000.pdf', 'score': 5.0, 'resum_id': '7f695dd8-0693-4575-b55d-c29a93f64ad6', 'name': 'Esther 20250312 202116 0000'}]}
+2025-06-16 17:23:55,936 - INFO - Iniciando análise do arquivo curriculo _2_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:24:05,677 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo - Emerson Vinicius.pdf', 'score': 5.0, 'resum_id': 'ac79a3da-408d-40c5-b51a-bd0bdffff607', 'name': 'Emerson Vinicius'}]}
+2025-06-16 17:24:05,727 - INFO - Iniciando análise do arquivo Curriculo .pdf 8_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:24:06,555 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'curriculo 2.pdf', 'score': 5.0, 'resum_id': 'dea60c5b-32d2-4a7e-a8fb-24b074f87fb3', 'name': '2'}]}
+2025-06-16 17:24:06,589 - INFO - Iniciando análise do arquivo Curriculo administracao mulher_20250113_215241_0000 1_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:24:32,308 - INFO - Resultado da análise: {'sucesso': False, 'resultados': [{'sucesso': False, 'file': 'curriculo .pdf', 'error': "1 validation error for Analysis\nname\n  Value error, O nome não pode estar vazio [type=value_error, input_value='', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.11/v/value_error"}]}
+2025-06-16 17:24:32,308 - ERROR - Erro ao analisar curriculo _3.pdf: Falha na análise do currículo.
+2025-06-16 17:24:32,375 - INFO - Iniciando análise do arquivo Curriculo Ainoa_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:24:40,258 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'curriculo _2.pdf', 'score': 5.0, 'resum_id': 'f49fa79a-bb99-4cb7-8a34-927fb2b80f80', 'name': '2'}]}
+2025-06-16 17:24:40,258 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo .pdf 8.pdf', 'score': 5.0, 'resum_id': '07bf63c5-c372-4a7e-9482-4b11144ea4de', 'name': 'Pdf 8'}]}
+2025-06-16 17:24:40,304 - INFO - Iniciando análise do arquivo CURRICULO DANILO BUARQUE DOS REIS_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:24:40,324 - INFO - Iniciando análise do arquivo Curriculo com foto profissional para advogados azul e cinza_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:24:43,857 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo administracao mulher_20250113_215241_0000 1.pdf', 'score': 5.0, 'resum_id': 'ad6834bd-d7fa-4787-bed6-0e15010df4ea', 'name': 'Administracao Mulher 20250113 215241 0000 1'}]}
+2025-06-16 17:24:43,908 - INFO - Iniciando análise do arquivo Curriculo Joao Bosco_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:09,486 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo Ainoa.pdf', 'score': 5.0, 'resum_id': 'cc3069ab-d593-4c31-a2e8-e6b072977dfe', 'name': 'Ainoa'}]}
+2025-06-16 17:25:09,520 - INFO - Iniciando análise do arquivo Curriculo Kaic Rian da Silva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:15,978 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo Joao Bosco.pdf', 'score': 5.0, 'resum_id': '3a5bbd6f-eb25-4506-b89c-11897fbcf52b', 'name': 'João Bosco'}]}
+2025-06-16 17:25:16,150 - INFO - Iniciando análise do arquivo Curriculo novo_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:16,305 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CURRICULO DANILO BUARQUE DOS REIS.pdf', 'score': 5.0, 'resum_id': 'ae31d023-987f-4623-bbd2-7f5d8a291a0c', 'name': 'Danilo Buarque dos Reis'}]}
+2025-06-16 17:25:16,365 - INFO - Iniciando análise do arquivo Curriculo profissional - Abgayl Esttefany 1_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:22,833 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo com foto profissional para advogados azul e cinza.pdf', 'score': 5.0, 'resum_id': 'a921967e-ed2f-4ea5-8403-b28b559663ae', 'name': 'Com Foto Profissional Para Advogados Azul E Cinza'}]}
+2025-06-16 17:25:22,890 - INFO - Iniciando análise do arquivo curriculo-1_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:45,613 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo novo.pdf', 'score': 5.0, 'resum_id': '2196b307-5ee0-482c-b2b1-6c6b56044945', 'name': 'Novo'}]}
+2025-06-16 17:25:45,616 - ERROR - Erro ao analisar CurriculoADRIELEDOSSANTOSSILVA_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:25:45,674 - INFO - Iniciando análise do arquivo CurriculoAlessandraMariadaSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:46,640 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo Kaic Rian da Silva.pdf', 'score': 5.0, 'resum_id': '3a358d1b-a527-4089-ab82-d2ccc0bbc310', 'name': 'Kaic Rian da Silva'}]}
+2025-06-16 17:25:46,700 - INFO - Iniciando análise do arquivo CurriculoALEXANDRASEVERINAFERREIRA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:25:50,321 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Curriculo profissional - Abgayl Esttefany 1.pdf', 'score': 5.0, 'resum_id': '739e5425-6554-40ca-97aa-d85f05692f83', 'name': 'Profissional Abgayl Esttefany 1'}]}
+2025-06-16 17:25:50,366 - INFO - Iniciando análise do arquivo CurriculoAlexandreDaSilvaSantos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:26:11,102 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'curriculo-1.pdf', 'score': 5.0, 'resum_id': '61efedc6-12d1-4426-b49c-1c71e85d5fc1', 'name': '1'}]}
+2025-06-16 17:26:11,114 - INFO - Iniciando análise do arquivo CurriculoAlexBarbosa_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:26:15,348 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoALEXANDRASEVERINAFERREIRA.pdf', 'score': 5.0, 'resum_id': '9935db89-a51e-43cd-84ff-d28f6caaee72', 'name': 'Alexandraseverinaferreira'}]}
+2025-06-16 17:26:15,358 - INFO - Iniciando análise do arquivo CurriculoALLYNESANTOSSILVADESOUZA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:26:17,861 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAlessandraMariadaSilva.pdf', 'score': 2.5, 'resum_id': '8f419e53-64c9-49f5-a738-a22484a42f95', 'name': 'Alessandra Mariada Silva'}]}
+2025-06-16 17:26:17,906 - INFO - Iniciando análise do arquivo CurriculoAMANDAAPARECIDAFRAZAODASILVA_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:26:38,528 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAlexandreDaSilvaSantos.pdf', 'score': 5.0, 'resum_id': '541831cb-b39e-4bec-9104-ee06ae9942ac', 'name': 'Alexandre da Silva Santos'}]}
+2025-06-16 17:26:38,655 - INFO - Iniciando análise do arquivo CurriculoAnapaulaDoNascimentolima_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:26:41,367 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAlexBarbosa.pdf', 'score': 5.0, 'resum_id': 'aa769dbd-5329-4712-b9e6-f63b769a2751', 'name': 'Alex Barbosa'}]}
+2025-06-16 17:26:41,368 - ERROR - Erro ao analisar CurriculoAnderson Thiago Araujo da Silva_2.pdf: Texto ilegível ou ausente.
+2025-06-16 17:26:41,378 - INFO - Iniciando análise do arquivo CurriculoAndersonFernandodoNascimentoSilva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:26:52,292 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoALLYNESANTOSSILVADESOUZA.pdf', 'score': 5.0, 'resum_id': '804c6b97-1de6-42bb-ac4e-a414ac2116b7', 'name': 'Allynesantossilvadesouza'}]}
+2025-06-16 17:26:52,316 - INFO - Iniciando análise do arquivo CurriculoAndersonPereiradeMoura_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:04,195 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAMANDAAPARECIDAFRAZAODASILVA.pdf', 'score': 5.0, 'resum_id': 'd55cd15e-8a7b-48c5-90c8-09bc5bdc9682', 'name': 'Amandaaparecidafrazaodasilva'}]}
+2025-06-16 17:27:04,228 - INFO - Iniciando análise do arquivo CurriculoANDERSONRODRIGUES_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:13,941 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAndersonFernandodoNascimentoSilva.pdf', 'score': 5.0, 'resum_id': '02fd6d66-187a-42d4-9ba6-5908cfde7042', 'name': 'Anderson Fernandodo Nascimento Silva'}]}
+2025-06-16 17:27:13,988 - INFO - Iniciando análise do arquivo Sabrina Rafaela de Azevedo Rodrigues_20250115_123256_0000_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:23,864 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAnapaulaDoNascimentolima.pdf', 'score': 5.0, 'resum_id': '5a1c1089-393c-4014-b5e5-30a4a41646d9', 'name': 'Anapaula do Nascimentolima'}]}
+2025-06-16 17:27:23,909 - INFO - Iniciando análise do arquivo CURRICULUM1 1_2.docx para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:39,448 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoAndersonPereiradeMoura.pdf', 'score': 3.2, 'resum_id': '269352c9-1bab-40e8-84f4-3f6d7560ac45', 'name': 'Anderson Pereirade Moura'}]}
+2025-06-16 17:27:39,470 - INFO - Iniciando análise do arquivo CV - 01-2025_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:49,702 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CurriculoANDERSONRODRIGUES.pdf', 'score': 5.0, 'resum_id': '5b120da1-9332-47ac-bfeb-248dc33d65aa', 'name': 'Andersonrodrigues'}]}
+2025-06-16 17:27:49,727 - INFO - Iniciando análise do arquivo CV Roger Ferreira_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:51,256 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CURRICULUM1 1.docx', 'score': 5.0, 'resum_id': '37563bbb-6295-4700-9367-2e0e655180bd', 'name': 'Curriculum1 1'}]}
+2025-06-16 17:27:51,338 - INFO - Iniciando análise do arquivo CV-igor-20250603154623_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:27:53,569 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Sabrina Rafaela de Azevedo Rodrigues_20250115_123256_0000.pdf', 'score': 5.0, 'resum_id': 'c832dd20-034d-4700-9b71-56befcedf151', 'name': 'Sabrina Rafaela de Azevedo Rodrigues 20250115 123256 0000'}]}
+2025-06-16 17:27:53,760 - INFO - Iniciando análise do arquivo CV-janiele-20250601162852_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:28:27,815 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CV-janiele-20250601162852.pdf', 'score': 5.0, 'resum_id': '8137f92b-9cfa-42b9-b06f-d0b1e0e652c9', 'name': 'Cv Janiele 20250601162852'}]}
+2025-06-16 17:28:27,899 - INFO - Iniciando análise do arquivo CV-Jenyffer Rayane da Silva_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:28:28,424 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CV-igor-20250603154623.pdf', 'score': 5.0, 'resum_id': 'c91d0c01-feeb-4c9f-bc6b-99fe918d6b26', 'name': 'Cv Igor 20250603154623'}]}
+2025-06-16 17:28:28,453 - INFO - Iniciando análise do arquivo DOC-20241126-WA0092._2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:28:33,301 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CV - 01-2025.pdf', 'score': 5.0, 'resum_id': '1b199d2c-fd36-4cb0-a774-8053ba236b52', 'name': 'Cv 01 2025'}]}
+2025-06-16 17:28:33,334 - INFO - Iniciando análise do arquivo DOC-20250526-WA0083._2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:28:35,445 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CV Roger Ferreira.pdf', 'score': 6.4, 'resum_id': '476f8956-2649-4919-b2a4-0aec12ff4879', 'name': 'Cv Roger Ferreira'}]}
+2025-06-16 17:28:35,461 - INFO - Iniciando análise do arquivo DOC-20250526-WA0141._2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:29:00,280 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'DOC-20241126-WA0092..pdf', 'score': 3.5, 'resum_id': 'c2678d9a-469d-45d9-b705-4a762e5e6fb6', 'name': 'Doc 20241126 Wa0092'}]}
+2025-06-16 17:29:00,321 - INFO - Iniciando análise do arquivo Documento de Eduarda Dos Santos_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:29:01,189 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'DOC-20250526-WA0141..pdf', 'score': 2.5, 'resum_id': '51bb6e4a-59f0-42e3-a54a-54d1e4a671bf', 'name': 'Doc 20250526 Wa0141'}]}
+2025-06-16 17:29:01,327 - INFO - Iniciando análise do arquivo Georgia Camila_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:29:06,480 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'CV-Jenyffer Rayane da Silva.pdf', 'score': 5.0, 'resum_id': '3a00279d-7ee2-4bc2-9387-7fd5839aa36b', 'name': 'Cv Jenyffer Rayane da Silva'}]}
+2025-06-16 17:29:06,536 - INFO - Iniciando análise do arquivo Jose Henrique dos Santos Silva_20250512_080828_0000_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:29:17,933 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'DOC-20250526-WA0083..pdf', 'score': 5.0, 'resum_id': '1fb55222-8d4a-4c4f-99fc-eacf7944dc82', 'name': 'Doc 20250526 Wa0083'}]}
+2025-06-16 17:29:17,958 - INFO - Iniciando análise do arquivo Meu Curriculo_2.pdf para vaga ID b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:29:52,931 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Documento de Eduarda Dos Santos.pdf', 'score': 5.0, 'resum_id': 'd230e654-d0a6-4ef1-9294-abe671ea0650', 'name': 'Documento de Eduarda dos Santos'}]}
+2025-06-16 17:29:53,831 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Georgia Camila.pdf', 'score': 5.0, 'resum_id': 'af440319-9835-4246-941d-4e1635cf44f9', 'name': 'Georgia Camila'}]}
+2025-06-16 17:29:58,156 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Jose Henrique dos Santos Silva_20250512_080828_0000.pdf', 'score': 5.0, 'resum_id': '22c2b598-5514-4a7b-b6cc-ee4294eae518', 'name': 'José Henrique dos Santos Silva 20250512 080828 0000'}]}
+2025-06-16 17:30:00,461 - INFO - Resultado da análise: {'sucesso': True, 'resultados': [{'sucesso': True, 'file': 'Meu Curriculo.pdf', 'score': 5.0, 'resum_id': 'beab972a-cc09-442e-88a8-2f6448e0e250', 'name': 'Meu Curriculo'}]}
+2025-06-16 17:30:00,489 - INFO - Análise concluída com sucesso. Vaga ID: b01e6524-2293-4512-af80-56b3d539d6ad, Sucessos: 140
+2025-06-16 17:30:02,587 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:30:02,587 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:30:02,938 - INFO - Buscando resultados para vaga ID: b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:30:03,094 - INFO - Dados encontrados: 140 registros
+2025-06-16 17:31:15,280 - INFO - Log do app iniciado com sucesso.
+2025-06-16 17:31:15,281 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-16 17:31:17,165 - INFO - Buscando resultados para vaga ID: b01e6524-2293-4512-af80-56b3d539d6ad
+2025-06-16 17:31:17,785 - INFO - Dados encontrados: 140 registros
+2025-06-17 11:21:50,154 - INFO - Log do app iniciado com sucesso.
+2025-06-17 11:21:50,154 - INFO - Conexão com o banco de dados inicializada com sucesso.

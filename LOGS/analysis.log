@@ -102,3 +102,1631 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-15 10:26:43,899 - INFO - ✅ Currículo 'Rafaelsoaresdelima' processado e salvo com ID: ef0b2fb8-68e8-45cd-8369-eeed082e8cc3
 2025-06-15 10:26:47,543 - INFO - ✅ Currículo 'Ruthflorêncio' processado e salvo com ID: 831658ce-7947-4de4-adf4-15ec60a7520a
 2025-06-15 10:26:57,089 - INFO - ✅ Currículo 'Reginaldorodriguesneto' processado e salvo com ID: 7d01a8ea-93b2-4e63-aba8-ac5826c007a7
+2025-06-16 10:07:09,883 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 10:07:09,897 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 10:07:09,987 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 10:07:10,281 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 10:07:10,283 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 10:07:10,290 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 10:07:10,296 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 10:07:10,298 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 10:07:10,592 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 10:07:31,206 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: bef5209d-986a-4f7a-93b9-72813f299659
+2025-06-16 10:07:32,763 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: faf09b98-b811-4047-9a3c-a3dfcb72848d
+2025-06-16 10:07:32,906 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: f9ba356d-514c-4cf7-a781-0d4abf4e4541
+2025-06-16 10:07:33,290 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 9c9afa07-3413-40d3-ae8f-b319b00b946b
+2025-06-16 10:07:35,545 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 361d9fb5-6d73-42d7-b529-68152bda4b96
+2025-06-16 10:07:39,759 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 647427bb-ffff-4ff2-b77a-0f5aeaf5c39b
+2025-06-16 10:07:42,210 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: 45a67946-260b-4e9f-a8a9-b24dd510790d
+2025-06-16 10:19:12,991 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 10:19:13,057 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 10:19:13,121 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 10:19:13,129 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 10:19:13,199 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 10:19:13,237 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 10:19:13,376 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 10:19:13,406 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 10:19:13,426 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 10:19:34,367 - ERROR - ❌ Erro ao processar CurriculoStefanyPereiraSampaio.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 182, in process_candidate
+    database.insert_analysis(analysis_data.model_dump())
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 22, in insert_analysis
+    supabase.table("analysis").upsert(analysis_data, on_conflict=["resum_id"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 10:19:34,368 - ERROR - ❌ Erro ao processar CurriculoSARAARIELESILVA.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 182, in process_candidate
+    database.insert_analysis(analysis_data.model_dump())
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 22, in insert_analysis
+    supabase.table("analysis").upsert(analysis_data, on_conflict=["resum_id"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 10:19:34,368 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: e3e01973-5ac3-4bae-8c4c-60d7f1015d5a
+2025-06-16 10:19:35,180 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: 9a2fa36a-2a96-4c93-80a5-d459b41393c6
+2025-06-16 10:19:36,607 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 1b6c978b-7c51-45b2-b826-0e09cbccbbd2
+2025-06-16 10:19:40,871 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 221f8cdd-a516-4e05-a8ea-774dd472e75b
+2025-06-16 10:19:43,619 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: 0842513a-0814-4a9f-9d1c-1eb3dc0e00aa
+2025-06-16 10:22:48,758 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 10:22:48,797 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 10:22:48,816 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 10:22:48,918 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 10:22:48,919 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 10:22:48,952 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 10:22:48,958 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 10:22:49,002 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 10:22:49,087 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 10:23:08,293 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: cc973311-f94d-4864-8326-926d9fc8a21c
+2025-06-16 10:23:09,751 - ERROR - ❌ Erro ao processar CurriculoSARAARIELESILVA.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 182, in process_candidate
+    database.insert_analysis(analysis_data.model_dump())
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 22, in insert_analysis
+    supabase.table("analysis").upsert(analysis_data, on_conflict=["resum_id"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 10:23:09,751 - ERROR - ❌ Erro ao processar CurriculoSuevellimCavalcantedeLima.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 183, in process_candidate
+    database.insert_file(file_data)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 25, in insert_file
+    supabase.table("files").upsert(file_data, on_conflict=["file_path"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 10:23:11,869 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 9fe6dcda-d003-414b-b80b-0a2b272e9497
+2025-06-16 10:23:15,078 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: a8550e71-acda-4acf-8f5f-d959df6b8169
+2025-06-16 10:23:15,983 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: fb2a5830-95d3-436b-80db-095d9a3555a7
+2025-06-16 10:23:19,546 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: a640f15f-7676-4560-b702-88b82a360f18
+2025-06-16 10:29:52,513 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 10:29:52,566 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 10:29:52,567 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 10:30:13,831 - ERROR - ❌ Erro ao processar CurriculoSARAARIELESILVA.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 183, in process_candidate
+    database.insert_file(file_data)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 25, in insert_file
+    supabase.table("files").upsert(file_data, on_conflict=["file_path"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 10:30:13,831 - ERROR - ❌ Erro ao processar CurriculoStefanyPereiraSampaio.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 183, in process_candidate
+    database.insert_file(file_data)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 25, in insert_file
+    supabase.table("files").upsert(file_data, on_conflict=["file_path"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 10:30:14,307 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 10:30:14,345 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 10:30:15,793 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: d3bd2a75-b913-4c5f-ac36-ebc50174ff97
+2025-06-16 10:30:16,143 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 10:30:16,303 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 10:30:16,696 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 10:30:35,175 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 8ab0a9c0-0adf-4bf1-b990-3d01d9098696
+2025-06-16 10:30:35,735 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 10:30:40,946 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: 32f42e26-3362-4e7e-b060-24e6845828e0
+2025-06-16 10:30:43,914 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 0d1cc9ba-e16b-4452-8f17-3ca99210ec3c
+2025-06-16 10:31:05,740 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: d4fc7c19-6a97-45ea-8d3d-2822f0a51c89
+2025-06-16 10:48:22,362 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 10:48:22,375 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 10:48:22,474 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 10:48:22,491 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 10:48:22,658 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 10:48:22,659 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 10:48:22,670 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 10:48:22,769 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 10:48:22,784 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 10:48:42,295 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 9467e1ce-f80d-4c12-a74d-1dcf1fe01925
+2025-06-16 10:48:43,769 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 91bb85a7-8b45-4a2b-bf62-b22b9272ec90
+2025-06-16 10:48:43,769 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: c7bc0e41-78ab-4846-9bb4-282ba7812a83
+2025-06-16 10:48:44,834 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 14cdc37e-ff7c-488c-b97b-211fbc15b003
+2025-06-16 10:48:46,101 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 9b0d7515-9380-44b8-9eb7-2b1c606fc23e
+2025-06-16 10:48:49,660 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: fc26d2ad-411a-4a8b-94e6-0ea3b2da0112
+2025-06-16 10:48:54,085 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: ae6e5909-6ad6-4cd2-bb6b-681feb65162f
+2025-06-16 14:01:25,737 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:01:25,744 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:01:25,881 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:01:25,960 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:01:25,960 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:01:25,960 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:01:25,961 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:01:25,982 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:01:26,297 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:01:56,210 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: ee0bd01d-519a-40b6-810f-77fe20a75ec7
+2025-06-16 14:01:56,211 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 3f0fd3b3-bf13-4a76-b7ef-e9bdaad102fb
+2025-06-16 14:01:57,684 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 84070eb6-154b-487b-9306-6d0a8dffd6ff
+2025-06-16 14:01:59,376 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: ac6afa63-6587-458b-81df-8cad5c3a4b9d
+2025-06-16 14:02:00,909 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 251f7aa4-405e-4ab4-be51-1c650d6721ac
+2025-06-16 14:02:01,858 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 7413fcbf-8aaf-4f36-86dc-d013453061be
+2025-06-16 14:02:24,686 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: 782f6233-ac4e-4510-9904-4b88333b1a08
+2025-06-16 14:08:56,921 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:08:56,954 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:08:57,014 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:08:57,126 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:08:57,126 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:08:57,126 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:08:57,126 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:08:57,185 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:08:57,330 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:08:57,750 - INFO - 📄 Processando: CurriculoThaisesLuciaMelo.pdf
+2025-06-16 14:09:20,468 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: fff46c07-8557-4b23-90ca-5661e8478acc
+2025-06-16 14:09:20,816 - INFO - 📄 Processando: CurriculoTIAGOMENDESBEZERRA.pdf
+2025-06-16 14:09:22,115 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: aaaec52b-a034-47eb-a47a-2a8d5b278365
+2025-06-16 14:09:22,466 - INFO - 📄 Processando: CurriculoVivianeMariadaSilva.pdf
+2025-06-16 14:09:23,466 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: c4143fd1-de5f-4146-9dcc-4c4b980fbe11
+2025-06-16 14:09:24,012 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 9880ba3a-6504-4b8b-b711-ac5d013f0b69
+2025-06-16 14:09:27,408 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 9d76c4a9-52e5-4e6e-9c04-dc101af6106e
+2025-06-16 14:09:29,512 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: bb064907-0cfa-4a4a-926b-4753ed15d470
+2025-06-16 14:09:35,912 - INFO - ✅ Currículo 'Thaises Lucia Melo' processado e salvo com ID: 3c172069-0636-423f-816f-7bd119ccea16
+2025-06-16 14:09:36,053 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: c068c06a-ba97-4121-a22d-6d63d2e888f0
+2025-06-16 14:09:50,599 - INFO - ✅ Currículo 'Viviane Mariada Silva' processado e salvo com ID: 4afe156c-da16-476b-b39b-7ad2f385d21f
+2025-06-16 14:10:01,149 - INFO - ✅ Currículo 'Tiagomendesbezerra' processado e salvo com ID: 1bcac5ae-1222-429f-b8ad-72a52d989bdf
+2025-06-16 14:11:04,201 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:11:04,297 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:11:04,339 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:11:04,349 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:11:04,352 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:11:04,368 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:11:04,413 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:11:04,538 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:11:04,557 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:11:33,961 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 2cdd8a4d-8eae-4c21-ad7b-854e63903f73
+2025-06-16 14:11:33,964 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: a830add8-09b7-41db-95ea-81f0a8ab2dc3
+2025-06-16 14:11:35,394 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 669ad970-6813-45b0-ab28-bf2f93c007d9
+2025-06-16 14:11:35,689 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 9ad82468-78d9-4416-afab-7ccddf56c2a1
+2025-06-16 14:11:36,586 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: 741f2a0a-e210-4cd8-8277-75a65a0a35f9
+2025-06-16 14:11:45,770 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: 15d8934c-f517-41f1-9e12-b3db78af43a6
+2025-06-16 14:11:45,772 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: d01bd390-240c-4ad8-b006-58d37ed2439e
+2025-06-16 14:17:33,494 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:17:33,640 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:17:33,643 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:17:33,713 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:17:33,720 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:17:33,726 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:17:33,733 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:17:33,845 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:17:33,992 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:17:57,659 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 4b517f11-1224-41ff-a68f-814c18ec1850
+2025-06-16 14:17:57,989 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 921a6091-d3c9-4460-b6ed-b423ef9f9a8e
+2025-06-16 14:17:58,128 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 48eefbe6-7a96-489d-adae-99633ea6f9af
+2025-06-16 14:18:04,987 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 240b907f-24e9-4e06-8b56-d43c8adc30ec
+2025-06-16 14:18:15,928 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: 1755e7d3-1ba4-420a-bd44-ad0e17df343e
+2025-06-16 14:18:29,497 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: f8afdf9b-2306-4744-8fff-75aa96454040
+2025-06-16 14:18:29,841 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 0244e265-a031-4caa-aabf-afa644f3dde9
+2025-06-16 14:19:15,350 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:19:15,372 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:19:15,378 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:19:15,387 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:19:15,440 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:19:15,451 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:19:15,477 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:19:15,584 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:19:15,594 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:19:42,136 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: c89bdfd1-e058-4441-abaf-9e26c6230f28
+2025-06-16 14:19:46,503 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: dd30eac0-ee77-42d3-98f3-3e4ab0ad8b20
+2025-06-16 14:19:50,466 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 6e434410-8be9-4883-ada7-0d6164a64d0a
+2025-06-16 14:19:52,433 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: e8646599-53af-4a16-99fc-7d023b3bb2a0
+2025-06-16 14:19:54,638 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: dbe60919-d8b6-45f4-9acd-2cecfc527273
+2025-06-16 14:19:55,122 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 51ef83e4-2798-4abf-94ab-d9d2f9240edd
+2025-06-16 14:19:56,863 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: d0accfa5-f3dd-4564-b506-5b1955fe764d
+2025-06-16 14:27:02,624 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:27:02,702 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:27:02,723 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:27:02,747 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:27:02,832 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:27:02,907 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:27:02,920 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:27:02,922 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:27:02,937 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:27:03,313 - INFO - 📄 Processando: CurriculoThaisesLuciaMelo.pdf
+2025-06-16 14:27:28,777 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: 906712d0-77af-49f2-9ec7-032cd19d8cc9
+2025-06-16 14:27:29,127 - INFO - 📄 Processando: CurriculoTIAGOMENDESBEZERRA.pdf
+2025-06-16 14:27:29,391 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 38dfda5c-59be-441a-9941-0291a8f32479
+2025-06-16 14:27:29,754 - INFO - 📄 Processando: CurriculoVivianeMariadaSilva.pdf
+2025-06-16 14:27:30,353 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 4ca6a7c4-732c-40d7-9ddb-bab701ef33b2
+2025-06-16 14:27:30,678 - INFO - 📄 Processando: CurriculoWalkyryaMyrelle.pdf
+2025-06-16 14:27:36,017 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: 037bb74e-7dcb-4553-a9c2-cd69009f1b72
+2025-06-16 14:27:36,435 - INFO - 📄 Processando: CurriculowesleydaSilvasgarlate.pdf
+2025-06-16 14:27:36,597 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 86b8958a-4e1b-419e-a802-ba24973122eb
+2025-06-16 14:27:36,964 - INFO - 📄 Processando: CurriculoWyllianFeranandodosSantosSilva.pdf
+2025-06-16 14:27:39,511 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: d75e9503-3941-47d8-9c57-ad1b0c298b69
+2025-06-16 14:27:39,854 - INFO - 📄 Processando: CurriculoYagoEduardo.pdf
+2025-06-16 14:27:41,779 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: e635a73d-c1b8-482b-b5f6-257eb10da9d6
+2025-06-16 14:27:42,133 - INFO - 📄 Processando: CurriculoYagoVictorCavalcantiFreireAlmeida.pdf
+2025-06-16 14:27:42,576 - INFO - ✅ Currículo 'Thaises Lucia Melo' processado e salvo com ID: 99bb395a-8062-4661-acd6-add7f922ca3e
+2025-06-16 14:27:42,927 - INFO - 📄 Processando: CurriculoYas.pdf
+2025-06-16 14:27:50,989 - INFO - ✅ Currículo 'Viviane Mariada Silva' processado e salvo com ID: a2825f2e-aac2-4417-aea1-abb6870b09ee
+2025-06-16 14:27:51,359 - INFO - 📄 Processando: CurriculoYasmimSoares.pdf
+2025-06-16 14:27:53,133 - INFO - ✅ Currículo 'Walkyrya Myrelle' processado e salvo com ID: 1c5f78fd-aa3f-43ea-947e-4d8c112824ac
+2025-06-16 14:27:53,492 - INFO - 📄 Processando: CurriculoYASMINLAUANESOUSABARBOSA.pdf
+2025-06-16 14:27:58,207 - INFO - ✅ Currículo 'Tiagomendesbezerra' processado e salvo com ID: eeb115a6-6346-4c9a-b1ae-b415fdd8f492
+2025-06-16 14:27:59,038 - INFO - 📄 Processando: curriculum Plinio Rafael caruaru.pdf
+2025-06-16 14:28:07,164 - INFO - ✅ Currículo 'Yago Eduardo' processado e salvo com ID: c7e2161c-e401-4787-9449-8967eb38d706
+2025-06-16 14:28:07,572 - INFO - 📄 Processando: CurriculoKETLLYEDUARDASOUZAMINERVINO.pdf
+2025-06-16 14:28:17,690 - INFO - ✅ Currículo 'Wyllian Feranandodos Santos Silva' processado e salvo com ID: 1ffed181-fd51-4c82-8442-222f35d58e42
+2025-06-16 14:28:18,042 - INFO - 📄 Processando: CurriculoKeyllaRaphaela.pdf
+2025-06-16 14:28:21,858 - INFO - ✅ Currículo 'Yago Victor Cavalcanti Freire Almeida' processado e salvo com ID: 4a177649-d069-4a41-8d01-61074f30894d
+2025-06-16 14:28:22,208 - INFO - 📄 Processando: CurriculoLauannyCibelleFerreiradaSilva.pdf
+2025-06-16 14:28:22,736 - INFO - ✅ Currículo 'Yas' processado e salvo com ID: 13d0c841-1292-4f2e-a041-f1c096bd5321
+2025-06-16 14:28:24,285 - INFO - ✅ Currículo 'Wesleyda Silvasgarlate' processado e salvo com ID: 2c45a83f-7abd-4f9e-8b88-9c52b776b87f
+2025-06-16 14:28:30,558 - INFO - ✅ Currículo 'Yasminlauanesousabarbosa' processado e salvo com ID: b8360ee8-a7b6-4b09-af61-71b96be1b0f1
+2025-06-16 14:28:36,329 - INFO - ✅ Currículo 'Yasmim Soares' processado e salvo com ID: 1018e0fb-5cdc-46ab-9641-6be5f3c57286
+2025-06-16 14:28:39,906 - INFO - ✅ Currículo 'Curriculum Plinio Rafael Caruaru' processado e salvo com ID: c1f8a340-69dd-444b-a32f-2489d94d2dd3
+2025-06-16 14:28:47,643 - INFO - ✅ Currículo 'Ketllyeduardasouzaminervino' processado e salvo com ID: ffb59bb7-6892-46a9-8eeb-7b004addab01
+2025-06-16 14:28:50,813 - INFO - ✅ Currículo 'Keylla Raphaela' processado e salvo com ID: 59753094-30e4-4488-baab-097f933c55f2
+2025-06-16 14:28:54,714 - INFO - ✅ Currículo 'Lauanny Cibelle Ferreirada Silva' processado e salvo com ID: b781c293-1966-47a9-a990-8ad14e9da3f3
+2025-06-16 14:34:27,188 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:34:27,199 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:34:27,409 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 14:34:27,409 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:34:27,410 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:34:27,410 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:34:27,410 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 14:34:27,470 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 14:34:27,700 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 14:34:28,119 - INFO - 📄 Processando: CurriculoThaisesLuciaMelo.pdf
+2025-06-16 14:34:53,121 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 5b050f26-4131-4fcb-8a4e-70abc67c681d
+2025-06-16 14:34:53,472 - INFO - 📄 Processando: CurriculoTIAGOMENDESBEZERRA.pdf
+2025-06-16 14:34:55,017 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: fc63b3ea-1d18-4f3a-b80b-c0ae83b2b362
+2025-06-16 14:34:55,362 - INFO - 📄 Processando: CurriculoVivianeMariadaSilva.pdf
+2025-06-16 14:34:55,837 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: 28835162-493c-47a5-8f5e-cbc633857200
+2025-06-16 14:34:56,177 - INFO - 📄 Processando: CurriculoWalkyryaMyrelle.pdf
+2025-06-16 14:34:58,359 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 1578a53d-75a6-47bd-9163-9219079c55d4
+2025-06-16 14:34:58,708 - INFO - 📄 Processando: CurriculowesleydaSilvasgarlate.pdf
+2025-06-16 14:35:00,087 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: a67e8901-15ed-4089-b4b0-af952b0a5412
+2025-06-16 14:35:00,431 - INFO - 📄 Processando: CurriculoWyllianFeranandodosSantosSilva.pdf
+2025-06-16 14:35:06,204 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: f3704881-8f8e-4451-ba80-713cf9a3ba98
+2025-06-16 14:35:06,553 - INFO - 📄 Processando: CurriculoYagoEduardo.pdf
+2025-06-16 14:35:09,452 - INFO - ✅ Currículo 'Thaises Lucia Melo' processado e salvo com ID: 429b5c41-7659-4fb7-a00a-19dca60dbd79
+2025-06-16 14:35:09,805 - INFO - 📄 Processando: CurriculoYagoVictorCavalcantiFreireAlmeida.pdf
+2025-06-16 14:35:18,346 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: 6c3233ee-2265-4c94-9a3d-8ef9e52a06fc
+2025-06-16 14:35:18,694 - INFO - 📄 Processando: CurriculoYas.pdf
+2025-06-16 14:35:20,738 - INFO - ✅ Currículo 'Tiagomendesbezerra' processado e salvo com ID: ea25c1ca-d97f-4615-a5b4-bbb41bc2e8ad
+2025-06-16 14:35:21,116 - INFO - 📄 Processando: CurriculoYasmimSoares.pdf
+2025-06-16 14:35:24,842 - INFO - ✅ Currículo 'Viviane Mariada Silva' processado e salvo com ID: 4aa17c4c-1e30-4317-94ff-4fc582a112be
+2025-06-16 14:35:25,212 - INFO - 📄 Processando: CurriculoYASMINLAUANESOUSABARBOSA.pdf
+2025-06-16 14:35:35,709 - INFO - ✅ Currículo 'Yago Eduardo' processado e salvo com ID: 43f98c37-0506-4347-803f-377fdbc2608e
+2025-06-16 14:35:36,432 - INFO - ✅ Currículo 'Walkyrya Myrelle' processado e salvo com ID: 953126fb-98e1-4ef3-80e3-c1943d72cf92
+2025-06-16 14:35:39,811 - INFO - ✅ Currículo 'Wesleyda Silvasgarlate' processado e salvo com ID: 03a36823-77ce-40d6-8365-e539b4b8f49f
+2025-06-16 14:35:43,893 - INFO - ✅ Currículo 'Wyllian Feranandodos Santos Silva' processado e salvo com ID: 05f4c16c-47b8-4dca-9fbc-2edab9842ebc
+2025-06-16 14:35:55,598 - INFO - ✅ Currículo 'Yago Victor Cavalcanti Freire Almeida' processado e salvo com ID: efd0b595-dd64-4267-9cb0-5439b00d83ac
+2025-06-16 14:35:55,603 - INFO - ✅ Currículo 'Yas' processado e salvo com ID: dc38492e-e74c-441e-9022-2a8ced59e415
+2025-06-16 14:35:58,680 - INFO - ✅ Currículo 'Yasmim Soares' processado e salvo com ID: 4c7e870a-2a46-4f8f-bcb4-170a9a3f659c
+2025-06-16 14:36:11,937 - INFO - ✅ Currículo 'Yasminlauanesousabarbosa' processado e salvo com ID: 166fb447-0cc4-4e2d-bb9f-bf4294fdec0a
+2025-06-16 14:38:37,821 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:38:37,984 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:38:37,991 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:38:38,008 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:38:38,017 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:39:11,562 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: a5cfb52f-d958-4db7-b9b3-4c5b5e2974ea
+2025-06-16 14:39:13,157 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: f3c40c89-de55-42ca-9dbc-c913ede5723a
+2025-06-16 14:39:13,426 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 59a423bd-a502-45d1-b114-1eab91f853e0
+2025-06-16 14:39:16,186 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 9983b4ba-1a6f-45d0-909e-0b380ff91288
+2025-06-16 14:39:19,817 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 847b40b9-8337-4ca2-84dd-ac010c8045d1
+2025-06-16 14:41:15,292 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:41:15,345 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:41:15,358 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:41:41,994 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 51231094-8d18-4430-9d01-2b9be97b3d43
+2025-06-16 14:41:43,190 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: b4049fee-57fa-4672-8550-3275b2deb71a
+2025-06-16 14:41:45,328 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 405a8916-3a65-433f-b9ad-918686e98d06
+2025-06-16 14:48:32,828 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:48:32,829 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:48:32,878 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:48:33,042 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:48:33,044 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:48:33,046 - WARNING - ⚠️ Arquivo já processado anteriormente. Ignorando: CurriculoSOBREMIM.pdf
+2025-06-16 14:53:02,230 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 14:53:02,235 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 14:53:02,248 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 14:53:02,256 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 14:53:02,256 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 14:53:30,770 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 023aa4f8-b655-4336-abee-8674f251a725
+2025-06-16 14:53:31,290 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: 883025b9-917f-4402-9b13-4b238919df23
+2025-06-16 14:53:31,428 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 820ecf1e-ee5c-4f9f-ae05-82d7ba4ff4e8
+2025-06-16 14:53:33,946 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: dfb3277f-5635-49f4-a450-edde253d0750
+2025-06-16 14:53:37,230 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: 1ad948bb-e397-420f-a1f0-dd2396d4f27c
+2025-06-16 15:01:04,371 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 15:01:04,534 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 15:01:04,534 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 15:01:04,535 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 15:01:04,540 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 15:01:04,574 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 15:01:04,969 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 15:01:35,134 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: a88e9610-a4e4-4f2c-a58a-bcf8ba3d31d2
+2025-06-16 15:01:35,359 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: f24a08dc-d41f-455a-acbd-e210bc579df2
+2025-06-16 15:01:35,504 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 9608c52b-01d0-4681-b2e9-25323a36655f
+2025-06-16 15:01:36,405 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: 9910de1b-d9b3-4008-9ff8-ba7e2fa86e7d
+2025-06-16 15:01:38,781 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: ef3e078a-89f4-4385-8c94-65549e5eef90
+2025-06-16 15:02:37,106 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 15:02:37,279 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 15:03:09,099 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 15:03:09,253 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 15:03:40,327 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 15:03:40,462 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 15:13:01,132 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 15:13:01,175 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 15:13:01,190 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 15:13:01,198 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 15:13:26,425 - ERROR - ❌ Erro ao processar CurriculoSARAARIELESILVA.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 182, in process_candidate
+    database.insert_analysis(analysis_data.model_dump())
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 22, in insert_analysis
+    supabase.table("analysis").upsert(analysis_data, on_conflict=["resum_id"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 15:13:26,425 - ERROR - ❌ Erro ao processar CurriculoSuelyMariadaSilva.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 183, in process_candidate
+    database.insert_file(file_data)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 25, in insert_file
+    supabase.table("files").upsert(file_data, on_conflict=["file_path"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 15:13:27,605 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: d3c92b1c-6059-445f-b678-75523e5ac24d
+2025-06-16 15:13:31,475 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: fead3225-afe1-4cba-bfe0-9db75cd26e2a
+2025-06-16 15:13:54,239 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 15:13:54,240 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 15:13:54,243 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 15:13:54,244 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 15:14:22,494 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: 69b41f31-afca-40d3-abf5-b164d9f29f55
+2025-06-16 15:14:24,851 - ERROR - ❌ Erro ao processar CurriculoSOBREMIM.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 183, in process_candidate
+    database.insert_file(file_data)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 25, in insert_file
+    supabase.table("files").upsert(file_data, on_conflict=["file_path"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 15:14:24,852 - ERROR - ❌ Erro ao processar CurriculoSuelyMariadaSilva.pdf: Server disconnected
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 438, in _read_incoming_data
+    raise self._read_exception  # pragma: nocover
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 187, in handle_request
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 150, in handle_request
+    status, headers = self._receive_response(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 294, in _receive_response
+    event = self._receive_stream_event(request, stream_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 336, in _receive_stream_event
+    self._receive_events(request, stream_id)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 364, in _receive_events
+    events = self._read_incoming_data(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 455, in _read_incoming_data
+    raise exc
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpcore\_sync\http2.py", line 443, in _read_incoming_data
+    raise RemoteProtocolError("Server disconnected")
+httpcore.RemoteProtocolError: Server disconnected
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 182, in process_candidate
+    database.insert_analysis(analysis_data.model_dump())
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\CONFIG\database.py", line 22, in insert_analysis
+    supabase.table("analysis").upsert(analysis_data, on_conflict=["resum_id"]).execute()
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\postgrest\_sync\request_builder.py", line 57, in execute
+    r = self.session.request(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\Viana e Moura.VM210490\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected
+2025-06-16 15:14:25,924 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: aae4af9b-4e61-49cd-a06c-694b35aee8f4
+2025-06-16 17:06:22,631 - INFO - 📄 Processando: CurriculoSARAARIELESILVA.pdf
+2025-06-16 17:06:22,656 - INFO - 📄 Processando: CurriculoSuelyMariadaSilva.pdf
+2025-06-16 17:06:22,733 - INFO - 📄 Processando: CurriculoStefanyPereiraSampaio.pdf
+2025-06-16 17:06:22,735 - INFO - 📄 Processando: CurriculoSOBREMIM.pdf
+2025-06-16 17:06:49,210 - INFO - ✅ Currículo 'Stefany Pereira Sampaio' processado e salvo com ID: c09123d3-00c2-4650-a6ea-ff024165e08c
+2025-06-16 17:06:49,662 - INFO - 📄 Processando: CurriculoSuevellimCavalcantedeLima.pdf
+2025-06-16 17:06:49,867 - INFO - ✅ Currículo 'Saraarielesilva' processado e salvo com ID: d9a8d2a7-b31c-43fd-bedf-59a912b6c258
+2025-06-16 17:06:50,265 - INFO - 📄 Processando: CurriculoTacitobrunoSilvavieira.pdf
+2025-06-16 17:06:50,524 - ERROR - ❌ Erro ao processar CurriculoTacitobrunoSilvavieira.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 17:06:51,002 - INFO - 📄 Processando: CurriculoTalitaSamaradaSilvaAlves.pdf
+2025-06-16 17:06:51,412 - INFO - ✅ Currículo 'Suely Mariada Silva' processado e salvo com ID: bd11af80-66fe-49f0-8fa5-2c26b29245a9
+2025-06-16 17:06:52,093 - INFO - 📄 Processando: CurriculoTatianeLiraDavi.pdf
+2025-06-16 17:06:58,295 - INFO - ✅ Currículo 'Sobremim' processado e salvo com ID: d5b1cf0e-f2df-4afb-9fed-0c29e6765d60
+2025-06-16 17:06:58,711 - INFO - 📄 Processando: CurriculoThaisesLuciaMelo.pdf
+2025-06-16 17:07:21,414 - INFO - ✅ Currículo 'Suevellim Cavalcantede Lima' processado e salvo com ID: 7a2726c8-34cd-457c-b0fb-2d2591a31ff8
+2025-06-16 17:07:21,861 - INFO - 📄 Processando: CurriculoTIAGOMENDESBEZERRA.pdf
+2025-06-16 17:07:41,182 - INFO - ✅ Currículo 'Talita Samarada Silva Alves' processado e salvo com ID: b810a553-4028-4df2-a379-a999a787eadd
+2025-06-16 17:07:41,551 - INFO - 📄 Processando: CurriculoVivianeMariadaSilva.pdf
+2025-06-16 17:07:43,648 - INFO - ✅ Currículo 'Thaises Lucia Melo' processado e salvo com ID: 3d258ad4-f042-4bba-b933-994daf3610fb
+2025-06-16 17:07:44,005 - INFO - 📄 Processando: CurriculoWalkyryaMyrelle.pdf
+2025-06-16 17:07:51,220 - INFO - ✅ Currículo 'Tatiane Lira Davi' processado e salvo com ID: faf9b564-d82d-46be-9da4-fabec32bd61d
+2025-06-16 17:07:51,603 - INFO - 📄 Processando: CurriculowesleydaSilvasgarlate.pdf
+2025-06-16 17:08:01,019 - INFO - ✅ Currículo 'Tiagomendesbezerra' processado e salvo com ID: 5e657d59-51c9-4da2-8e30-a6a536611cc5
+2025-06-16 17:08:01,424 - INFO - 📄 Processando: CurriculoWyllianFeranandodosSantosSilva.pdf
+2025-06-16 17:08:09,765 - INFO - ✅ Currículo 'Viviane Mariada Silva' processado e salvo com ID: 537dc0ec-724a-4ad1-b0fc-dc1e47f01429
+2025-06-16 17:08:10,162 - INFO - 📄 Processando: CurriculoYagoEduardo.pdf
+2025-06-16 17:08:12,563 - INFO - ✅ Currículo 'Walkyrya Myrelle' processado e salvo com ID: 04da2418-6da6-4996-9c31-3ecc8802670f
+2025-06-16 17:08:12,991 - INFO - 📄 Processando: CurriculoYagoVictorCavalcantiFreireAlmeida.pdf
+2025-06-16 17:08:38,042 - INFO - ✅ Currículo 'Wyllian Feranandodos Santos Silva' processado e salvo com ID: 5df8226e-1364-4497-9793-ea4fbc8268df
+2025-06-16 17:08:38,414 - INFO - 📄 Processando: CurriculoYas.pdf
+2025-06-16 17:08:39,214 - INFO - ✅ Currículo 'Wesleyda Silvasgarlate' processado e salvo com ID: c217da79-a37e-4a3a-8555-9601a604927e
+2025-06-16 17:08:39,618 - INFO - 📄 Processando: CurriculoYasmimSoares.pdf
+2025-06-16 17:08:43,068 - INFO - ✅ Currículo 'Yago Eduardo' processado e salvo com ID: 0bf88bc5-41d1-4a18-9626-fbd3b4b8d747
+2025-06-16 17:08:43,471 - INFO - 📄 Processando: CurriculoYASMINLAUANESOUSABARBOSA.pdf
+2025-06-16 17:08:49,246 - INFO - ✅ Currículo 'Yago Victor Cavalcanti Freire Almeida' processado e salvo com ID: 426a5fba-90c9-4909-a74b-ad3723547ac8
+2025-06-16 17:08:50,138 - INFO - 📄 Processando: curriculum Plinio Rafael caruaru.pdf
+2025-06-16 17:09:18,516 - INFO - ✅ Currículo 'Yasminlauanesousabarbosa' processado e salvo com ID: 17ef132c-1279-4cc1-9ecc-ac46db3e5508
+2025-06-16 17:09:18,913 - INFO - 📄 Processando: CurriculoKETLLYEDUARDASOUZAMINERVINO.pdf
+2025-06-16 17:09:19,677 - INFO - ✅ Currículo 'Yas' processado e salvo com ID: 4cc62aea-7e7f-47b9-b7fd-f1c963d472f8
+2025-06-16 17:09:20,053 - INFO - 📄 Processando: CurriculoKeyllaRaphaela.pdf
+2025-06-16 17:09:20,366 - INFO - ✅ Currículo 'Yasmim Soares' processado e salvo com ID: 118ccd11-ffae-4376-849c-a390e6b9c190
+2025-06-16 17:09:20,802 - INFO - 📄 Processando: CurriculoLauannyCibelleFerreiradaSilva.pdf
+2025-06-16 17:09:27,897 - INFO - ✅ Currículo 'Curriculum Plinio Rafael Caruaru' processado e salvo com ID: 8cbec4ed-f376-4153-abc7-fce552f418b7
+2025-06-16 17:09:28,417 - INFO - 📄 Processando: CurriculoLeonardoAlves.pdf
+2025-06-16 17:09:55,013 - INFO - ✅ Currículo 'Keylla Raphaela' processado e salvo com ID: 41116b08-ab17-425b-bcda-51744966ef92
+2025-06-16 17:09:55,418 - INFO - 📄 Processando: CurriculoluanVitor.pdf
+2025-06-16 17:09:55,552 - INFO - ✅ Currículo 'Lauanny Cibelle Ferreirada Silva' processado e salvo com ID: cb10fd35-ef82-4cde-a04f-2b870996b0d8
+2025-06-16 17:09:55,686 - INFO - ✅ Currículo 'Ketllyeduardasouzaminervino' processado e salvo com ID: 02f5c6e5-3d20-464a-b878-0c686a6d98d6
+2025-06-16 17:09:56,004 - INFO - 📄 Processando: CurriculoLucasdeMacedoSantos.pdf
+2025-06-16 17:09:56,116 - INFO - 📄 Processando: CurriculoLucasMateusSantosdeMacedo.pdf
+2025-06-16 17:10:13,091 - INFO - ✅ Currículo 'Leonardo Alves' processado e salvo com ID: c4104b42-d603-45b5-baa3-7e86c5a1cab5
+2025-06-16 17:10:13,481 - INFO - 📄 Processando: CurriculoLuizFelipeTenorioPortoMoraes.pdf
+2025-06-16 17:10:24,728 - INFO - ✅ Currículo 'Luan Vitor' processado e salvo com ID: e312e366-2bcc-4f8f-88ff-539b0fe5235f
+2025-06-16 17:10:25,163 - INFO - 📄 Processando: CurriculoLuizFellipeDaSIlvaGomes.pdf
+2025-06-16 17:10:26,624 - INFO - ✅ Currículo 'Lucas Mateus Santosde Macedo' processado e salvo com ID: 992bbfe8-ef53-4b64-82f4-59d42046899d
+2025-06-16 17:10:27,056 - INFO - 📄 Processando: CurriculoMARCIAEDUARDALAURENTINOSILVA.pdf
+2025-06-16 17:10:33,124 - INFO - ✅ Currículo 'Lucasde Macedo Santos' processado e salvo com ID: d88ae17a-6421-4258-81e4-4f39483ee177
+2025-06-16 17:10:33,517 - INFO - 📄 Processando: CurriculoMariaClara.pdf
+2025-06-16 17:11:02,689 - INFO - ✅ Currículo 'Luiz Felipe Tenorio Porto Moraes' processado e salvo com ID: 5b70db26-aaba-4cd6-9421-b50b17f9b53b
+2025-06-16 17:11:03,019 - INFO - ✅ Currículo 'Maria Clara' processado e salvo com ID: 78cf4c1a-9454-40b3-8e02-e0e4f778d672
+2025-06-16 17:11:03,177 - INFO - 📄 Processando: CurriculoMariaEricaDasilva.pdf
+2025-06-16 17:11:03,439 - INFO - 📄 Processando: CurriculoMariaFernandaMarques.pdf
+2025-06-16 17:11:09,792 - INFO - ✅ Currículo 'Luiz Fellipe da S Ilva Gomes' processado e salvo com ID: e5b95374-055e-4ed4-bf94-89f4a5afc7be
+2025-06-16 17:11:10,204 - INFO - 📄 Processando: CurriculoMariaGabriela.pdf
+2025-06-16 17:11:21,829 - INFO - ✅ Currículo 'Marciaeduardalaurentinosilva' processado e salvo com ID: 664dfa1d-3054-4509-adbe-f91002cb5098
+2025-06-16 17:11:22,291 - INFO - 📄 Processando: CurriculoMARIAVITORIADACRUZMACEDO.pdf
+2025-06-16 17:11:35,311 - INFO - ✅ Currículo 'Maria Fernanda Marques' processado e salvo com ID: 8f95b1db-8861-4f83-8568-f56ec0e3c908
+2025-06-16 17:11:35,670 - INFO - 📄 Processando: CurriculoMatheusJacomettiPalmeira.pdf
+2025-06-16 17:11:39,750 - INFO - ✅ Currículo 'Maria Erica Dasilva' processado e salvo com ID: c19ec32b-14bc-483f-b726-a10fb15763c0
+2025-06-16 17:11:40,135 - INFO - 📄 Processando: CurriculoMatheusSantos.pdf
+2025-06-16 17:11:47,336 - INFO - ✅ Currículo 'Maria Gabriela' processado e salvo com ID: 919b6cad-abf1-4670-9d2d-223b86ff871f
+2025-06-16 17:11:47,782 - INFO - 📄 Processando: CurriculoMichaelLeandroSilva.pdf
+2025-06-16 17:12:02,591 - INFO - ✅ Currículo 'Matheus Santos' processado e salvo com ID: 56013b6e-5165-456b-8c1c-2603939e1b25
+2025-06-16 17:12:03,008 - INFO - 📄 Processando: CurriculoMikaeleCristineDaSilva.pdf
+2025-06-16 17:12:05,085 - INFO - ✅ Currículo 'Mariavitoriadacruzmacedo' processado e salvo com ID: 9b9eb221-8370-4ed7-a4bc-262aeafe972f
+2025-06-16 17:12:05,548 - INFO - 📄 Processando: CurriculoMilenaLima.pdf
+2025-06-16 17:12:13,788 - INFO - ✅ Currículo 'Matheus Jacometti Palmeira' processado e salvo com ID: dda93234-8d26-4378-af9d-c865c8dbcedd
+2025-06-16 17:12:14,174 - INFO - 📄 Processando: CurriculoMONICAMOURA.pdf
+2025-06-16 17:12:23,349 - INFO - ✅ Currículo 'Michael Leandro Silva' processado e salvo com ID: 08ca2620-51e2-4c1f-bbae-a5b6f0ee7488
+2025-06-16 17:12:23,794 - INFO - 📄 Processando: CurriculoOTILIAISLANIATORRES.pdf
+2025-06-16 17:12:30,484 - INFO - ✅ Currículo 'Mikaele Cristine da Silva' processado e salvo com ID: 9b7eb501-387b-45a4-88d8-d35c0faa563d
+2025-06-16 17:12:31,038 - INFO - 📄 Processando: CurriculoPaulosergioSergio.pdf
+2025-06-16 17:12:47,710 - INFO - ✅ Currículo 'Monicamoura' processado e salvo com ID: a66f0b76-0c23-42d3-860f-8b1c5a6bb56a
+2025-06-16 17:12:48,086 - INFO - 📄 Processando: CurriculoPedroHenriqueMarquesdaSilva.pdf
+2025-06-16 17:12:48,382 - INFO - ✅ Currículo 'Milena Lima' processado e salvo com ID: be377f85-8174-474c-9ce7-20a1b2f82463
+2025-06-16 17:12:48,816 - INFO - 📄 Processando: CurriculoQuetulaEliasdeFrancaSilva.pdf
+2025-06-16 17:13:00,351 - INFO - ✅ Currículo 'Otiliaislaniatorres' processado e salvo com ID: 4673dd89-30b6-4c01-b759-66f42571136f
+2025-06-16 17:13:00,804 - INFO - 📄 Processando: CurriculoRafaelSoaresdeLima.pdf
+2025-06-16 17:13:25,908 - INFO - ✅ Currículo 'Paulosergio Sergio' processado e salvo com ID: dff04f8a-a4ac-48cd-95c7-24ff9fe59db2
+2025-06-16 17:13:26,293 - INFO - 📄 Processando: CurriculoREBECCAISLAYNENASCIMENTOFREITAS.pdf
+2025-06-16 17:13:33,022 - INFO - ✅ Currículo 'Pedro Henrique Marquesda Silva' processado e salvo com ID: a3719de0-7b1a-4a8a-b386-3febca7502c2
+2025-06-16 17:13:33,424 - INFO - 📄 Processando: CurriculoREGINALDORODRIGUESNETO.pdf
+2025-06-16 17:13:39,363 - INFO - ✅ Currículo 'Quetula Eliasde Franca Silva' processado e salvo com ID: f677a562-2635-424b-95a5-ac972a9ad503
+2025-06-16 17:13:39,776 - INFO - 📄 Processando: CurriculoRuthFlorencio.pdf
+2025-06-16 17:13:46,141 - INFO - ✅ Currículo 'Rafael Soaresde Lima' processado e salvo com ID: c53e8299-7a2a-4ba1-a0c9-3729196658b9
+2025-06-16 17:13:46,504 - INFO - 📄 Processando: CurriculoSABRINAMARIA.pdf
+2025-06-16 17:14:13,079 - INFO - ✅ Currículo 'Rebeccaislaynenascimentofreitas' processado e salvo com ID: 955da89f-73a5-44ee-ab2d-48c28bf76db2
+2025-06-16 17:14:13,475 - INFO - 📄 Processando: CurriculoFranklinSantosBarbosa.pdf
+2025-06-16 17:14:20,917 - INFO - ✅ Currículo 'Sabrinamaria' processado e salvo com ID: c3710d73-c485-4e5b-9ce0-be54d8b4507c
+2025-06-16 17:14:21,304 - INFO - 📄 Processando: CurriculoGabrielDesantanasantos.pdf
+2025-06-16 17:14:27,525 - INFO - ✅ Currículo 'Reginaldorodriguesneto' processado e salvo com ID: f10f95c8-694b-4032-9114-a131a0743774
+2025-06-16 17:14:28,080 - INFO - 📄 Processando: CurriculoGerusaAlvesdaSilva.pdf
+2025-06-16 17:14:42,791 - INFO - ✅ Currículo 'Ruth Florencio' processado e salvo com ID: 20cbd584-28c5-4559-8d8e-ae0b93ae5efd
+2025-06-16 17:14:43,172 - INFO - 📄 Processando: CurriculoGivanildovelozo.pdf
+2025-06-16 17:14:46,646 - INFO - ✅ Currículo 'Franklin Santos Barbosa' processado e salvo com ID: bfd08629-57a5-4150-8c28-1ad83c229144
+2025-06-16 17:14:46,998 - INFO - 📄 Processando: CurriculoGlauseSilva.pdf
+2025-06-16 17:15:14,167 - INFO - ✅ Currículo 'Gerusa Alvesda Silva' processado e salvo com ID: 7fb7199b-8ce7-4c24-be38-dd67d2e36ad1
+2025-06-16 17:15:14,540 - INFO - 📄 Processando: CurriculoHELTONJOSEDASILVA.pdf
+2025-06-16 17:15:16,729 - INFO - ✅ Currículo 'Gabriel Desantanasantos' processado e salvo com ID: c14ee912-fd94-4546-925c-13a83e85a188
+2025-06-16 17:15:17,149 - INFO - 📄 Processando: CurriculoHOZANAQUEIROZ.pdf
+2025-06-16 17:15:28,188 - INFO - ✅ Currículo 'Glause Silva' processado e salvo com ID: b47b7fb4-0a89-4a51-a615-ef04e13a53e8
+2025-06-16 17:15:28,543 - INFO - 📄 Processando: CurriculoIgorNascimento.pdf
+2025-06-16 17:15:28,829 - INFO - ✅ Currículo 'Givanildovelozo' processado e salvo com ID: 34264b74-c631-4f04-a003-fab9bcd2b568
+2025-06-16 17:15:29,615 - INFO - 📄 Processando: Curriculoigorramos.pdf
+2025-06-16 17:15:50,527 - INFO - ✅ Currículo 'Hozanaqueiroz' processado e salvo com ID: af2dfda1-7c70-4679-b6c9-67e4ff859fbc
+2025-06-16 17:15:50,861 - INFO - 📄 Processando: CurriculoIndianopolisCaruaru.pdf
+2025-06-16 17:15:51,005 - ERROR - ❌ Erro ao processar CurriculoIndianopolisCaruaru.pdf: ❌ PDF vazio ou ilegível
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 125, in process_candidate
+    raise ValueError("❌ PDF vazio ou ilegível")
+ValueError: ❌ PDF vazio ou ilegível
+2025-06-16 17:15:51,457 - INFO - 📄 Processando: CurriculoIsaacIourranniCorreiadeSouza.pdf
+2025-06-16 17:15:53,574 - INFO - ✅ Currículo 'Igorramos' processado e salvo com ID: 7ddc5dc3-1ce1-4dc8-b500-fe952931cecc
+2025-06-16 17:15:53,944 - INFO - 📄 Processando: CurriculoJacksonBezerra.pdf
+2025-06-16 17:15:56,521 - INFO - ✅ Currículo 'Heltonjosedasilva' processado e salvo com ID: 52a94ed6-ecba-4b5d-96d5-bdbf50c898a2
+2025-06-16 17:15:56,902 - INFO - 📄 Processando: CurriculoJACKSONMANOELDSANTOSSILVA.pdf
+2025-06-16 17:16:10,242 - INFO - ✅ Currículo 'Igor Nascimento' processado e salvo com ID: 8988b37d-6d5c-425c-964e-0beb2f67e4a4
+2025-06-16 17:16:10,651 - INFO - 📄 Processando: CurriculoJailtonGomes.pdf
+2025-06-16 17:16:30,824 - INFO - ✅ Currículo 'Jackson Bezerra' processado e salvo com ID: 75ceb569-477f-422a-8b97-f6bff35f76db
+2025-06-16 17:16:31,194 - INFO - 📄 Processando: CurriculoJandsonMikaelFrancaSilva.pdf
+2025-06-16 17:16:33,477 - INFO - ✅ Currículo 'Isaac Iourranni Correiade Souza' processado e salvo com ID: 635ec808-b5ee-4b44-83bb-3bc4aac7d5e1
+2025-06-16 17:16:33,856 - INFO - 📄 Processando: CurriculoJarielPereiraDos.pdf
+2025-06-16 17:16:33,997 - INFO - ✅ Currículo 'Jacksonmanoeldsantossilva' processado e salvo com ID: c331982d-496d-4b99-8f77-29cee968fdeb
+2025-06-16 17:16:34,413 - INFO - 📄 Processando: CurriculoJESSICASantos.pdf
+2025-06-16 17:16:35,800 - INFO - ✅ Currículo 'Jailton Gomes' processado e salvo com ID: af97ed32-91a1-47e0-9f04-f94b4fd55a4e
+2025-06-16 17:16:36,185 - INFO - 📄 Processando: CurriculoJessikaNayaraAlmeidaOliveira.pdf
+2025-06-16 17:17:08,192 - INFO - ✅ Currículo 'Jariel Pereira dos' processado e salvo com ID: ff61ec85-7513-453d-b360-c4bcecc978d4
+2025-06-16 17:17:08,717 - INFO - 📄 Processando: CurriculoJoseDavideOliveiraSantos.pdf
+2025-06-16 17:17:09,445 - INFO - ✅ Currículo 'Jessika Nayara Almeida Oliveira' processado e salvo com ID: 883b3708-ca46-438d-ab8e-4e1f977fadef
+2025-06-16 17:17:09,935 - INFO - 📄 Processando: CurriculoJOSEEDINALDODEANDRADEFILHO.pdf
+2025-06-16 17:17:10,068 - INFO - ✅ Currículo 'Jessica Santos' processado e salvo com ID: c4129bbb-2199-452f-b3a8-2135283002e1
+2025-06-16 17:17:10,498 - INFO - 📄 Processando: CurriculoJOSEERIVANBARROSDOSSANTOSERIVAN.pdf
+2025-06-16 17:17:46,305 - INFO - ✅ Currículo 'Jandson Mikael Franca Silva' processado e salvo com ID: 7f478366-e906-4281-aaff-783d0225c1e2
+2025-06-16 17:17:46,676 - INFO - 📄 Processando: CurriculoKETHILLYSAMARADASILVAFIGUEIRA - Copia 2.pdf
+2025-06-16 17:17:54,885 - INFO - ✅ Currículo 'Joseerivanbarrosdossantoserivan' processado e salvo com ID: 31cf42b4-a2fa-4df9-b944-0efce49c4dfe
+2025-06-16 17:17:55,260 - INFO - 📄 Processando: CurriculoAndredaSilvaSantos.pdf
+2025-06-16 17:17:56,991 - INFO - ✅ Currículo 'Joseedinaldodeandradefilho' processado e salvo com ID: 2e08ad17-1019-4b94-ac8a-d574cb0c3e22
+2025-06-16 17:17:57,365 - INFO - 📄 Processando: CurriculoAndrezaelieteDasilva.pdf
+2025-06-16 17:17:58,233 - INFO - ✅ Currículo 'José Davide Oliveira Santos' processado e salvo com ID: 42cbc974-2d49-467a-b920-39849f51ad09
+2025-06-16 17:17:58,735 - INFO - 📄 Processando: CurriculoANNYCAROLINE.pdf
+2025-06-16 17:18:23,165 - INFO - ✅ Currículo 'Kethillysamaradasilvafigueira Copia 2' processado e salvo com ID: 7c8b2f82-3b90-48ad-a9e0-8e965a4e182e
+2025-06-16 17:18:23,692 - INFO - 📄 Processando: CurriculoArthurSilva.pdf
+2025-06-16 17:18:34,369 - INFO - ✅ Currículo 'Andreda Silva Santos' processado e salvo com ID: f160f2c0-4cab-4fc8-b620-9d9c40a0c0f5
+2025-06-16 17:18:34,800 - INFO - 📄 Processando: CurriculoArturViniciusSilva.pdf
+2025-06-16 17:18:39,112 - INFO - ✅ Currículo 'Andrezaeliete Dasilva' processado e salvo com ID: aec89bc2-91ea-471d-bf78-47597c08607f
+2025-06-16 17:18:39,512 - INFO - 📄 Processando: CurriculoAuxiliarVendas2025.pdf
+2025-06-16 17:18:39,628 - INFO - ✅ Currículo 'Annycaroline' processado e salvo com ID: 9e2b8977-953b-449a-b6e6-0497a452145e
+2025-06-16 17:18:39,991 - INFO - 📄 Processando: CurriculoBarbaraThayse.pdf
+2025-06-16 17:18:55,414 - INFO - ✅ Currículo 'Arthur Silva' processado e salvo com ID: 90e3c5ec-b764-4ee3-9689-f22cc11e221c
+2025-06-16 17:18:55,860 - INFO - 📄 Processando: CurriculoBrenaVitoriaSantosFarias.pdf
+2025-06-16 17:19:15,167 - INFO - ✅ Currículo 'Artur Vinicius Silva' processado e salvo com ID: 50842b3e-2416-4add-9ef2-96ae84120245
+2025-06-16 17:19:15,580 - INFO - 📄 Processando: CurriculoBrunoPereira.pdf
+2025-06-16 17:19:17,559 - INFO - ✅ Currículo 'Barbara Thayse' processado e salvo com ID: 0057b3c7-c02a-4636-8e31-8c11d264a0ed
+2025-06-16 17:19:18,016 - INFO - 📄 Processando: CurriculoCarlosOliveira.pdf
+2025-06-16 17:19:22,992 - INFO - ✅ Currículo 'Auxiliar Vendas2025' processado e salvo com ID: bd1d3beb-8b26-4e4b-ad71-034e1358a4b6
+2025-06-16 17:19:23,393 - INFO - 📄 Processando: CurriculoCELIAVERISSIMO.pdf
+2025-06-16 17:19:33,874 - INFO - ✅ Currículo 'Brena Vitoria Santos Farias' processado e salvo com ID: 67381e71-1ef2-477b-98e8-c0ab8a6a3ec4
+2025-06-16 17:19:34,216 - INFO - 📄 Processando: CurriculoCelyDanuzadaSilva.pdf
+2025-06-16 17:19:55,428 - INFO - ✅ Currículo 'Carlos Oliveira' processado e salvo com ID: 0856142f-1e8f-470a-bdeb-cf117b6735ee
+2025-06-16 17:19:55,831 - INFO - 📄 Processando: CurriculoCiceraJucicleidedosSantosBezerra.pdf
+2025-06-16 17:20:00,979 - INFO - ✅ Currículo 'Bruno Pereira' processado e salvo com ID: 29f38970-3bce-4b65-a115-6b6bd9ecd867
+2025-06-16 17:20:01,379 - INFO - 📄 Processando: CurriculoConceicaoGranja.pdf
+2025-06-16 17:20:11,535 - INFO - ✅ Currículo 'Cely Danuzada Silva' processado e salvo com ID: 646b65b8-c5bf-4128-91ba-7f6ed571c09d
+2025-06-16 17:20:11,897 - INFO - 📄 Processando: CurriculoCristianaPereiraSantana.pdf
+2025-06-16 17:20:24,990 - INFO - ✅ Currículo 'Celiaverissimo' processado e salvo com ID: 5de4c9e7-ca95-430f-b541-6a2122205a1f
+2025-06-16 17:20:25,361 - INFO - 📄 Processando: CurriculoDaillaPietraBezerradaCruz.pdf
+2025-06-16 17:20:31,837 - INFO - ✅ Currículo 'Cicera Jucicleidedos Santos Bezerra' processado e salvo com ID: bc2095a7-950e-4c02-9f2c-4e9315ac7871
+2025-06-16 17:20:32,290 - INFO - 📄 Processando: CurriculoDanielAlmeidaRochaBarros.pdf
+2025-06-16 17:20:49,369 - INFO - ✅ Currículo 'Conceicao Granja' processado e salvo com ID: 267f2eee-008a-45d1-a2f7-610d432f8810
+2025-06-16 17:20:49,822 - INFO - 📄 Processando: CurriculoDAYANESILVA.pdf
+2025-06-16 17:20:52,905 - INFO - ✅ Currículo 'Cristiana Pereira Santana' processado e salvo com ID: b41e4f5e-e8b0-4ce6-91fa-eb9e71dd6129
+2025-06-16 17:20:53,364 - INFO - 📄 Processando: CurriculoDeborakaianneCabraldaSilva.pdf
+2025-06-16 17:21:02,046 - INFO - ✅ Currículo 'Dailla Pietra Bezerrada Cruz' processado e salvo com ID: d018651e-8e91-4d94-b747-a4dbb90b9c62
+2025-06-16 17:21:02,419 - INFO - 📄 Processando: CurriculoEdivanJoseSantanadosSantos.pdf
+2025-06-16 17:21:19,008 - INFO - ✅ Currículo 'Daniel Almeida Rocha Barros' processado e salvo com ID: f89a416f-9cee-4374-b24d-4fe5735192a8
+2025-06-16 17:21:19,448 - INFO - 📄 Processando: CurriculoEDNEYMAIA.pdf
+2025-06-16 17:21:27,311 - INFO - ✅ Currículo 'Dayanesilva' processado e salvo com ID: b44834bf-81f9-408d-a4dd-2f09026c0b1f
+2025-06-16 17:21:27,696 - INFO - 📄 Processando: CurriculoEduardaFarias.pdf
+2025-06-16 17:21:31,257 - INFO - ✅ Currículo 'Deborakaianne Cabralda Silva' processado e salvo com ID: 1d862333-f9da-4809-9128-3b324f7ad7f2
+2025-06-16 17:21:31,713 - INFO - 📄 Processando: CurriculoEduardaLeticia.pdf
+2025-06-16 17:21:46,945 - INFO - ✅ Currículo 'Edivan José Santanados Santos' processado e salvo com ID: 7d53db20-bdd1-4df9-89aa-a273a20863df
+2025-06-16 17:21:47,304 - INFO - 📄 Processando: CurriculoEduardoFilipeAmarodaSilva.pdf
+2025-06-16 17:21:58,163 - INFO - ✅ Currículo 'Eduarda Farias' processado e salvo com ID: 9ab1cd72-441c-4dfd-8575-f2ac2bb7ed73
+2025-06-16 17:21:58,566 - INFO - 📄 Processando: CurriculoElayneVitoriaRodriguesdaSilva 1.pdf
+2025-06-16 17:22:06,849 - INFO - ✅ Currículo 'Edneymaia' processado e salvo com ID: b3fe6821-1b8f-4665-afe2-4400872b0e16
+2025-06-16 17:22:07,203 - INFO - 📄 Processando: CurriculoEliseuNunes.pdf
+2025-06-16 17:22:17,321 - INFO - ✅ Currículo 'Eduarda Leticia' processado e salvo com ID: 7a7fbe4e-53dc-4e0c-9647-ae0017c88118
+2025-06-16 17:22:17,754 - INFO - 📄 Processando: CurriculoErineizeMaria.pdf
+2025-06-16 17:22:29,014 - INFO - ✅ Currículo 'Eduardo Filipe Amaroda Silva' processado e salvo com ID: a8b55acf-e7c1-4b14-a186-63a8c3a1d21e
+2025-06-16 17:22:29,377 - INFO - 📄 Processando: CurriculoEvelynAlmeida.pdf
+2025-06-16 17:22:38,962 - INFO - ✅ Currículo 'Elayne Vitoria Rodriguesda Silva 1' processado e salvo com ID: 54b83e06-a939-492a-86b9-70efd77e3406
+2025-06-16 17:22:39,343 - INFO - 📄 Processando: CurriculoFelipeManoel.pdf
+2025-06-16 17:22:41,321 - INFO - ✅ Currículo 'Eliseu Nunes' processado e salvo com ID: d0e842f7-91b1-4745-84f3-022c4bb2d5ef
+2025-06-16 17:22:41,704 - INFO - 📄 Processando: CurriculoFernandoAllyssonSerafimdaSilva.pdf
+2025-06-16 17:22:52,149 - INFO - ✅ Currículo 'Erineize Maria' processado e salvo com ID: 99e4c7ee-cf79-43fd-aa41-fd97b53d8f69
+2025-06-16 17:22:52,588 - INFO - 📄 Processando: Ana Beatriz Cavalcante Soares.pdf
+2025-06-16 17:22:56,589 - INFO - ✅ Currículo 'Evelyn Almeida' processado e salvo com ID: 35946e0b-49ab-4efb-a9a1-a550b5c1e2dd
+2025-06-16 17:22:57,032 - INFO - 📄 Processando: ANA BEATRIZ DOS SANTOS SILVA.pdf
+2025-06-16 17:23:17,601 - INFO - ✅ Currículo 'Felipe Manoel' processado e salvo com ID: 82b08cd3-2740-4587-ad03-2bebbf77fae5
+2025-06-16 17:23:18,027 - INFO - 📄 Processando: Curriculo - Emerson Vinicius.pdf
+2025-06-16 17:23:22,552 - INFO - ✅ Currículo 'Fernando Allysson Serafimda Silva' processado e salvo com ID: b80a8b83-c59f-44b9-b836-f761adfc8fd0
+2025-06-16 17:23:22,923 - INFO - 📄 Processando: Curriculo - Esther_20250312_202116_0000.pdf
+2025-06-16 17:23:26,696 - INFO - ✅ Currículo 'Ana Beatriz Cavalcante Soares' processado e salvo com ID: ecdb962f-653b-4ff5-90f0-9be271df6a85
+2025-06-16 17:23:27,066 - INFO - 📄 Processando: curriculo 2.pdf
+2025-06-16 17:23:54,028 - INFO - ✅ Currículo 'Ana Beatriz dos Santos Silva' processado e salvo com ID: 3631f4af-bc7a-48a1-9875-d82ca3d3193d
+2025-06-16 17:23:54,381 - INFO - 📄 Processando: curriculo .pdf
+2025-06-16 17:23:55,721 - INFO - ✅ Currículo 'Esther 20250312 202116 0000' processado e salvo com ID: 7f695dd8-0693-4575-b55d-c29a93f64ad6
+2025-06-16 17:23:56,264 - INFO - 📄 Processando: curriculo _2.pdf
+2025-06-16 17:24:05,676 - INFO - ✅ Currículo 'Emerson Vinicius' processado e salvo com ID: ac79a3da-408d-40c5-b51a-bd0bdffff607
+2025-06-16 17:24:06,062 - INFO - 📄 Processando: Curriculo .pdf 8.pdf
+2025-06-16 17:24:06,555 - INFO - ✅ Currículo '2' processado e salvo com ID: dea60c5b-32d2-4a7e-a8fb-24b074f87fb3
+2025-06-16 17:24:06,922 - INFO - 📄 Processando: Curriculo administracao mulher_20250113_215241_0000 1.pdf
+2025-06-16 17:24:32,305 - ERROR - ❌ Erro ao processar curriculo .pdf: 1 validation error for Analysis
+name
+  Value error, O nome não pode estar vazio [type=value_error, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+Traceback (most recent call last):
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\SERVICES\analise.py", line 158, in process_candidate
+    analysis_data = Analysis(
+                    ^^^^^^^^^
+  File "C:\Users\Viana e Moura.VM210490\Documents\GitHub\Curriculo_IA\Curriculo_IA-clean\venv312\Lib\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Analysis
+name
+  Value error, O nome não pode estar vazio [type=value_error, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-06-16 17:24:32,701 - INFO - 📄 Processando: Curriculo Ainoa.pdf
+2025-06-16 17:24:40,257 - INFO - ✅ Currículo '2' processado e salvo com ID: f49fa79a-bb99-4cb7-8a34-927fb2b80f80
+2025-06-16 17:24:40,258 - INFO - ✅ Currículo 'Pdf 8' processado e salvo com ID: 07bf63c5-c372-4a7e-9482-4b11144ea4de
+2025-06-16 17:24:40,794 - INFO - 📄 Processando: CURRICULO DANILO BUARQUE DOS REIS.pdf
+2025-06-16 17:24:40,797 - INFO - 📄 Processando: Curriculo com foto profissional para advogados azul e cinza.pdf
+2025-06-16 17:24:43,856 - INFO - ✅ Currículo 'Administracao Mulher 20250113 215241 0000 1' processado e salvo com ID: ad6834bd-d7fa-4787-bed6-0e15010df4ea
+2025-06-16 17:24:44,255 - INFO - 📄 Processando: Curriculo Joao Bosco.pdf
+2025-06-16 17:25:09,486 - INFO - ✅ Currículo 'Ainoa' processado e salvo com ID: cc3069ab-d593-4c31-a2e8-e6b072977dfe
+2025-06-16 17:25:09,897 - INFO - 📄 Processando: Curriculo Kaic Rian da Silva.pdf
+2025-06-16 17:25:15,977 - INFO - ✅ Currículo 'João Bosco' processado e salvo com ID: 3a5bbd6f-eb25-4506-b89c-11897fbcf52b
+2025-06-16 17:25:16,305 - INFO - ✅ Currículo 'Danilo Buarque dos Reis' processado e salvo com ID: ae31d023-987f-4623-bbd2-7f5d8a291a0c
+2025-06-16 17:25:16,548 - INFO - 📄 Processando: Curriculo novo.pdf
+2025-06-16 17:25:16,752 - INFO - 📄 Processando: Curriculo profissional - Abgayl Esttefany 1.pdf
+2025-06-16 17:25:22,832 - INFO - ✅ Currículo 'Com Foto Profissional Para Advogados Azul E Cinza' processado e salvo com ID: a921967e-ed2f-4ea5-8403-b28b559663ae
+2025-06-16 17:25:23,244 - INFO - 📄 Processando: curriculo-1.pdf
+2025-06-16 17:25:45,613 - INFO - ✅ Currículo 'Novo' processado e salvo com ID: 2196b307-5ee0-482c-b2b1-6c6b56044945
+2025-06-16 17:25:46,060 - INFO - 📄 Processando: CurriculoAlessandraMariadaSilva.pdf
+2025-06-16 17:25:46,639 - INFO - ✅ Currículo 'Kaic Rian da Silva' processado e salvo com ID: 3a358d1b-a527-4089-ab82-d2ccc0bbc310
+2025-06-16 17:25:47,047 - INFO - 📄 Processando: CurriculoALEXANDRASEVERINAFERREIRA.pdf
+2025-06-16 17:25:50,320 - INFO - ✅ Currículo 'Profissional Abgayl Esttefany 1' processado e salvo com ID: 739e5425-6554-40ca-97aa-d85f05692f83
+2025-06-16 17:25:50,723 - INFO - 📄 Processando: CurriculoAlexandreDaSilvaSantos.pdf
+2025-06-16 17:26:11,101 - INFO - ✅ Currículo '1' processado e salvo com ID: 61efedc6-12d1-4426-b49c-1c71e85d5fc1
+2025-06-16 17:26:11,458 - INFO - 📄 Processando: CurriculoAlexBarbosa.pdf
+2025-06-16 17:26:15,348 - INFO - ✅ Currículo 'Alexandraseverinaferreira' processado e salvo com ID: 9935db89-a51e-43cd-84ff-d28f6caaee72
+2025-06-16 17:26:15,699 - INFO - 📄 Processando: CurriculoALLYNESANTOSSILVADESOUZA.pdf
+2025-06-16 17:26:17,860 - INFO - ✅ Currículo 'Alessandra Mariada Silva' processado e salvo com ID: 8f419e53-64c9-49f5-a738-a22484a42f95
+2025-06-16 17:26:18,247 - INFO - 📄 Processando: CurriculoAMANDAAPARECIDAFRAZAODASILVA.pdf
+2025-06-16 17:26:38,527 - INFO - ✅ Currículo 'Alexandre da Silva Santos' processado e salvo com ID: 541831cb-b39e-4bec-9104-ee06ae9942ac
+2025-06-16 17:26:38,986 - INFO - 📄 Processando: CurriculoAnapaulaDoNascimentolima.pdf
+2025-06-16 17:26:41,366 - INFO - ✅ Currículo 'Alex Barbosa' processado e salvo com ID: aa769dbd-5329-4712-b9e6-f63b769a2751
+2025-06-16 17:26:41,715 - INFO - 📄 Processando: CurriculoAndersonFernandodoNascimentoSilva.pdf
+2025-06-16 17:26:52,291 - INFO - ✅ Currículo 'Allynesantossilvadesouza' processado e salvo com ID: 804c6b97-1de6-42bb-ac4e-a414ac2116b7
+2025-06-16 17:26:52,652 - INFO - 📄 Processando: CurriculoAndersonPereiradeMoura.pdf
+2025-06-16 17:27:04,195 - INFO - ✅ Currículo 'Amandaaparecidafrazaodasilva' processado e salvo com ID: d55cd15e-8a7b-48c5-90c8-09bc5bdc9682
+2025-06-16 17:27:04,591 - INFO - 📄 Processando: CurriculoANDERSONRODRIGUES.pdf
+2025-06-16 17:27:13,940 - INFO - ✅ Currículo 'Anderson Fernandodo Nascimento Silva' processado e salvo com ID: 02fd6d66-187a-42d4-9ba6-5908cfde7042
+2025-06-16 17:27:14,313 - INFO - 📄 Processando: Sabrina Rafaela de Azevedo Rodrigues_20250115_123256_0000.pdf
+2025-06-16 17:27:23,863 - INFO - ✅ Currículo 'Anapaula do Nascimentolima' processado e salvo com ID: 5a1c1089-393c-4014-b5e5-30a4a41646d9
+2025-06-16 17:27:24,281 - INFO - 📄 Processando: CURRICULUM1 1.docx
+2025-06-16 17:27:39,447 - INFO - ✅ Currículo 'Anderson Pereirade Moura' processado e salvo com ID: 269352c9-1bab-40e8-84f4-3f6d7560ac45
+2025-06-16 17:27:39,799 - INFO - 📄 Processando: CV - 01-2025.pdf
+2025-06-16 17:27:49,701 - INFO - ✅ Currículo 'Andersonrodrigues' processado e salvo com ID: 5b120da1-9332-47ac-bfeb-248dc33d65aa
+2025-06-16 17:27:50,056 - INFO - 📄 Processando: CV Roger Ferreira.pdf
+2025-06-16 17:27:51,256 - INFO - ✅ Currículo 'Curriculum1 1' processado e salvo com ID: 37563bbb-6295-4700-9367-2e0e655180bd
+2025-06-16 17:27:51,702 - INFO - 📄 Processando: CV-igor-20250603154623.pdf
+2025-06-16 17:27:53,569 - INFO - ✅ Currículo 'Sabrina Rafaela de Azevedo Rodrigues 20250115 123256 0000' processado e salvo com ID: c832dd20-034d-4700-9b71-56befcedf151
+2025-06-16 17:27:54,096 - INFO - 📄 Processando: CV-janiele-20250601162852.pdf
+2025-06-16 17:28:27,815 - INFO - ✅ Currículo 'Cv Janiele 20250601162852' processado e salvo com ID: 8137f92b-9cfa-42b9-b06f-d0b1e0e652c9
+2025-06-16 17:28:28,272 - INFO - 📄 Processando: CV-Jenyffer Rayane da Silva.pdf
+2025-06-16 17:28:28,415 - INFO - ✅ Currículo 'Cv Igor 20250603154623' processado e salvo com ID: c91d0c01-feeb-4c9f-bc6b-99fe918d6b26
+2025-06-16 17:28:28,834 - INFO - 📄 Processando: DOC-20241126-WA0092..pdf
+2025-06-16 17:28:33,300 - INFO - ✅ Currículo 'Cv 01 2025' processado e salvo com ID: 1b199d2c-fd36-4cb0-a774-8053ba236b52
+2025-06-16 17:28:33,736 - INFO - 📄 Processando: DOC-20250526-WA0083..pdf
+2025-06-16 17:28:35,445 - INFO - ✅ Currículo 'Cv Roger Ferreira' processado e salvo com ID: 476f8956-2649-4919-b2a4-0aec12ff4879
+2025-06-16 17:28:35,827 - INFO - 📄 Processando: DOC-20250526-WA0141..pdf
+2025-06-16 17:29:00,280 - INFO - ✅ Currículo 'Doc 20241126 Wa0092' processado e salvo com ID: c2678d9a-469d-45d9-b705-4a762e5e6fb6
+2025-06-16 17:29:00,691 - INFO - 📄 Processando: Documento de Eduarda Dos Santos.pdf
+2025-06-16 17:29:01,188 - INFO - ✅ Currículo 'Doc 20250526 Wa0141' processado e salvo com ID: 51bb6e4a-59f0-42e3-a54a-54d1e4a671bf
+2025-06-16 17:29:01,714 - INFO - 📄 Processando: Georgia Camila.pdf
+2025-06-16 17:29:06,480 - INFO - ✅ Currículo 'Cv Jenyffer Rayane da Silva' processado e salvo com ID: 3a00279d-7ee2-4bc2-9387-7fd5839aa36b
+2025-06-16 17:29:06,885 - INFO - 📄 Processando: Jose Henrique dos Santos Silva_20250512_080828_0000.pdf
+2025-06-16 17:29:17,933 - INFO - ✅ Currículo 'Doc 20250526 Wa0083' processado e salvo com ID: 1fb55222-8d4a-4c4f-99fc-eacf7944dc82
+2025-06-16 17:29:18,317 - INFO - 📄 Processando: Meu Curriculo.pdf
+2025-06-16 17:29:52,930 - INFO - ✅ Currículo 'Documento de Eduarda dos Santos' processado e salvo com ID: d230e654-d0a6-4ef1-9294-abe671ea0650
+2025-06-16 17:29:53,830 - INFO - ✅ Currículo 'Georgia Camila' processado e salvo com ID: af440319-9835-4246-941d-4e1635cf44f9
+2025-06-16 17:29:58,156 - INFO - ✅ Currículo 'José Henrique dos Santos Silva 20250512 080828 0000' processado e salvo com ID: 22c2b598-5514-4a7b-b6cc-ee4294eae518
+2025-06-16 17:30:00,460 - INFO - ✅ Currículo 'Meu Curriculo' processado e salvo com ID: beab972a-cc09-442e-88a8-2f6448e0e250
