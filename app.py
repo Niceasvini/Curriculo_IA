@@ -41,6 +41,7 @@ except Exception as e:
     st.error("Erro ao inicializar banco de dados: " + str(e))
     st.stop()
 
+
 def normalize_filename(filename: str) -> str:
     # Normaliza Unicode (NFKD) e remove caracteres não ASCII
     nfkd_form = unicodedata.normalize('NFKD', filename)
