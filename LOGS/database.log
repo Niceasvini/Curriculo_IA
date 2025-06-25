@@ -113,3 +113,7 @@
 2025-06-25 15:15:40,436 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@hotmail.com: Este email já está registrado no sistema.
 2025-06-25 15:15:53,237 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@hotmail.com
 2025-06-25 15:15:53,237 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@hotmail.com: A senha deve ter pelo menos 6 caracteres
+2025-06-25 15:22:50,537 - INFO - 🔑 TENTATIVA DE LOGIN PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 15:22:51,156 - ERROR - 💥 Erro no login para viniciusniceas@vianaemoura.com.br: Invalid login credentials
+2025-06-25 15:22:55,333 - INFO - 🔄 SOLICITAÇÃO DE RESET DE SENHA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 15:22:58,247 - INFO - ✅ EMAIL DE RESET ENVIADO PARA: viniciusniceas@vianaemoura.com.br
