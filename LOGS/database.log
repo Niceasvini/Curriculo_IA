@@ -1,3 +1,115 @@
 2025-06-25 10:41:36,109 - ERROR - Erro ao verificar e‑mail no Supabase: User not allowed
 2025-06-25 11:28:25,582 - INFO - Email viniciusniceas@vianaemoura.com.br já existe no sistema
 2025-06-25 11:28:46,037 - INFO - Email viniciusniceas@vianaemoura.com.br já existe no sistema
+2025-06-25 11:29:40,973 - INFO - Email viniiciusniceas@gmail.com já existe no sistema
+2025-06-25 11:30:32,813 - INFO - Email viniiciusniceas@gmail.com já existe no sistema
+2025-06-25 11:58:04,789 - INFO - Iniciando processo de cadastro para: viniiciusniceas@gmail.com
+2025-06-25 11:58:05,403 - INFO - Email viniiciusniceas@gmail.com já existe no sistema
+2025-06-25 11:58:05,404 - WARNING - Tentativa de cadastro com email já existente: viniiciusniceas@gmail.com
+2025-06-25 13:47:36,125 - INFO - Iniciando processo de cadastro para: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:47:37,230 - INFO - Email viniciusniceas@vianaemoura.com.br já existe no sistema
+2025-06-25 13:47:37,230 - WARNING - Tentativa de cadastro com email já existente: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:47:47,838 - INFO - Iniciando processo de cadastro para: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:47:48,323 - INFO - Email viniciusniceas@vianaemoura.com.br já existe no sistema
+2025-06-25 13:47:48,323 - WARNING - Tentativa de cadastro com email já existente: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:49:45,685 - INFO - Iniciando processo de cadastro para: viniiciusniceas@gmail.com
+2025-06-25 13:49:46,205 - INFO - Email viniiciusniceas@gmail.com já existe no sistema
+2025-06-25 13:49:46,205 - WARNING - Tentativa de cadastro com email já existente: viniiciusniceas@gmail.com
+2025-06-25 13:55:01,233 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@gmail.com
+2025-06-25 13:55:01,234 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 13:55:04,017 - INFO - 📥 Response recebido do Supabase
+2025-06-25 13:55:04,017 - INFO - 📋 User: True
+2025-06-25 13:55:04,017 - INFO - 📋 Session: False
+2025-06-25 13:55:04,018 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniiciusniceas@gmail.com
+2025-06-25 13:56:01,703 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:56:01,705 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 13:56:01,971 - INFO - 📥 Response recebido do Supabase
+2025-06-25 13:56:01,972 - INFO - 📋 User: True
+2025-06-25 13:56:01,972 - INFO - 📋 Session: False
+2025-06-25 13:56:01,972 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:59:49,736 - INFO - 🚀 INICIANDO CADASTRO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:59:49,737 - INFO - 🔍 Verificando se viniciusniceas@vianaemoura.com.br já existe...
+2025-06-25 13:59:52,366 - INFO - ✅ Email viniciusniceas@vianaemoura.com.br JÁ EXISTE (reset funcionou)
+2025-06-25 13:59:52,367 - WARNING - ❌ Email viniciusniceas@vianaemoura.com.br já está cadastrado
+2025-06-25 14:00:01,672 - INFO - 🚀 INICIANDO CADASTRO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:00:01,672 - INFO - 🔍 Verificando se viniciusniceas@vianaemoura.com.br já existe...
+2025-06-25 14:00:02,037 - INFO - 🔍 Erro no reset para viniciusniceas@vianaemoura.com.br: for security purposes, you can only request this after 48 seconds.
+2025-06-25 14:00:02,038 - INFO - ⚠️ Erro ambíguo, assumindo que viniciusniceas@vianaemoura.com.br NÃO EXISTE
+2025-06-25 14:00:02,039 - INFO - 📤 Email disponível, criando conta...
+2025-06-25 14:00:02,316 - INFO - 📥 Response recebido do Supabase
+2025-06-25 14:00:02,317 - INFO - 📋 User: True
+2025-06-25 14:00:02,317 - INFO - 📋 Session: False
+2025-06-25 14:00:02,317 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:13:58,650 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@gmail.com
+2025-06-25 14:13:58,650 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 14:13:59,269 - INFO - 📥 Response recebido do Supabase
+2025-06-25 14:13:59,270 - INFO - 📋 User: True
+2025-06-25 14:13:59,270 - INFO - 📋 Session: False
+2025-06-25 14:13:59,270 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniiciusniceas@gmail.com
+2025-06-25 14:14:28,718 - INFO - 🔄 SOLICITAÇÃO DE RESET DE SENHA PARA: viniiciusniceas@gmail.com
+2025-06-25 14:14:31,250 - INFO - ✅ EMAIL DE RESET ENVIADO PARA: viniiciusniceas@gmail.com
+2025-06-25 14:15:25,128 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:15:25,128 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 14:15:25,582 - INFO - 📥 Response recebido do Supabase
+2025-06-25 14:15:25,582 - INFO - 📋 User: True
+2025-06-25 14:15:25,582 - INFO - 📋 Session: False
+2025-06-25 14:15:25,582 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:21:40,334 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@gmail.com
+2025-06-25 14:21:40,835 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@gmail.com: User not allowed
+2025-06-25 14:21:40,837 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:21:55,309 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@gmail.com
+2025-06-25 14:21:55,960 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@gmail.com: User not allowed
+2025-06-25 14:21:55,960 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:22:05,930 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:22:06,237 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 14:22:06,238 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:34:27,921 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:34:28,436 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 14:34:28,436 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:34:44,715 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@hotmail.com
+2025-06-25 14:34:45,115 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@hotmail.com: User not allowed
+2025-06-25 14:34:45,116 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:36:27,525 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@hotmail.com
+2025-06-25 14:36:28,158 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@hotmail.com: User not allowed
+2025-06-25 14:36:28,159 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:36:47,877 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:36:48,248 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 14:36:48,249 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:37:05,502 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:37:05,751 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 14:37:05,752 - ERROR - ❓ Erro não mapeado: user not allowed
+2025-06-25 14:41:52,050 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:41:52,050 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 14:41:54,719 - INFO - 📥 Response recebido do Supabase
+2025-06-25 14:41:54,720 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:42:21,321 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:42:21,321 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 14:42:21,884 - INFO - 📥 Response recebido do Supabase
+2025-06-25 14:42:21,884 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:50:04,582 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:50:05,199 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:51:16,733 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:51:17,337 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:56:55,248 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:56:55,975 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 14:57:05,117 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:57:05,598 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 15:09:06,540 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 15:09:07,234 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: 'list' object has no attribute 'data'
+2025-06-25 15:10:04,856 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 15:10:05,403 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: 'list' object has no attribute 'data'
+2025-06-25 15:11:05,736 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 15:11:06,350 - WARNING - ❌ Email viniciusniceas@vianaemoura.com.br JÁ EXISTE no Supabase.
+2025-06-25 15:11:06,351 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: Este email já está registrado no sistema.
+2025-06-25 15:13:54,694 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniciusniceas@vianaemoura.com.br
+2025-06-25 15:13:55,189 - WARNING - ❌ Email viniciusniceas@vianaemoura.com.br JÁ EXISTE no Supabase.
+2025-06-25 15:13:55,189 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniciusniceas@vianaemoura.com.br: Este email já está registrado no sistema.
+2025-06-25 15:14:06,812 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@hotmail.com
+2025-06-25 15:14:07,301 - INFO - 📤 Enviando requisição para Supabase...
+2025-06-25 15:14:09,620 - INFO - 📥 Response recebido do Supabase
+2025-06-25 15:14:09,620 - INFO - 🎉 CONTA CRIADA COM SUCESSO PARA: viniiciusniceas@hotmail.com
+2025-06-25 15:15:39,943 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@hotmail.com
+2025-06-25 15:15:40,436 - WARNING - ❌ Email viniiciusniceas@hotmail.com JÁ EXISTE no Supabase.
+2025-06-25 15:15:40,436 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@hotmail.com: Este email já está registrado no sistema.
+2025-06-25 15:15:53,237 - INFO - 🚀 TENTANDO CRIAR CONTA PARA: viniiciusniceas@hotmail.com
+2025-06-25 15:15:53,237 - ERROR - 💥 ERRO AO CRIAR CONTA PARA viniiciusniceas@hotmail.com: A senha deve ter pelo menos 6 caracteres

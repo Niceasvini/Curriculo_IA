@@ -173,12 +173,53 @@ def login_page():
     st.markdown('<h1 class="login-title">Sistema de Recrutamento IA</h1>', unsafe_allow_html=True)
     st.markdown('<p class="login-subtitle">Faça login para acessar o sistema</p>', unsafe_allow_html=True)
     
-    # Inicializa o estado do formulário
+    # Inicializa estados
     if 'show_register' not in st.session_state:
         st.session_state.show_register = False
+    if 'show_forgot_password' not in st.session_state:
+        st.session_state.show_forgot_password = False
+    if 'email_input' not in st.session_state:
+        st.session_state.email_input = ""
+    if 'password_input' not in st.session_state:
+        st.session_state.password_input = ""
+        
+    # 🔄 1️⃣ FORMULÁRIO DE RECUPERAÇÃO DE SENHA
+    if st.session_state.show_forgot_password:
+        st.markdown("### 🔄 Recuperar Senha")
+        with st.form("forgot_password_form", clear_on_submit=True):
+            email = st.text_input("📧 Email", placeholder="Digite seu email para recuperação")
+            
+            col_send, col_back = st.columns(2)
+            
+            with col_send:
+                send_submitted = st.form_submit_button("📧 Enviar", use_container_width=True)
+
+            with col_back:
+                back_clicked = st.form_submit_button("⬅️ Voltar", use_container_width=True)
+
+        if back_clicked:
+            st.session_state.show_forgot_password = False
+            st.rerun()
+
+        if send_submitted:
+            if not email:
+                st.error("⚠️ Por favor, digite seu email.")
+            else:
+                try:
+                    with st.spinner("📧 Enviando email de recuperação..."):
+                        result = database.reset_password(email)
+                        if result.get("success"):
+                            st.success(result.get("message"))
+                            time.sleep(3)
+                            st.session_state.show_forgot_password = False
+                            st.rerun()
+                        else:
+                            st.error("❌ Erro ao enviar email de recuperação.")
+                except Exception as e:
+                    st.error(f"❌ {str(e)}")
     
     # Formulário de Login
-    if not st.session_state.show_register:
+    elif not st.session_state.show_register:
         st.markdown("### 🔐 Entrar no Sistema")
         
         with st.form("login_form", clear_on_submit=False):
@@ -204,8 +245,8 @@ def login_page():
                 try:
                     with st.spinner("🔄 Verificando credenciais..."):
                         user = database.sign_in(email, password)
-                        if user:
-                            st.session_state.user = user.email
+                        if result.get("success"):
+                            st.session_state.user = result["user"].email
                             st.session_state.logged_in = True
                             st.success("✅ Login realizado com sucesso! Redirecionando...")
                             time.sleep(1)
@@ -213,18 +254,19 @@ def login_page():
                         else:
                             st.error("❌ Email ou senha incorretos.")
                 except Exception as e:
-                    st.error(f"❌ Erro no login: {e}")
+                    st.error(f"❌ {str(e)}")
+
+        # 👉 ADICIONE O BOTÃO DE ESQUECI MINHA SENHA AQUI
+        st.markdown("---")  # linha para separar
+        if st.button("❓ Esqueci minha senha?"):
+            st.session_state.show_forgot_password = True
+            st.rerun()
+
     else:
         # Formulário de Cadastro
         st.markdown("### 📝 Criar Nova Conta")
-
-        # Estados para validação em tempo real
-        if 'email_input' not in st.session_state:
-            st.session_state.email_input = ""
-        if 'password_input' not in st.session_state:
-            st.session_state.password_input = ""
         
-        with st.form("register_form", clear_on_submit=True):
+        with st.form("register_form", clear_on_submit=False):
             email = st.text_input("📧 Email", placeholder="Digite seu email", value=st.session_state.email_input)
             password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha", value=st.session_state.password_input)
             password_confirm = st.text_input("🔒 Confirme a Senha", type="password", placeholder="Confirme sua senha")
@@ -256,10 +298,13 @@ def login_page():
         
         if back_clicked:
             st.session_state.show_register = False
+            # ✅ LIMPAR CAMPOS AO VOLTAR
+            st.session_state.email_input = ""
+            st.session_state.password_input = ""
             st.rerun()
         
         if register_submitted:
-            # Atualiza estados
+            # ✅ ATUALIZAR SESSION STATE COM VALORES ATUAIS
             st.session_state.email_input = email
             st.session_state.password_input = password
             # Validações
@@ -275,11 +320,9 @@ def login_page():
                                 if result.get("success"):
                                     st.success(result.get("message", "Conta criada com sucesso!"))
                                     log.info(f"Nova conta criada para: {email}")
-                                    
-                                    # Limpa os campos
+                                    # ✅ LIMPAR CAMPOS APÓS SUCESSO
                                     st.session_state.email_input = ""
                                     st.session_state.password_input = ""
-                                    
                                     time.sleep(3)
                                     st.session_state.show_register = False
                                     st.rerun()

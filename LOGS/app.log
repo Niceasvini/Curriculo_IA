@@ -10160,3 +10160,276 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-25 11:28:45,662 - INFO - Log do app iniciado com sucesso.
 2025-06-25 11:28:45,662 - INFO - Conexão com o banco de dados inicializada com sucesso.
 2025-06-25 11:28:46,038 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Este email já está cadastrado no sistema
+2025-06-25 11:29:04,283 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:29:04,284 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:29:13,758 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:29:13,758 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:29:13,779 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: A senha deve ter pelo menos 6 caracteres
+2025-06-25 11:29:31,710 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:29:31,710 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:29:40,551 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:29:40,551 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:29:40,978 - ERROR - Erro no cadastro para viniiciusniceas@gmail.com: Este email já está cadastrado no sistema
+2025-06-25 11:30:08,547 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:08,548 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:08,649 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:08,649 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:09,726 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:09,726 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:09,825 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:09,825 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:12,992 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:12,993 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:14,956 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:14,956 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:15,053 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:15,054 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:32,053 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:30:32,053 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:30:32,814 - ERROR - Erro no cadastro para viniiciusniceas@gmail.com: Este email já está cadastrado no sistema
+2025-06-25 11:43:56,255 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:43:56,256 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:43:59,140 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:43:59,141 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:43:59,241 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:43:59,241 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:57:47,521 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:57:47,522 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:57:48,977 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:57:48,978 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:57:49,062 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:57:49,063 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:58:04,745 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:58:04,745 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:58:05,405 - ERROR - Erro no cadastro para viniiciusniceas@gmail.com: Este email já está cadastrado no sistema
+2025-06-25 13:47:22,446 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:47:22,452 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:47:25,113 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:47:25,114 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:47:25,215 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:47:25,215 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:47:36,098 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:47:36,099 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:47:37,232 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Este email já está cadastrado no sistema
+2025-06-25 13:47:47,818 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:47:47,818 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:47:48,324 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Este email já está cadastrado no sistema
+2025-06-25 13:49:45,665 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:49:45,666 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:49:46,206 - ERROR - Erro no cadastro para viniiciusniceas@gmail.com: Este email já está cadastrado no sistema
+2025-06-25 13:54:47,100 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:54:47,100 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:54:48,850 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:54:48,851 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:54:48,976 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:54:48,977 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:55:01,216 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:55:01,217 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:55:04,019 - INFO - Nova conta criada para: viniiciusniceas@gmail.com
+2025-06-25 13:55:07,079 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:55:07,079 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:55:51,592 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:55:51,593 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:55:51,680 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:55:51,681 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:56:01,677 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:56:01,680 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:56:01,972 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 13:56:05,044 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:56:05,044 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:58:36,592 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:58:36,592 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:58:36,733 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:58:36,733 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:59:39,087 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:59:39,088 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:59:41,103 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:59:41,103 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:59:41,223 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:59:41,224 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:59:49,717 - INFO - Log do app iniciado com sucesso.
+2025-06-25 13:59:49,718 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 13:59:52,367 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Este email já está cadastrado no sistema
+2025-06-25 14:00:01,646 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:00:01,647 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:00:02,317 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:00:05,390 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:00:05,390 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:44,555 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:44,555 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:48,922 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:48,923 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:49,015 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:49,016 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:53,036 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:53,037 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:53,120 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:53,120 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:54,252 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:54,252 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:12:54,340 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:12:54,340 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:13:44,210 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:13:44,211 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:13:46,540 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:13:46,541 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:13:46,634 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:13:46,634 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:13:58,629 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:13:58,630 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:13:59,271 - INFO - Nova conta criada para: viniiciusniceas@gmail.com
+2025-06-25 14:14:02,341 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:14:02,341 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:14:19,388 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:14:19,388 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:14:19,487 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:14:19,487 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:14:28,700 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:14:28,701 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:14:34,323 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:14:34,323 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:15:14,052 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:15:14,053 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:15:14,137 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:15:14,138 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:15:25,107 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:15:25,107 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:15:25,583 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:15:28,653 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:15:28,653 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:20:58,648 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:20:58,648 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:21:34,172 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:21:34,172 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:21:34,262 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:21:34,263 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:21:40,314 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:21:40,315 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:21:40,843 - ERROR - Erro no cadastro para viniiciusniceas@gmail.com: Erro ao criar conta: User not allowed
+2025-06-25 14:21:55,289 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:21:55,290 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:21:55,961 - ERROR - Erro no cadastro para viniiciusniceas@gmail.com: Erro ao criar conta: User not allowed
+2025-06-25 14:22:05,914 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:22:05,914 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:22:06,241 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Erro ao criar conta: User not allowed
+2025-06-25 14:34:27,903 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:34:27,904 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:34:28,437 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Erro ao criar conta: User not allowed
+2025-06-25 14:34:44,694 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:34:44,694 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:34:45,116 - ERROR - Erro no cadastro para viniiciusniceas@hotmail.com: Erro ao criar conta: User not allowed
+2025-06-25 14:36:27,505 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:36:27,505 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:36:28,160 - ERROR - Erro no cadastro para viniiciusniceas@hotmail.com: Erro ao criar conta: User not allowed
+2025-06-25 14:36:47,848 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:36:47,848 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:36:48,252 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Erro ao criar conta: User not allowed
+2025-06-25 14:36:50,888 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:36:50,888 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:36:50,974 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:36:50,974 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:36:52,655 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:36:52,656 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:36:52,744 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:36:52,744 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:37:05,478 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:37:05,479 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:37:05,753 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Erro ao criar conta: User not allowed
+2025-06-25 14:41:35,409 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:41:35,409 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:41:37,197 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:41:37,197 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:41:37,294 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:41:37,294 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:41:52,030 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:41:52,030 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:41:54,722 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:41:57,787 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:41:57,787 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:42:10,950 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:42:10,951 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:42:11,040 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:42:11,041 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:42:21,295 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:42:21,296 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:42:21,885 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:42:24,965 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:42:24,966 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:49:54,475 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:49:54,475 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:49:56,059 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:49:56,060 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:49:56,157 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:49:56,158 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:50:04,563 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:50:04,564 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:50:05,200 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:50:08,287 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:50:08,287 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:50:18,340 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:50:18,341 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:50:18,432 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:50:18,433 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:51:16,715 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:51:16,715 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:51:17,338 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 14:51:20,405 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:51:20,405 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:56:42,523 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:56:42,524 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:56:44,308 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:56:44,308 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:56:44,393 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:56:44,394 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:56:55,227 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:56:55,228 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:56:55,977 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 14:57:00,932 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:57:00,932 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:57:05,091 - INFO - Log do app iniciado com sucesso.
+2025-06-25 14:57:05,092 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 14:57:05,601 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: User not allowed
+2025-06-25 15:08:50,948 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:08:50,948 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:08:52,471 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:08:52,471 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:08:52,588 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:08:52,588 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:09:06,521 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:09:06,521 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:10:04,837 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:10:04,837 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:11:05,719 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:11:05,719 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:13:54,677 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:13:54,678 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:13:55,193 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Erro ao criar conta: Este email já está registrado no sistema.
+2025-06-25 15:14:06,792 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:06,792 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:09,621 - INFO - Nova conta criada para: viniiciusniceas@hotmail.com
+2025-06-25 15:14:12,687 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:12,688 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:15,185 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:15,185 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:15,267 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:15,267 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:16,471 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:16,472 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:16,561 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:16,561 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:23,950 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:23,951 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:14:24,044 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:14:24,044 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:15:39,926 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:15:39,926 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:15:40,438 - ERROR - Erro no cadastro para viniiciusniceas@hotmail.com: Erro ao criar conta: Este email já está registrado no sistema.
+2025-06-25 15:15:47,654 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:15:47,654 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:15:53,215 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:15:53,216 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:15:53,238 - ERROR - Erro no cadastro para viniiciusniceas@hotmail.com: Erro ao criar conta: A senha deve ter pelo menos 6 caracteres
+2025-06-25 15:16:00,214 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:16:00,215 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 15:16:00,328 - INFO - Log do app iniciado com sucesso.
+2025-06-25 15:16:00,328 - INFO - Conexão com o banco de dados inicializada com sucesso.

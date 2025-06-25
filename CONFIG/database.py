@@ -8,11 +8,16 @@ from LOGS.log_config import setup_logger
 
 load_dotenv() # Carrega variáveis de ambiente do arquivo .env
 SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY") # chave pública (anon)
+SUPABASE_SERVICE_ROLE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")  # chave secreta (service_role)
 
 log = setup_logger(__name__, "database.log")
 
+# Cliente público para operações comuns (login, signup)
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+# Cliente admin para operações administrativas (list_users etc)
+supabase_admin = create_client(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)
 
 class AnalyseDataBase:
 
@@ -65,136 +70,83 @@ class AnalyseDataBase:
         if len(password) < 6:
             return False, "A senha deve ter pelo menos 6 caracteres"
         
-        if len(password) > 72:  # Limite do Supabase
+        if len(password) > 72:
             return False, "A senha deve ter no máximo 72 caracteres"
-        
-        # Opcional: validações adicionais de força
-        if password.isdigit():
-            return False, "A senha não pode conter apenas números"
-        
-        if password.lower() == password and password.isalpha():
-            return False, "A senha deve conter pelo menos um número ou caractere especial"
         
         return True, ""
 
-    def verificar_email_existente(self, email: str) -> bool:
-        """Verifica se email já existe no sistema"""
-        try:
-            email = email.strip().lower()
-            
-            # Método mais confiável: tentar fazer login com senha inválida
-            # Se o email existir, retornará erro de senha incorreta
-            # Se não existir, retornará erro de usuário não encontrado
-            try:
-                response = supabase.auth.sign_in_with_password({
-                    "email": email, 
-                    "password": "senha_temporaria_invalida_123456789"
-                })
-                # Se chegou aqui sem erro, algo está errado
-                return True
-            except Exception as e:
-                error_msg = str(e).lower()
-                
-                # Se contém "invalid login credentials" ou "email not confirmed"
-                # significa que o email existe mas a senha está errada
-                if any(phrase in error_msg for phrase in [
-                    "invalid login credentials", 
-                    "email not confirmed",
-                    "invalid email or password"
-                ]):
-                    log.info(f"Email {email} já existe no sistema")
-                    return True
-                
-                # Se contém "user not found" ou similar, email não existe
-                if any(phrase in error_msg for phrase in [
-                    "user not found",
-                    "no user found",
-                    "user does not exist"
-                ]):
-                    log.info(f"Email {email} não existe no sistema")
-                    return False
-                
-                # Para outros erros, assumimos que existe por segurança
-                log.warning(f"Erro ambíguo ao verificar email {email}: {e}")
-                return True
-                
-        except Exception as e:
-            log.error(f"Erro ao verificar email {email}: {e}")
-            # Em caso de erro, assumimos que existe por segurança
-            return True
-
     def sign_up(self, email: str, password: str) -> dict:
-        """Cria um novo usuário com validações melhoradas"""
-        
-        # Validações locais primeiro
-        email_valido, email_erro = self.validar_email(email)
-        if not email_valido:
-            raise ValueError(email_erro)
-        
-        senha_valida, senha_erro = self.validar_senha(password)
-        if not senha_valida:
-            raise ValueError(senha_erro)
-        
-        email = email.strip().lower()
-        
-        # Verifica se email já existe
-        if self.verificar_email_existente(email):
-            raise ValueError("Este email já está cadastrado no sistema")
+        """
+        Cria um novo usuário - MÉTODO DIRETO SEM VERIFICAÇÃO PRÉVIA
+        Deixa o Supabase decidir se o email já existe
+        """
         
         try:
-            log.info(f"Tentando criar conta para: {email}")
+            log.info(f"🚀 TENTANDO CRIAR CONTA PARA: {email}")
             
-            response = supabase.auth.sign_up({
-                "email": email, 
-                "password": password
-            })
+            # 1️⃣ Validações locais
+            email_valido, email_erro = self.validar_email(email)
+            if not email_valido:
+                raise ValueError(email_erro)
+
+            senha_valida, senha_erro = self.validar_senha(password)
+            if not senha_valida:
+                raise ValueError(senha_erro)
+
+            email = email.strip().lower()
+
+            # 2️⃣ Envia requisição de criação ao Supabase
+            existing_users = supabase_admin.auth.admin.list_users()
+            print(existing_users)
+            if any(u.email == email for u in existing_users):
+                log.warning(f"❌ Email {email} JÁ EXISTE no Supabase.")
+                raise ValueError("Este email já está registrado no sistema.")
+
+            # Tenta sign up
+            log.info(f"📤 Enviando requisição para Supabase...")
+            response = supabase.auth.sign_up({"email": email, "password": password})
+            log.info(f"📥 Response recebido do Supabase")
             
+            # ✅ SUCESSO - CONTA CRIADA
             if response.user:
-                log.info(f"Conta criada com sucesso para: {email}")
+                log.info(f"🎉 CONTA CRIADA COM SUCESSO PARA: {email}")
                 return {
                     "success": True,
                     "user": response.user,
                     "message": f"Conta criada com sucesso! Verifique seu email ({email}) para confirmar o cadastro."
                 }
+            
             else:
-                error_msg = "Erro desconhecido ao criar conta"
+                error_msg = "Resposta inesperada do servidor"
                 if hasattr(response, 'error') and response.error:
                     error_msg = str(response.error.message)
-                
-                log.error(f"Falha ao criar conta para {email}: {error_msg}")
+
+                log.error(f"❌ Resposta sem user: {error_msg}")
                 raise ValueError(f"Erro ao criar conta: {error_msg}")
                 
         except Exception as e:
-            error_msg = str(e)
-            log.error(f"Exceção ao criar conta para {email}: {error_msg}")
+            error_msg = str(e).lower()
+            log.error(f"💥 ERRO AO CRIAR CONTA PARA {email}: {e}")
+            if "user already registered" in error_msg or "email already registered" in error_msg:
+                raise ValueError("Este email já está registrado no sistema.")
             
-            # Traduzir erros comuns
-            if "user already registered" in error_msg.lower():
-                raise ValueError("Este email já está cadastrado no sistema")
-            elif "invalid email" in error_msg.lower():
-                raise ValueError("Email inválido")
-            elif "password" in error_msg.lower() and "6" in error_msg:
-                raise ValueError("A senha deve ter pelo menos 6 caracteres")
-            elif "rate limit" in error_msg.lower():
-                raise ValueError("Muitas tentativas. Aguarde alguns minutos e tente novamente")
             else:
-                raise ValueError(f"Erro ao criar conta: {error_msg}")
+                raise ValueError(f"Erro ao criar conta: {str(e)}")
 
     def sign_in(self, email: str, password: str) -> dict:
-        """Faz login com validações melhoradas"""
-        
-        # Validações básicas
-        email_valido, email_erro = self.validar_email(email)
-        if not email_valido:
-            raise ValueError(email_erro)
-        
-        if not password or len(password.strip()) == 0:
-            raise ValueError("Senha é obrigatória")
-        
-        email = email.strip().lower()
-        
+        """Faz login"""
         try:
-            log.info(f"Tentativa de login para: {email}")
+            log.info(f"🔑 TENTATIVA DE LOGIN PARA: {email}")
+            
+            # Validações básicas
+            email_valido, email_erro = self.validar_email(email)
+            if not email_valido:
+                raise ValueError(email_erro)
+            
+            if not password:
+                raise ValueError("Senha é obrigatória")
+            
+            email = email.strip().lower()
             
             response = supabase.auth.sign_in_with_password({
                 "email": email, 
@@ -202,39 +154,86 @@ class AnalyseDataBase:
             })
             
             if response.user:
-                log.info(f"Login realizado com sucesso para: {email}")
+                log.info(f"✅ LOGIN REALIZADO COM SUCESSO PARA: {email}")
                 return {
                     "success": True,
                     "user": response.user,
                     "message": "Login realizado com sucesso!"
                 }
             else:
-                error_msg = "Credenciais inválidas"
-                if hasattr(response, 'error') and response.error:
-                    error_msg = str(response.error.message)
-                
-                log.warning(f"Falha no login para {email}: {error_msg}")
+                log.warning(f"❌ Falha no login para {email}")
                 raise ValueError("Email ou senha incorretos")
                 
+        except ValueError:
+            raise
         except Exception as e:
             error_msg = str(e).lower()
-            log.error(f"Exceção no login para {email}: {e}")
+            log.error(f"💥 Erro no login para {email}: {e}")
             
-            # Traduzir erros específicos
             if any(phrase in error_msg for phrase in [
                 "invalid login credentials", 
                 "invalid email or password",
-                "email or password"
+                "wrong password",
+                "incorrect password"
             ]):
                 raise ValueError("Email ou senha incorretos")
-            elif "email not confirmed" in error_msg:
+            elif any(phrase in error_msg for phrase in [
+                "email not confirmed",
+                "email not verified"
+            ]):
                 raise ValueError("Email não confirmado. Verifique sua caixa de entrada e confirme seu cadastro")
-            elif "too many requests" in error_msg or "rate limit" in error_msg:
+            elif any(phrase in error_msg for phrase in [
+                "too many requests",
+                "rate limit"
+            ]):
                 raise ValueError("Muitas tentativas de login. Aguarde alguns minutos")
-            elif "network" in error_msg or "connection" in error_msg:
-                raise ValueError("Erro de conexão. Verifique sua internet")
             else:
                 raise ValueError("Erro no login. Tente novamente")
+
+    def reset_password(self, email: str) -> dict:
+        """
+        🔄 NOVA FUNÇÃO: Reset de senha manual (para botão "Esqueci Senha")
+        """
+        try:
+            log.info(f"🔄 SOLICITAÇÃO DE RESET DE SENHA PARA: {email}")
+            
+            # Validação básica
+            email_valido, email_erro = self.validar_email(email)
+            if not email_valido:
+                raise ValueError(email_erro)
+            
+            email = email.strip().lower()
+            
+            # Enviar email de reset
+            response = supabase.auth.reset_password_email(email)
+            
+            log.info(f"✅ EMAIL DE RESET ENVIADO PARA: {email}")
+            return {
+                "success": True,
+                "message": f"Email de recuperação enviado para {email}. Verifique sua caixa de entrada."
+            }
+            
+        except Exception as e:
+            error_msg = str(e).lower()
+            log.error(f"💥 Erro no reset de senha para {email}: {e}")
+            
+            if any(phrase in error_msg for phrase in [
+                "rate limit",
+                "too many requests",
+                "48 seconds"
+            ]):
+                raise ValueError("Aguarde alguns minutos antes de solicitar outro reset de senha")
+            elif any(phrase in error_msg for phrase in [
+                "user not found",
+                "email not found"
+            ]):
+                # Por segurança, não revelamos se o email existe ou não
+                return {
+                    "success": True,
+                    "message": f"Se o email {email} estiver cadastrado, você receberá as instruções de recuperação."
+                }
+            else:
+                raise ValueError("Erro ao enviar email de recuperação. Tente novamente")
 
     def sign_out(self):
         """Faz logout"""
