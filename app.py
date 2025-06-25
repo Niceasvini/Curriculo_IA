@@ -262,12 +262,7 @@ def login_page():
                 st.error("❌ As senhas não coincidem.")
             else:
                 try:
-                    with st.spinner("🔍 Verificando se o email já está cadastrado..."):
-                        # Verifica se o email já existe
-                        if verificar_email_existente(email):
-                            st.error("❌ Este email já está cadastrado. Tente fazer login ou use outro email.")
-                            log.warning(f"Tentativa de cadastro com email já existente: {email}")
-                        else:
+                    # Verifica se o email já está cadastrado
                             with st.spinner("📝 Criando conta..."):
                                 user = database.sign_up(email, password)
                                 if user:
