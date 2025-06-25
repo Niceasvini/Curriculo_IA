@@ -182,7 +182,7 @@ def login_page():
         st.session_state.email_input = ""
     if 'password_input' not in st.session_state:
         st.session_state.password_input = ""
-        
+
     # 🔄 1️⃣ FORMULÁRIO DE RECUPERAÇÃO DE SENHA
     if st.session_state.show_forgot_password:
         st.markdown("### 🔄 Recuperar Senha")
@@ -258,7 +258,7 @@ def login_page():
 
         # 👉 ADICIONE O BOTÃO DE ESQUECI MINHA SENHA AQUI
         st.markdown("---")  # linha para separar
-        if st.button("❓ Esqueci minha senha?"):
+        if st.button("Esqueci minha senha?"):
             st.session_state.show_forgot_password = True
             st.rerun()
 
