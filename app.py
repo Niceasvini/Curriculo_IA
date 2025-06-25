@@ -247,6 +247,9 @@ def login_page():
                 st.error("❌ As senhas não coincidem.")
             else:
                 try:
+                    if database.verificar_email_existente_supabase(email):
+                        st.error("❌ Este e‑mail já está registrado. Tente realizar login.")
+                    else:
                     # Verifica se o email já está cadastrado
                             with st.spinner("📝 Criando conta..."):
                                 user = database.sign_up(email, password)

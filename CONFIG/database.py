@@ -61,6 +61,18 @@ class AnalyseDataBase:
     def sign_out(self):
         """Faz logout."""
         supabase.auth.sign_out()
+
+    def verificar_email_existente_supabase(self, email: str) -> bool:
+        try:
+            response = supabase.auth.admin.list_users()
+            if response.data and "users" in response.data:
+                for user in response.data["users"]:
+                    if user.get("email") == email:
+                        return True
+            return False
+        except Exception as e:
+            log.error(f"Erro ao verificar e‑mail no Supabase: {e}")
+            return False
     
     def get_user(self):
         """Retorna o usuário autenticado atual."""
