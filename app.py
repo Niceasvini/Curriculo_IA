@@ -86,21 +86,6 @@ def traduzir_erro(erro_msg):
     # Se não encontrou tradução específica, retorna a mensagem original
     return str(erro_msg)
 
-def verificar_email_existente(email):
-    """Verifica se já existe um usuário com este email"""
-    try:
-        # Tenta fazer login com email e senha vazia para verificar se existe
-        # Se o email não existir, vai dar erro diferente de senha incorreta
-        result = database.sign_in(email, "senha_temporaria_para_verificacao")
-        return True  # Se chegou aqui, email existe
-    except Exception as e:
-        erro_msg = str(e).lower()
-        # Se o erro for de senha incorreta, significa que o email existe
-        if "invalid login credentials" in erro_msg or "invalid email or password" in erro_msg:
-            return True
-        # Se for outro tipo de erro, provavelmente o email não existe
-        return False
-
 def login_page():
     """Página de login profissional e limpa"""
     
