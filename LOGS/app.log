@@ -10087,3 +10087,76 @@ ValueError: ❌ PDF vazio ou ilegível
 2025-06-16 17:31:17,785 - INFO - Dados encontrados: 140 registros
 2025-06-17 11:21:50,154 - INFO - Log do app iniciado com sucesso.
 2025-06-17 11:21:50,154 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:41:23,465 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:41:23,466 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:41:25,816 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:41:25,816 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:41:25,906 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:41:25,906 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:41:35,217 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:41:35,217 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:41:36,283 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 10:41:39,360 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:41:39,361 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:44:13,847 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:44:13,847 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:44:13,957 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:44:13,957 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:44:20,800 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:44:20,801 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:44:21,279 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 10:44:24,362 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:44:24,363 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:53:30,132 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:53:30,133 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:53:32,272 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:53:32,272 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:53:32,364 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:53:32,364 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:53:40,566 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:53:40,566 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:55:25,191 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:55:25,191 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:55:29,204 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:55:29,205 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:55:29,302 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:55:29,302 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:55:37,164 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:55:37,164 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 10:55:37,656 - INFO - Nova conta criada para: viniciusniceas@vianaemoura.com.br
+2025-06-25 10:55:40,777 - INFO - Log do app iniciado com sucesso.
+2025-06-25 10:55:40,777 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:15:28,323 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:15:28,324 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:15:31,224 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:15:31,225 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:15:31,334 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:15:31,335 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:15:38,711 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:15:38,712 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:15:38,732 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: name 're' is not defined
+2025-06-25 11:16:11,359 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:16:11,360 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:16:24,994 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:16:24,994 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:16:25,021 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: name 're' is not defined
+2025-06-25 11:28:10,608 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:10,608 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:12,286 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:12,286 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:12,375 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:12,375 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:24,806 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:24,806 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:25,583 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Este email já está cadastrado no sistema
+2025-06-25 11:28:31,206 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:31,207 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:31,298 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:31,299 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:32,980 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:32,981 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:33,071 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:33,072 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:45,662 - INFO - Log do app iniciado com sucesso.
+2025-06-25 11:28:45,662 - INFO - Conexão com o banco de dados inicializada com sucesso.
+2025-06-25 11:28:46,038 - ERROR - Erro no cadastro para viniciusniceas@vianaemoura.com.br: Este email já está cadastrado no sistema

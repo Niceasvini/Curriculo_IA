@@ -217,11 +217,34 @@ def login_page():
     else:
         # Formulário de Cadastro
         st.markdown("### 📝 Criar Nova Conta")
+
+        # Estados para validação em tempo real
+        if 'email_input' not in st.session_state:
+            st.session_state.email_input = ""
+        if 'password_input' not in st.session_state:
+            st.session_state.password_input = ""
         
         with st.form("register_form", clear_on_submit=True):
-            email = st.text_input("📧 Email", placeholder="Digite seu email")
-            password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha")
+            email = st.text_input("📧 Email", placeholder="Digite seu email", value=st.session_state.email_input)
+            password = st.text_input("🔒 Senha", type="password", placeholder="Digite sua senha", value=st.session_state.password_input)
             password_confirm = st.text_input("🔒 Confirme a Senha", type="password", placeholder="Confirme sua senha")
+
+            # Validação visual da senha em tempo real
+            if password:
+                st.markdown('<div class="password-requirements">', unsafe_allow_html=True)
+                st.markdown("**Requisitos da senha:**")
+                
+                # Verifica cada requisito
+                req_length = len(password) >= 6
+                req_not_only_numbers = not password.isdigit()
+                req_not_only_letters = not (password.lower() == password and password.isalpha())
+                
+                st.markdown(f'<div class="requirement {"valid" if req_length else "invalid"}">{"✅" if req_length else "❌"} Pelo menos 6 caracteres</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="requirement {"valid" if req_not_only_numbers else "invalid"}">{"✅" if req_not_only_numbers else "❌"} Não pode conter apenas números</div>', unsafe_allow_html=True)
+                st.markdown(f'<div class="requirement {"valid" if req_not_only_letters else "invalid"}">{"✅" if req_not_only_letters else "❌"} Deve conter números ou caracteres especiais</div>', unsafe_allow_html=True)
+                
+                st.markdown('</div>', unsafe_allow_html=True)
+
             
             col_register, col_back = st.columns(2)
             
@@ -236,36 +259,36 @@ def login_page():
             st.rerun()
         
         if register_submitted:
+            # Atualiza estados
+            st.session_state.email_input = email
+            st.session_state.password_input = password
             # Validações
             if not email or not password or not password_confirm:
                 st.error("⚠️ Por favor, preencha todos os campos.")
-            elif not re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email):
-                st.error("⚠️ Por favor, digite um email válido.")
-            elif len(password) < 6:
-                st.error("⚠️ A senha deve ter pelo menos 6 caracteres.")
             elif password != password_confirm:
                 st.error("❌ As senhas não coincidem.")
             else:
                 try:
-                    if database.verificar_email_existente_supabase(email):
-                        st.error("❌ Este e‑mail já está registrado. Tente realizar login.")
-                    else:
                     # Verifica se o email já está cadastrado
                             with st.spinner("📝 Criando conta..."):
-                                user = database.sign_up(email, password)
-                                if user:
-                                    st.success(f"✅ Conta criada com sucesso! Um email de confirmação foi enviado para {email}. Por favor, confirme seu email para fazer login.")
+                                result = database.sign_up(email, password)
+                                if result.get("success"):
+                                    st.success(result.get("message", "Conta criada com sucesso!"))
                                     log.info(f"Nova conta criada para: {email}")
+                                    
+                                    # Limpa os campos
+                                    st.session_state.email_input = ""
+                                    st.session_state.password_input = ""
+                                    
                                     time.sleep(3)
                                     st.session_state.show_register = False
                                     st.rerun()
                                 else:
                                     st.error("❌ Erro ao criar conta. Tente novamente.")
                 except Exception as e:
-                    erro_traduzido = traduzir_erro(str(e))
-                    st.error(f"❌ Erro no cadastro: {erro_traduzido}")
+                    st.error(f"❌ {str(e)}")
                     log.error(f"Erro no cadastro para {email}: {e}")
-    
+            
     st.markdown('</div>', unsafe_allow_html=True)
 
 def setup_page():
