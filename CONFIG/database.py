@@ -3,10 +3,13 @@ import os
 from dotenv import load_dotenv
 from supabase import create_client
 from typing import List, Dict, Optional
+from LOGS.log_config import setup_logger
 
 load_dotenv() # Carrega variáveis de ambiente do arquivo .env
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+log = setup_logger(__name__, "database.log")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
