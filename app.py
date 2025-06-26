@@ -313,6 +313,12 @@ def login_page():
                 st.error("⚠️ Por favor, preencha todos os campos.")
             elif password != password_confirm:
                 st.error("❌ As senhas não coincidem.")
+            elif len(password) < 6:
+                st.error("❌ A senha deve ter pelo menos 6 caracteres.")
+            elif password.isdigit():
+                st.error("❌ A senha não pode conter apenas números.")
+            elif password.lower() == password and password.isalpha():
+                st.error("❌ A senha não pode conter apenas letras.")
             else:
                 try:
                     # Verifica se o email já está cadastrado
