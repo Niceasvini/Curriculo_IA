@@ -245,7 +245,7 @@ def login_page():
             else:
                 try:
                     with st.spinner("🔄 Verificando credenciais..."):
-                        user = database.sign_in(email, password)
+                        result = database.sign_in(email, password)
                         if result.get("success"):
                             st.session_state.user = result["user"].email
                             st.session_state.logged_in = True
